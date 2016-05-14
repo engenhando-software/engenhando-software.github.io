@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Introdução e Testes de Caixa-Branca | Engenheirando Software | Minhas observações sobre Engenharia de Software</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <meta name="keywords" content="disciplina1,unidade1,modulo3">
+  <meta name="description" content="O objetivo principal de qualquer técnica de testes é maximizar a relação percentagem de defeito sobre o número de testes feitos. O ideal é fazer o menor número de teste e testar a maior parte do siste">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Introdução e Testes de Caixa-Branca">
+<meta property="og:url" content="http://yoursite.com/2015/08/11/introducao-e-testes-de-caixa-branca/index.html">
+<meta property="og:site_name" content="Engenheirando Software">
+<meta property="og:description" content="O objetivo principal de qualquer técnica de testes é maximizar a relação percentagem de defeito sobre o número de testes feitos. O ideal é fazer o menor número de teste e testar a maior parte do siste">
+<meta property="og:updated_time" content="2015-12-06T15:45:45.846Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Introdução e Testes de Caixa-Branca">
+<meta name="twitter:description" content="O objetivo principal de qualquer técnica de testes é maximizar a relação percentagem de defeito sobre o número de testes feitos. O ideal é fazer o menor número de teste e testar a maior parte do siste">
+  
+    <link rel="alternative" href="/atom.xml" title="Engenheirando Software" type="application/atom+xml">
+  
+  <link rel="shortcut icon" href="/">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="loading" class="active"></div>
+
+  <nav id="menu" class="hide" >
+   <div class="inner">
+  <a href="javascript:;" class="header-icon waves-circle-light" id="menu-off">
+      <i class="icon icon-lg icon-close"></i>
+  </a>
+  <div class="brand-wrap">
+    <div class="brand">
+      <a href="/" class="avatar"><img src="/images/avatar.jpg"></a>
+      <hgroup class="introduce">
+        <h5 class="nickname">Jonathas Amaral</h5>
+        <a href="mailto:jnthas@gmail.com" title="jnthas@gmail.com" class="mail">jnthas@gmail.com</a>
+      </hgroup>
+    </div>
+  </div>
+  <ul class="nav">
+    
+        <li class="waves-block">
+          <a href="/"  >
+            <i class="icon icon-lg icon-home"></i>
+            Home
+          </a>
+        </li>
+    
+        <li class="waves-block">
+          <a href="/archives"  >
+            <i class="icon icon-lg icon-archives"></i>
+            Archives
+          </a>
+        </li>
+    
+        <li class="waves-block">
+          <a href="/tags"  >
+            <i class="icon icon-lg icon-tags"></i>
+            Tags
+          </a>
+        </li>
+    
+        <li class="waves-block">
+          <a href="https://github.com/engenhando-software/engenhando-software.github.io" target="_blank" >
+            <i class="icon icon-lg icon-github"></i>
+            Github
+          </a>
+        </li>
+    
+  </ul>
+
+  <footer class="footer">
+  <p><a rel="license" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0;vertical-align:middle;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAAAPCAMAAABEF7i9AAAAllBMVEUAAAD///+rsapERER3d3eIiIjMzMzu7u4iIiKUmZO6v7rKzsoODg4RERFVVVUNDQ0NDg0PEA8zMzNLTEtbXltmZmZydnF9gn2AgICPkI+ZmZmqqqq7u7vFxsXIzMgNDQwZGRkgICAhISEkJSMnKCcuMC4xMzE5Ozk7PTtBQkFCQkJDQ0Nna2eGhoaHh4ezuLLGysbd3d1wVGpAAAAA4UlEQVR42q2T1xqCMAyFk7QsBQeKA9x7j/d/OSm22CpX0nzcpA1/T05aAOuBVkMAScQFHLnEwoCo2f1TnQIGoVMewjZEjVFN4GH1Ue1Cn2jWqwfsOOj6wDwGvotsl/c8lv7KIq1eLOsT0HMFHMIE/RZyHnlphryT9zyV+8WH5e8yQw3wnQvgAFxPTKUVi555SHR/lOfLMgVTeDlSfN+TaoUsiTyeIm+bCkHvCA2FUKG48LDtYBZBknsYP/G8NTw0gaaHyuQf4H5pecrB/FYCT2sL9zAfy1Xyjou6L8X2W7YcLyBZCRtnq/zfAAAAAElFTkSuQmCC" /></a></p>
+  <p>Jonathas Amaral &copy; 2016</p>
+  <p>Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme
+  <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a></p>
+  <a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-2x icon-rss-square"></i></a>
+</footer>
+
+</div>
+
+  </nav>
+  <main id="main">
+    <header class="header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-circle-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">Introdução e Testes de Caixa-Branca</div>
+        
+    </div>
+</header>
+<header class="content-header">
+  <div class="container">
+    <h1 class="author">Introdução e Testes de Caixa-Branca</h1>
+    <h5 class="subtitle">11/08/2015</h5>
+  </div>
+</header>
+
+    <div class="container body-wrap">
+      
+  <article id="post-introducao-e-testes-de-caixa-branca" class="article article-type-post" itemscope itemprop="blogPost">
+    
+      <div class="post-meat flex-row">
+        <div class="flex-col">
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/disciplina1/">disciplina1</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/modulo3/">modulo3</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/unidade1/">unidade1</a></li></ul>
+</div>
+      </div>
+      <div class="post-body">
+
+        <aside class="post-widget" id="post-widget">
+
+          
+
+          
+          <nav class="post-toc-wrap" id="post-toc">
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Principios"><span class="post-toc-text">Princípios</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Conceitos"><span class="post-toc-text">Conceitos</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Metodos-de-Testes-de-Caixa-Branca"><span class="post-toc-text">Métodos de Testes de Caixa Branca</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Cobertura-Logica"><span class="post-toc-text">Cobertura Lógica</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Fatores-para-escolha-dos-criterios"><span class="post-toc-text">Fatores para escolha dos critérios:</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Criterios"><span class="post-toc-text">Critérios</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Metodo-dos-caminhos-basicos"><span class="post-toc-text">Método dos caminhos básicos</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Definicoes"><span class="post-toc-text">Definições</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Geracao-dos-casos-de-teste"><span class="post-toc-text">Geração dos casos de teste</span></a></li></ol></li></ol>
+          </nav>
+          
+        </aside>
+
+        <div class="post-main">
+
+            <div class="post-content" itemprop="postContent"><p>O objetivo principal de qualquer técnica de testes é maximizar a relação percentagem de defeito sobre o número de testes feitos. O ideal é fazer o menor número de teste e testar a maior parte do sistema todo.  </p>
+<h3 id="Principios"><a href="#Principios" class="headerlink" title="Princípios"></a>Princípios</h3><ul>
+<li>Testar completamente é impossível</li>
+<li>Testar é um trabalho criativo e difícil</li>
+<li>Testes devem ser planejados e projetados</li>
+<li>Teste requer independência (sem vícios)</li>
+</ul>
+<h3 id="Conceitos"><a href="#Conceitos" class="headerlink" title="Conceitos"></a>Conceitos</h3><ul>
+<li>Casos de teste: conjunto de entradas possíveis do programa</li>
+<li><p>Métodos de teste: métodos para se gerar casos de teste</p>
+</li>
+<li><p>Caixa branca ou estruturais</p>
+</li>
+<li>Caixa preta</li>
+</ul>
+<h3 id="Metodos-de-Testes-de-Caixa-Branca"><a href="#Metodos-de-Testes-de-Caixa-Branca" class="headerlink" title="Métodos de Testes de Caixa Branca"></a>Métodos de Testes de Caixa Branca</h3><h4 id="Cobertura-Logica"><a href="#Cobertura-Logica" class="headerlink" title="Cobertura Lógica"></a>Cobertura Lógica</h4><p>São critérios que devem ser obedecidos para determinar os casos de testes.</p>
+<h4 id="Fatores-para-escolha-dos-criterios"><a href="#Fatores-para-escolha-dos-criterios" class="headerlink" title="Fatores para escolha dos critérios:"></a>Fatores para escolha dos critérios:</h4><ul>
+<li>Complexidade do programa a se testar</li>
+<li>Estrutura do programa a ser testado</li>
+<li>Criticidade do programa a se testar</li>
+<li>Nível de confiança que se deseja atingir</li>
+</ul>
+<h4 id="Criterios"><a href="#Criterios" class="headerlink" title="Critérios"></a>Critérios</h4><ul>
+<li><p>Cobertura de comandos</p>
+</li>
+<li><p>Todos os comandos que existem no programa a ser testado sejam executados</p>
+</li>
+<li><p>Cobertura de decisões</p>
+</li>
+<li><p>O teste deve passar por todas as decisões do programa nos dois casos (verdadeiro e falso) pelo menos uma vez.</p>
+</li>
+<li><p>Cobertura de decisões-condições</p>
+</li>
+<li><p>Cobertura de múltiplas condições</p>
+</li>
+<li><p>Combinar todas as possibilidades nas duas decisões dadas no exemplo.</p>
+</li>
+</ul>
+<h4 id="Metodo-dos-caminhos-basicos"><a href="#Metodo-dos-caminhos-basicos" class="headerlink" title="Método dos caminhos básicos"></a>Método dos caminhos básicos</h4><ul>
+<li>Fortemente embasado na teoria de grafos</li>
+<li>Os casos de testes gerados passem por um número ótimo de caminhos entre a entrada e saída do programa</li>
+</ul>
+<h4 id="Definicoes"><a href="#Definicoes" class="headerlink" title="Definições"></a>Definições</h4><ul>
+<li><strong>Grafo de controle</strong>: descreve o fluxo do programa</li>
+<li><p><strong>Caminhos independentes</strong>: é um caminho que não é constituído pela combinação de dois ou mais outros (não apresenta redundância).</p>
+</li>
+<li><p>Existem 3 formas de se contar o número de caminhos independentes (Complexidade Ciclomática)</p>
+</li>
+<li><p>Número de regiões: contar o número de regiões (blocos dentro do IF) e uma externa</p>
+</li>
+<li>C = E -N +2 onde, C número de caminhos independentes, E número de arestas e N número de nós.</li>
+<li>Número de estruturas de decisão + 1</li>
+</ul>
+<h4 id="Geracao-dos-casos-de-teste"><a href="#Geracao-dos-casos-de-teste" class="headerlink" title="Geração dos casos de teste"></a>Geração dos casos de teste</h4><p>Cada caminho independente gera um caso de teste</p>
+</div>
+
+            
+<nav class="post-nav flex-row">
+  <div class="flex-col waves-block prev">
+    
+      <a href="/2015/08/15/testes-de-caixa-preta/" title="Testes de Caixa-Preta" id="post-prev" class="post-nav-link">
+        <i class="icon icon-chevron-left"></i>
+        <span class="article-nav-title">Anterior</span>
+      </a>
+    
+  </div>
+  <div class="flex-col waves-block next">
+    
+      <a href="/2015/07/09/gestao-do-desenvolvimento-de-software/" title="Gestão do Desenvolvimento de Software" id="post-next" class="post-nav-link">
+        <span class="article-nav-title">Próximo</span>
+        <i class="icon icon-chevron-right"></i>
+      </a>
+    
+  </div>
+
+</nav>
+
+
+
+            
+<div id="disqus_thread"></div>
+<script>
+    /**
+     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+     */
+    /*
+    var disqus_config = function () {
+        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() {  // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        
+        s.src = '//engenhandosoftware.disqus.com/embed.js';
+        
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+
+
+        </div>
+
+      </div>
+
+    
+
+  </article>
+
+
+
+    </div>
+  </main>
+<div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-circle-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+<script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+
+<script src="/js/main.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

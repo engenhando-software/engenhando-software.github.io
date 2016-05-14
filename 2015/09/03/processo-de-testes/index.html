@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Processo de Testes | Engenheirando Software | Minhas observações sobre Engenharia de Software</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <meta name="keywords" content="disciplina1,unidade4,modulo3">
+  <meta name="description" content="Verificação e Validação no MPS-BrNível D do MPS-BrObjetivo: formalizar o processo de teste de softwareOs resultados (da verificação e validação) são utilizados por avaliadores se a empresa atingiu os">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Processo de Testes">
+<meta property="og:url" content="http://yoursite.com/2015/09/03/processo-de-testes/index.html">
+<meta property="og:site_name" content="Engenheirando Software">
+<meta property="og:description" content="Verificação e Validação no MPS-BrNível D do MPS-BrObjetivo: formalizar o processo de teste de softwareOs resultados (da verificação e validação) são utilizados por avaliadores se a empresa atingiu os">
+<meta property="og:updated_time" content="2015-12-05T17:01:25.820Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Processo de Testes">
+<meta name="twitter:description" content="Verificação e Validação no MPS-BrNível D do MPS-BrObjetivo: formalizar o processo de teste de softwareOs resultados (da verificação e validação) são utilizados por avaliadores se a empresa atingiu os">
+  
+    <link rel="alternative" href="/atom.xml" title="Engenheirando Software" type="application/atom+xml">
+  
+  <link rel="shortcut icon" href="/">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="loading" class="active"></div>
+
+  <nav id="menu" class="hide" >
+   <div class="inner">
+  <a href="javascript:;" class="header-icon waves-circle-light" id="menu-off">
+      <i class="icon icon-lg icon-close"></i>
+  </a>
+  <div class="brand-wrap">
+    <div class="brand">
+      <a href="/" class="avatar"><img src="/images/avatar.jpg"></a>
+      <hgroup class="introduce">
+        <h5 class="nickname">Jonathas Amaral</h5>
+        <a href="mailto:jnthas@gmail.com" title="jnthas@gmail.com" class="mail">jnthas@gmail.com</a>
+      </hgroup>
+    </div>
+  </div>
+  <ul class="nav">
+    
+        <li class="waves-block">
+          <a href="/"  >
+            <i class="icon icon-lg icon-home"></i>
+            Home
+          </a>
+        </li>
+    
+        <li class="waves-block">
+          <a href="/archives"  >
+            <i class="icon icon-lg icon-archives"></i>
+            Archives
+          </a>
+        </li>
+    
+        <li class="waves-block">
+          <a href="/tags"  >
+            <i class="icon icon-lg icon-tags"></i>
+            Tags
+          </a>
+        </li>
+    
+        <li class="waves-block">
+          <a href="https://github.com/engenhando-software/engenhando-software.github.io" target="_blank" >
+            <i class="icon icon-lg icon-github"></i>
+            Github
+          </a>
+        </li>
+    
+  </ul>
+
+  <footer class="footer">
+  <p><a rel="license" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0;vertical-align:middle;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAAAPCAMAAABEF7i9AAAAllBMVEUAAAD///+rsapERER3d3eIiIjMzMzu7u4iIiKUmZO6v7rKzsoODg4RERFVVVUNDQ0NDg0PEA8zMzNLTEtbXltmZmZydnF9gn2AgICPkI+ZmZmqqqq7u7vFxsXIzMgNDQwZGRkgICAhISEkJSMnKCcuMC4xMzE5Ozk7PTtBQkFCQkJDQ0Nna2eGhoaHh4ezuLLGysbd3d1wVGpAAAAA4UlEQVR42q2T1xqCMAyFk7QsBQeKA9x7j/d/OSm22CpX0nzcpA1/T05aAOuBVkMAScQFHLnEwoCo2f1TnQIGoVMewjZEjVFN4GH1Ue1Cn2jWqwfsOOj6wDwGvotsl/c8lv7KIq1eLOsT0HMFHMIE/RZyHnlphryT9zyV+8WH5e8yQw3wnQvgAFxPTKUVi555SHR/lOfLMgVTeDlSfN+TaoUsiTyeIm+bCkHvCA2FUKG48LDtYBZBknsYP/G8NTw0gaaHyuQf4H5pecrB/FYCT2sL9zAfy1Xyjou6L8X2W7YcLyBZCRtnq/zfAAAAAElFTkSuQmCC" /></a></p>
+  <p>Jonathas Amaral &copy; 2016</p>
+  <p>Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme
+  <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a></p>
+  <a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-2x icon-rss-square"></i></a>
+</footer>
+
+</div>
+
+  </nav>
+  <main id="main">
+    <header class="header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-circle-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">Processo de Testes</div>
+        
+    </div>
+</header>
+<header class="content-header">
+  <div class="container">
+    <h1 class="author">Processo de Testes</h1>
+    <h5 class="subtitle">03/09/2015</h5>
+  </div>
+</header>
+
+    <div class="container body-wrap">
+      
+  <article id="post-processo-de-testes" class="article article-type-post" itemscope itemprop="blogPost">
+    
+      <div class="post-meat flex-row">
+        <div class="flex-col">
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/disciplina1/">disciplina1</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/modulo3/">modulo3</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/unidade4/">unidade4</a></li></ul>
+</div>
+      </div>
+      <div class="post-body">
+
+        <aside class="post-widget" id="post-widget">
+
+          
+
+          
+          <nav class="post-toc-wrap" id="post-toc">
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Verificacao-e-Validacao-no-MPS-Br"><span class="post-toc-text">Verificação e Validação no MPS-Br</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Validacao"><span class="post-toc-text">Validação</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Verificacao"><span class="post-toc-text">Verificação</span></a></li></ol></li></ol>
+          </nav>
+          
+        </aside>
+
+        <div class="post-main">
+
+            <div class="post-content" itemprop="postContent"><h2 id="Verificacao-e-Validacao-no-MPS-Br"><a href="#Verificacao-e-Validacao-no-MPS-Br" class="headerlink" title="Verificação e Validação no MPS-Br"></a>Verificação e Validação no MPS-Br</h2><p>Nível D do MPS-BrObjetivo: formalizar o processo de teste de softwareOs resultados (da verificação e validação) são utilizados por avaliadores se a empresa atingiu os propositos dos processos de teste.</p>
+<h3 id="Validacao"><a href="#Validacao" class="headerlink" title="Validação"></a>Validação</h3><blockquote>
+<p>O propósito do processo Validação é confirmar que um produto ou componente do produto atenderá a seu uso pretendido quando colocado no ambiente para o qual foi desenvolvido.</p>
+</blockquote>
+<p><strong>O objetivo da validação é garantir que o produto correto está sendo desenvolvido. </strong>  </p>
+<p>Resultados esperados  </p>
+<ul>
+<li>VAL1 - Produtos de trabalho a serem validados são identificados</li>
+<li>VAL2 - Uma estratégia de validação é desenvolvida e implementada, estabelecendo cronograma, participantes envolvidos, métodos para validação e qualquer material a ser utilizado na validação.</li>
+<li>VAL3 - Critérios e procedimentos para validação dos produtos de trabalho a serem validados são identificados e um ambiente para validação é estabelecido.</li>
+<li><p>VAL4 - Atividades de validação são executadas para garantir que o produto esteja pronto para uso no ambiente operacional pretendido.</p>
+</li>
+<li><p>A execução dos testes ao longo do processo é possível através de 4 etapas:</p>
+</li>
+<li>Planejamento</li>
+<li>Projeto de casos de teste</li>
+<li>Execução</li>
+<li><p>Avaliação dos resultados</p>
+</li>
+<li><p>VAL5 - Problemas são identificados e registrados</p>
+</li>
+<li>VAL6 - Resultados de atividades de validação são analisados e disponibilizados para as partes interessadas.</li>
+<li>VAL7 - Evidências de que os produtos de software desenvolvidos estão prontos para o uso pretendido são fornecidas.</li>
+</ul>
+<h3 id="Verificacao"><a href="#Verificacao" class="headerlink" title="Verificação"></a>Verificação</h3><blockquote>
+<p>O propósito do processo de Verificação é confirmar que cada serviço e/ou produto de trabalho do processo ou do projeto atende apropriadamente os requisitos especificados.</p>
+</blockquote>
+<p>Resultados esperados  </p>
+<ul>
+<li>VER1 - Produtos de trabalho a serem verificados são identificados</li>
+<li>VER2 - Uma estratégia de verificação é desenvolvida e implementada, estabelecendo cronograma, revisores envolvidos, métodos para verificação e qualquer material a ser utilizado na verificação.</li>
+<li>VER3 - Critérios e procedimentos para verificação dos produtos de trabalho a serem verificados são identificados e um ambiente para verificação é estabelecido.</li>
+<li>VER4 - Atividades de verificação, incluindo testes e revisões por pares, são executadas.</li>
+<li>VER5 - Defeitos são identificados e registrados</li>
+<li>VER6 - Resultados de atividades de verificação são analisados e disponibilizados para as partes interessadas</li>
+</ul>
+</div>
+
+            
+<nav class="post-nav flex-row">
+  <div class="flex-col waves-block prev">
+    
+      <a href="/2015/09/04/visao-geral-da-arquitetura-de-software/" title="Visão Geral da Arquitetura de Software" id="post-prev" class="post-nav-link">
+        <i class="icon icon-chevron-left"></i>
+        <span class="article-nav-title">Anterior</span>
+      </a>
+    
+  </div>
+  <div class="flex-col waves-block next">
+    
+      <a href="/2015/08/20/estrategias-para-testes-de-software/" title="Estratégias para testes de software" id="post-next" class="post-nav-link">
+        <span class="article-nav-title">Próximo</span>
+        <i class="icon icon-chevron-right"></i>
+      </a>
+    
+  </div>
+
+</nav>
+
+
+
+            
+<div id="disqus_thread"></div>
+<script>
+    /**
+     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+     */
+    /*
+    var disqus_config = function () {
+        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() {  // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        
+        s.src = '//engenhandosoftware.disqus.com/embed.js';
+        
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+
+
+        </div>
+
+      </div>
+
+    
+
+  </article>
+
+
+
+    </div>
+  </main>
+<div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-circle-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+<script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+
+<script src="/js/main.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

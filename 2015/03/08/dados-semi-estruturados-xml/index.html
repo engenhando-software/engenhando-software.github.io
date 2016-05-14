@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Dados Semi-Estruturados XML | Engenheirando Software | Minhas observações sobre Engenharia de Software</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <meta name="keywords" content="modulo1,unidade1,disciplina4">
+  <meta name="description" content="O que são:
+
+Dados Estruturados: são os dados contidos nos bancos de dados, com formato definido.
+Dados Semiestruturados: são dados que permitem adicionar atributos mesmo depois de criados.
+A diferença">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Dados Semi-Estruturados XML">
+<meta property="og:url" content="http://yoursite.com/2015/03/08/dados-semi-estruturados-xml/index.html">
+<meta property="og:site_name" content="Engenheirando Software">
+<meta property="og:description" content="O que são:
+
+Dados Estruturados: são os dados contidos nos bancos de dados, com formato definido.
+Dados Semiestruturados: são dados que permitem adicionar atributos mesmo depois de criados.
+A diferença">
+<meta property="og:updated_time" content="2015-06-06T04:25:29.347Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Dados Semi-Estruturados XML">
+<meta name="twitter:description" content="O que são:
+
+Dados Estruturados: são os dados contidos nos bancos de dados, com formato definido.
+Dados Semiestruturados: são dados que permitem adicionar atributos mesmo depois de criados.
+A diferença">
+  
+    <link rel="alternative" href="/atom.xml" title="Engenheirando Software" type="application/atom+xml">
+  
+  <link rel="shortcut icon" href="/">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="loading" class="active"></div>
+
+  <nav id="menu" class="hide" >
+   <div class="inner">
+  <a href="javascript:;" class="header-icon waves-circle-light" id="menu-off">
+      <i class="icon icon-lg icon-close"></i>
+  </a>
+  <div class="brand-wrap">
+    <div class="brand">
+      <a href="/" class="avatar"><img src="/images/avatar.jpg"></a>
+      <hgroup class="introduce">
+        <h5 class="nickname">Jonathas Amaral</h5>
+        <a href="mailto:jnthas@gmail.com" title="jnthas@gmail.com" class="mail">jnthas@gmail.com</a>
+      </hgroup>
+    </div>
+  </div>
+  <ul class="nav">
+    
+        <li class="waves-block">
+          <a href="/"  >
+            <i class="icon icon-lg icon-home"></i>
+            Home
+          </a>
+        </li>
+    
+        <li class="waves-block">
+          <a href="/archives"  >
+            <i class="icon icon-lg icon-archives"></i>
+            Archives
+          </a>
+        </li>
+    
+        <li class="waves-block">
+          <a href="/tags"  >
+            <i class="icon icon-lg icon-tags"></i>
+            Tags
+          </a>
+        </li>
+    
+        <li class="waves-block">
+          <a href="https://github.com/engenhando-software/engenhando-software.github.io" target="_blank" >
+            <i class="icon icon-lg icon-github"></i>
+            Github
+          </a>
+        </li>
+    
+  </ul>
+
+  <footer class="footer">
+  <p><a rel="license" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0;vertical-align:middle;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAAAPCAMAAABEF7i9AAAAllBMVEUAAAD///+rsapERER3d3eIiIjMzMzu7u4iIiKUmZO6v7rKzsoODg4RERFVVVUNDQ0NDg0PEA8zMzNLTEtbXltmZmZydnF9gn2AgICPkI+ZmZmqqqq7u7vFxsXIzMgNDQwZGRkgICAhISEkJSMnKCcuMC4xMzE5Ozk7PTtBQkFCQkJDQ0Nna2eGhoaHh4ezuLLGysbd3d1wVGpAAAAA4UlEQVR42q2T1xqCMAyFk7QsBQeKA9x7j/d/OSm22CpX0nzcpA1/T05aAOuBVkMAScQFHLnEwoCo2f1TnQIGoVMewjZEjVFN4GH1Ue1Cn2jWqwfsOOj6wDwGvotsl/c8lv7KIq1eLOsT0HMFHMIE/RZyHnlphryT9zyV+8WH5e8yQw3wnQvgAFxPTKUVi555SHR/lOfLMgVTeDlSfN+TaoUsiTyeIm+bCkHvCA2FUKG48LDtYBZBknsYP/G8NTw0gaaHyuQf4H5pecrB/FYCT2sL9zAfy1Xyjou6L8X2W7YcLyBZCRtnq/zfAAAAAElFTkSuQmCC" /></a></p>
+  <p>Jonathas Amaral &copy; 2016</p>
+  <p>Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme
+  <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a></p>
+  <a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-2x icon-rss-square"></i></a>
+</footer>
+
+</div>
+
+  </nav>
+  <main id="main">
+    <header class="header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-circle-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">Dados Semi-Estruturados XML</div>
+        
+    </div>
+</header>
+<header class="content-header">
+  <div class="container">
+    <h1 class="author">Dados Semi-Estruturados XML</h1>
+    <h5 class="subtitle">08/03/2015</h5>
+  </div>
+</header>
+
+    <div class="container body-wrap">
+      
+  <article id="post-dados-semi-estruturados-xml" class="article article-type-post" itemscope itemprop="blogPost">
+    
+      <div class="post-meat flex-row">
+        <div class="flex-col">
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/disciplina4/">disciplina4</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/modulo1/">modulo1</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/unidade1/">unidade1</a></li></ul>
+</div>
+      </div>
+      <div class="post-body">
+
+        <aside class="post-widget" id="post-widget">
+
+          
+
+          
+          <nav class="post-toc-wrap" id="post-toc">
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Linguagens-de-Marcacao"><span class="post-toc-text">Linguagens de Marcação</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Utilizacao-da-XML"><span class="post-toc-text">Utilização da XML</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Linguagens-para-manipular-XML"><span class="post-toc-text">Linguagens para manipular XML</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Conceitos-de-XML"><span class="post-toc-text">Conceitos de XML</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#DTD-Document-Type-Description"><span class="post-toc-text">DTD (Document Type Description)</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Declaracoes-contidas-em-uma-DTD"><span class="post-toc-text">Declarações contidas em uma DTD</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Descricao-de-cada-declaracao"><span class="post-toc-text">Descrição de cada declaração</span></a></li></ol>
+          </nav>
+          
+        </aside>
+
+        <div class="post-main">
+
+            <div class="post-content" itemprop="postContent"><p>O que são:</p>
+<ul>
+<li>Dados Estruturados: são os dados contidos nos bancos de dados, com formato definido.</li>
+<li>Dados Semiestruturados: são dados que permitem adicionar atributos mesmo depois de criados.</li>
+<li>A diferença entre os dois então, é a forma de criação do schema.</li>
+</ul>
+<h3 id="Linguagens-de-Marcacao"><a href="#Linguagens-de-Marcacao" class="headerlink" title="Linguagens de Marcação"></a>Linguagens de Marcação</h3><ul>
+<li><strong>HTML</strong> foi a primeira. Trabalha com marcadores definidos. Cuida da forma como o dado é apresentado. A visualização é sempre fixada (ex. o dado é sempre em itálico).  </li>
+<li><strong>XML</strong> nasceu para tratar do do conteúdo dos dados, trouxe flexibilidade, e não existe nenhuma preocupação com a  apresentação dos dados. Possui uma estrutura hierárquica. </li>
+</ul>
+<h4 id="Utilizacao-da-XML"><a href="#Utilizacao-da-XML" class="headerlink" title="Utilização da XML"></a>Utilização da XML</h4><ul>
+<li>Busca de dados na web</li>
+<li>Troca de dados</li>
+<li>Catálogos</li>
+<li>Automação de grandes redes (bancos, suprimentos, etc.)</li>
+</ul>
+<h4 id="Linguagens-para-manipular-XML"><a href="#Linguagens-para-manipular-XML" class="headerlink" title="Linguagens para manipular XML"></a>Linguagens para manipular XML</h4><ul>
+<li>Xpath: trabalha através de grafos, para saber o caminho percorrido</li>
+<li>Xquery: voltada para recuperar o dados</li>
+<li>XSL: definir o estilo que o dados serão exibidos</li>
+</ul>
+<h3 id="Conceitos-de-XML"><a href="#Conceitos-de-XML" class="headerlink" title="Conceitos de XML"></a>Conceitos de XML</h3><ul>
+<li>Documento bem formado: ordem de abertura e fechamento das tags</li>
+<li>Documento válido: de acordo com o esquema definido</li>
+</ul>
+<h3 id="DTD-Document-Type-Description"><a href="#DTD-Document-Type-Description" class="headerlink" title="DTD (Document Type Description)"></a>DTD (Document Type Description)</h3><p>Contém as regras para elaboração do XML. Define que um XML pode conter, a ordem, obrigatoriedade, cardinalidade (número de vezes que cada valor ocorre) e unicidade (se possui valor único ou não). Pode estar dentro ou fora do arquivo XML.</p>
+<h4 id="Declaracoes-contidas-em-uma-DTD"><a href="#Declaracoes-contidas-em-uma-DTD" class="headerlink" title="Declarações contidas em uma DTD"></a>Declarações contidas em uma DTD</h4><ul>
+<li>ELEMENT: especifica um elemento do XML</li>
+<li>ATTLIST: declara uma lista de atributos associados a um elemento e o valores possiveis</li>
+<li>ENTITY: usado para declarar uma espécie de alias dentro do doc.</li>
+<li>NOTATION: usado para passar dados sobre impressora, ou a forma de impressão do doc.</li>
+</ul>
+<h3 id="Descricao-de-cada-declaracao"><a href="#Descricao-de-cada-declaracao" class="headerlink" title="Descrição de cada declaração"></a>Descrição de cada declaração</h3><p>Tag ELEMENT  </p>
+<p>&lt;!ELEMENT S Nome S EspecificacaoConteudo S ?&gt;  </p>
+<ul>
+<li>Nome - nome do elemento</li>
+<li><p>EspecificaçãoConteudo pode ser:</p>
+</li>
+<li><p>EMPTY - não possui nenhum dado no elemento</p>
+</li>
+<li>ANY - pode ser vazio ou não</li>
+<li>mixed - pode ter alguma informação dentro dele ou alguns filhos</li>
+<li><p>children - subdivide-se em outros elementos</p>
+</li>
+<li><p>? (Cardinalidade) pode ser</p>
+</li>
+<li><p>? -&gt; No máximo uma ocorrência</p>
+</li>
+<li><ul>
+<li>-&gt; Nenhuma ou diversas ocorrências</li>
+</ul>
+</li>
+<li><ul>
+<li>-&gt; No mínimo uma ocorrência</li>
+</ul>
+</li>
+</ul>
+<p>Simbolo “|” -&gt; o elemento pode se dividir em outros elementos e eles são alternativos<br>Tag ATTLIST<br>&lt;!ATTLIST S Nome S EspecificacaoAtributo S ?&gt;  </p>
+<ul>
+<li>Nome - nome do atributo</li>
+<li><p>EspecificacaoAtributo é composto por:</p>
+</li>
+<li><p>NomeAtributo S TipoAtributo S ValorPadrão S ValorDefault</p>
+</li>
+<li>Onde:</li>
+<li>NomeAtributo - nome do atributo</li>
+<li><p>TipoAtributo são os tipos:</p>
+</li>
+<li><p>CDATA: dados com formato de caracteres (não pode conter tag)</p>
+</li>
+<li>ID: identificador do elemento (possui valor único)</li>
+<li>IDREF: é a referencia ao ID de um atributo</li>
+<li>IDREFS: mais de um ID</li>
+<li>NMTOKEN: palavra ou conjunto de palavras sem espaço </li>
+<li>NMTOKENS: lista separadas por espaço </li>
+<li><p>ENUMERADO: lista enumerada</p>
+</li>
+<li><p>ValorPadrão - sempre será esse valor, não muda nunca</p>
+</li>
+<li><p>ValorDefault - se nao definir um valor pro atributo, ele assume esse valor padrão</p>
+</li>
+<li><p>? Cardinalidade - mesma do elemento</p>
+</li>
+</ul>
+</div>
+
+            
+<nav class="post-nav flex-row">
+  <div class="flex-col waves-block prev">
+    
+      <a href="/2015/04/05/processos-de-ciclo-de-vida/" title="Processos de Ciclo de Vida" id="post-prev" class="post-nav-link">
+        <i class="icon icon-chevron-left"></i>
+        <span class="article-nav-title">Anterior</span>
+      </a>
+    
+  </div>
+  <div class="flex-col waves-block next">
+    
+      <a href="/2015/03/06/sistemas-de-gestao-empresarial/" title="Sistemas de Gestão Empresarial" id="post-next" class="post-nav-link">
+        <span class="article-nav-title">Próximo</span>
+        <i class="icon icon-chevron-right"></i>
+      </a>
+    
+  </div>
+
+</nav>
+
+
+
+            
+<div id="disqus_thread"></div>
+<script>
+    /**
+     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+     */
+    /*
+    var disqus_config = function () {
+        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() {  // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        
+        s.src = '//engenhandosoftware.disqus.com/embed.js';
+        
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+
+
+        </div>
+
+      </div>
+
+    
+
+  </article>
+
+
+
+    </div>
+  </main>
+<div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-circle-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+<script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+
+<script src="/js/main.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Projeto Comportamental | Engenheirando Software | Minhas observações sobre Engenharia de Software</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <meta name="keywords" content="modulo2,unidade2,disciplina2">
+  <meta name="description" content="Contrato de Operações
+Ajudam a definir o comportamento do sistema, descrevendo o resultado das execuções das operações do sistema
+Objetos de domínio: as classes dão origem aos objetos do sistema, os o">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Projeto Comportamental">
+<meta property="og:url" content="http://yoursite.com/2015/05/16/projeto-comportamental/index.html">
+<meta property="og:site_name" content="Engenheirando Software">
+<meta property="og:description" content="Contrato de Operações
+Ajudam a definir o comportamento do sistema, descrevendo o resultado das execuções das operações do sistema
+Objetos de domínio: as classes dão origem aos objetos do sistema, os o">
+<meta property="og:updated_time" content="2015-09-05T21:17:30.261Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Projeto Comportamental">
+<meta name="twitter:description" content="Contrato de Operações
+Ajudam a definir o comportamento do sistema, descrevendo o resultado das execuções das operações do sistema
+Objetos de domínio: as classes dão origem aos objetos do sistema, os o">
+  
+    <link rel="alternative" href="/atom.xml" title="Engenheirando Software" type="application/atom+xml">
+  
+  <link rel="shortcut icon" href="/">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="loading" class="active"></div>
+
+  <nav id="menu" class="hide" >
+   <div class="inner">
+  <a href="javascript:;" class="header-icon waves-circle-light" id="menu-off">
+      <i class="icon icon-lg icon-close"></i>
+  </a>
+  <div class="brand-wrap">
+    <div class="brand">
+      <a href="/" class="avatar"><img src="/images/avatar.jpg"></a>
+      <hgroup class="introduce">
+        <h5 class="nickname">Jonathas Amaral</h5>
+        <a href="mailto:jnthas@gmail.com" title="jnthas@gmail.com" class="mail">jnthas@gmail.com</a>
+      </hgroup>
+    </div>
+  </div>
+  <ul class="nav">
+    
+        <li class="waves-block">
+          <a href="/"  >
+            <i class="icon icon-lg icon-home"></i>
+            Home
+          </a>
+        </li>
+    
+        <li class="waves-block">
+          <a href="/archives"  >
+            <i class="icon icon-lg icon-archives"></i>
+            Archives
+          </a>
+        </li>
+    
+        <li class="waves-block">
+          <a href="/tags"  >
+            <i class="icon icon-lg icon-tags"></i>
+            Tags
+          </a>
+        </li>
+    
+        <li class="waves-block">
+          <a href="https://github.com/engenhando-software/engenhando-software.github.io" target="_blank" >
+            <i class="icon icon-lg icon-github"></i>
+            Github
+          </a>
+        </li>
+    
+  </ul>
+
+  <footer class="footer">
+  <p><a rel="license" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0;vertical-align:middle;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAAAPCAMAAABEF7i9AAAAllBMVEUAAAD///+rsapERER3d3eIiIjMzMzu7u4iIiKUmZO6v7rKzsoODg4RERFVVVUNDQ0NDg0PEA8zMzNLTEtbXltmZmZydnF9gn2AgICPkI+ZmZmqqqq7u7vFxsXIzMgNDQwZGRkgICAhISEkJSMnKCcuMC4xMzE5Ozk7PTtBQkFCQkJDQ0Nna2eGhoaHh4ezuLLGysbd3d1wVGpAAAAA4UlEQVR42q2T1xqCMAyFk7QsBQeKA9x7j/d/OSm22CpX0nzcpA1/T05aAOuBVkMAScQFHLnEwoCo2f1TnQIGoVMewjZEjVFN4GH1Ue1Cn2jWqwfsOOj6wDwGvotsl/c8lv7KIq1eLOsT0HMFHMIE/RZyHnlphryT9zyV+8WH5e8yQw3wnQvgAFxPTKUVi555SHR/lOfLMgVTeDlSfN+TaoUsiTyeIm+bCkHvCA2FUKG48LDtYBZBknsYP/G8NTw0gaaHyuQf4H5pecrB/FYCT2sL9zAfy1Xyjou6L8X2W7YcLyBZCRtnq/zfAAAAAElFTkSuQmCC" /></a></p>
+  <p>Jonathas Amaral &copy; 2016</p>
+  <p>Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme
+  <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a></p>
+  <a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-2x icon-rss-square"></i></a>
+</footer>
+
+</div>
+
+  </nav>
+  <main id="main">
+    <header class="header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-circle-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">Projeto Comportamental</div>
+        
+    </div>
+</header>
+<header class="content-header">
+  <div class="container">
+    <h1 class="author">Projeto Comportamental</h1>
+    <h5 class="subtitle">16/05/2015</h5>
+  </div>
+</header>
+
+    <div class="container body-wrap">
+      
+  <article id="post-projeto-comportamental" class="article article-type-post" itemscope itemprop="blogPost">
+    
+      <div class="post-meat flex-row">
+        <div class="flex-col">
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/disciplina2/">disciplina2</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/modulo2/">modulo2</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/unidade2/">unidade2</a></li></ul>
+</div>
+      </div>
+      <div class="post-body">
+
+        <aside class="post-widget" id="post-widget">
+
+          
+
+          
+          <nav class="post-toc-wrap" id="post-toc">
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Contrato-de-Operacoes"><span class="post-toc-text">Contrato de Operações</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Secoes-de-um-contrato"><span class="post-toc-text">Seções de um contrato</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Responsabilidades-principios-e-padroes-de-projeto"><span class="post-toc-text">Responsabilidades, princípios e padrões de projeto</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Padroes-de-Projeto"><span class="post-toc-text">Padrões de Projeto</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Principios-de-projeto"><span class="post-toc-text">Princípios de projeto</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Responsabilidades-interacoes-e-realizacoes-de-casos-de-uso"><span class="post-toc-text">Responsabilidades, interações e realizações de casos de uso</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Construindo-diagramas-de-interacao"><span class="post-toc-text">Construindo diagramas de interação</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Diagrama-de-Classes-de-Projeto"><span class="post-toc-text">Diagrama de Classes de Projeto</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Criando-classes-de-projeto"><span class="post-toc-text">Criando classes de projeto</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Visibilidade-entre-objetos"><span class="post-toc-text">Visibilidade entre objetos</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Diagrama-de-transicao-de-estados"><span class="post-toc-text">Diagrama de transição de estados</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Estado"><span class="post-toc-text">Estado</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Evento"><span class="post-toc-text">Evento</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Acoes"><span class="post-toc-text">Ações</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Objetos-dependentes-de-estado"><span class="post-toc-text">Objetos dependentes de estado</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Tipos"><span class="post-toc-text">Tipos</span></a></li></ol></li></ol>
+          </nav>
+          
+        </aside>
+
+        <div class="post-main">
+
+            <div class="post-content" itemprop="postContent"><h2 id="Contrato-de-Operacoes"><a href="#Contrato-de-Operacoes" class="headerlink" title="Contrato de Operações"></a>Contrato de Operações</h2><ul>
+<li>Ajudam a definir o comportamento do sistema, descrevendo o resultado das execuções das operações do sistema</li>
+<li>Objetos de domínio: as classes dão origem aos objetos do sistema, os objetos mudam de estado.</li>
+</ul>
+<h3 id="Secoes-de-um-contrato"><a href="#Secoes-de-um-contrato" class="headerlink" title="Seções de um contrato"></a>Seções de um contrato</h3><ul>
+<li>Operação: nome e parâmetros da operação</li>
+<li>Referências cruzadas: casos de uso nos quais esta operação deve ocorrer</li>
+<li>Pré-condição: hipóteses dignas de nota sobre o estado do sistema. Essas hipóteses não serão testadas na lógica da operação.</li>
+<li>Pós-condição: o estado dos objetos no modelo de domínio, concluída a operação. <span style="background-color: yellow;">É importante descrever na mudança de estado: criação ou remoção de instância, criação ou exclusão de associação, alteração de atributo.</span></li>
+</ul>
+<blockquote>
+<p>Descrever o resultado sem se importar “como”.</p>
+</blockquote>
+<p>Quando usar contratos  </p>
+<ul>
+<li>É importante utilizar contratos quando existem muitos objetos de domínio que estão sendo criados, modificados, etc. num único passo do caso de uso. </li>
+<li>É útil usar contratos também quando não é claro quais objetos serão atualizados pela descrição dos casos de uso.</li>
+<li>Não é necessário fazer contratos para toda operação do sistema, em geral, só o caso de uso basta.</li>
+</ul>
+<p>Para fazer contratos</p>
+<ul>
+<li>Identifique operações de sistema a partir dos <span style="background-color: yellow;">diagramas de sequência</span> de sistema.</li>
+<li>Para operações do sistema que são complexas</li>
+<li><p>Para descrever as pós condições, use as seguintes categorias:</p>
+</li>
+<li><p>Criação e remoção de instância</p>
+</li>
+<li>Modificação de atributo</li>
+<li>Associação formadas e desfeitas</li>
+</ul>
+<h2 id="Responsabilidades-principios-e-padroes-de-projeto"><a href="#Responsabilidades-principios-e-padroes-de-projeto" class="headerlink" title="Responsabilidades, princípios e padrões de projeto"></a>Responsabilidades, princípios e padrões de projeto</h2><p>Responsabilidade é um contrato que uma classe tem. Existem dois tipos de responsabilidade:  </p>
+<ol>
+<li>Conhecer dados privados. São derivadas dos atributos dos objetos </li>
+<li>Fazer: criar objetos, realizar cálculo, etc. São derivadas dos métodos.</li>
+</ol>
+<p>Responsabilidade pode envolver um ou mais métodos de um ou mais objetos.Interações são trocas de mensagem entre objetos no sistema, e quando se troca mensagens estamos atribuindo responsabilidades a um objeto, já que ocorre a interação de um objeto com outro.  </p>
+<h3 id="Padroes-de-Projeto"><a href="#Padroes-de-Projeto" class="headerlink" title="Padrões de Projeto"></a>Padrões de Projeto</h3><p>Padrões de desenvolvimento: expressam uma solução para um determinado problema em um determinado contexto.  </p>
+<p>Padrões arquiteturais: expressam uma solução num nível mais alto de abstração.  </p>
+<p>Exemplos de padrão arquitetural:  </p>
+<ul>
+<li>Modelo visão-controle: MVC</li>
+<li>Camadas: só se comunica com as camadas adjacentes</li>
+<li><p>Padrões GRASP</p>
+</li>
+<li><p>Controlador</p>
+</li>
+<li>Coesão alta</li>
+<li>Acoplamento baixo</li>
+<li><p>Polimorfismo</p>
+</li>
+<li><p>Padrões de domínio: o principal foco deve ser o domínio, a logica do domínio.</p>
+</li>
+<li><p>Entidades</p>
+</li>
+<li>Objetos de valor</li>
+<li>Serviços</li>
+<li>Fábricas</li>
+</ul>
+<h3 id="Principios-de-projeto"><a href="#Principios-de-projeto" class="headerlink" title="Princípios de projeto"></a>Princípios de projeto</h3><p>Representam um conjunto de diretrizes que ajudam a evitar que um projeto fiquei ruim ou de baixa qualidade. Deve ser evitado nos projetos:</p>
+<ul>
+<li><strong>Rigidez:</strong> sistema muito acoplado</li>
+<li><strong>Fragilidade</strong>: uma parte para de funcionar quando se faz alteração em outra parte não relacionada.</li>
+<li><strong>Imobilidade</strong>: muito difícil ou arriscado separar uma parte da aplicação para ser usada em outro projeto.</li>
+<li><strong>Viscosidade</strong>: fazer coisas corretas é mais difícil do que fazer coisas erradas.</li>
+<li><strong>Complexidade</strong> desnecessária</li>
+<li><strong>Repetição desnecessária</strong>: projeto possui estruturas repetidas que não podem ser unificadas.</li>
+<li><strong>Opacidade</strong>: intenção do projeto não está bem expressada.</li>
+</ul>
+<p>Deve-se procurar praticar:</p>
+<ul>
+<li>Única responsabilidade</li>
+<li>Manter o controller simples e a lógica deve ficar no domínio </li>
+<li>Restringir as associações ao máximo, torna o projeto mais claro</li>
+</ul>
+<h2 id="Responsabilidades-interacoes-e-realizacoes-de-casos-de-uso"><a href="#Responsabilidades-interacoes-e-realizacoes-de-casos-de-uso" class="headerlink" title="Responsabilidades, interações e realizações de casos de uso"></a>Responsabilidades, interações e realizações de casos de uso</h2><p>Mensagens são utilizadas com objetivo de cumprir as responsabilidades. Uma mensagem indica uma operação existente no objeto receptor.  </p>
+<h3 id="Construindo-diagramas-de-interacao"><a href="#Construindo-diagramas-de-interacao" class="headerlink" title="Construindo diagramas de interação"></a>Construindo diagramas de interação</h3><p>A maioria dos objetos envolvidos nesse diagrama já foram identificados no diagrama de classe de domínio. Diagrama de interação vai estar consistente com os casos de uso e as classes de domínio.  </p>
+<p>No ciclo de vida iterativo/incremental os modelos vão evoluindo, então:  </p>
+<p>Modelo de classes serve como base para o modelo de interações<br>Mod. Interações ajuda o refinamento do modelo de casos de uso<br>Mod. Interações ajuda gerar operações para o modelo de classes<br>Mod. Interações gera novos atributos para o modelo de classes  </p>
+<p>Exemplo de diagramas de interação de um PDV  </p>
+<h2 id="Diagrama-de-Classes-de-Projeto"><a href="#Diagrama-de-Classes-de-Projeto" class="headerlink" title="Diagrama de Classes de Projeto"></a>Diagrama de Classes de Projeto</h2><p>Classes de projeto ilustram as especificações para as classes de software e interfaces.<br>Acontece em paralelo ao diagrama de interação  </p>
+<h3 id="Criando-classes-de-projeto"><a href="#Criando-classes-de-projeto" class="headerlink" title="Criando classes de projeto"></a>Criando classes de projeto</h3><ul>
+<li>Identificar as classes que fazem parte do diagrama;</li>
+<li>Acrescentar atributos identificados no modelo de domínio;</li>
+<li>Acrescentar operações (analisando o diagrama de interação);</li>
+</ul>
+<h3 id="Visibilidade-entre-objetos"><a href="#Visibilidade-entre-objetos" class="headerlink" title="Visibilidade entre objetos"></a>Visibilidade entre objetos</h3><p>É a habilidade de um objeto ver ou ter referência a outro objeto.  </p>
+<ul>
+<li><p>Visibilidade por atributo</p>
+</li>
+<li><p>Existe de A pra B quando B é um atributo de A</p>
+</li>
+<li><p>Visibilidade por parâmetro</p>
+</li>
+<li><p>Existe de A pra B quando B é passado como parâmetro para um método de A</p>
+</li>
+<li><p>Visibilidade local</p>
+</li>
+<li><p>Existe quando B é declarado como um objeto local dentro de um método de A</p>
+</li>
+<li><p>Visibilidade global</p>
+</li>
+<li><p>Existe quando B é declarado como um objeto global em A</p>
+</li>
+</ul>
+<blockquote>
+<p><strong>Navegabilidade</strong> é a propriedade do papel que indica que é possível navegar unidirecionalmente por meio da associação de objetos da classe de origem para objetos da classe alvo. (Seta nos diagramas de classe para ligar duas classes)</p>
+</blockquote>
+<h2 id="Diagrama-de-transicao-de-estados"><a href="#Diagrama-de-transicao-de-estados" class="headerlink" title="Diagrama de transição de estados"></a>Diagrama de transição de estados</h2><p>Esses diagramas são uma complementação para modelagem comportamental.  </p>
+<h3 id="Estado"><a href="#Estado" class="headerlink" title="Estado"></a>Estado</h3><ul>
+<li><strong>Estado</strong> é uma situação na vida de um objeto em determinado momento no tempo em que ele satisfaz a alguma condição ou realiza alguma atividade.</li>
+<li>Cada estado é determinado pelos valores dos atributos ou pela ligações com outros objetos.</li>
+<li>Em geral, possui um único estado inicial pode ou não possuir estados finais.</li>
+</ul>
+<h3 id="Evento"><a href="#Evento" class="headerlink" title="Evento"></a>Evento</h3><ul>
+<li>Uma transição possui um evento associado</li>
+<li>Um evento é algo que acontece em algum ponto do tempo e que pode modificar o estado de um objeto. Ex. Pedido Realizado, Fatura paga, Cheque devolvido, etc.</li>
+<li>Condição de Guarda é uma espécie de “If” que valida se a transição vai ocorrer quando for disparada por um evento.</li>
+</ul>
+<h3 id="Acoes"><a href="#Acoes" class="headerlink" title="Ações"></a>Ações</h3><ul>
+<li>Ações são tudo que um objeto realiza quando transita de um estado para outro.</li>
+<li>É expressa em termos de atributos, operações, associações da classe, etc. </li>
+<li>Está associada sempre a uma transição. E é executada somente se uma transição for disparada.</li>
+</ul>
+<h3 id="Objetos-dependentes-de-estado"><a href="#Objetos-dependentes-de-estado" class="headerlink" title="Objetos dependentes de estado"></a>Objetos dependentes de estado</h3><blockquote>
+<p>Os diagramas de estado devem ser criados para objetos dependentes de estados, ou seja, objetos que reagem diferente dependendo de seu estado.</p>
+</blockquote>
+<h3 id="Tipos"><a href="#Tipos" class="headerlink" title="Tipos"></a>Tipos</h3><p>Existem dois tipos de objetos dependentes de estado:</p>
+<ul>
+<li><p><strong>Objetos Reativos</strong>: </p>
+</li>
+<li><p>Complexos: telefone, carro, microondas, elevador</p>
+</li>
+<li>Transações ou objetos de negócio: venda, pedido, pagamento reagem a eventos como cancelar, adiar, faturar, etc.</li>
+<li>Protocolos de comunicação</li>
+<li>Fluxos de navegação de pagina, janela, menu, interface com usuário</li>
+<li><p>Controlador de sessão de um fluxo de interface em páginas web, guarda o estado da sessão no cliente web e dependendo desse estado ele reage diferente.</p>
+</li>
+<li><p><strong>Sequências de operações</strong>: as operações que chegam ao sistema tem que chegar numa determinada ordem de estados. Para definir essa ordem, usamos o diagrama de estados. Ex. Estados: EsperandoPorVenda -&gt; EntrandoItens -&gt; EsperandoPagamento -&gt; AutorizandoPagamento.</p>
+</li>
+</ul>
+</div>
+
+            
+<nav class="post-nav flex-row">
+  <div class="flex-col waves-block prev">
+    
+      <a href="/2015/05/17/projeto-arquitetural/" title="Projeto Arquitetural" id="post-prev" class="post-nav-link">
+        <i class="icon icon-chevron-left"></i>
+        <span class="article-nav-title">Anterior</span>
+      </a>
+    
+  </div>
+  <div class="flex-col waves-block next">
+    
+      <a href="/2015/05/04/projeto-de-sistemas-introducao-e-contextualizacao/" title="Projeto de Sistemas: Introdução e Contextualização" id="post-next" class="post-nav-link">
+        <span class="article-nav-title">Próximo</span>
+        <i class="icon icon-chevron-right"></i>
+      </a>
+    
+  </div>
+
+</nav>
+
+
+
+            
+<div id="disqus_thread"></div>
+<script>
+    /**
+     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+     */
+    /*
+    var disqus_config = function () {
+        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() {  // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        
+        s.src = '//engenhandosoftware.disqus.com/embed.js';
+        
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+
+
+        </div>
+
+      </div>
+
+    
+
+  </article>
+
+
+
+    </div>
+  </main>
+<div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-circle-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+<script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+
+<script src="/js/main.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

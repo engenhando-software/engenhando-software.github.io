@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Métricas e Estimativas de Projetos | Engenheirando Software | Minhas observações sobre Engenharia de Software</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <meta name="keywords" content="modulo2,disciplina4,unidade2">
+  <meta name="description" content="Métricas, Estimativas e Modelos de softwareQualidadeA avaliação da qualidade está relacionada a uma série de características intrínsecas do produto, ex.,  
+
+Quantidade de bugs
+Conformidade com requisi">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Métricas e Estimativas de Projetos">
+<meta property="og:url" content="http://yoursite.com/2015/06/25/metricas-e-estimativas-de-projetos/index.html">
+<meta property="og:site_name" content="Engenheirando Software">
+<meta property="og:description" content="Métricas, Estimativas e Modelos de softwareQualidadeA avaliação da qualidade está relacionada a uma série de características intrínsecas do produto, ex.,  
+
+Quantidade de bugs
+Conformidade com requisi">
+<meta property="og:updated_time" content="2015-09-06T21:22:21.353Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Métricas e Estimativas de Projetos">
+<meta name="twitter:description" content="Métricas, Estimativas e Modelos de softwareQualidadeA avaliação da qualidade está relacionada a uma série de características intrínsecas do produto, ex.,  
+
+Quantidade de bugs
+Conformidade com requisi">
+  
+    <link rel="alternative" href="/atom.xml" title="Engenheirando Software" type="application/atom+xml">
+  
+  <link rel="shortcut icon" href="/">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="loading" class="active"></div>
+
+  <nav id="menu" class="hide" >
+   <div class="inner">
+  <a href="javascript:;" class="header-icon waves-circle-light" id="menu-off">
+      <i class="icon icon-lg icon-close"></i>
+  </a>
+  <div class="brand-wrap">
+    <div class="brand">
+      <a href="/" class="avatar"><img src="/images/avatar.jpg"></a>
+      <hgroup class="introduce">
+        <h5 class="nickname">Jonathas Amaral</h5>
+        <a href="mailto:jnthas@gmail.com" title="jnthas@gmail.com" class="mail">jnthas@gmail.com</a>
+      </hgroup>
+    </div>
+  </div>
+  <ul class="nav">
+    
+        <li class="waves-block">
+          <a href="/"  >
+            <i class="icon icon-lg icon-home"></i>
+            Home
+          </a>
+        </li>
+    
+        <li class="waves-block">
+          <a href="/archives"  >
+            <i class="icon icon-lg icon-archives"></i>
+            Archives
+          </a>
+        </li>
+    
+        <li class="waves-block">
+          <a href="/tags"  >
+            <i class="icon icon-lg icon-tags"></i>
+            Tags
+          </a>
+        </li>
+    
+        <li class="waves-block">
+          <a href="https://github.com/engenhando-software/engenhando-software.github.io" target="_blank" >
+            <i class="icon icon-lg icon-github"></i>
+            Github
+          </a>
+        </li>
+    
+  </ul>
+
+  <footer class="footer">
+  <p><a rel="license" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0;vertical-align:middle;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAAAPCAMAAABEF7i9AAAAllBMVEUAAAD///+rsapERER3d3eIiIjMzMzu7u4iIiKUmZO6v7rKzsoODg4RERFVVVUNDQ0NDg0PEA8zMzNLTEtbXltmZmZydnF9gn2AgICPkI+ZmZmqqqq7u7vFxsXIzMgNDQwZGRkgICAhISEkJSMnKCcuMC4xMzE5Ozk7PTtBQkFCQkJDQ0Nna2eGhoaHh4ezuLLGysbd3d1wVGpAAAAA4UlEQVR42q2T1xqCMAyFk7QsBQeKA9x7j/d/OSm22CpX0nzcpA1/T05aAOuBVkMAScQFHLnEwoCo2f1TnQIGoVMewjZEjVFN4GH1Ue1Cn2jWqwfsOOj6wDwGvotsl/c8lv7KIq1eLOsT0HMFHMIE/RZyHnlphryT9zyV+8WH5e8yQw3wnQvgAFxPTKUVi555SHR/lOfLMgVTeDlSfN+TaoUsiTyeIm+bCkHvCA2FUKG48LDtYBZBknsYP/G8NTw0gaaHyuQf4H5pecrB/FYCT2sL9zAfy1Xyjou6L8X2W7YcLyBZCRtnq/zfAAAAAElFTkSuQmCC" /></a></p>
+  <p>Jonathas Amaral &copy; 2016</p>
+  <p>Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme
+  <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a></p>
+  <a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-2x icon-rss-square"></i></a>
+</footer>
+
+</div>
+
+  </nav>
+  <main id="main">
+    <header class="header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-circle-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">Métricas e Estimativas de Projetos</div>
+        
+    </div>
+</header>
+<header class="content-header">
+  <div class="container">
+    <h1 class="author">Métricas e Estimativas de Projetos</h1>
+    <h5 class="subtitle">25/06/2015</h5>
+  </div>
+</header>
+
+    <div class="container body-wrap">
+      
+  <article id="post-metricas-e-estimativas-de-projetos" class="article article-type-post" itemscope itemprop="blogPost">
+    
+      <div class="post-meat flex-row">
+        <div class="flex-col">
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/disciplina4/">disciplina4</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/modulo2/">modulo2</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/unidade2/">unidade2</a></li></ul>
+</div>
+      </div>
+      <div class="post-body">
+
+        <aside class="post-widget" id="post-widget">
+
+          
+
+          
+          <nav class="post-toc-wrap" id="post-toc">
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Metricas-Estimativas-e-Modelos-de-software"><span class="post-toc-text">Métricas, Estimativas e Modelos de software</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Qualidade"><span class="post-toc-text">Qualidade</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Metrica"><span class="post-toc-text">Métrica</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Atividades-de-medicao-e-analise-sao-importantes-para"><span class="post-toc-text">Atividades de medição e análise são importantes para:</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Escalas-de-mensuracao"><span class="post-toc-text">Escalas de mensuração</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Algumas-metricas-conhecidas-no-desenvolvimento-de-software"><span class="post-toc-text">Algumas métricas conhecidas no desenvolvimento de software:</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Objetivos"><span class="post-toc-text">Objetivos</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Caracteristicas-de-uma-boa-metrica"><span class="post-toc-text">Características de uma boa métrica</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Classificacao"><span class="post-toc-text">Classificação</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Analise-de-Pontos-de-Funcao-APF"><span class="post-toc-text">Análise de Pontos de Função (APF)</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#O-que-deve-ser-contado-num-produto-segundo-a-APF"><span class="post-toc-text">O que deve ser contado num produto, segundo a APF?</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Tipo-de-Contagem-de-PF"><span class="post-toc-text">Tipo de Contagem de PF</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Etapas-do-processo-de-contagem-de-pontos-de-funcao"><span class="post-toc-text">Etapas do processo de contagem de pontos de função</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Contagem-por-pontos-de-funcao"><span class="post-toc-text">Contagem por pontos de função</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Transacoes-podem-ser"><span class="post-toc-text">Transações podem ser</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Itens-de-influencia-Fatores-de-Ajuste"><span class="post-toc-text">Itens de influência (Fatores de Ajuste)</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Etapas-para-o-calculo-da-produtividade"><span class="post-toc-text">Etapas para o cálculo da produtividade</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Fatores-que-influenciam-na-produtividade-de-um-projeto"><span class="post-toc-text">Fatores que influênciam na produtividade de um projeto</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Metodos-de-estimativas-empiricos"><span class="post-toc-text">Métodos de estimativas empíricos</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Reflexoes-sobre-estimativas-de-software"><span class="post-toc-text">Reflexões sobre estimativas de software</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Outras-metricas"><span class="post-toc-text">Outras métricas</span></a></li></ol></li></ol></li></ol>
+          </nav>
+          
+        </aside>
+
+        <div class="post-main">
+
+            <div class="post-content" itemprop="postContent"><h2 id="Metricas-Estimativas-e-Modelos-de-software"><a href="#Metricas-Estimativas-e-Modelos-de-software" class="headerlink" title="Métricas, Estimativas e Modelos de software"></a>Métricas, Estimativas e Modelos de software</h2><h3 id="Qualidade"><a href="#Qualidade" class="headerlink" title="Qualidade"></a>Qualidade</h3><p>A avaliação da qualidade está relacionada a uma série de características intrínsecas do produto, ex.,  </p>
+<ul>
+<li>Quantidade de bugs</li>
+<li>Conformidade com requisitos</li>
+<li>Desempenho</li>
+<li>Indicador de qualidade</li>
+</ul>
+<h3 id="Metrica"><a href="#Metrica" class="headerlink" title="Métrica"></a>Métrica</h3><p>É a medição de atributos de um processo, projeto, etc. É também uma relação entre medidas.  </p>
+<h4 id="Atividades-de-medicao-e-analise-sao-importantes-para"><a href="#Atividades-de-medicao-e-analise-sao-importantes-para" class="headerlink" title="Atividades de medição e análise são importantes para:"></a>Atividades de medição e análise são importantes para:</h4><ul>
+<li>Caracterizar ou permitir entender processos, produtos, recursos e ambiente.</li>
+<li>Avaliar para determinar o status do projeto, com respeito aos planos feitos</li>
+<li>Predizer valores observados possam ser utilizados para predizer outros</li>
+<li>Melhorar, identificando causas de problemas e ineficiências e oportunidades de melhoria</li>
+</ul>
+<h4 id="Escalas-de-mensuracao"><a href="#Escalas-de-mensuracao" class="headerlink" title="Escalas de mensuração"></a>Escalas de mensuração</h4><ul>
+<li>Nominal: escala inicial, baseada em uma avaliação nominal</li>
+<li>Ordinal: baseada numa ordem pre-estabelecida. Ex prioridade mínima, média, max.</li>
+<li>Intervalar: baseada em intervalos. Ex temperatura</li>
+<li>Razão: existe uma relação natural entre os valores. Ex: Salário</li>
+<li>Nas métricas de software serão usadas basicamente as escalas de razão e ordinal</li>
+</ul>
+<h4 id="Algumas-metricas-conhecidas-no-desenvolvimento-de-software"><a href="#Algumas-metricas-conhecidas-no-desenvolvimento-de-software" class="headerlink" title="Algumas métricas conhecidas no desenvolvimento de software:"></a>Algumas métricas conhecidas no desenvolvimento de software:</h4><ul>
+<li>Números de linhas de código </li>
+<li>Número de pessoas para implementar um caso de uso</li>
+<li>Número de defeitos encontrados num produto</li>
+<li>Esforço necessário para realizar uma tarefa/projeto</li>
+<li>Tempo necessário para realizar uma tarefa/projeto</li>
+<li>Custo necessário para realizar uma tarefa/projeto</li>
+<li>Grau de satisfação do cliente</li>
+</ul>
+<h4 id="Objetivos"><a href="#Objetivos" class="headerlink" title="Objetivos"></a>Objetivos</h4><ul>
+<li>Melhorar a previsibilidade e a chance de sucesso no projeto.</li>
+<li>Permitir melhor gerenciamento do projeto</li>
+<li>Reduzir pressões sobre cronogramas</li>
+<li>Apoiar decisões make or buy fazer/comprar</li>
+<li>Indicar a qualidade de um produto de software</li>
+<li>Avaliar benefícios</li>
+<li>Avaliar ROI</li>
+</ul>
+<h4 id="Caracteristicas-de-uma-boa-metrica"><a href="#Caracteristicas-de-uma-boa-metrica" class="headerlink" title="Características de uma boa métrica"></a>Características de uma boa métrica</h4><ul>
+<li>Facilmente calculada, entendida e testada</li>
+<li>Pode ser automatizável</li>
+<li>Deve ser útil para de estudos estatísticos</li>
+<li>Deve ser repetível, objetiva</li>
+<li>Capaz de indicar um caminho de melhoria</li>
+</ul>
+<h4 id="Classificacao"><a href="#Classificacao" class="headerlink" title="Classificação"></a><span style="background-color: yellow;">Classificação</span></h4><ul>
+<li><p>Métricas Diretas</p>
+</li>
+<li><p>É aquela que é realizada em termos <span style="background-color: yellow;">atributos observáveis</span>. Números de linhas, número de erros, etc</p>
+</li>
+<li><p>Métricas Indiretas</p>
+</li>
+<li><p><span style="background-color: yellow;">São baseadas em medidas diretas</span>. Ex. facilidade de manutenção, produtividade, esforço, tamanho baseado em funcionalidade. Não são observáveis diretamente.</p>
+</li>
+<li><p>Métricas orientadas a tamanho</p>
+</li>
+<li><p>São aquelas aplicáveis a contagem de tamanho de artefatos de software. Ex.: KLOC, número da páginas de documentação.</p>
+</li>
+<li><p>Métricas orientadas à função</p>
+</li>
+<li><p>Se baseia em métodos para medição de software do ponto de vista do usuário. Ex. Ponto de função, ponto de caso de uso, etc.</p>
+</li>
+</ul>
+<h3 id="Analise-de-Pontos-de-Funcao-APF"><a href="#Analise-de-Pontos-de-Funcao-APF" class="headerlink" title="Análise de Pontos de Função (APF)"></a>Análise de Pontos de Função (APF)</h3><p>Consiste na contagem das funções que caracterizam um sistema, sob o ponto de vista do que ele faz para o usuário.</p>
+<ul>
+<li>Mede a funcionalidade entregue ao cliente (métrica indireta)</li>
+<li>Utiliza um método padronizado internacionalmente</li>
+<li>Pode ser usada tanto no início, no meio ou no final do projeto de software</li>
+<li>Útil para medição de produtos novos ou existentes, em evolução</li>
+<li><p>É baseado em função de dois tipos. </p>
+</li>
+<li><p><strong>Dado</strong>: relacionam-se ao modelo de dados. Dividem-se em Arquivos Lógicos Internos (ALI) e Arquivos de Interface Externa (AIE)</p>
+</li>
+<li><p><strong>Transação</strong>: estão relacionadas “as transações realizadas no escopo da aplicação. Geralmente são captadas por meio de casos de uso. Dividem-se em Entradas Externas (EE), Saídas Externas (SE) e Consultas Externas CE).</p>
+</li>
+<li><p>É uma métrica indireta e funcional.</p>
+</li>
+</ul>
+<h4 id="O-que-deve-ser-contado-num-produto-segundo-a-APF"><a href="#O-que-deve-ser-contado-num-produto-segundo-a-APF" class="headerlink" title="O que deve ser contado num produto, segundo a APF?"></a>O que deve ser contado num produto, segundo a APF?</h4><ol>
+<li>Entradas: transações que alteram o estado do sistema. Ex: CRUD</li>
+<li>Saídas: transações que enviam dados para fora do sistema. Ex: Arquivos de interface</li>
+<li>Consultas: transações de consulta a bases de dados</li>
+<li>Arquivos Lógicos Internos: arquivos mantidos pelo sistema</li>
+<li>Arquivos de Interface Externa: arquivos externos que não são mantidos pela aplicação</li>
+</ol>
+<h4 id="Tipo-de-Contagem-de-PF"><a href="#Tipo-de-Contagem-de-PF" class="headerlink" title="Tipo de Contagem de PF"></a>Tipo de Contagem de PF</h4><ul>
+<li><strong>Contagem Indicativa</strong>: feita no momento inicial do projeto com um modelo preliminar dos dados.</li>
+<li><strong>Contagem Estimada</strong>: realizada quando se possui detalhes suficientes para fazer uma estimativa melhor. Quando se tem um modelo de funções básicas.</li>
+<li><strong>Contagem Detalhada</strong>: bastante confiável, realizada quando se tem informações completas sobres as funções e dados.</li>
+</ul>
+<h4 id="Etapas-do-processo-de-contagem-de-pontos-de-funcao"><a href="#Etapas-do-processo-de-contagem-de-pontos-de-funcao" class="headerlink" title="Etapas do processo de contagem de pontos de função"></a>Etapas do processo de contagem de pontos de função</h4><ol>
+<li>Identificação das funções do sistema</li>
+<li>Classificação de cada função de acordo com sua complexidade funcional</li>
+<li>Cálculo dos pontos de função brutos através de pesos de acordo com uma tabela</li>
+<li>Avaliação das 14 “características gerais” do sistema</li>
+<li>Determinação do fator de ajuste (específico do projeto)</li>
+<li>Cálculo dos pontos de função ajustados</li>
+</ol>
+<h4 id="Contagem-por-pontos-de-funcao"><a href="#Contagem-por-pontos-de-funcao" class="headerlink" title="Contagem por pontos de função"></a>Contagem por pontos de função</h4><p>É feito por 5 etapas.</p>
+<ul>
+<li><p>Entradas</p>
+</li>
+<li><p>São elementos que vão alterar algum estado dos dados na aplicação</p>
+</li>
+<li><p>Saídas</p>
+</li>
+<li><p>São funcionalidades que provem a troca de dados na saída de dados</p>
+</li>
+<li><p>Arquivos lógicos internos</p>
+</li>
+<li><p>São arquivos que armazenam informações da aplicação internamente</p>
+</li>
+<li><p>Arquivos de interface externo</p>
+</li>
+<li><p>São arquivos de outras aplicações que são apenas acessados</p>
+</li>
+<li><p>Consulta</p>
+</li>
+<li><p>Trazem dados que estão armazenados mediante uma seleção desses dados</p>
+</li>
+</ul>
+<h4 id="Transacoes-podem-ser"><a href="#Transacoes-podem-ser" class="headerlink" title="Transações podem ser"></a>Transações podem ser</h4><ul>
+<li>Entrada </li>
+<li>Saída </li>
+<li>Consulta</li>
+</ul>
+<p>A produtividade de uma equipe pode ser determinada com a quantidade de horas gastas para disponibilizar uma quantidade de pontos de função.  </p>
+<blockquote>
+<p><strong>Produtividade = Tamanho do Produto / Esforço</strong></p>
+</blockquote>
+<p>Obs.: Tamanho do Produto pode ser em diversas unidades, como PF/HH, PF/PM.  </p>
+<blockquote>
+<p><strong>Esforço = Pessoas x Tempo</strong></p>
+</blockquote>
+<p>Prdutividade média é baseada em dados históricos, com a fórmula:  </p>
+<blockquote>
+<p><strong>Qtd. Pessoas = Tamanho / (Produtividade x Tempo)</strong></p>
+</blockquote>
+<h4 id="Itens-de-influencia-Fatores-de-Ajuste"><a href="#Itens-de-influencia-Fatores-de-Ajuste" class="headerlink" title="Itens de influência (Fatores de Ajuste)"></a>Itens de influência (Fatores de Ajuste)</h4><ol>
+<li>Teleprocessamento</li>
+<li>Processamento Distribuído</li>
+<li>Performance</li>
+<li>Carga de Máquina</li>
+<li>Volume de Transações</li>
+<li>Entradas de dados online</li>
+<li>Atualizações online</li>
+<li>Eficiência do usuário final</li>
+<li>Complexiadade do processamento</li>
+<li>Reutilização de código</li>
+<li>Facilidade de implantação</li>
+<li>Facilidade de operação</li>
+<li>Facilidade de manutenção/alterações</li>
+<li>Operação em múltiplos locais</li>
+</ol>
+<h4 id="Etapas-para-o-calculo-da-produtividade"><a href="#Etapas-para-o-calculo-da-produtividade" class="headerlink" title="Etapas para o cálculo da produtividade"></a>Etapas para o cálculo da produtividade</h4><ul>
+<li>Medição do tamanho em pontos de função</li>
+<li>Registros históricos para determinar o escopo (medido em homens x hora)</li>
+<li>Calcular a produtividade obtida - Horas/PF ou PF/HH</li>
+<li>Estabelecer as produtividades médias para os diversos ambientes de desenvolvimento e tipos de projeto</li>
+</ul>
+<h4 id="Fatores-que-influenciam-na-produtividade-de-um-projeto"><a href="#Fatores-que-influenciam-na-produtividade-de-um-projeto" class="headerlink" title="Fatores que influênciam na produtividade de um projeto"></a>Fatores que influênciam na produtividade de um projeto</h4><ul>
+<li>Inexperiência da equipe</li>
+<li>Gerenciamento ineficiente do projeto</li>
+<li>Requisitos instáveis</li>
+<li>Falta de metodologia </li>
+<li>Tamanho do projeto</li>
+</ul>
+<h4 id="Metodos-de-estimativas-empiricos"><a href="#Metodos-de-estimativas-empiricos" class="headerlink" title="Métodos de estimativas empíricos"></a>Métodos de estimativas empíricos</h4><ul>
+<li><p>Estimativa Ad-hoc</p>
+</li>
+<li><p>Estimativa isolada. Projeto não está conectado a uma outra situação conhecida.</p>
+</li>
+<li><p>Estimativa gerencial</p>
+</li>
+<li><p>Gerente estima o prazo. Problema de prazo sub-dimensionado.</p>
+</li>
+<li><p>Métodos ágeis</p>
+</li>
+<li><p>planning poker, etc</p>
+</li>
+<li><p>De equipe</p>
+</li>
+<li><p>a própria equipe estima o trabalho</p>
+</li>
+<li>Pode ser feita utilizando uma técnica chamada Delphi: cada pessoa faz uma contagem e depois tenta-se convergir os valores</li>
+</ul>
+<h4 id="Reflexoes-sobre-estimativas-de-software"><a href="#Reflexoes-sobre-estimativas-de-software" class="headerlink" title="Reflexões sobre estimativas de software"></a>Reflexões sobre estimativas de software</h4><ul>
+<li><p>Métricas são falíveis</p>
+</li>
+<li><p>Mesmo assim é melhor ter métricas do que planejar no escuro</p>
+</li>
+<li><p>Utilizar faixas de tolerância é uma recomendação</p>
+</li>
+<li><p>Não se consegue boas estimativas no início do projeto</p>
+</li>
+<li><p>Mesmo assim uma estimativa inicial deve ser feita</p>
+</li>
+<li><p>Uma base histórica é o que faz a diferença para uma boa estimativa</p>
+</li>
+</ul>
+<h4 id="Outras-metricas"><a href="#Outras-metricas" class="headerlink" title="Outras métricas"></a>Outras métricas</h4><ul>
+<li><p>COCOMO II</p>
+</li>
+<li><p>Bom para estimar custo. Difícil de ser usado.</p>
+</li>
+<li><p>Pontos de Caso de Uso</p>
+</li>
+<li><p>Derivada dos pontos de função, mas usa atores e casos de uso.</p>
+</li>
+<li><p>Pontos de histórias de usuário</p>
+</li>
+<li><p>aplicada em histórias de usuário dos métodos ágeis</p>
+</li>
+<li><p>COSMIC</p>
+</li>
+<li><p>Nova geração de métricas. Não estabelece limites para medição de uma função. Mede não somente a camada da aplicação mas a infraestrutura.</p>
+</li>
+<li>Deve ser aplicado quando há muita variação de escopo</li>
+<li>Deve ser aplicado com muitos pontos de função</li>
+<li>Propicia o aumento da previsibilidade e menor variabilidade na relação entre o tamanho, custo e esforço.</li>
+</ul>
+</div>
+
+            
+<nav class="post-nav flex-row">
+  <div class="flex-col waves-block prev">
+    
+      <a href="/2015/07/04/gerencia-de-configuracoes/" title="Gerência de Configurações" id="post-prev" class="post-nav-link">
+        <i class="icon icon-chevron-left"></i>
+        <span class="article-nav-title">Anterior</span>
+      </a>
+    
+  </div>
+  <div class="flex-col waves-block next">
+    
+      <a href="/2015/06/16/principios-da-gerencia-de-projetos/" title="Princípios da Gerência de Projetos" id="post-next" class="post-nav-link">
+        <span class="article-nav-title">Próximo</span>
+        <i class="icon icon-chevron-right"></i>
+      </a>
+    
+  </div>
+
+</nav>
+
+
+
+            
+<div id="disqus_thread"></div>
+<script>
+    /**
+     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+     */
+    /*
+    var disqus_config = function () {
+        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() {  // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        
+        s.src = '//engenhandosoftware.disqus.com/embed.js';
+        
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+
+
+        </div>
+
+      </div>
+
+    
+
+  </article>
+
+
+
+    </div>
+  </main>
+<div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-circle-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+<script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+
+<script src="/js/main.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

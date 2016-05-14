@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Engenheirando Software | Minhas observações sobre Engenharia de Software</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <meta name="keywords" content="undefined">
+  <meta name="description" content="Blog sobre engenharia de software">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Engenheirando Software">
+<meta property="og:url" content="http://yoursite.com/page/5/index.html">
+<meta property="og:site_name" content="Engenheirando Software">
+<meta property="og:description" content="Blog sobre engenharia de software">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Engenheirando Software">
+<meta name="twitter:description" content="Blog sobre engenharia de software">
+  
+    <link rel="alternative" href="/atom.xml" title="Engenheirando Software" type="application/atom+xml">
+  
+  <link rel="shortcut icon" href="/">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="loading" class="active"></div>
+
+  <nav id="menu"  >
+   <div class="inner">
+  <a href="javascript:;" class="header-icon waves-circle-light" id="menu-off">
+      <i class="icon icon-lg icon-close"></i>
+  </a>
+  <div class="brand-wrap">
+    <div class="brand">
+      <a href="/" class="avatar"><img src="/images/avatar.jpg"></a>
+      <hgroup class="introduce">
+        <h5 class="nickname">Jonathas Amaral</h5>
+        <a href="mailto:jnthas@gmail.com" title="jnthas@gmail.com" class="mail">jnthas@gmail.com</a>
+      </hgroup>
+    </div>
+  </div>
+  <ul class="nav">
+    
+        <li class="waves-block active">
+          <a href="/"  >
+            <i class="icon icon-lg icon-home"></i>
+            Home
+          </a>
+        </li>
+    
+        <li class="waves-block">
+          <a href="/archives"  >
+            <i class="icon icon-lg icon-archives"></i>
+            Archives
+          </a>
+        </li>
+    
+        <li class="waves-block">
+          <a href="/tags"  >
+            <i class="icon icon-lg icon-tags"></i>
+            Tags
+          </a>
+        </li>
+    
+        <li class="waves-block">
+          <a href="https://github.com/engenhando-software/engenhando-software.github.io" target="_blank" >
+            <i class="icon icon-lg icon-github"></i>
+            Github
+          </a>
+        </li>
+    
+  </ul>
+
+  <footer class="footer">
+  <p><a rel="license" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0;vertical-align:middle;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAAAPCAMAAABEF7i9AAAAllBMVEUAAAD///+rsapERER3d3eIiIjMzMzu7u4iIiKUmZO6v7rKzsoODg4RERFVVVUNDQ0NDg0PEA8zMzNLTEtbXltmZmZydnF9gn2AgICPkI+ZmZmqqqq7u7vFxsXIzMgNDQwZGRkgICAhISEkJSMnKCcuMC4xMzE5Ozk7PTtBQkFCQkJDQ0Nna2eGhoaHh4ezuLLGysbd3d1wVGpAAAAA4UlEQVR42q2T1xqCMAyFk7QsBQeKA9x7j/d/OSm22CpX0nzcpA1/T05aAOuBVkMAScQFHLnEwoCo2f1TnQIGoVMewjZEjVFN4GH1Ue1Cn2jWqwfsOOj6wDwGvotsl/c8lv7KIq1eLOsT0HMFHMIE/RZyHnlphryT9zyV+8WH5e8yQw3wnQvgAFxPTKUVi555SHR/lOfLMgVTeDlSfN+TaoUsiTyeIm+bCkHvCA2FUKG48LDtYBZBknsYP/G8NTw0gaaHyuQf4H5pecrB/FYCT2sL9zAfy1Xyjou6L8X2W7YcLyBZCRtnq/zfAAAAAElFTkSuQmCC" /></a></p>
+  <p>Jonathas Amaral &copy; 2016</p>
+  <p>Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme
+  <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a></p>
+  <a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-2x icon-rss-square"></i></a>
+</footer>
+
+</div>
+
+  </nav>
+  <main id="main">
+    <header class="header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-circle-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">Engenheirando Software</div>
+        
+    </div>
+</header>
+<header class="content-header">
+  <div class="container">
+    <h1 class="author">Engenheirando Software</h1>
+    <h5 class="subtitle">Minhas observações sobre Engenharia de Software</h5>
+  </div>
+</header>
+
+    <div class="container body-wrap">
+      
+  <ul class="post-list">
+  
+    <li class="post-list-item">
+  <article id="post-principios-da-interacao-humano-computador" class="article article-type-post" itemscope itemprop="blogPost">
+    
+      
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2015/02/16/principios-da-interacao-humano-computador/">Princípios da Interação Humano-Computador</a>
+    </h3>
+  
+
+
+
+      <div class="post-meat flex-row">
+        <div class="flex-col">
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/disciplina3/">disciplina3</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/modulo1/">modulo1</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/unidade1/">unidade1</a></li></ul>
+</div>
+        <time datetime="2015-02-16T21:54:00.003Z" itemprop="datePublished" class="post-tiem">
+  16/02/2015
+</time>
+      </div>
+      <div class="post-content" itemprop="postContent" >
+        
+          <h3 id="Definicoes-de-Usabilidade"><a href="#Definicoes-de-Usabilidade" class="headerlink" title="Definições de Usabilidade"></a>Definições de Usabilidade</h3><blockquote>
+<p>Capacidade que um sistema interativo oferece a seu usuário, em um determinado contexto de operação, para a realização de tarefas de maneira eficaz, eficiente e agradável. (ISO 9241)</p>
+<p> Facilidade com que um usuário pode aprender a operar, preparar entradas para e interpretar as saídas de um sistema ou componente. (IEEE)</p>
+</blockquote>
+<p><strong>Cognição:</strong> série de habilidades cerebrais necessárias para obtenção de conhecimento.<br>É importante estimular o usuário usar aspectos cognitivos para aprender a usar o software.  </p>
+<h3 id="Modelos-de-abordagens-entre-ser-humano-e-software"><a href="#Modelos-de-abordagens-entre-ser-humano-e-software" class="headerlink" title="Modelos de abordagens entre ser-humano e software"></a>Modelos de abordagens entre ser-humano e software</h3><p>Em todos os modelos de aceitação de software, criados por Donald Norman, Shackel, Nielsen, ISO 9241 possuem a Usabilidade como uma de suas caracteristicas.  </p>
+<h3 id="Requisitos-de-uma-boa-usabilidade"><a href="#Requisitos-de-uma-boa-usabilidade" class="headerlink" title="Requisitos de uma boa usabilidade"></a>Requisitos de uma boa usabilidade</h3><p>Podem ser usados para avaliar um requisito ou interface.  </p>
+<ul>
+<li><strong>Facilidade de aprendizado:</strong> quanto tempo e esforço para que consiga desempenhar tarefas;</li>
+<li><strong>Facilidade de Uso:</strong> Está relacionado com a cognição. Quanto de esforço o usuário tem para usar o software;</li>
+<li><strong>Produtividade:</strong> avalia se a produtividade do usuário aumentou usando o software;</li>
+<li><strong>Flexibilidade:</strong> Possibilidade do usuário customizar seu ambiente de trabalho;</li>
+</ul>
+<p>É importante reconhecer as características do usuário ao desenvolver um software</p>
+
+        
+      </div>
+      <div class="post-footer clearfix">
+        <a href="/2015/02/16/principios-da-interacao-humano-computador/" class="post-more waves-button-light">MORE</a>
+      </div>
+    
+
+  </article>
+
+
+</li>
+  
+    <li class="post-list-item">
+  <article id="post-requisitos-de-software" class="article article-type-post" itemscope itemprop="blogPost">
+    
+      
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2014/10/26/requisitos-de-software/">Requisitos de Software</a>
+    </h3>
+  
+
+
+
+      <div class="post-meat flex-row">
+        <div class="flex-col">
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/disciplina2/">disciplina2</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/modulo1/">modulo1</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/unidade1/">unidade1</a></li></ul>
+</div>
+        <time datetime="2014-10-26T21:23:00.001Z" itemprop="datePublished" class="post-tiem">
+  26/10/2014
+</time>
+      </div>
+      <div class="post-content" itemprop="postContent" >
+        
+          <h3 id="Requisitos-de-software"><a href="#Requisitos-de-software" class="headerlink" title="Requisitos de software"></a>Requisitos de software</h3><p>Trabalha com funcionalidades e qualidades que o software vai alcançar.  </p>
+<h3 id="Tipos"><a href="#Tipos" class="headerlink" title="Tipos:"></a>Tipos:</h3><p>Requisitos do usuário:<br>    Expresso em linguagem natural<br>    O que o usuário espera encontrar no sistema  </p>
+<p>Requisitos do sistema:<br>    Detalha as funções e restrições do sistema  </p>
+<h3 id="Classificacao-dos-requisitos"><a href="#Classificacao-dos-requisitos" class="headerlink" title="Classificação dos requisitos:"></a>Classificação dos requisitos:</h3><pre><code>- Funcionais  
+Especifica as funcionalidades do sistema  
+
+- Não funcionais  
+Restrições em cima dos funcionais  
+    Tipos: De produtos, Organizacionais e Externos e vários outros subtipos.  
+
+- Domínio (negócio)  
+Restrições que vêm do ambiente de negócio do sistema.  
+</code></pre><h3 id="Documentacao-de-requisitos"><a href="#Documentacao-de-requisitos" class="headerlink" title="Documentação de requisitos"></a>Documentação de requisitos</h3><p>Os requisitos devem ter completeza e consistência<br>Os requisitos devem ter IDs<br>Organizar os requisitos por alguma ordem<br>DEVE (obrigatório) e DEVERIA (desejável)<br>Evite sentenças muito longas<br>Evite conjunçoes como “ou”, “e”, etc.</p>
+
+        
+      </div>
+      <div class="post-footer clearfix">
+        <a href="/2014/10/26/requisitos-de-software/" class="post-more waves-button-light">MORE</a>
+      </div>
+    
+
+  </article>
+
+
+</li>
+  
+    <li class="post-list-item">
+  <article id="post-a-pratica-da-engenharia-de-software" class="article article-type-post" itemscope itemprop="blogPost">
+    
+      
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2014/10/26/a-pratica-da-engenharia-de-software/">A prática da engenharia de software</a>
+    </h3>
+  
+
+
+
+      <div class="post-meat flex-row">
+        <div class="flex-col">
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/disciplina1/">disciplina1</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/modulo1/">modulo1</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/unidade4/">unidade4</a></li></ul>
+</div>
+        <time datetime="2014-10-26T20:50:00.000Z" itemprop="datePublished" class="post-tiem">
+  26/10/2014
+</time>
+      </div>
+      <div class="post-content" itemprop="postContent" >
+        
+          <p>Roger Pressman define dois princípios que guiam a prática da engenharia de software:  </p>
+<ul>
+<li>Princípios que guiam o processo</li>
+<li>Princípios que guiam a prática</li>
+</ul>
+<h3 id="Principios-que-guiam-o-processo"><a href="#Principios-que-guiam-o-processo" class="headerlink" title="Principios que guiam o processo"></a>Principios que guiam o processo</h3><ul>
+<li>Seja ágil</li>
+<li>Concnetre-se na qualidade em todas as etapas</li>
+<li>Esteja pronto para adaptações</li>
+<li>Monte uma equipe efetiva</li>
+<li>Estabeleça mecanismos para comunicação e coordenação</li>
+<li>Gerencie mudanças</li>
+<li>Avalie riscos</li>
+<li>Gere artefatos que forneçam valor para outros artefatos</li>
+</ul>
+<h3 id="Principios-que-guiam-a-pratica"><a href="#Principios-que-guiam-a-pratica" class="headerlink" title="Principios que guiam a prática"></a>Principios que guiam a prática</h3><ul>
+<li>Divida e  consquiste</li>
+<li>Compreenda o uso da abastração</li>
+<li>Esforce-se por consistência</li>
+<li>Foque na transferência de informação</li>
+<li>Construa software que apresente modularidade efetiva</li>
+<li>Padronize</li>
+<li>Quando possível, represente o problema e sua solução sob perspectivas diferentes</li>
+<li>Lembre-se de que alguém fará manutenção no software</li>
+</ul>
+
+        
+      </div>
+      <div class="post-footer clearfix">
+        <a href="/2014/10/26/a-pratica-da-engenharia-de-software/" class="post-more waves-button-light">MORE</a>
+      </div>
+    
+
+  </article>
+
+
+</li>
+  
+    <li class="post-list-item">
+  <article id="post-processo-agil" class="article article-type-post" itemscope itemprop="blogPost">
+    
+      
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2014/10/02/processo-agil/">Processo Ágil</a>
+    </h3>
+  
+
+
+
+      <div class="post-meat flex-row">
+        <div class="flex-col">
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/disciplina1/">disciplina1</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/modulo1/">modulo1</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/unidade3/">unidade3</a></li></ul>
+</div>
+        <time datetime="2014-10-02T03:44:00.000Z" itemprop="datePublished" class="post-tiem">
+  02/10/2014
+</time>
+      </div>
+      <div class="post-content" itemprop="postContent" >
+        
+          <h2 id="Manifesto-do-Desenvolvimento-de-Software-Agil"><a href="#Manifesto-do-Desenvolvimento-de-Software-Agil" class="headerlink" title="Manifesto do Desenvolvimento de Software Ágil"></a>Manifesto do Desenvolvimento de Software Ágil</h2><ul>
+<li><strong>Indivíduos e interação</strong> acima de processos e ferramentas;</li>
+<li><strong>Software em funcionamento</strong> acima de documentação abrangente;</li>
+<li><strong>Colaboração com o cliente</strong> acima de negociação de contratos;</li>
+<li><strong>Responder a mudanças</strong> acima de seguir um plano.</li>
+</ul>
+<p>Agile é rápido nas mudanças e eficaz na comunicação com os envolvidos, faz entregas incrementais.<br>Segundo o gráfico, com agilidade a curva do custo a mudança é diminuido.  </p>
+<h3 id="Principios-da-Agilidade"><a href="#Principios-da-Agilidade" class="headerlink" title="Princípios da Agilidade"></a>Princípios da Agilidade</h3><ol>
+<li>A maior prioridade é satisfazer o cliente por meio de entregas continuas;</li>
+<li>Acolha bem os pedidos de alterações no software;</li>
+<li>Entregue software em funcionamento frequentemente;</li>
+<li>Comercial e desenvolvedor trabalham juntos;</li>
+<li>Trabalhe em trono de indivíduos motivados;</li>
+<li>O método mais eficiente de transmitir informações para equipe é uma conversa aberta;</li>
+<li>O software em funcionamento é a principal medida de progresso;</li>
+<li>Os processos ágeis promovem desenvolvimento sustentável;</li>
+<li>Atenção contínua com a excelência técnica;</li>
+<li>Simplicidade;</li>
+<li>Os melhores projetos emergem de equipes auto-organizaveis;</li>
+<li>Regularmente a equipe faz uma auto-avaliação para ver como se tornar mais eficiente. </li>
+</ol>
+<h3 id="Fatores-Humanos"><a href="#Fatores-Humanos" class="headerlink" title="Fatores Humanos"></a>Fatores Humanos</h3><ul>
+<li>Competência</li>
+<li>Foco comum</li>
+<li>Colaboração</li>
+<li>Habilidade na tomada de decisão</li>
+<li>Habilidade de solução de problemas confusos</li>
+<li>Confiança mútua e respeito</li>
+<li>Auto-organização</li>
+</ul>
+<h2 id="Extreme-Programming-XP-Kent-Beck"><a href="#Extreme-Programming-XP-Kent-Beck" class="headerlink" title="Extreme Programming (XP) (Kent Beck)"></a>Extreme Programming (XP) (Kent Beck)</h2><h3 id="Valores-Basicos"><a href="#Valores-Basicos" class="headerlink" title="Valores Básicos"></a>Valores Básicos</h3><ul>
+<li>Comunicação (tanto com o cliente quanto o time)</li>
+<li>Simplicidade (fazer somente o necessário)</li>
+<li>Feedback (deve ser constante)</li>
+<li>Coragem (ou disciplina)</li>
+<li>Respeito (pelo software e pela equipe)</li>
+</ul>
+<h3 id="Processo-Agil-XP"><a href="#Processo-Agil-XP" class="headerlink" title="Processo Ágil: XP"></a>Processo Ágil: XP</h3><ul>
+<li><p>Planejamento</p>
+</li>
+<li><p>Começa com a criação das histórias dos usuários</p>
+</li>
+<li>Equipe avalia e estima o custo das histórias</li>
+<li>Histórias são agrupadas em um incremento de software</li>
+<li>Define-se uma data de entrega do incremento</li>
+<li><p>O primeiro é referência para acelerar os demais incrementos</p>
+</li>
+<li><p>Desenho (Design)</p>
+</li>
+<li><p>Princípio KISS</p>
+</li>
+<li>Uso de cartões CRC</li>
+<li>Grandes problemas são resolvidos com prototipação</li>
+<li>Encoraja a refatoração</li>
+<li>Recomenda os testes unitários antes de codificar</li>
+<li><p>Encoraja a programação em par</p>
+</li>
+<li><p>Teste</p>
+</li>
+<li><p>Todos os testes unitários são executados diariamente</p>
+</li>
+<li>Testes de avaliação são definidos pelo cliente</li>
+</ul>
+<h3 id="Processo-Agil-Desenvolvimento-de-software-adaptativo"><a href="#Processo-Agil-Desenvolvimento-de-software-adaptativo" class="headerlink" title="Processo Ágil: Desenvolvimento de software adaptativo"></a>Processo Ágil: Desenvolvimento de software adaptativo</h3><ul>
+<li>Planejamento dirigindo a missão</li>
+<li>Foco no desenvolvimento baseado em componentes</li>
+<li>Uso de time-boxing (só trata um certo número de requisitos por vez)</li>
+<li>Consideração explicita de riscos</li>
+<li>Ênfase na colaboração para entendimento dos requisitos</li>
+<li>Ênfase na “aprendizagem” durante o processo  </li>
+</ul>
+<h3 id="Processo-Agil-Metodo-Dinamico-de-Desenvolvimento-de-Sistemas-DSDM"><a href="#Processo-Agil-Metodo-Dinamico-de-Desenvolvimento-de-Sistemas-DSDM" class="headerlink" title="Processo Ágil: Método Dinâmico de Desenvolvimento de Sistemas (DSDM)"></a>Processo Ágil: Método Dinâmico de Desenvolvimento de Sistemas (DSDM)</h3><ul>
+<li>Promovido pelo consórcio DSDM</li>
+<li>Similar ao XP e ASD em muitos aspectos</li>
+</ul>
+<h3 id="Processo-Agil-SCRUM"><a href="#Processo-Agil-SCRUM" class="headerlink" title="Processo Ágil: SCRUM"></a>Processo Ágil: SCRUM</h3><ul>
+<li>O trabalho do desenvolvimento é dividido em pacotes;</li>
+<li>Testes e documentação são realizados e construídos a medida que o produto é construído</li>
+<li>O trabalho ocorre em “sprints” derivados de um “backlog” de requisitos</li>
+<li>As reuniões são curtas</li>
+<li>“Demos” são entregues ao cliente no “time-box” alocado</li>
+</ul>
+<h3 id="Processo-Agil-Modelagem-Agil"><a href="#Processo-Agil-Modelagem-Agil" class="headerlink" title="Processo Ágil: Modelagem Ágil"></a>Processo Ágil: Modelagem Ágil</h3><ul>
+<li>Modelagem com um propósito</li>
+<li>Uso de múltiplos modelos</li>
+<li>Facilidade de manutenção dos modelos</li>
+<li>Conteúdo é mais importante que a representação</li>
+<li>Conhecimento de modelos e ferramentas para criá-los</li>
+<li>Adaptações da abordagem de modelagem às características da equipe</li>
+</ul>
+<h3 id="Processo-Agil-Crystal"><a href="#Processo-Agil-Crystal" class="headerlink" title="Processo Ágil: Crystal"></a>Processo Ágil: Crystal</h3><ul>
+<li>Permite adaptabilidade baseada nas características do problema</li>
+<li>Ênfase na comunicação face a face</li>
+<li>Sugere-se o uso de workshops de reflexão para revisão da forma de trabalho da equipe</li>
+</ul>
+<h3 id="Processo-Agil-Feature-Driven-Development-FDD"><a href="#Processo-Agil-Feature-Driven-Development-FDD" class="headerlink" title="Processo Ágil: Feature Driven Development (FDD)"></a>Processo Ágil: Feature Driven Development (FDD)</h3><ul>
+<li><p>Ênfase na definição de características (feauture)</p>
+</li>
+<li><p>Uma feature é uma “função” valorizada pelo cliente que pode ser implementada em duas semanas ou menos</p>
+</li>
+<li><p>Usa um template para criar uma lista de features e então, iniciar o planejamento</p>
+</li>
+<li>O design é a construção do FDD</li>
+</ul>
+<h3 id="Processo-Agil-Agile-Unified-Process-AUP"><a href="#Processo-Agil-Agile-Unified-Process-AUP" class="headerlink" title="Processo Ágil: Agile Unified Process (AUP)"></a>Processo Ágil: Agile Unified Process (AUP)</h3><ul>
+<li><p>Adota uma filosofia:</p>
+</li>
+<li><p>Serial para o que é amplo</p>
+</li>
+<li><p>Iterativa para o que é particular</p>
+</li>
+<li><p>Atividades</p>
+</li>
+<li><p>Modelagem</p>
+</li>
+<li>Implementação</li>
+<li>Teste</li>
+<li>Aplicação</li>
+<li>Configuração e genreciamento de projeto</li>
+<li>Gerenciamento do ambiente</li>
+</ul>
+
+        
+      </div>
+      <div class="post-footer clearfix">
+        <a href="/2014/10/02/processo-agil/" class="post-more waves-button-light">MORE</a>
+      </div>
+    
+
+  </article>
+
+
+</li>
+  
+    <li class="post-list-item">
+  <article id="post-processos-de-desenvolvimento-de-software" class="article article-type-post" itemscope itemprop="blogPost">
+    
+      
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2014/09/25/processos-de-desenvolvimento-de-software/">Processos de desenvolvimento de software</a>
+    </h3>
+  
+
+
+
+      <div class="post-meat flex-row">
+        <div class="flex-col">
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/disciplina1/">disciplina1</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/modulo1/">modulo1</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/unidade2/">unidade2</a></li></ul>
+</div>
+        <time datetime="2014-09-25T04:18:00.000Z" itemprop="datePublished" class="post-tiem">
+  25/09/2014
+</time>
+      </div>
+      <div class="post-content" itemprop="postContent" >
+        
+          <h3 id="Citacoes"><a href="#Citacoes" class="headerlink" title="Citações"></a>Citações</h3><blockquote>
+<p>Software de qualidade é aquele que atende seus requisitos</p>
+<p>Processo de software é uma metodologia para as atividades, ações e tarefas necessárias para desenvolver um software de alta qualidade.</p>
+<p>Uma ideia proposta por uma série de renomados engenheiros de software: um processo de software deve priorizar flexibilidade, extensibilidade e velocidade de desenvolvimento, acima da alta qualidade.</p>
+<p>Quando restrições cruzam múltiplas funções, recursos e informações do sistema, elas são, frequentemente, denominadas restrições cruzadas. (Aspecto) </p>
+</blockquote>
+<h3 id="Atividades-Metodologicas"><a href="#Atividades-Metodologicas" class="headerlink" title="Atividades Metodológicas"></a>Atividades Metodológicas</h3><p>São atividades genéricas que podem ser encontradas em qualquer processo de engenharia de software, ela define 5 passos essenciais:  </p>
+<ul>
+<li>Comunicação</li>
+<li>Planejamento</li>
+<li>Modelagem</li>
+<li>Construção</li>
+<li>Entrega</li>
+</ul>
+<h3 id="Atividades-de-Apoio-Umbrella-activities"><a href="#Atividades-de-Apoio-Umbrella-activities" class="headerlink" title="Atividades de Apoio (Umbrella activities)"></a>Atividades de Apoio (Umbrella activities)</h3><p>Essas atividades complementam e auxiliam as atividades metodologicas, são elas:</p>
+<ul>
+<li>Controle e acompanhamento do projeto</li>
+<li>Administração de riscos</li>
+<li>Garantia de qualidade</li>
+<li>Revisões técnicas</li>
+<li>Medição</li>
+<li>Gerenciamento de configuração de software</li>
+<li>Gerenciamento da reusabilidade</li>
+<li>Preparo e produção de artefatos</li>
+</ul>
+<h3 id="Fluxo-de-Processo"><a href="#Fluxo-de-Processo" class="headerlink" title="Fluxo de Processo"></a>Fluxo de Processo</h3><p>Todo o processo de engenharia de software segue um dos quatro tipos de fluxo de processo:  </p>
+<ul>
+<li>Linear</li>
+<li>Iterativo</li>
+<li>Evolucionário</li>
+<li>Paralelo</li>
+</ul>
+<h3 id="Padroes-de-Processo"><a href="#Padroes-de-Processo" class="headerlink" title="Padrões de Processo"></a>Padrões de Processo</h3><p>Nome do Padrão<br>Forças<br>Tipo (Padrão de estágio, tarefas ou fases)<br>Contexto inicial<br>Problema<br>Solução<br>Contexto Resultante<br>Padrões relativos<br>Usos conhecidos e exemplos  </p>
+<h4 id="Avaliacao-e-aperfeicoamento-dos-processos-de-software"><a href="#Avaliacao-e-aperfeicoamento-dos-processos-de-software" class="headerlink" title="Avaliação e aperfeiçoamento dos processos de software"></a>Avaliação e aperfeiçoamento dos processos de software</h4><ul>
+<li>SCAMPI (CMMI)</li>
+<li>CBA IPI (CMM)</li>
+<li>SPICE (ISO/IEC15504)</li>
+<li>ISO 9001:2000</li>
+</ul>
+<h3 id="Modelos-de-Software"><a href="#Modelos-de-Software" class="headerlink" title="Modelos de Software"></a>Modelos de Software</h3><h4 id="Modelo-de-Processo-Prescritivo"><a href="#Modelo-de-Processo-Prescritivo" class="headerlink" title="Modelo de Processo Prescritivo"></a>Modelo de Processo Prescritivo</h4><p>A engenharia de software e o seu “produto” beiram o caos, ao mesmo tempo que está tudo organizado, está muito próximo também de surpresas. O modelo de processo prescritivo tenta trazer ordem ao caos através de um conjunto de elementos de processo como, atividades metodologicas, ações de engenharia, tarefas, produtos de trabalho, garantia de qualidade, etc.Todos os modelos de processo de software (listados abaixo) podem acomodar as atividades metodologicas genéricas (comunição, planejamento, modelagem, construção e entrega).<br>Os modelos de processo prescritvos são conhecidos como modelos tradicionais.  </p>
+<p>#### </p>
+<ul>
+<li>Modelo em cascata</li>
+</ul>
+<p>Também conhecido como ciclo de vida clássico e waterfall model. Existe uma variação desse modelo chamado Modelo V, em que a segunda parte existem testes que validam o software e se necessário pode-se corrigir antes de entregar o produto.  </p>
+<ul>
+<li>Adia identificação de riscos</li>
+<li>Atrasa os testes do sistema</li>
+<li>Difícil entrega parcial do produto</li>
+<li>Difícil lidar com mudança de requisitos</li>
+</ul>
+<p>#### </p>
+<ul>
+<li>Incremental</li>
+</ul>
+<p><span style="font-weight: normal;">O modelo incremental aplica sequencias lineares, de forma escalonada, a medida que o tempo vai avançando. Cada sequência linear gera “incrementais” (entregáveis/aprovados/liberados) do software. Exemplo do editor de textos, a cada incremento, novas funcionalidades são adicionadas.</span><br><span style="font-weight: normal;"><br></span></p>
+<p>#### </p>
+<ul>
+<li><p>Evolucionário (espiral e prototipação)</p>
+</li>
+<li><p>Prototipação (Problemas conhecidos)</p>
+</li>
+<li><p><span style="font-weight: normal;">O cliente enxerga o prototipo como o software já pronto, e exige que com algumas modificações ele se torne operacional, constantemente a gerência de desenvolvimento aceita.</span></p>
+</li>
+<li><p><span style="font-weight: normal;">Na pressa de apresentar um protótipo, o engenheiro de software opta por ferramentas como liguagem de programação, sistema operacional que lhe são mais intimas simplesmente. Após um tempo, pode se acomodar com tais escolhas e o projeto acaba adotando definitivamente essas tecnologias, que podem não ser as ideais. </span></p>
+</li>
+<li><p>Espiral</p>
+</li>
+<li><p><span style="font-weight: normal;">Parecido com o incremental, o software evolui a cada volta na espiral.</span></p>
+</li>
+<li><p><strong>Concorrente</strong> </p>
+</li>
+</ul>
+<p>Define uma rede de processos que são ligados e possuem estados como concluido, aguardando modificações, em exame, inativo, etc.  </p>
+<h4 id="Modelo-de-Processo-Especializado"><a href="#Modelo-de-Processo-Especializado" class="headerlink" title="Modelo de Processo Especializado"></a>Modelo de Processo Especializado</h4><ul>
+<li><p><strong>Baseado em Componentes</strong></p>
+</li>
+<li><p>Esse modelo desenvolve aplicações a partir de componentes de software pré-empacotados.</p>
+</li>
+<li><p>As atividades de modelagem e construção desse modelo começam com a identificação de possíveis candidatos a componentes.</p>
+</li>
+<li><p><strong>Métodos formais</strong></p>
+</li>
+<li><p>Através de análise matemática são facilmente descobertos problemas no software como ambiguidade, incompletude e inconsistência</p>
+</li>
+<li>Desvantagens: consome muito tempo e dinheiro, poucos desenvolvedores capacitados, dificil comunicação com o cliente.</li>
+</ul>
+<h4 id="PSP-Personal-Software-Process"><a href="#PSP-Personal-Software-Process" class="headerlink" title="PSP (Personal Software Process)"></a>PSP (Personal Software Process)</h4><p>O PSP enfatiza a medição pessoal do todo o processo desde o planejamento até a entrega do software. Com esses dados de medição coletados, o engenheiro de software pode trabalhar em melhorar as partes falhas do processo executados por ele mesmo. O PSP não foi largamente adotado pelo setor, os motivos têm mais a ver com a natureza humana e com a inércia organizacional do que propriamente com o processo desenvolvido por Watts Humphrey.</p>
+<ul>
+<li>Planejamento</li>
+<li>Projeto de alto nível</li>
+<li>Revisão de projeto de alto nível</li>
+<li>Desenvolvimento</li>
+<li>Autópsia</li>
+</ul>
+<h4 id="TSP-Team-Software-Process"><a href="#TSP-Team-Software-Process" class="headerlink" title="TSP (Team Software Process)"></a>TSP (Team Software Process)</h4><p>Os principais objetivos do TSP são:</p>
+<ul>
+<li>Equipes auto-dirigidas</li>
+<li>Mostrar gerentes como treinar e manter equipes</li>
+<li>Acelerar o aperfeiçoamento dos processos de software</li>
+<li>Fornecer orientações para melhorias a organizações</li>
+<li>Preparar universitário para trabalhar em equipe a nivel industrial</li>
+</ul>
+<p>As atividades metodológicas do TSP são:</p>
+<ul>
+<li>Lançamento do projeto</li>
+<li>Projeto de alto nivel</li>
+<li>Implementação</li>
+<li>Integração e testes</li>
+<li>Autópsia</li>
+</ul>
+<p>Assim como o PSP, essa metodologia induz a equipe a se auto-avaliar, atraves de medições do processo e do produto. —————————–</p>
+<h4 id="UP-Unified-Process"><a href="#UP-Unified-Process" class="headerlink" title="UP (Unified Process)"></a>UP (Unified Process)</h4><p>É uma metodologia de processo. Foi criado pelo mesmos autores da UML. Possui três características chave:</p>
+<ul>
+<li>Dirigido por casos de uso</li>
+<li>Centrado na arquitetura</li>
+<li>Iterativo e incremental</li>
+</ul>
+<h4 id="Fases-do-RUP"><a href="#Fases-do-RUP" class="headerlink" title="Fases do RUP"></a>Fases do RUP</h4><ul>
+<li>Concepção (comunicação e planejamento)</li>
+<li>Elaboração (comunicação e modelagem)</li>
+<li>Construção (construção)</li>
+<li>Transição (última parte da construção e primeira parte da atividade de entrega)</li>
+</ul>
+
+        
+      </div>
+      <div class="post-footer clearfix">
+        <a href="/2014/09/25/processos-de-desenvolvimento-de-software/" class="post-more waves-button-light">MORE</a>
+      </div>
+    
+
+  </article>
+
+
+</li>
+  
+    <li class="post-list-item">
+  <article id="post-engenharia-de-software" class="article article-type-post" itemscope itemprop="blogPost">
+    
+      
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2014/09/17/engenharia-de-software/">Engenharia de Software</a>
+    </h3>
+  
+
+
+
+      <div class="post-meat flex-row">
+        <div class="flex-col">
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/disciplina1/">disciplina1</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/modulo1/">modulo1</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/unidade1/">unidade1</a></li></ul>
+</div>
+        <time datetime="2014-09-18T02:59:00.001Z" itemprop="datePublished" class="post-tiem">
+  17/09/2014
+</time>
+      </div>
+      <div class="post-content" itemprop="postContent" >
+        
+          <p>Três pontos me chamaram atenção durante essa unidade, pois foram frisadas em mais de um momento, são elas:  </p>
+<h4 id="Fazer-software-nao-significa-sentar-no-computador-e-programar"><a href="#Fazer-software-nao-significa-sentar-no-computador-e-programar" class="headerlink" title="Fazer software não significa sentar no computador e programar"></a>Fazer software não significa sentar no computador e programar</h4><p>Obviamente, para quem está estudando engenharia de software e ainda não tem isso na cabeça, é melhor mudar agora.  </p>
+<h4 id="Qualidade-e-produtividade-sao-duas-palavras-que-devem-andar-juntas-sempre"><a href="#Qualidade-e-produtividade-sao-duas-palavras-que-devem-andar-juntas-sempre" class="headerlink" title="Qualidade e produtividade são duas palavras que devem andar juntas, sempre"></a>Qualidade e produtividade são duas palavras que devem andar juntas, sempre</h4><p>Pelo que percebi, essa idéia está relacionada a qualquer tipo de engenharia, e se pensar bem, em qualquer área de produção. Sempre é melhor fazer um produto de alta qualidade e com o menor gasto de recursos possiveis. Interessante que, apesar de software não ser um produto - é uma solução - mas ele deve se adequar a esse conceito da engenharia.  </p>
+<h4 id="O-software-nao-deve-atrapalhar-a-vida-das-pessoas"><a href="#O-software-nao-deve-atrapalhar-a-vida-das-pessoas" class="headerlink" title="O software não deve atrapalhar a vida das pessoas"></a>O software não deve atrapalhar a vida das pessoas</h4><p>Auto-explicativo, se o sistema está atrapalhando a vida do usuário, tem alguma coisa errada. Isso pode ter acontecido desde a concepção do software até as rotinas executadas dentro da empresa onde o programa está rodando.  </p>
+<hr>
+<h3 id="Questoes-para-Engenharia-de-Software"><a href="#Questoes-para-Engenharia-de-Software" class="headerlink" title="Questões para Engenharia de Software"></a>Questões para Engenharia de Software</h3><p>Dúvidas a serem respondidas durante a elaboração de software.  </p>
+<ul>
+<li>Qual o problema a ser resolvido?</li>
+<li>Quais as características do software são utilizadas para resolver o problema?</li>
+<li>Como o software será construído?</li>
+<li>Como os erros serão identificados?</li>
+<li>Como o software será mantido?</li>
+</ul>
+<h3 id="How-to-Solve-It"><a href="#How-to-Solve-It" class="headerlink" title="How to Solve It"></a><a href="http://en.wikipedia.org/wiki/How_to_Solve_It" target="_blank" rel="external">How to Solve It</a></h3><p>Livro de 1945 do matemático George Pólya que descreve métodos para se resolver um problema, a essência do livro são os passos citados abaixo, cada passo possui possui várias perguntas a serem respondidas.    </p>
+<ul>
+<li>Compreenda o problema</li>
+<li>Planeje a solução</li>
+<li>Execute / leve adiante o plano</li>
+<li>Examine o resultado</li>
+</ul>
+
+        
+      </div>
+      <div class="post-footer clearfix">
+        <a href="/2014/09/17/engenharia-de-software/" class="post-more waves-button-light">MORE</a>
+      </div>
+    
+
+  </article>
+
+
+</li>
+  
+    <li class="post-list-item">
+  <article id="post-software-e-suas-aplicacoes" class="article article-type-post" itemscope itemprop="blogPost">
+    
+      
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2014/09/17/software-e-suas-aplicacoes/">Software e suas aplicações</a>
+    </h3>
+  
+
+
+
+      <div class="post-meat flex-row">
+        <div class="flex-col">
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/disciplina1/">disciplina1</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/modulo1/">modulo1</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/unidade1/">unidade1</a></li></ul>
+</div>
+        <time datetime="2014-09-18T02:18:00.002Z" itemprop="datePublished" class="post-tiem">
+  17/09/2014
+</time>
+      </div>
+      <div class="post-content" itemprop="postContent" >
+        
+          <blockquote>
+<p>Software é um lugar onde sonhos são plantados e pesadelos são colhidos, um pântano abstrato e místico onde demônios terríveis competem com mágicas panaceias, um mundo de lobisomens e balas de prata. (Brad J. Cox) </p>
+</blockquote>
+<p>Melhor e mais engraçada definição de software que já li. Esqueça aquele papo de que software é um conjunto de instruções de computador, estrutura de dados, blah blah blah.  </p>
+<p>A classificação dos tipos de software segundo Roger Pressman não me agradou, achei pouco objetiva, por deixar muitas dúvidas no ar, pretendo ler esse capítulo do livro Engenharia de Software - Roger Pressman (Bookman) para obter mais detalhes, só a explicação da aula não foi suficiente.<br>Aplicações de software segundo Pressman:  </p>
+<ul>
+<li>Software de sistemas</li>
+<li>Software de tempo real</li>
+<li>Software de aplicação (aplicativos)</li>
+<li>Software científicos (astronomia - volcanologia, CAD)</li>
+<li>Software embutido (embedded)</li>
+<li>Software para linhas de produto (editor texto, planilhas)</li>
+<li>Software que usa recursos da web (webapps)</li>
+<li>Software de inteligência artificial</li>
+<li>Software netsourcing (widgets)</li>
+<li>Software Livre</li>
+<li>Computação Ubíquoa</li>
+</ul>
+
+        
+      </div>
+      <div class="post-footer clearfix">
+        <a href="/2014/09/17/software-e-suas-aplicacoes/" class="post-more waves-button-light">MORE</a>
+      </div>
+    
+
+  </article>
+
+
+</li>
+  
+    <li class="post-list-item">
+  <article id="post-introducao-a-engenharia-de-software" class="article article-type-post" itemscope itemprop="blogPost">
+    
+      
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2014/09/17/introducao-a-engenharia-de-software/">Introdução à engenharia de software</a>
+    </h3>
+  
+
+
+
+      <div class="post-meat flex-row">
+        <div class="flex-col">
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/disciplina1/">disciplina1</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/modulo1/">modulo1</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/unidade1/">unidade1</a></li></ul>
+</div>
+        <time datetime="2014-09-17T04:02:00.004Z" itemprop="datePublished" class="post-tiem">
+  17/09/2014
+</time>
+      </div>
+      <div class="post-content" itemprop="postContent" >
+        
+          <p>Assistindo a primeira video-aula da pós graduação em Engenharia de Software na PUC Minas, o professor Dr. Humberto Neto levantou um ponto que me chamou atenção.</p>
+<blockquote>
+<p>Na história da informática, o hardware evoluiu (e ainda evolui) muito mais em muito menos tempo do que o software.</p>
+</blockquote>
+<p>Segundo ele, por um motivo básico, o principal recurso do software ainda é a mente humana, enquanto que, o processo de produção de hardware necessita cada vez menos da interação humana. A medida que pesquisas avançam com descobertas em novas tecnologias, basta um projeto para que a produção de hardware aconteça.  </p>
+<p>Ainda no vídeo, foram levantados algumas áreas que ocorrem falhas na construção do software, elas estão relacionadas ao:  </p>
+<ul>
+<li><strong>Processo:</strong> como cronogramas, gerência de recursos, qualquer problema relacionado a planejamento. </li>
+<li><strong>Produto:</strong> requisitos de software mudam. FATO!, isso atrapalha o cronograma e pode gerar problemas no software. Além disso, adicionar novos requisistos depois que o escopo está fechado, também acarreta problemas.</li>
+<li><strong>Tecnologia:</strong> qualquer tecnologia utilizada no software como bibliotecas, frameworks, etc. Tanto superestimar os beneficions de um framework quanto a troca durante a produção de software prejudicam o cronograma. </li>
+</ul>
+<p>Por enquanto é isso. :)</p>
+
+        
+      </div>
+      <div class="post-footer clearfix">
+        <a href="/2014/09/17/introducao-a-engenharia-de-software/" class="post-more waves-button-light">MORE</a>
+      </div>
+    
+
+  </article>
+
+
+</li>
+  
+    <li class="post-list-item">
+  <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+    
+      
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2014/09/17/hello-world/">Hello World!</a>
+    </h3>
+  
+
+
+
+      <div class="post-meat flex-row">
+        <div class="flex-col"></div>
+        <time datetime="2014-09-17T03:29:00.001Z" itemprop="datePublished" class="post-tiem">
+  17/09/2014
+</time>
+      </div>
+      <div class="post-content" itemprop="postContent" >
+        
+          <p>Primeiro post… hello world!</p>
+
+        
+      </div>
+      <div class="post-footer clearfix">
+        <a href="/2014/09/17/hello-world/" class="post-more waves-button-light">MORE</a>
+      </div>
+    
+
+  </article>
+
+
+</li>
+  
+  </ul>
+  
+    <nav id="page-nav">
+      <div class="inner">
+        <a class="extend prev" rel="prev" href="/page/4/">上一页</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><span class="page-number current">5</span>
+      </div>
+    </nav>
+  
+
+
+
+    </div>
+  </main>
+<div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-circle-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+<script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+
+<script src="/js/main.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

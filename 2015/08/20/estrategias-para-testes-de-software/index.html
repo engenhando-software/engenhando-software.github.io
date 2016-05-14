@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Estratégias para testes de software | Engenheirando Software | Minhas observações sobre Engenharia de Software</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <meta name="keywords" content="disciplina1,unidade3,modulo3">
+  <meta name="description" content="Estratégias para teste de software URL
+Testes de módulos atômicos
+
+Usa testes de caixa branca
+
+Testes de integração
+
+Testes de validação
+
+Caixa preta
+
+Testes de sistema
+
+Desempenho, segurança
+
+Testes">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Estratégias para testes de software">
+<meta property="og:url" content="http://yoursite.com/2015/08/20/estrategias-para-testes-de-software/index.html">
+<meta property="og:site_name" content="Engenheirando Software">
+<meta property="og:description" content="Estratégias para teste de software URL
+Testes de módulos atômicos
+
+Usa testes de caixa branca
+
+Testes de integração
+
+Testes de validação
+
+Caixa preta
+
+Testes de sistema
+
+Desempenho, segurança
+
+Testes">
+<meta property="og:updated_time" content="2015-12-05T15:35:49.904Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Estratégias para testes de software">
+<meta name="twitter:description" content="Estratégias para teste de software URL
+Testes de módulos atômicos
+
+Usa testes de caixa branca
+
+Testes de integração
+
+Testes de validação
+
+Caixa preta
+
+Testes de sistema
+
+Desempenho, segurança
+
+Testes">
+  
+    <link rel="alternative" href="/atom.xml" title="Engenheirando Software" type="application/atom+xml">
+  
+  <link rel="shortcut icon" href="/">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="loading" class="active"></div>
+
+  <nav id="menu" class="hide" >
+   <div class="inner">
+  <a href="javascript:;" class="header-icon waves-circle-light" id="menu-off">
+      <i class="icon icon-lg icon-close"></i>
+  </a>
+  <div class="brand-wrap">
+    <div class="brand">
+      <a href="/" class="avatar"><img src="/images/avatar.jpg"></a>
+      <hgroup class="introduce">
+        <h5 class="nickname">Jonathas Amaral</h5>
+        <a href="mailto:jnthas@gmail.com" title="jnthas@gmail.com" class="mail">jnthas@gmail.com</a>
+      </hgroup>
+    </div>
+  </div>
+  <ul class="nav">
+    
+        <li class="waves-block">
+          <a href="/"  >
+            <i class="icon icon-lg icon-home"></i>
+            Home
+          </a>
+        </li>
+    
+        <li class="waves-block">
+          <a href="/archives"  >
+            <i class="icon icon-lg icon-archives"></i>
+            Archives
+          </a>
+        </li>
+    
+        <li class="waves-block">
+          <a href="/tags"  >
+            <i class="icon icon-lg icon-tags"></i>
+            Tags
+          </a>
+        </li>
+    
+        <li class="waves-block">
+          <a href="https://github.com/engenhando-software/engenhando-software.github.io" target="_blank" >
+            <i class="icon icon-lg icon-github"></i>
+            Github
+          </a>
+        </li>
+    
+  </ul>
+
+  <footer class="footer">
+  <p><a rel="license" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0;vertical-align:middle;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAAAPCAMAAABEF7i9AAAAllBMVEUAAAD///+rsapERER3d3eIiIjMzMzu7u4iIiKUmZO6v7rKzsoODg4RERFVVVUNDQ0NDg0PEA8zMzNLTEtbXltmZmZydnF9gn2AgICPkI+ZmZmqqqq7u7vFxsXIzMgNDQwZGRkgICAhISEkJSMnKCcuMC4xMzE5Ozk7PTtBQkFCQkJDQ0Nna2eGhoaHh4ezuLLGysbd3d1wVGpAAAAA4UlEQVR42q2T1xqCMAyFk7QsBQeKA9x7j/d/OSm22CpX0nzcpA1/T05aAOuBVkMAScQFHLnEwoCo2f1TnQIGoVMewjZEjVFN4GH1Ue1Cn2jWqwfsOOj6wDwGvotsl/c8lv7KIq1eLOsT0HMFHMIE/RZyHnlphryT9zyV+8WH5e8yQw3wnQvgAFxPTKUVi555SHR/lOfLMgVTeDlSfN+TaoUsiTyeIm+bCkHvCA2FUKG48LDtYBZBknsYP/G8NTw0gaaHyuQf4H5pecrB/FYCT2sL9zAfy1Xyjou6L8X2W7YcLyBZCRtnq/zfAAAAAElFTkSuQmCC" /></a></p>
+  <p>Jonathas Amaral &copy; 2016</p>
+  <p>Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme
+  <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a></p>
+  <a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-2x icon-rss-square"></i></a>
+</footer>
+
+</div>
+
+  </nav>
+  <main id="main">
+    <header class="header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-circle-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">Estratégias para testes de software</div>
+        
+    </div>
+</header>
+<header class="content-header">
+  <div class="container">
+    <h1 class="author">Estratégias para testes de software</h1>
+    <h5 class="subtitle">20/08/2015</h5>
+  </div>
+</header>
+
+    <div class="container body-wrap">
+      
+  <article id="post-estrategias-para-testes-de-software" class="article article-type-post" itemscope itemprop="blogPost">
+    
+      <div class="post-meat flex-row">
+        <div class="flex-col">
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/disciplina1/">disciplina1</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/modulo3/">modulo3</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/unidade3/">unidade3</a></li></ul>
+</div>
+      </div>
+      <div class="post-body">
+
+        <aside class="post-widget" id="post-widget">
+
+          
+
+          
+          <nav class="post-toc-wrap" id="post-toc">
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Estrategias-para-teste-de-software-URL"><span class="post-toc-text">Estratégias para teste de software URL</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Testes-de-modulos-atomicos"><span class="post-toc-text">Testes de módulos atômicos</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Testes-de-integracao"><span class="post-toc-text">Testes de integração</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Testes-de-validacao"><span class="post-toc-text">Testes de validação</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Testes-de-sistema"><span class="post-toc-text">Testes de sistema</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Testes-de-aceitacao"><span class="post-toc-text">Testes de aceitação</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Revisoes-formais"><span class="post-toc-text">Revisões formais</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Tipos-de-revisoes"><span class="post-toc-text">Tipos de revisões:</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Papeis"><span class="post-toc-text">Papeis:</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Responsabilidades-do-autor"><span class="post-toc-text">Responsabilidades do autor</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Responsabilidades-do-coordenador"><span class="post-toc-text">Responsabilidades do coordenador</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Responsabilidades-dos-outros-membros"><span class="post-toc-text">Responsabilidades dos outros membros</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Ao-final-da-revisao"><span class="post-toc-text">Ao final da revisão:</span></a></li></ol></li></ol></li></ol>
+          </nav>
+          
+        </aside>
+
+        <div class="post-main">
+
+            <div class="post-content" itemprop="postContent"><h2 id="Estrategias-para-teste-de-software-URL"><a href="#Estrategias-para-teste-de-software-URL" class="headerlink" title="Estratégias para teste de software URL"></a>Estratégias para teste de software URL</h2><ul>
+<li><p>Testes de módulos atômicos</p>
+</li>
+<li><p>Usa testes de caixa branca</p>
+</li>
+<li><p>Testes de integração</p>
+</li>
+<li><p>Testes de validação</p>
+</li>
+<li><p>Caixa preta</p>
+</li>
+<li><p>Testes de sistema</p>
+</li>
+<li><p>Desempenho, segurança</p>
+</li>
+<li><p>Testes de aceitação</p>
+</li>
+<li><p>No ambiente do usuário</p>
+</li>
+</ul>
+<h3 id="Testes-de-modulos-atomicos"><a href="#Testes-de-modulos-atomicos" class="headerlink" title="Testes de módulos atômicos"></a>Testes de módulos atômicos</h3><ul>
+<li>Testar condições limite</li>
+<li>Todos os caminhos são testados (método caminho básico)</li>
+<li>Usa-se Drives que são chamadas aos módulos (que simulam um modulo ainda não testado)</li>
+</ul>
+<h3 id="Testes-de-integracao"><a href="#Testes-de-integracao" class="headerlink" title="Testes de integração"></a>Testes de integração</h3><p>Consiste em se integrar os módulos do sistema. Possui duas abordagens:</p>
+<ul>
+<li><p>Bottom-up</p>
+</li>
+<li><p>Parte para os módulos no nível mais baixo. Os módulos são agrupados em clusters para que fique mais fácil de testar e cria-se drivers que vão simular uma parte superior na estrutura da hierarquia dos módulos que ainda não foi testada. </p>
+</li>
+<li><p>Vantagem: São mais simples que o top-down.</p>
+</li>
+<li><p>Top-down</p>
+</li>
+<li><p>Parte para os módulos de nível mais alto. Há duas formas de percorrer os módulos para testes: Profundidade - testa-se verticalmente até chegar numa folha - e Largura no qual se testa horizontalmente cada nível. </p>
+</li>
+<li>Stubs = mock</li>
+</ul>
+<h3 id="Testes-de-validacao"><a href="#Testes-de-validacao" class="headerlink" title="Testes de validação"></a>Testes de validação</h3><ul>
+<li>Uma sequencia de testes de caixa-preta que demonstram a funcionalidade dos requisitos.</li>
+<li>Os casos de teste devem ser montados seguindo a especificação de requisitos</li>
+<li>Depois de realizar cada caso de teste, vão existir uma das opções</li>
+</ul>
+<ol>
+<li>Teste é aceito </li>
+<li>Uma lista de deficiências é criada</li>
+</ol>
+<h3 id="Testes-de-sistema"><a href="#Testes-de-sistema" class="headerlink" title="Testes de sistema"></a>Testes de sistema</h3><p>Tem como objetivo colocar o sistema à prova. Tipo mais comuns:</p>
+<ul>
+<li>Testes de recuperação: forçar o sistema a falhar e ver a recuperação do sistema</li>
+<li>Testes de segurança: verificar os mecanismos de segurança do sistema. Senhas, proteção de acesso a funções. recomendável um especialista.</li>
+<li>Teste de stress: consiste em testar o programa em situações limite</li>
+<li>Testes de desempenho: realizado para testar os requisitos de desempenho descritos na especificação. Deve ocorrer ao longo de todos os passos do processo de testes. Confundido com teste de stress.</li>
+</ul>
+<h3 id="Testes-de-aceitacao"><a href="#Testes-de-aceitacao" class="headerlink" title="Testes de aceitação"></a>Testes de aceitação</h3><p>Visam especificamente capacitar clientes a validar seus requisitos. Realizado exclusivamente pelo usuário final. </p>
+<ul>
+<li>Alfa teste: realizado nas instalações do desenvolvedor</li>
+<li>Beta teste: realizado nas instalações do cliente</li>
+</ul>
+<h2 id="Revisoes-formais"><a href="#Revisoes-formais" class="headerlink" title="Revisões formais"></a>Revisões formais</h2><p>As revisões capturam erros durante as etapas de desenvolvimento e evita que esses erros sejam descobertos no fim do desenvolvimento.</p>
+<h4 id="Tipos-de-revisoes"><a href="#Tipos-de-revisoes" class="headerlink" title="Tipos de revisões:"></a>Tipos de revisões:</h4><ul>
+<li>Revisão de especificação é uma revisão em que os requisitos e especificações do usuário são revisados</li>
+<li>Revisão de interface do usuário: preocupa-se com os formatos de entrada e saída, layout de tela, relatório, posição dos componentes na tela, etc. Do campo IHC.</li>
+<li>Revisão de projeto é revisão dada nas decisões de implementação, arquitetura de software, técnicas empregadas, etc.</li>
+<li>Revisão de código: verifica o código fonte</li>
+<li>Revisão de teste: conduzidas para que os dados de teste sejam adequados ao sistema, não pra examinar a saída do teste.</li>
+</ul>
+<h4 id="Papeis"><a href="#Papeis" class="headerlink" title="Papeis:"></a>Papeis:</h4><ul>
+<li>Apresentador: a tarefa é introduzir o produto, apresenta o produto numa reunião.</li>
+<li>Coordenador: responsável para que as atividades sejam organizadas e atua também como moderador.</li>
+<li>Secretário copista: tomar notas durante da revisão</li>
+<li>Oráculo da manutenção: rever o produto sobre manutenções futuras</li>
+<li>Portador de padrões: especialista em engenharia de software que verifica se normas e padrões estão sendo seguidos</li>
+<li>Representante do usuário: verifica se os requisitos estão sendo atendidos</li>
+<li>Especialista na área do sistema: verifica se o sistema está correto na área da especialidade. Ex.: folha de pagamento.</li>
+</ul>
+<h4 id="Responsabilidades-do-autor"><a href="#Responsabilidades-do-autor" class="headerlink" title="Responsabilidades do autor"></a>Responsabilidades do autor</h4><ul>
+<li>Anunciar sua intenção de fazer uma revisão</li>
+<li>Escolher participantes e coordenador</li>
+<li>Fornecer material apropriado para a revisão</li>
+<li>Escolher um produto que possa ser revisado em no máximo 60min.</li>
+</ul>
+<h4 id="Responsabilidades-do-coordenador"><a href="#Responsabilidades-do-coordenador" class="headerlink" title="Responsabilidades do coordenador"></a>Responsabilidades do coordenador</h4><ul>
+<li>Assegurar que a revisão aconteça;</li>
+<li>que os participantes atendam a revisão</li>
+<li>Distribuir o material para a revisão</li>
+</ul>
+<h4 id="Responsabilidades-dos-outros-membros"><a href="#Responsabilidades-dos-outros-membros" class="headerlink" title="Responsabilidades dos outros membros"></a>Responsabilidades dos outros membros</h4><ul>
+<li>Ler documentação fornecida antes da reunião (1 hora)</li>
+</ul>
+<h4 id="Ao-final-da-revisao"><a href="#Ao-final-da-revisao" class="headerlink" title="Ao final da revisão:"></a>Ao final da revisão:</h4><ul>
+<li>Coordenador notifica a gerencia</li>
+<li>É distribuída uma cópia da ata aos participantes</li>
+<li>Produtor vai realizar as ações descritas na ata</li>
+</ul>
+</div>
+
+            
+<nav class="post-nav flex-row">
+  <div class="flex-col waves-block prev">
+    
+      <a href="/2015/09/03/processo-de-testes/" title="Processo de Testes" id="post-prev" class="post-nav-link">
+        <i class="icon icon-chevron-left"></i>
+        <span class="article-nav-title">Anterior</span>
+      </a>
+    
+  </div>
+  <div class="flex-col waves-block next">
+    
+      <a href="/2015/08/15/testes-de-caixa-preta/" title="Testes de Caixa-Preta" id="post-next" class="post-nav-link">
+        <span class="article-nav-title">Próximo</span>
+        <i class="icon icon-chevron-right"></i>
+      </a>
+    
+  </div>
+
+</nav>
+
+
+
+            
+<div id="disqus_thread"></div>
+<script>
+    /**
+     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+     */
+    /*
+    var disqus_config = function () {
+        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() {  // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        
+        s.src = '//engenhandosoftware.disqus.com/embed.js';
+        
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+
+
+        </div>
+
+      </div>
+
+    
+
+  </article>
+
+
+
+    </div>
+  </main>
+<div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-circle-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+<script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+
+<script src="/js/main.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

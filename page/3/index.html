@@ -1,0 +1,1648 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Engenheirando Software | Minhas observações sobre Engenharia de Software</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <meta name="keywords" content="undefined">
+  <meta name="description" content="Blog sobre engenharia de software">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Engenheirando Software">
+<meta property="og:url" content="http://yoursite.com/page/3/index.html">
+<meta property="og:site_name" content="Engenheirando Software">
+<meta property="og:description" content="Blog sobre engenharia de software">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Engenheirando Software">
+<meta name="twitter:description" content="Blog sobre engenharia de software">
+  
+    <link rel="alternative" href="/atom.xml" title="Engenheirando Software" type="application/atom+xml">
+  
+  <link rel="shortcut icon" href="/">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="loading" class="active"></div>
+
+  <nav id="menu"  >
+   <div class="inner">
+  <a href="javascript:;" class="header-icon waves-circle-light" id="menu-off">
+      <i class="icon icon-lg icon-close"></i>
+  </a>
+  <div class="brand-wrap">
+    <div class="brand">
+      <a href="/" class="avatar"><img src="/images/avatar.jpg"></a>
+      <hgroup class="introduce">
+        <h5 class="nickname">Jonathas Amaral</h5>
+        <a href="mailto:jnthas@gmail.com" title="jnthas@gmail.com" class="mail">jnthas@gmail.com</a>
+      </hgroup>
+    </div>
+  </div>
+  <ul class="nav">
+    
+        <li class="waves-block active">
+          <a href="/"  >
+            <i class="icon icon-lg icon-home"></i>
+            Home
+          </a>
+        </li>
+    
+        <li class="waves-block">
+          <a href="/archives"  >
+            <i class="icon icon-lg icon-archives"></i>
+            Archives
+          </a>
+        </li>
+    
+        <li class="waves-block">
+          <a href="/tags"  >
+            <i class="icon icon-lg icon-tags"></i>
+            Tags
+          </a>
+        </li>
+    
+        <li class="waves-block">
+          <a href="https://github.com/engenhando-software/engenhando-software.github.io" target="_blank" >
+            <i class="icon icon-lg icon-github"></i>
+            Github
+          </a>
+        </li>
+    
+  </ul>
+
+  <footer class="footer">
+  <p><a rel="license" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0;vertical-align:middle;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAAAPCAMAAABEF7i9AAAAllBMVEUAAAD///+rsapERER3d3eIiIjMzMzu7u4iIiKUmZO6v7rKzsoODg4RERFVVVUNDQ0NDg0PEA8zMzNLTEtbXltmZmZydnF9gn2AgICPkI+ZmZmqqqq7u7vFxsXIzMgNDQwZGRkgICAhISEkJSMnKCcuMC4xMzE5Ozk7PTtBQkFCQkJDQ0Nna2eGhoaHh4ezuLLGysbd3d1wVGpAAAAA4UlEQVR42q2T1xqCMAyFk7QsBQeKA9x7j/d/OSm22CpX0nzcpA1/T05aAOuBVkMAScQFHLnEwoCo2f1TnQIGoVMewjZEjVFN4GH1Ue1Cn2jWqwfsOOj6wDwGvotsl/c8lv7KIq1eLOsT0HMFHMIE/RZyHnlphryT9zyV+8WH5e8yQw3wnQvgAFxPTKUVi555SHR/lOfLMgVTeDlSfN+TaoUsiTyeIm+bCkHvCA2FUKG48LDtYBZBknsYP/G8NTw0gaaHyuQf4H5pecrB/FYCT2sL9zAfy1Xyjou6L8X2W7YcLyBZCRtnq/zfAAAAAElFTkSuQmCC" /></a></p>
+  <p>Jonathas Amaral &copy; 2016</p>
+  <p>Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme
+  <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a></p>
+  <a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-2x icon-rss-square"></i></a>
+</footer>
+
+</div>
+
+  </nav>
+  <main id="main">
+    <header class="header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-circle-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">Engenheirando Software</div>
+        
+    </div>
+</header>
+<header class="content-header">
+  <div class="container">
+    <h1 class="author">Engenheirando Software</h1>
+    <h5 class="subtitle">Minhas observações sobre Engenharia de Software</h5>
+  </div>
+</header>
+
+    <div class="container body-wrap">
+      
+  <ul class="post-list">
+  
+    <li class="post-list-item">
+  <article id="post-conceitos-de-programacao-orientada-a-objetos" class="article article-type-post" itemscope itemprop="blogPost">
+    
+      
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2015/05/24/conceitos-de-programacao-orientada-a-objetos/">Conceitos de Programação Orientada a Objetos</a>
+    </h3>
+  
+
+
+
+      <div class="post-meat flex-row">
+        <div class="flex-col">
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/disciplina3/">disciplina3</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/modulo2/">modulo2</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/unidade1/">unidade1</a></li></ul>
+</div>
+        <time datetime="2015-05-25T00:45:00.000Z" itemprop="datePublished" class="post-tiem">
+  24/05/2015
+</time>
+      </div>
+      <div class="post-content" itemprop="postContent" >
+        
+          <h3 id="Conceitos-Basicos-de-OO-cap-1"><a href="#Conceitos-Basicos-de-OO-cap-1" class="headerlink" title="Conceitos Básicos de OO (cap. 1)"></a>Conceitos Básicos de OO (cap. 1)</h3><ul>
+<li>Classes consistem na descrição de atributos e métodos para um conjunto de objetos. Possuem uma visão interna e externa (funções publicas).</li>
+<li>Interface pública são os serviços da classe que poderão ser utilizados por outras partes do programa, ocultando como os serviços são implementados. Essa ocultação é chamada <strong>encapsulamento</strong>.</li>
+<li>Objetos são entidades unicamente identificados. Eles são uma instancia concreta e dinâmica de uma classe. Possuem dados, comportamento e identidade da classe. Pode-se dizer que um objeto é “uma variável do tipo de dados definido pela classe”.</li>
+<li>Os métodos de uma classe podem ser chamados de funções membros ou serviços.</li>
+<li>O estado de um objeto é determinado pelo valor de seus atributos</li>
+<li><p>Modificadores de acesso</p>
+</li>
+<li><p>Público - visíveis em toda aplicação</p>
+</li>
+<li>Privado - visíveis apenas internamente a classe que foram programados</li>
+<li><p>Protegido - visibilidade intermediária, visíveis apenas em uma hierarquia de classes (subclasses)</p>
+</li>
+<li><p>Herança</p>
+</li>
+<li><p>Criar classe mãe e classes filhas que especializam um determinado comportamento</p>
+</li>
+<li>Herança múltipla: duas ou mais classes que possuem subclasses (java e c# não implementa esse conceito)</li>
+</ul>
+<h3 id="Linguagem-Java-cap-3"><a href="#Linguagem-Java-cap-3" class="headerlink" title="Linguagem Java - (cap. 3)"></a>Linguagem Java - (cap. 3)</h3><ul>
+<li>Em java, um objeto é interpretado como uma referência e não o objeto propriamente dito.</li>
+<li>NomeClasse nomeObjeto -&gt; cria-se referência mas não objeto; uma vez criado objeto com “new” a referência não pode ser manipulada numericamente.</li>
+<li>Construtor: iniciam o objeto</li>
+<li>Modificador “friendly” - visíveis apenas no mesmo pacote</li>
+<li>Membros estáticos: os atributos declarados como estáticos, possuem o mesmo valor durante a execução.</li>
+<li>Destrutores: são utilizados para finalizar um objeto.</li>
+</ul>
+<h3 id="Heranca-de-Classe-cap-4"><a href="#Heranca-de-Classe-cap-4" class="headerlink" title="Herança de Classe (cap. 4)"></a>Herança de Classe (cap. 4)</h3><ul>
+<li>Extends</li>
+<li><p>Atributos protegidos podem ser explicados depois que o conceito de herança de classe foi introduzido</p>
+</li>
+<li><p>Membros protegidos podem ser acessados por classes do mesmo pacote mesmo que não sejam da mesma hierarquia de classes</p>
+</li>
+<li>Podem ser acessados por classes que estendem dessa classe, mesmo que esta subclasse seja de outro pacote</li>
+<li>Membros protegidos se limitam a uma hierarquia de classes, uma vez que java não permite herança múltipla de classes</li>
+<li><p>Membros protegidos e estáticos podem ser acessados em qualquer classe estendida</p>
+</li>
+<li><p>Construtores em classes estendidas</p>
+</li>
+<li><p>Quando uma subclasse é construída, uma superclasse também é.</p>
+</li>
+<li>A nova classe (derivada) deverá escolher qual construtor da superclasse deseja chamar</li>
+<li>Subclasse chama o construtor da superclasse através do super() com a mesma assinatura da superclasse</li>
+</ul>
+<h3 id="Polimorfismo-cap-5"><a href="#Polimorfismo-cap-5" class="headerlink" title="Polimorfismo (cap 5)"></a>Polimorfismo (cap 5)</h3><ul>
+<li>Reescrever métodos com mesmo nome, parâmetros diferentes, etc.</li>
+<li>Palavra chave super, pode-se usar super.metodo()</li>
+<li>Palavra chave final, serve para definir atributos ou métodos que não podem ser modificados após sua primeira inicialização.</li>
+</ul>
+
+        
+      </div>
+      <div class="post-footer clearfix">
+        <a href="/2015/05/24/conceitos-de-programacao-orientada-a-objetos/" class="post-more waves-button-light">MORE</a>
+      </div>
+    
+
+  </article>
+
+
+</li>
+  
+    <li class="post-list-item">
+  <article id="post-projeto-nos-modelos-de-qualidade" class="article article-type-post" itemscope itemprop="blogPost">
+    
+      
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2015/05/19/projeto-nos-modelos-de-qualidade/">Projeto nos Modelos de Qualidade</a>
+    </h3>
+  
+
+
+
+      <div class="post-meat flex-row">
+        <div class="flex-col">
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/disciplina2/">disciplina2</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/modulo2/">modulo2</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/unidade4/">unidade4</a></li></ul>
+</div>
+        <time datetime="2015-05-19T03:05:00.001Z" itemprop="datePublished" class="post-tiem">
+  19/05/2015
+</time>
+      </div>
+      <div class="post-content" itemprop="postContent" >
+        
+          <h2 id="Projeto-e-construcao-do-produto-MPS-br"><a href="#Projeto-e-construcao-do-produto-MPS-br" class="headerlink" title="Projeto e construção do produto MPS.br"></a>Projeto e construção do produto MPS.br</h2><p>O objetivo do processo é definir atividades que permitam a elaboração do projeto e que possibilitem a implementação dos requisitos.</p>
+<h3 id="Processos-de-projeto-de-software"><a href="#Processos-de-projeto-de-software" class="headerlink" title="Processos de projeto de software"></a>Processos de projeto de software</h3><p>No MPS.br</p>
+<ul>
+<li>Projeto e Construção do Produto (PCP) -&gt; Nível D</li>
+</ul>
+<p>No CMMI</p>
+<ul>
+<li>Technical Solutions (TS) -&gt; Nível 3</li>
+</ul>
+<p>Na ISO 12207</p>
+<ul>
+<li>Development Processes</li>
+</ul>
+<h3 id="Proposito"><a href="#Proposito" class="headerlink" title="Propósito"></a>Propósito</h3><ul>
+<li><p>Projetar (design)</p>
+</li>
+<li><p>Processo criativo de transformar o problema em uma solução.</p>
+</li>
+<li><p>Representação significativa de algo a ser construído</p>
+</li>
+<li><p>Desenvolver</p>
+</li>
+<li>Implementar requisitos</li>
+</ul>
+<h3 id="Resultados-esperados"><a href="#Resultados-esperados" class="headerlink" title="Resultados esperados"></a><strong>Resultados esperados</strong></h3><ul>
+<li><p>PCP1 - <span style="background-color: yellow;">Definição da arquitetura e documentação da arquitetura</span></p>
+</li>
+<li><p>Necessário fazer a definição da arquitetura do software</p>
+</li>
+<li><p>Criar alternativas para solucionar o problema </p>
+</li>
+<li><p><em>Exemplos de alternativas</em></p>
+</li>
+<li>Desenvolver ou comprar?</li>
+<li>Linguagens, frameworks</li>
+<li>Ambiente desktop, move</li>
+<li><p>Banco de dados</p>
+</li>
+<li><p>Escolher uma das alternativas com base nos critérios estabelecidos inicialmente</p>
+</li>
+<li><p><em>Exemplos de critérios</em></p>
+</li>
+<li>Risco</li>
+<li>Custo</li>
+<li><p>Capacitação da equipe</p>
+</li>
+<li><p>PCP2 - <span style="background-color: yellow;">Soluções</span></p>
+</li>
+<li><p>Soluções são selecionadas com base no cenário que são definidos e em critérios que são identificados</p>
+</li>
+<li>Necessário identificar os critérios de seleção e avaliar as alternativas </li>
+<li><p>Pode ser necessário repetir o processo todo de tomada de decisão para um componente específico</p>
+</li>
+<li><p>PCP3 - <span style="background-color: yellow;">Produto e componentes do produto</span></p>
+</li>
+<li><p>Projetar o produto de acordo com os requisitos</p>
+</li>
+<li>Projeto é constituído da arquitetura do sistema (hardware, software e op. manual) e do software</li>
+<li><p>Para evidenciar este resultado pode ser usado documentos técnicos como documento de arquitetura, desenho, análise ou modelo de banco de dados</p>
+</li>
+<li><p>PCP4 - <span style="background-color: yellow;">Interfaces</span></p>
+</li>
+<li><p>Interfaces entre os componentes do produto</p>
+</li>
+<li>Componente precisa expor as interfaces que ele fornece e que ele consome.</li>
+<li>Projeto deve conter a definição das interfaces</li>
+<li>A escolha da interface leva em conta os requisitos definidos no processo DRE</li>
+<li><p>O processo ITP (integração do produto) utilizará as interfaces projetadas</p>
+</li>
+<li><p>PCP5 - <span style="background-color: yellow;">Análise dos componentes do produto</span></p>
+</li>
+<li><p>Análise é necessário para decidir sobre a construção, compra ou reutilização dos componentes</p>
+</li>
+<li><p>Considerar custo-benefício, deve incluir custo direto e indireto.</p>
+</li>
+<li><p>PCP6 - <span style="background-color: yellow;">Componentes do produto implementado e verificação</span></p>
+</li>
+<li><p>Verificar se os componentes estão implementados de acordo com o projeto e a sua documentação desenvolvida</p>
+</li>
+<li><p>MPS.br fornece várias alternativas para fazer a verificação</p>
+</li>
+<li><p>Revisão por pares</p>
+</li>
+<li>Testes de unidade</li>
+<li><p>Verificação em relação aos requisitos do projeto</p>
+</li>
+<li><p>Como evitar este resultado?</p>
+</li>
+<li><p>Código fonte</p>
+</li>
+<li>Lista de verificação</li>
+<li>Padrões de codificação</li>
+<li>Relatórios de inspeção</li>
+<li><p>Relatórios da execução dos testes</p>
+</li>
+<li><p>PCP7 - <span style="background-color: yellow;">Documentação</span></p>
+</li>
+<li><p>Desenvolvida de acordo com os padrões estabelecidos</p>
+</li>
+<li>Doc. deve dar apoio para o desenvolvimento</li>
+<li><p>Deve conter</p>
+</li>
+<li><p>O projeto de arquitetura do projeto</p>
+</li>
+<li>Justificativa das decisões tomadas</li>
+<li>Projeto dos componentes</li>
+<li>Projeto das interfaces</li>
+<li><p>Rastreabilidade entre os requisitos e interfaces</p>
+</li>
+<li><p>PCP8 - <span style="background-color: yellow;">Documentação é mantida</span></p>
+</li>
+<li><p>Doc. precisa ser mantida e revisada</p>
+</li>
+<li><p>Pode-se utilizar padrões na documentação, ex:</p>
+</li>
+<li><p>Fontes a serem utilizadas</p>
+</li>
+<li>uso de abreviações</li>
+<li>índice</li>
+<li>tamanho da fonte</li>
+</ul>
+<h2 id="Introducao-ao-framework-SEMAT-Essence"><a href="#Introducao-ao-framework-SEMAT-Essence" class="headerlink" title="Introdução ao framework SEMAT Essence"></a>Introdução ao framework SEMAT Essence</h2><p>SEMAT é a comunidade que trabalha definindo o framework Essence</p>
+<h3 id="Framework-Essence"><a href="#Framework-Essence" class="headerlink" title="Framework Essence"></a>Framework Essence</h3><p>O framework inclui uma linguagem e um kernel e oferece:  </p>
+<ul>
+<li>Monitoramento do progresso do projeto de software</li>
+<li>Direcionamento do progresso dirigido por objetivos</li>
+</ul>
+<p>Framework consiste</p>
+<ul>
+<li>Métodos</li>
+<li>Práticas</li>
+<li>Kernel Essence</li>
+<li>Linguagem Essence</li>
+</ul>
+<p>O framework se baseia em três aspectos: Cliente, Solução e Esforço, dentro de cada aspecto tem os:  </p>
+<ul>
+<li><p>Alphas: itens com os quais trabalhamos</p>
+</li>
+<li><p>Possuem diversos estados</p>
+</li>
+<li>Cada estado possui uma lista de verificação</li>
+<li><p>Organiza os estados através de cartões</p>
+</li>
+<li><p>Espaços de atividades: itens a fazer</p>
+</li>
+<li>Competências: quais as competências para trabalhar dentro da situação</li>
+</ul>
+<p>Portanto, a estrutura ficaria assim:</p>
+<ul>
+<li><p>Cliente</p>
+</li>
+<li><p>Alphas</p>
+</li>
+<li><p>Oportunidade, Stakeholders</p>
+</li>
+<li><p>Espaços de atividades</p>
+</li>
+<li><p>Competências</p>
+</li>
+<li><p>Solução</p>
+</li>
+<li><p>Alphas</p>
+</li>
+<li><p>Requisitos e Sistemas de Software</p>
+</li>
+<li><p>Espaços de atividades</p>
+</li>
+<li><p>Competências</p>
+</li>
+<li><p>Esforço</p>
+</li>
+<li><p>Alphas</p>
+</li>
+<li><p>Trabalho, Forma de Trabalho e Equipe</p>
+</li>
+<li><p>Espaços de atividades</p>
+</li>
+<li>Competências</li>
+</ul>
+<h3 id="Kernel-do-Essence"><a href="#Kernel-do-Essence" class="headerlink" title="Kernel do Essence"></a>Kernel do Essence</h3><ol>
+<li>Olhar o projeto holisticamente</li>
+</ol>
+<ul>
+<li>Dar atenção de forma holística é observar todos os aspectos do projeto (todos os alpha)</li>
+</ul>
+<ol>
+<li>Monitorar o progresso</li>
+</ol>
+<ul>
+<li>Definir qual o estado atual de um determinado alpha</li>
+<li>Precisa ter a lista de verificação feita para completar um estado no alpha</li>
+</ul>
+<ol>
+<li>Definir a direção e os objetivos do projeto</li>
+</ol>
+<ul>
+<li>Uma vez definido o estado atual</li>
+<li>Definir o estado alvo, qual a direção que vou dar para o projeto</li>
+</ul>
+<ol>
+<li>Decidir como alcançar os objetivos (itens a trabalhar)</li>
+</ol>
+<ul>
+<li>Preciso demonstrar as características chave</li>
+</ul>
+<ol>
+<li>Agir para concluir os itens a trabalhar</li>
+</ol>
+<ul>
+<li>Produzir os itens levantados para atingir o objetivo</li>
+</ul>
+<h3 id="Alphas-relevantes-dentro-da-disciplina"><a href="#Alphas-relevantes-dentro-da-disciplina" class="headerlink" title="Alphas relevantes dentro da disciplina"></a>Alphas relevantes dentro da disciplina</h3><ul>
+<li><p>Requisitos delimitados</p>
+</li>
+<li><p>Sem eles não é possível elaborar a arquitetura definitiva</p>
+</li>
+<li><p>Requisitos coerentes</p>
+</li>
+<li><p>Não há conflitos entre os requisitos funcionais e não funcionais</p>
+</li>
+<li><p>Sistema de Software</p>
+</li>
+<li><p>o primeiro item é certificar que a arquitetura deve ser selecionada</p>
+</li>
+<li>ser capaz de demonstrar a arquitetura selecionada</li>
+</ul>
+<h3 id="Kernel-prove-a-estrutura-e-o-mecanismo-para"><a href="#Kernel-prove-a-estrutura-e-o-mecanismo-para" class="headerlink" title="Kernel provê a estrutura e o mecanismo para:"></a>Kernel provê a estrutura e o mecanismo para:</h3><ul>
+<li>Monitoramento do progresso do projeto</li>
+<li>Reflexão da equipe</li>
+<li>Gerenciamento de riscos</li>
+<li>Direcionamento do projeto</li>
+</ul>
+<blockquote>
+<p>Fundamento do SEMAT Essence é o kernel. Utilizando as práticas e o kernel é possível criar um método personalizado.</p>
+</blockquote>
+
+        
+      </div>
+      <div class="post-footer clearfix">
+        <a href="/2015/05/19/projeto-nos-modelos-de-qualidade/" class="post-more waves-button-light">MORE</a>
+      </div>
+    
+
+  </article>
+
+
+</li>
+  
+    <li class="post-list-item">
+  <article id="post-projeto-arquitetural" class="article article-type-post" itemscope itemprop="blogPost">
+    
+      
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2015/05/17/projeto-arquitetural/">Projeto Arquitetural</a>
+    </h3>
+  
+
+
+
+      <div class="post-meat flex-row">
+        <div class="flex-col">
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/disciplina2/">disciplina2</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/modulo2/">modulo2</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/unidade3/">unidade3</a></li></ul>
+</div>
+        <time datetime="2015-05-17T17:49:00.000Z" itemprop="datePublished" class="post-tiem">
+  17/05/2015
+</time>
+      </div>
+      <div class="post-content" itemprop="postContent" >
+        
+          <h2 id="Fundamentos-da-Analise-Arquitetural"><a href="#Fundamentos-da-Analise-Arquitetural" class="headerlink" title="Fundamentos da Análise Arquitetural"></a>Fundamentos da Análise Arquitetural</h2><p>Trata de modelos que ajuda o implementador a construir o software.  </p>
+<h3 id="Questoes-Principais"><a href="#Questoes-Principais" class="headerlink" title="Questões Principais"></a>Questões Principais</h3><ul>
+<li><p>Como decompor um sistema em diversos pacotes e subsistemas?</p>
+</li>
+<li><p>Quais classes devem estar em cada subsistema de forma a permitir mais reutilização de subsistemas?</p>
+</li>
+<li>Quais dependências entre os subsistemas?</li>
+<li><p>Quais os conectores devem ser usados entre os subsistemas?</p>
+</li>
+<li><p>Como distribuir cada um dos subsistemas em diferentes nós de processamento?</p>
+</li>
+<li><p>Apenas um subsistema em cada maquina ou mais de um?</p>
+</li>
+<li>Qual o impacto no resto do sistema se agruparmos ou separarmos subsistemas em diferentes nós?</li>
+</ul>
+<h3 id="Propriedades-do-sistema"><a href="#Propriedades-do-sistema" class="headerlink" title="Propriedades do sistema"></a>Propriedades do sistema</h3><ul>
+<li>Escala: número de usuários </li>
+<li>Capacidade: de atender ao um certo número de requisições</li>
+<li>Degradação: como o sistema se comporta (degrada) se a capacidade for ultrapassada</li>
+<li>Desempenho</li>
+<li>Portabilidade</li>
+</ul>
+<h3 id="Projeto-arquitetural-identifica"><a href="#Projeto-arquitetural-identifica" class="headerlink" title="Projeto arquitetural identifica:"></a>Projeto arquitetural identifica:</h3><ul>
+<li>Componentes: definem onde ocorre o processamento;</li>
+<li>Conectores: mediam as interações entre os componentes;</li>
+<li>Propriedades: informações para a construção e análise;</li>
+</ul>
+<h3 id="Modelo-“4-1”-visoes-arquiteturais"><a href="#Modelo-“4-1”-visoes-arquiteturais" class="headerlink" title="Modelo “4+1” visões arquiteturais"></a>Modelo “4+1” visões arquiteturais</h3><p><a href="http://4.bp.blogspot.com/-AzX4hvxeaS8/VVeHiZ4fMSI/AAAAAAAAC7Q/6qvlAFL2EFs/s1600/slide_3.jpg" target="_blank" rel="external"><img src="http://4.bp.blogspot.com/-AzX4hvxeaS8/VVeHiZ4fMSI/AAAAAAAAC7Q/6qvlAFL2EFs/s400/slide_3.jpg" alt=""></a></p>
+<ul>
+<li>Visão de projeto ou lógica: estamos interessados em definir a funcionalidade do sistema, vocabulário dos objetos de negócio do sistema</li>
+<li>Visão de implementação ou componentes: definir o gerenciamento da configuração, quais os elementos que vão fazer parte da configuração do sistema. Aqui definimos como fazer o build do sistema.</li>
+<li>Visão de processo: interessados na visão de execução do sistema, nessa etapa que nos preocupamos com as propriedades do sistema (acima). </li>
+<li>Visão de implantação: mostra como os componentes de software estão mapeados pelos componentes de hardware. (Topologia, distribuição, fornecimento, instalação, etc)</li>
+<li>Visão de caso de uso: diagrama de casos de uso.</li>
+</ul>
+<blockquote>
+<p>A visões são como as diferentes visões de uma casa, como a planta baixa, projeto elétrico, projeto hidráulico, maquete 3D, etc.</p>
+</blockquote>
+<h3 id="Pontos-de-Variacao-e-Evolucao"><a href="#Pontos-de-Variacao-e-Evolucao" class="headerlink" title="Pontos de Variação e Evolução"></a>Pontos de Variação e Evolução</h3><ul>
+<li>Pontos de Variação: variações previstas nos requisitos do sistema.</li>
+<li>Ponto de evolução: pontos especulativos de variação que podem surgir no futuro mas que não estão presentes nos requisitos existentes.</li>
+</ul>
+<p><strong>Passos para fazer análise arquitetural:</strong></p>
+<ul>
+<li>Identificar e analisar os requisitos não-funcionais e funcionais</li>
+<li>Analisar alternativas e criar soluções que resolvam o impacto, documentando as decisões arquiteturais</li>
+</ul>
+<p><strong>Fatores arquiteturais</strong></p>
+<ul>
+<li><p>Segurança</p>
+</li>
+<li><p>Como o controle de segurança afeta o projeto do sistema para evitar uso indevido do sistema?</p>
+</li>
+<li><p>Confiabilidade, tolerância a falhas</p>
+</li>
+<li><p>Como os requisitos de confiabilidade e tolerância a falhas afetam o projeto?</p>
+</li>
+<li><p>Custo</p>
+</li>
+<li><p>Custo de software de terceiros adquiridos vai afetar os lucros, etc.</p>
+</li>
+<li><p>Adaptabilidade, configurabilidade</p>
+</li>
+<li><p>Como afetam o projeto?</p>
+</li>
+<li><p>Desempenho, capacidade e degradação</p>
+</li>
+<li><p>Como afetam o projeto?</p>
+</li>
+<li><p>Usabilidade</p>
+</li>
+<li><p>Como impacta no projeto?</p>
+</li>
+<li><p>Restrições de projeto</p>
+</li>
+<li><p>Como as interfaces externas com outros sistemas, o ambiente de desenvolvimento e execução impactarão na solução?</p>
+</li>
+<li><p>Restrições de Processo</p>
+</li>
+<li><p>Como a documentação exigida, normas e processos a serem seguidos no desenvolvimento vão impactar a arquitetura?</p>
+</li>
+</ul>
+<h2 id="Padroes-Arquiteturais"><a href="#Padroes-Arquiteturais" class="headerlink" title="Padrões Arquiteturais"></a>Padrões Arquiteturais</h2><p>São formas conhecidas para se estruturar um sistema. Se diferem um dos outros nos componentes, nas formas de conexão e formas de se conectar.<strong>Categorias de padrões arquiteturais</strong></p>
+<ul>
+<li><p>Sistemas de fluxo de dados;</p>
+</li>
+<li><p>Disponibilidade dos dados controla a computação;</p>
+</li>
+<li>Estrutura baseia-se na transferência ordenada de dados entre componentes;</li>
+<li>Não há outra forma de interação entre componentes;</li>
+<li>Variações: Batch sequencial, pipe-e-filtro e padrão de camadas;</li>
+<li><p>Exemplo: comunicação entre camadas de redes (ISO/OSI)</p>
+</li>
+<li><p>Sistemas de chamada-e-retorno;</p>
+</li>
+<li><p>Sistema em rede;</p>
+</li>
+<li><p>Cliente-servidor: </p>
+</li>
+<li><p>Em geral, clientes iniciam as computações e interagem com usuários. Servidores: executam as computações e provêm recursos.</p>
+</li>
+<li><p>P2P</p>
+</li>
+<li><p>Componentes executam em máquinas distintas;</p>
+</li>
+<li>Cada componente age como ambos, cliente e servidor.</li>
+<li>Em geral, existe um servidor centralizado onde os componentes se registram.</li>
+<li><p>É um padrão resiliente. Tolera a remoção de componentes.</p>
+</li>
+<li><p>Sistemas interativos;</p>
+</li>
+<li>Repositórios;</li>
+<li><p>Sistemas orientados a serviços;</p>
+</li>
+<li><p>Componentes são serviços de organizações possivelmente diferentes (provedores).</p>
+</li>
+<li>Conectores são XML</li>
+<li>Aplicações que requisitam os serviços, são os consumidores</li>
+<li>Existe um diretório de serviços (banco de dados) onde eles podem ser descobertos</li>
+<li><p>Requisitante pode ser uma aplicação, web service, mobile, etc.</p>
+</li>
+<li><p>Computação nas nuvens</p>
+</li>
+<li><p>Funcionalidade é toda através de serviços</p>
+</li>
+<li>Está fora da empresa que necessita do serviço</li>
+<li>As maquinas são virtualizadas. Configuradas de acordo com a necessidade, como o S.O.</li>
+<li>Os recursos são escaláveis</li>
+<li>Gerenciamento</li>
+<li><p>Serviços são providos no modelo de pilha</p>
+</li>
+<li><p>IaaS: Infra Ex: EC2 (Amazon)</p>
+</li>
+<li>PaaS: Plataforma Ex: Google AppEngine, MS Azure</li>
+<li>SaaS: Software (Aplicação) Ex: SalesForce</li>
+</ul>
+<p><a href="http://1.bp.blogspot.com/--OZ4gvN-j_s/VVijNYNrVOI/AAAAAAAAC7k/WMD_ZXa9bPE/s1600/Divisao%2Bcloud.jpg" target="_blank" rel="external"><img src="http://1.bp.blogspot.com/--OZ4gvN-j_s/VVijNYNrVOI/AAAAAAAAC7k/WMD_ZXa9bPE/s320/Divisao%2Bcloud.jpg" alt=""></a>  </p>
+<h2 id="Arquitetura-na-UML"><a href="#Arquitetura-na-UML" class="headerlink" title="Arquitetura na UML"></a>Arquitetura na UML</h2><p>Voltar no modelo 4+1</p>
+<ul>
+<li><p>Visão de casos de uso</p>
+</li>
+<li><p>É um resumo dos casos de uso mais significativos</p>
+</li>
+<li>Ilustra a cobertura arquitetural mais significativa</li>
+<li><p>O caso de uso “Processar Venda” exercita vários elementos arquiteturais, por isso, é interessante detalhar. Podemos incluir realizações, contratos de operação, diagramas de interação.</p>
+</li>
+<li><p>Visão lógica ou de projeto</p>
+</li>
+<li><p>Mostra a organização conceitual do software, em termos de camadas, subsistemas, pacotes, frameworks, classes importantes.</p>
+</li>
+<li><p>É uma visão para o modelo de projeto do RUP</p>
+</li>
+<li><p>Visão de implementação ou de componentes</p>
+</li>
+<li><p>Inclui os componentes utilizados para montar e entregar o sistema físico</p>
+</li>
+<li><p>Um componente de software é uma unidade indivisível de um sistema. Ex: Banco de dados, navegador web.</p>
+</li>
+<li><p>Podem ser substituídos por outros componentes que fazem a mesma coisa</p>
+</li>
+<li>Caixa preta com interface bem definida</li>
+<li><p>Fornece ou requisita serviços a outros componentes</p>
+</li>
+<li><p>Visão de implantação</p>
+</li>
+<li><p>Representa a topologia física do sistema e componentes que são executados nessa topologia. Mostra um mapeamento entre elementos de hardware e software.</p>
+</li>
+<li><p>Elementos do diagrama são os nós de processamento e conexões.</p>
+</li>
+<li><p>Nós: processadores, sensores, etc. (executam software)</p>
+</li>
+<li>Conexões: meio físicos de comunicação (cabos), ou protocolos (tcp, etc)</li>
+</ul>
+<h3 id="Arquitetura-na-UML-1"><a href="#Arquitetura-na-UML-1" class="headerlink" title="Arquitetura na UML"></a>Arquitetura na UML</h3><p>Como representar arquitetura na UML, utiliza os conceitos de:</p>
+<ul>
+<li><p>Pacotes</p>
+</li>
+<li><p>É um mecanismo para agrupar vários artefatos de um modelo</p>
+</li>
+<li>Podem conter outros pacotes</li>
+<li><p>Podem existir relacionamentos entre pacotes</p>
+</li>
+<li><p>Interfaces </p>
+</li>
+<li><p>É um conjunto de especificações de serviço</p>
+</li>
+<li>Não contém estrutura interna (diferente de uma classe abstrata)</li>
+<li><p>Quando uma classe implementa as operações de uma interface, a classe realiza essa interface</p>
+</li>
+<li><p>Subsistemas</p>
+</li>
+</ul>
+
+        
+      </div>
+      <div class="post-footer clearfix">
+        <a href="/2015/05/17/projeto-arquitetural/" class="post-more waves-button-light">MORE</a>
+      </div>
+    
+
+  </article>
+
+
+</li>
+  
+    <li class="post-list-item">
+  <article id="post-projeto-comportamental" class="article article-type-post" itemscope itemprop="blogPost">
+    
+      
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2015/05/16/projeto-comportamental/">Projeto Comportamental</a>
+    </h3>
+  
+
+
+
+      <div class="post-meat flex-row">
+        <div class="flex-col">
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/disciplina2/">disciplina2</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/modulo2/">modulo2</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/unidade2/">unidade2</a></li></ul>
+</div>
+        <time datetime="2015-05-16T20:23:00.000Z" itemprop="datePublished" class="post-tiem">
+  16/05/2015
+</time>
+      </div>
+      <div class="post-content" itemprop="postContent" >
+        
+          <h2 id="Contrato-de-Operacoes"><a href="#Contrato-de-Operacoes" class="headerlink" title="Contrato de Operações"></a>Contrato de Operações</h2><ul>
+<li>Ajudam a definir o comportamento do sistema, descrevendo o resultado das execuções das operações do sistema</li>
+<li>Objetos de domínio: as classes dão origem aos objetos do sistema, os objetos mudam de estado.</li>
+</ul>
+<h3 id="Secoes-de-um-contrato"><a href="#Secoes-de-um-contrato" class="headerlink" title="Seções de um contrato"></a>Seções de um contrato</h3><ul>
+<li>Operação: nome e parâmetros da operação</li>
+<li>Referências cruzadas: casos de uso nos quais esta operação deve ocorrer</li>
+<li>Pré-condição: hipóteses dignas de nota sobre o estado do sistema. Essas hipóteses não serão testadas na lógica da operação.</li>
+<li>Pós-condição: o estado dos objetos no modelo de domínio, concluída a operação. <span style="background-color: yellow;">É importante descrever na mudança de estado: criação ou remoção de instância, criação ou exclusão de associação, alteração de atributo.</span></li>
+</ul>
+<blockquote>
+<p>Descrever o resultado sem se importar “como”.</p>
+</blockquote>
+<p>Quando usar contratos  </p>
+<ul>
+<li>É importante utilizar contratos quando existem muitos objetos de domínio que estão sendo criados, modificados, etc. num único passo do caso de uso. </li>
+<li>É útil usar contratos também quando não é claro quais objetos serão atualizados pela descrição dos casos de uso.</li>
+<li>Não é necessário fazer contratos para toda operação do sistema, em geral, só o caso de uso basta.</li>
+</ul>
+<p>Para fazer contratos</p>
+<ul>
+<li>Identifique operações de sistema a partir dos <span style="background-color: yellow;">diagramas de sequência</span> de sistema.</li>
+<li>Para operações do sistema que são complexas</li>
+<li><p>Para descrever as pós condições, use as seguintes categorias:</p>
+</li>
+<li><p>Criação e remoção de instância</p>
+</li>
+<li>Modificação de atributo</li>
+<li>Associação formadas e desfeitas</li>
+</ul>
+<h2 id="Responsabilidades-principios-e-padroes-de-projeto"><a href="#Responsabilidades-principios-e-padroes-de-projeto" class="headerlink" title="Responsabilidades, princípios e padrões de projeto"></a>Responsabilidades, princípios e padrões de projeto</h2><p>Responsabilidade é um contrato que uma classe tem. Existem dois tipos de responsabilidade:  </p>
+<ol>
+<li>Conhecer dados privados. São derivadas dos atributos dos objetos </li>
+<li>Fazer: criar objetos, realizar cálculo, etc. São derivadas dos métodos.</li>
+</ol>
+<p>Responsabilidade pode envolver um ou mais métodos de um ou mais objetos.Interações são trocas de mensagem entre objetos no sistema, e quando se troca mensagens estamos atribuindo responsabilidades a um objeto, já que ocorre a interação de um objeto com outro.  </p>
+<h3 id="Padroes-de-Projeto"><a href="#Padroes-de-Projeto" class="headerlink" title="Padrões de Projeto"></a>Padrões de Projeto</h3><p>Padrões de desenvolvimento: expressam uma solução para um determinado problema em um determinado contexto.  </p>
+<p>Padrões arquiteturais: expressam uma solução num nível mais alto de abstração.  </p>
+<p>Exemplos de padrão arquitetural:  </p>
+<ul>
+<li>Modelo visão-controle: MVC</li>
+<li>Camadas: só se comunica com as camadas adjacentes</li>
+<li><p>Padrões GRASP</p>
+</li>
+<li><p>Controlador</p>
+</li>
+<li>Coesão alta</li>
+<li>Acoplamento baixo</li>
+<li><p>Polimorfismo</p>
+</li>
+<li><p>Padrões de domínio: o principal foco deve ser o domínio, a logica do domínio.</p>
+</li>
+<li><p>Entidades</p>
+</li>
+<li>Objetos de valor</li>
+<li>Serviços</li>
+<li>Fábricas</li>
+</ul>
+<h3 id="Principios-de-projeto"><a href="#Principios-de-projeto" class="headerlink" title="Princípios de projeto"></a>Princípios de projeto</h3><p>Representam um conjunto de diretrizes que ajudam a evitar que um projeto fiquei ruim ou de baixa qualidade. Deve ser evitado nos projetos:</p>
+<ul>
+<li><strong>Rigidez:</strong> sistema muito acoplado</li>
+<li><strong>Fragilidade</strong>: uma parte para de funcionar quando se faz alteração em outra parte não relacionada.</li>
+<li><strong>Imobilidade</strong>: muito difícil ou arriscado separar uma parte da aplicação para ser usada em outro projeto.</li>
+<li><strong>Viscosidade</strong>: fazer coisas corretas é mais difícil do que fazer coisas erradas.</li>
+<li><strong>Complexidade</strong> desnecessária</li>
+<li><strong>Repetição desnecessária</strong>: projeto possui estruturas repetidas que não podem ser unificadas.</li>
+<li><strong>Opacidade</strong>: intenção do projeto não está bem expressada.</li>
+</ul>
+<p>Deve-se procurar praticar:</p>
+<ul>
+<li>Única responsabilidade</li>
+<li>Manter o controller simples e a lógica deve ficar no domínio </li>
+<li>Restringir as associações ao máximo, torna o projeto mais claro</li>
+</ul>
+<h2 id="Responsabilidades-interacoes-e-realizacoes-de-casos-de-uso"><a href="#Responsabilidades-interacoes-e-realizacoes-de-casos-de-uso" class="headerlink" title="Responsabilidades, interações e realizações de casos de uso"></a>Responsabilidades, interações e realizações de casos de uso</h2><p>Mensagens são utilizadas com objetivo de cumprir as responsabilidades. Uma mensagem indica uma operação existente no objeto receptor.  </p>
+<h3 id="Construindo-diagramas-de-interacao"><a href="#Construindo-diagramas-de-interacao" class="headerlink" title="Construindo diagramas de interação"></a>Construindo diagramas de interação</h3><p>A maioria dos objetos envolvidos nesse diagrama já foram identificados no diagrama de classe de domínio. Diagrama de interação vai estar consistente com os casos de uso e as classes de domínio.  </p>
+<p>No ciclo de vida iterativo/incremental os modelos vão evoluindo, então:  </p>
+<p>Modelo de classes serve como base para o modelo de interações<br>Mod. Interações ajuda o refinamento do modelo de casos de uso<br>Mod. Interações ajuda gerar operações para o modelo de classes<br>Mod. Interações gera novos atributos para o modelo de classes  </p>
+<p>Exemplo de diagramas de interação de um PDV  </p>
+<h2 id="Diagrama-de-Classes-de-Projeto"><a href="#Diagrama-de-Classes-de-Projeto" class="headerlink" title="Diagrama de Classes de Projeto"></a>Diagrama de Classes de Projeto</h2><p>Classes de projeto ilustram as especificações para as classes de software e interfaces.<br>Acontece em paralelo ao diagrama de interação  </p>
+<h3 id="Criando-classes-de-projeto"><a href="#Criando-classes-de-projeto" class="headerlink" title="Criando classes de projeto"></a>Criando classes de projeto</h3><ul>
+<li>Identificar as classes que fazem parte do diagrama;</li>
+<li>Acrescentar atributos identificados no modelo de domínio;</li>
+<li>Acrescentar operações (analisando o diagrama de interação);</li>
+</ul>
+<h3 id="Visibilidade-entre-objetos"><a href="#Visibilidade-entre-objetos" class="headerlink" title="Visibilidade entre objetos"></a>Visibilidade entre objetos</h3><p>É a habilidade de um objeto ver ou ter referência a outro objeto.  </p>
+<ul>
+<li><p>Visibilidade por atributo</p>
+</li>
+<li><p>Existe de A pra B quando B é um atributo de A</p>
+</li>
+<li><p>Visibilidade por parâmetro</p>
+</li>
+<li><p>Existe de A pra B quando B é passado como parâmetro para um método de A</p>
+</li>
+<li><p>Visibilidade local</p>
+</li>
+<li><p>Existe quando B é declarado como um objeto local dentro de um método de A</p>
+</li>
+<li><p>Visibilidade global</p>
+</li>
+<li><p>Existe quando B é declarado como um objeto global em A</p>
+</li>
+</ul>
+<blockquote>
+<p><strong>Navegabilidade</strong> é a propriedade do papel que indica que é possível navegar unidirecionalmente por meio da associação de objetos da classe de origem para objetos da classe alvo. (Seta nos diagramas de classe para ligar duas classes)</p>
+</blockquote>
+<h2 id="Diagrama-de-transicao-de-estados"><a href="#Diagrama-de-transicao-de-estados" class="headerlink" title="Diagrama de transição de estados"></a>Diagrama de transição de estados</h2><p>Esses diagramas são uma complementação para modelagem comportamental.  </p>
+<h3 id="Estado"><a href="#Estado" class="headerlink" title="Estado"></a>Estado</h3><ul>
+<li><strong>Estado</strong> é uma situação na vida de um objeto em determinado momento no tempo em que ele satisfaz a alguma condição ou realiza alguma atividade.</li>
+<li>Cada estado é determinado pelos valores dos atributos ou pela ligações com outros objetos.</li>
+<li>Em geral, possui um único estado inicial pode ou não possuir estados finais.</li>
+</ul>
+<h3 id="Evento"><a href="#Evento" class="headerlink" title="Evento"></a>Evento</h3><ul>
+<li>Uma transição possui um evento associado</li>
+<li>Um evento é algo que acontece em algum ponto do tempo e que pode modificar o estado de um objeto. Ex. Pedido Realizado, Fatura paga, Cheque devolvido, etc.</li>
+<li>Condição de Guarda é uma espécie de “If” que valida se a transição vai ocorrer quando for disparada por um evento.</li>
+</ul>
+<h3 id="Acoes"><a href="#Acoes" class="headerlink" title="Ações"></a>Ações</h3><ul>
+<li>Ações são tudo que um objeto realiza quando transita de um estado para outro.</li>
+<li>É expressa em termos de atributos, operações, associações da classe, etc. </li>
+<li>Está associada sempre a uma transição. E é executada somente se uma transição for disparada.</li>
+</ul>
+<h3 id="Objetos-dependentes-de-estado"><a href="#Objetos-dependentes-de-estado" class="headerlink" title="Objetos dependentes de estado"></a>Objetos dependentes de estado</h3><blockquote>
+<p>Os diagramas de estado devem ser criados para objetos dependentes de estados, ou seja, objetos que reagem diferente dependendo de seu estado.</p>
+</blockquote>
+<h3 id="Tipos"><a href="#Tipos" class="headerlink" title="Tipos"></a>Tipos</h3><p>Existem dois tipos de objetos dependentes de estado:</p>
+<ul>
+<li><p><strong>Objetos Reativos</strong>: </p>
+</li>
+<li><p>Complexos: telefone, carro, microondas, elevador</p>
+</li>
+<li>Transações ou objetos de negócio: venda, pedido, pagamento reagem a eventos como cancelar, adiar, faturar, etc.</li>
+<li>Protocolos de comunicação</li>
+<li>Fluxos de navegação de pagina, janela, menu, interface com usuário</li>
+<li><p>Controlador de sessão de um fluxo de interface em páginas web, guarda o estado da sessão no cliente web e dependendo desse estado ele reage diferente.</p>
+</li>
+<li><p><strong>Sequências de operações</strong>: as operações que chegam ao sistema tem que chegar numa determinada ordem de estados. Para definir essa ordem, usamos o diagrama de estados. Ex. Estados: EsperandoPorVenda -&gt; EntrandoItens -&gt; EsperandoPagamento -&gt; AutorizandoPagamento.</p>
+</li>
+</ul>
+
+        
+      </div>
+      <div class="post-footer clearfix">
+        <a href="/2015/05/16/projeto-comportamental/" class="post-more waves-button-light">MORE</a>
+      </div>
+    
+
+  </article>
+
+
+</li>
+  
+    <li class="post-list-item">
+  <article id="post-projeto-de-sistemas-introducao-e-contextualizacao" class="article article-type-post" itemscope itemprop="blogPost">
+    
+      
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2015/05/04/projeto-de-sistemas-introducao-e-contextualizacao/">Projeto de Sistemas: Introdução e Contextualização</a>
+    </h3>
+  
+
+
+
+      <div class="post-meat flex-row">
+        <div class="flex-col">
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/disciplina2/">disciplina2</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/modulo2/">modulo2</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/unidade1/">unidade1</a></li></ul>
+</div>
+        <time datetime="2015-05-04T05:56:00.000Z" itemprop="datePublished" class="post-tiem">
+  04/05/2015
+</time>
+      </div>
+      <div class="post-content" itemprop="postContent" >
+        
+          <p>Objetivos do projeto de software:  </p>
+<ul>
+<li>Definir um modelo implementável que atenda aos requisitos</li>
+<li>Garantir que todos os requisitos sejam satisfeitos</li>
+</ul>
+<h4 id="Atividades-de-projeto"><a href="#Atividades-de-projeto" class="headerlink" title="Atividades de projeto"></a>Atividades de projeto</h4><ul>
+<li><p>Projeto da arquitetura do sistema</p>
+</li>
+<li><p>Decomposição em componentes</p>
+</li>
+<li><p>Definição da interface entre eles</p>
+</li>
+<li><p>Projeto das interfaces do sistema</p>
+</li>
+<li><p>com usuário</p>
+</li>
+<li><p>com outros sistemas</p>
+</li>
+<li><p>Projeto detalhado comportamental</p>
+</li>
+<li><p>Projeto dos objetos e suas interações</p>
+</li>
+<li><p>Projeto da persistência de dados</p>
+</li>
+<li><p>Documentação do projeto</p>
+</li>
+</ul>
+<h4 id="Avaliacao-do-projeto-considerar-a-qualidade-do-projeto"><a href="#Avaliacao-do-projeto-considerar-a-qualidade-do-projeto" class="headerlink" title="Avaliação do projeto (considerar a qualidade do projeto)"></a>Avaliação do projeto (considerar a qualidade do projeto)</h4><ul>
+<li><p>Determina se o projeto satisfaz os requisitos do sistema</p>
+</li>
+<li><p>Importante verificar se todos os requisitos foram considerados</p>
+</li>
+<li><p>Como o projeto atende/satisfaz um requisito</p>
+</li>
+<li><p>Determina se o projeto pode ser entendido pelos implementadores e testadores do sistema</p>
+</li>
+</ul>
+<h4 id="Diagramas-que-contemplam-a-etapa-de-projeto"><a href="#Diagramas-que-contemplam-a-etapa-de-projeto" class="headerlink" title="Diagramas que contemplam a etapa de projeto"></a>Diagramas que contemplam a etapa de projeto</h4><ul>
+<li><p>Casos de uso</p>
+</li>
+<li><p>Diagrama</p>
+</li>
+<li><p>Especificação do caso de uso</p>
+</li>
+<li><p>Diagrama de Classes</p>
+</li>
+<li><p>Diagrama de Sequencia</p>
+</li>
+<li><p>Superficial (ainda na analise)</p>
+</li>
+<li><p>Detalhado</p>
+</li>
+<li><p>Diagrama de Componentes (projeto arquitetural)</p>
+</li>
+<li>Diagrama de Implantação</li>
+</ul>
+<h3 id="Principios-de-Projeto"><a href="#Principios-de-Projeto" class="headerlink" title="Princípios de Projeto"></a>Princípios de Projeto</h3><ul>
+<li>Considerar diversas abordagens (soluções candidatas) que atenda um requisito e outro</li>
+<li>Precisa ser rastreável entre os elementos de análise e os elementos de projeto</li>
+<li>Utilizar padrões ao invés de reinventar a roda</li>
+<li>Projeto precisa minimizar a distância entre o software e o mundo real (projeto que conecta os dois mundos)</li>
+<li>Precisa ser estruturado para acomodar mudanças. É certo que o software vai mudar!</li>
+<li>Precisa ser avaliado quanto a sua qualidade em cada etapa</li>
+</ul>
+<h3 id="Conceitos-de-Projeto"><a href="#Conceitos-de-Projeto" class="headerlink" title="Conceitos de Projeto"></a>Conceitos de Projeto</h3><ol>
+<li>Abstração: sistema nasce num nível alto e desce até o código</li>
+<li>Refinamento: elaboração maior do nível de detalhes (complementar da abstração)</li>
+<li>Modularização: sistemas divididos em componentes</li>
+<li>Ocultação de Informações: sugere que cada módulo deve conter decisões de projeto. Modulo publica na interface só o que importa. Deve conter um segredo.</li>
+</ol>
+<h2 id="Projetos-de-Software-no-RUP"><a href="#Projetos-de-Software-no-RUP" class="headerlink" title="Projetos de Software no RUP"></a>Projetos de Software no RUP</h2><p>Princípios essenciais do RUP</p>
+<ul>
+<li><span style="background-color: yellow;">-&gt; Atacar os riscos de forma rápida e contínua</span></li>
+<li>Garantir que se está provendo algo de valor ao cliente</li>
+<li><span style="background-color: yellow;">-&gt; Concentrar-se em produzir software executável</span></li>
+<li><span style="background-color: yellow;">-&gt; Acomodar mudanças no projeto</span></li>
+<li><span style="background-color: yellow;">-&gt; Definir a arquitetura o mais cedo possível</span></li>
+<li><span style="background-color: yellow;">-&gt; Construir o sistema com componentes</span></li>
+<li>Trabalhar em equipe</li>
+<li>Fazer da qualidade uma forma de vida</li>
+</ul>
+<p><span style="background-color: yellow;">-&gt; Impactam na etapa de projeto do sistema</span>  </p>
+<ul>
+<li>Atacar os riscos: <span style="background-color: #ffe599;">RUP prega que devemos atacar primeiro os problemas que apresentam o maior risco para o sucesso do projeto.</span> É diferente do modelo em cascata nesse ponto. É preciso testar a arquitetura logo no inicio do projeto através de protótipos arquiteturais.</li>
+<li>Construir o sistema com componentes: Componentes separam a interface da implementação. Possibilita a reutilização de partes. Reduz o impacto de mudanças.</li>
+<li>Desenvolvimento iterativo e incremental</li>
+<li><p>Fases e atividades do RUP</p>
+</li>
+<li><p>Concepção: entender o escopo e construir o caso de negócio</p>
+</li>
+<li><p>Objetivos:</p>
+</li>
+<li><p>Compreender o que construir</p>
+</li>
+<li>Identificar funcionalidades chave</li>
+<li>Determinar ao menos uma solução possível </li>
+<li>Custos, prazos, riscos, qual processo, qual ferramentas</li>
+<li><p>Decidir se deve continuar ou cancelar</p>
+</li>
+<li><p>Elaboração: reduzir os riscos técnicos, criar a arquitetura do sistema</p>
+</li>
+<li><p>Tem uma ou mais iterações, na primeira: Identificar cenários críticos, criar protótipos para testar esses cenários, fazer o projeto inicial do BD, detalhar os casos de uso de maior prioridade, validar arquitetura. Na segunda iteração, consertar problemas da primeira iteração, fechar projeto do BD, detalhar os casos de uso restantes, garantir que a arquitetura está estável.</p>
+</li>
+<li><p>Objetivos:</p>
+</li>
+<li><p>Detalhar os requisitos</p>
+</li>
+<li>Projetar, implementar e validar arquitetura</li>
+<li>Mitigar os riscos principais</li>
+<li>Revisar estimativas de prazo e custo</li>
+<li>Refinar o processo</li>
+<li><p>Implantar ferramentas</p>
+</li>
+<li><p>Construção: construir versão operacional do sistema</p>
+</li>
+<li>Transição: construir versão final do produto e entregar o cliente</li>
+<li>Marcos: ao final de cada fase há marcos. </li>
+</ul>
+<h3 id="Arquitetura"><a href="#Arquitetura" class="headerlink" title="Arquitetura"></a>Arquitetura</h3><h4 id="Para-projetar-a-arquitetura"><a href="#Para-projetar-a-arquitetura" class="headerlink" title="Para projetar a arquitetura:"></a>Para projetar a arquitetura:</h4><ul>
+<li>Componentes do sistema e suas interfaces</li>
+<li>Decidir se cada componente será desenvolvido, reutilizado, comprado</li>
+<li>Definir como os componentes vão interagir</li>
+</ul>
+<h4 id="Implementacao"><a href="#Implementacao" class="headerlink" title="Implementação"></a>Implementação</h4><ul>
+<li>Criar protótipo arquitetural para validar a arquitetura</li>
+<li>Projetar casos de uso críticos </li>
+<li>Consolidar e empacotar classes</li>
+<li>Garantir uma cobertura arquitetural</li>
+<li>Projetar BD</li>
+<li>Identificar padrões</li>
+<li>Delinear aspectos de concorrência e distribuição</li>
+<li>Implementar cenários críticos</li>
+<li>Integrar componentes</li>
+<li>Testar cenários mais críticos</li>
+</ul>
+<h4 id="Prototipo-arquitetural"><a href="#Prototipo-arquitetural" class="headerlink" title="Protótipo arquitetural"></a>Protótipo arquitetural</h4><p><span style="background-color: yellow;">A arquitetura é definida com base nos casos de uso mais significativos.</span> Para se fazer um protótipo que represente bem a arquitetura do sistema, deve-se selecionar os casos de uso mais significativos pro sistema e desenvolver o protótipo em cima desses casos de uso.</p>
+<h4 id="Cobertura-arquitetural"><a href="#Cobertura-arquitetural" class="headerlink" title="Cobertura arquitetural"></a>Cobertura arquitetural</h4><p>Garante que todos os elementos arquiteturais sejam cobertos através de um caso de uso.  </p>
+<h4 id="Validacao-arquitetura"><a href="#Validacao-arquitetura" class="headerlink" title="Validação arquitetura"></a>Validação arquitetura</h4><p>Protótipo arquitetural tem que exibir as características adequadas.  </p>
+<h2 id="Diagramas-de-Interacao"><a href="#Diagramas-de-Interacao" class="headerlink" title="Diagramas de Interação"></a>Diagramas de Interação</h2><p>Diagrama de Sequencia do Sistema - DSS</p>
+<ul>
+<li>Ilustram as interações dos atores com o sistema</li>
+<li>As operações iniciadas por eles</li>
+<li>As respostas do sistema</li>
+<li>É uma figura que mostra os eventos que os atores geram e a ordem que eles acontecem.</li>
+<li>Deve ser feito um diagrama para a sequencia de sucesso e para cenários alternativos</li>
+</ul>
+<p><strong>Modelagem Estrutural:</strong> Diz respeitos de componentes que vão compor o sistema.<strong>Modelagem Comportamental:</strong> Ajuda projetar a lógica, comportamento do código, corpo dos métodos.  </p>
+<p>Dois tipos de diagramas de interação:  </p>
+<ul>
+<li>Diagrama de sequência: foi visto no vídeo</li>
+<li>Diagrama de comunicação: apresentam as mensagens enfatizando relacionamentos.</li>
+</ul>
+<p>Ambos são equivalentes.</p>
+
+        
+      </div>
+      <div class="post-footer clearfix">
+        <a href="/2015/05/04/projeto-de-sistemas-introducao-e-contextualizacao/" class="post-more waves-button-light">MORE</a>
+      </div>
+    
+
+  </article>
+
+
+</li>
+  
+    <li class="post-list-item">
+  <article id="post-normas-aplicadas-a-qualidade-de-software" class="article article-type-post" itemscope itemprop="blogPost">
+    
+      
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2015/04/30/normas-aplicadas-a-qualidade-de-software/">Normas Aplicadas a Qualidade de Software</a>
+    </h3>
+  
+
+
+
+      <div class="post-meat flex-row">
+        <div class="flex-col">
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/disciplina1/">disciplina1</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/modulo2/">modulo2</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/unidade3/">unidade3</a></li></ul>
+</div>
+        <time datetime="2015-04-30T05:02:00.000Z" itemprop="datePublished" class="post-tiem">
+  30/04/2015
+</time>
+      </div>
+      <div class="post-content" itemprop="postContent" >
+        
+          <h2 id="ISO-9126"><a href="#ISO-9126" class="headerlink" title="ISO 9126"></a>ISO 9126</h2><p>Define características e sub-características. Norma técnica sempre te dá o roteiro sobre “o que fazer” e não como.Define um conjunto de 6 visões da qualidade para produtos de software:</p>
+<ol>
+<li><strong>Funcionalidade</strong>: entender quais as funções;</li>
+</ol>
+<ul>
+<li><strong>Adequação</strong>: medir o tanto que o software é adequado aos processos do cliente (mais usada)</li>
+<li><strong>Acurácia</strong>: precisão, saber se o software entrega dados corretos e precisos</li>
+<li><strong>Interoperabilidade</strong>: capacidade que o sistema tem de integrar com outros sistemas</li>
+<li><strong>Conformidade</strong>: os dados gerados pelo sistema estão de acordo com as regras do negócio. Ex. Calculo do imposto de renda, está fiel ao calculo do IR?</li>
+<li><strong>Segurança</strong>: saber se o sistema evita acessos não autorizados</li>
+</ul>
+<ol>
+<li><strong>Confiabilidade</strong>: o esforço de medir as indisponibilidades do sistemas, diz respeito a falhas</li>
+</ol>
+<ul>
+<li><strong>Maturidade</strong>: frequência de falhas, quanto maior o numero de falhas, menos maduro</li>
+<li><strong>Tolerância a falhas</strong>: robustez do sistema. Reage bem após falha.</li>
+<li><strong>Recuperabilidade</strong>: capacidade de recuperar dados, transações pós falha.</li>
+<li><strong>Conformidade</strong>: Não estar em conformidade com o contrato redigido pelo cliente.</li>
+</ul>
+<ol>
+<li><strong>Usabilidade</strong>: esforço de uso do sistema</li>
+</ol>
+<ul>
+<li><strong>Inteligibilidade</strong>: capacidade que o sistema tem de passar para o usuário o seu propósito.</li>
+<li><strong>Apreensibilidade</strong>: esforço de uso do sistema.</li>
+<li><strong>Atratividade</strong>: capacidade de atração que proporciona ao usuário.</li>
+<li><strong>Operatividade</strong>: instalação do software, colocar disponível, fazer backup, etc. </li>
+<li><strong>Conformidade</strong>: se está em conformidade com padrões de organização, fonte, etc.</li>
+</ul>
+<ol>
+<li><strong>Eficiência</strong>: desempenho</li>
+</ol>
+<ul>
+<li><strong>Comportamento em relação ao tempo</strong>: quanto tempo leva para o sistema te retornar uma informação. </li>
+<li><strong>Comportamento em relação aos recursos</strong>: recursos é memória, CPU, etc. </li>
+<li><strong>Conformidade</strong>: sistema tem entregue dentro de uma eficiência acordada (contrato).</li>
+</ul>
+<ol>
+<li><strong>Manutenibilidade</strong>: esforço de manutenção</li>
+</ol>
+<ul>
+<li><strong>Analisibilidade</strong>: esforço de analisar aonde existe algum problema a ser resolvido. Quanto menor o esforço de analisar o sistema, melhor.</li>
+<li><strong>Modificabilidade</strong>: esforço de modificação do código.</li>
+<li><strong>Estabilidade</strong>: risco de se mexer no sistema.</li>
+<li><strong>Testabilidade</strong>: esforço de teste após manutenção.</li>
+<li><strong>Conformidade</strong>: mesmo das outras características, está sendo feita dentro do que foi acordado.</li>
+</ul>
+<ol>
+<li><strong>Portabilidade</strong>: capacidade que o sistema tem de trabalhar em diferentes ambientes operacionais</li>
+</ol>
+<ul>
+<li><strong>Adaptabilidade</strong>: o quanto que o sistema se adapta ao ambiente especificado (Win, Linux)</li>
+<li><strong>Coexistência</strong>: capacidade de coexistir com outros softwares.</li>
+<li><strong>Capacidade para ser instalado:</strong> qual o esforço para instalar num ambiente ou no outro.</li>
+<li><strong>Capacidade para substituir:</strong> capacidade de substituir um outro sistema num outro ambiente. Ex. Office no Windows -&gt; não tem capacidade de substituir outro pacote de escritório no linux</li>
+<li><strong>Conformidade</strong>: portabilidade acordada para o software está sendo atendida?</li>
+</ul>
+<h3 id="Sistema-quantitativo-para-medir-qualidade"><a href="#Sistema-quantitativo-para-medir-qualidade" class="headerlink" title="Sistema quantitativo para medir qualidade"></a>Sistema quantitativo para medir qualidade</h3><blockquote>
+<p>Qualidade de Software = soma(características)<br>Características = soma(subcaracteristicas)<br>Subcaracterísitcas = soma(métricas)</p>
+</blockquote>
+<p><em><span style="background-color: yellow;">Métricas são perguntas objetivas</span> feitas para o avaliador responder sobre o sistema__<span style="background-color: yellow;">Peso é um valor relativo da importância que se atribui</span> <span style="background-color: white;">a cada uma característica</span>. Ex. sistema web deve ter um peso maior para Usabilidade. Automação deve ter um peso maior na confiabilidade.</em></p>
+<h2 id="ISO-14598"><a href="#ISO-14598" class="headerlink" title="ISO 14598"></a>ISO 14598</h2><p>Trata o processo de avaliação do software. Bem mais recente que a ISO 9126. É um roteiro de como projetar uma avaliação de um software.Possui 4 momentos:</p>
+<ol>
+<li>Estabelecer requisitos de avaliação: </li>
+</ol>
+<ul>
+<li>estabelecer o proposito da avaliação</li>
+<li>identificar o tipo de produto a ser avaliado</li>
+<li>especificar um modelo de qualidade (ISO 9126)</li>
+</ul>
+<ol>
+<li>Especificar a avaliação</li>
+</ol>
+<ul>
+<li>selecionar métricas (criar métricas para as características)</li>
+<li>atribuir valores/pesos para as métricas</li>
+<li>estabelecer critérios para julgamento</li>
+</ul>
+<ol>
+<li>Projetar a avaliação (fazer o plano de avaliação)</li>
+</ol>
+<ul>
+<li>plano deve conter métricas para ser avaliados por usuários, desenvolvedores, etc. cada um no que entende. Ex. desenvolvedor que avalia a confiabilidade, e o usuário que avalia a usabilidade.</li>
+</ul>
+<ol>
+<li>Executar a avaliação</li>
+</ol>
+<ul>
+<li>obter as medidas</li>
+<li>comparar com critérios</li>
+<li>julgar os resultados</li>
+</ul>
+
+        
+      </div>
+      <div class="post-footer clearfix">
+        <a href="/2015/04/30/normas-aplicadas-a-qualidade-de-software/" class="post-more waves-button-light">MORE</a>
+      </div>
+    
+
+  </article>
+
+
+</li>
+  
+    <li class="post-list-item">
+  <article id="post-maturidade-nos-processos-de-software" class="article article-type-post" itemscope itemprop="blogPost">
+    
+      
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2015/04/30/maturidade-nos-processos-de-software/">Maturidade nos Processos de Software</a>
+    </h3>
+  
+
+
+
+      <div class="post-meat flex-row">
+        <div class="flex-col">
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/disciplina1/">disciplina1</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/modulo2/">modulo2</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/unidade4/">unidade4</a></li></ul>
+</div>
+        <time datetime="2015-04-30T05:01:00.003Z" itemprop="datePublished" class="post-tiem">
+  30/04/2015
+</time>
+      </div>
+      <div class="post-content" itemprop="postContent" >
+        
+          <h2 id="Capability-Maturity-Model-CMM"><a href="#Capability-Maturity-Model-CMM" class="headerlink" title="Capability Maturity Model - CMM"></a>Capability Maturity Model - CMM</h2><p>Surgiu na área militar do EUA ao terceirizar a produção de software, havia necessidade de qualificar uma empresa de software.  </p>
+<h4 id="Definicao"><a href="#Definicao" class="headerlink" title="Definição"></a>Definição</h4><p>É uma soma de “melhores práticas” para diagnóstico e avaliação de maturidade no desenvolvimento de software.  </p>
+<p>Organizações maduras:  </p>
+<ul>
+<li>papéis e responsabilidades bem definidos</li>
+<li>existe base históricas</li>
+<li>é possível julgar a qualidade do produto</li>
+<li>qualidade é monitorada</li>
+<li>o processo pode ser atualizado</li>
+<li>modelo de comunicação bem definido</li>
+</ul>
+<p>Organização imaturas:</p>
+<ul>
+<li>processo improvisado</li>
+<li>não possui base histórica (a cada novo projeto um recomeço)</li>
+<li>não há maneira objetiva de julgar a qualidade do produto</li>
+<li>não há rigor no processo</li>
+<li>resolução de crises imediatas</li>
+</ul>
+<p>O modelo é definido por 5 níveis de maturidade</p>
+<ol>
+<li><strong>Inicial</strong> - todos estamos nele, quando não existe clareza na forma de desenvolvimento de software. Não há KPAs. Depende do desenvolvedor que abraça o projeto e o leva até o fim. </li>
+<li><p><strong>Repetível</strong> - o desenvolvimento de software já tem alguma repetição de sucesso nas entregas. Empresa já adota algumas práticas sempre. Já se consegue estimar com maior clareza. Seria o primeiro nível de maturidade. É o passo mais difícil, por ter que sair de zero maturidade. Possui as seguintes KPAs:</p>
+</li>
+<li><p>gerenciamento de requisitos</p>
+</li>
+<li>planejamento de projetos</li>
+<li>gerenciamento de subcontratação (terceiros)</li>
+<li>garantia da qualidade de software</li>
+<li><p>gerenciamento de configuração</p>
+</li>
+<li><p><strong>Definido</strong> - já implantou e tem uma série de práticas definidas. É obrigatório seguir padrões, não é possível alguém fazer algo diferente. KPAs:</p>
+</li>
+<li><p>revisões</p>
+</li>
+<li>coordenação de intergrupos</li>
+<li>engenharia de produto de software</li>
+<li>gerenciamento de software integrado</li>
+<li>programa de treinamento</li>
+<li>foco no processo da organização</li>
+<li><p>definição do processo da organização</p>
+</li>
+<li><p><strong>Gerenciado</strong> - quando se consegue fazer medições quantitativas no processo. Fazer medições no produto é praticar o “nível gerenciado”. KPAs:</p>
+</li>
+<li><p>gerenciamento quantitativo da qualidade do software</p>
+</li>
+<li><p>gerenciamento quantitativo do processo</p>
+</li>
+<li><p><strong>Otimizado</strong> - é a melhoria contínua do processo de desenvolvimento. Promover inovação no seu processo. KPAs:</p>
+</li>
+<li><p>gerenciamento de mudança no processo</p>
+</li>
+<li>gerenciamento de mudança tecnológica</li>
+<li>prevenção de defeitos</li>
+</ol>
+<p>Há outros processos de maturidade como:</p>
+<ul>
+<li>Personal Software Process - PSP</li>
+<li>MPS-BR</li>
+<li>SPICE - ISO/15504</li>
+<li>CMMi (evolução do CMM)</li>
+<li>Outros</li>
+</ul>
+
+        
+      </div>
+      <div class="post-footer clearfix">
+        <a href="/2015/04/30/maturidade-nos-processos-de-software/" class="post-more waves-button-light">MORE</a>
+      </div>
+    
+
+  </article>
+
+
+</li>
+  
+    <li class="post-list-item">
+  <article id="post-introducao-a-qualidade-de-software" class="article article-type-post" itemscope itemprop="blogPost">
+    
+      
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2015/04/21/introducao-a-qualidade-de-software/">Introdução a qualidade de software</a>
+    </h3>
+  
+
+
+
+      <div class="post-meat flex-row">
+        <div class="flex-col">
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/disciplina1/">disciplina1</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/modulo2/">modulo2</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/unidade1/">unidade1</a></li></ul>
+</div>
+        <time datetime="2015-04-22T00:07:00.001Z" itemprop="datePublished" class="post-tiem">
+  21/04/2015
+</time>
+      </div>
+      <div class="post-content" itemprop="postContent" >
+        
+          <p>Qualidade é:  </p>
+<ul>
+<li>atender aos requisitos do cliente</li>
+<li>antecipa os desejos do cliente</li>
+<li>escrever tudo o que se deve fazer e fazer tudo que foi escrito</li>
+</ul>
+<p>Definição de qualidade segundo alguns autores:</p>
+<ul>
+<li>a) <strong>qualidade intrínseca do produto ou serviço:</strong> presença ou ausência de critérios específicos;</li>
+<li>b) <strong>custo:</strong> é o preço justo que o cliente está disposto a pagar;</li>
+<li>c) <strong>atendimento:</strong> quantidade certa, no local e hora certa;</li>
+</ul>
+<p>Definição segundo a ISO:</p>
+<blockquote>
+<p>… a totalidade das características de uma <strong>entidade</strong> que lhe confere a capacidade de satisfazer às <strong>necessidades explicitas e implícitas</strong></p>
+</blockquote>
+<p><strong>entidade</strong> é o software<strong>necessidade</strong> <strong>explicita</strong>: tudo que o usuário consegue perceber em relação  ao software<strong>necessidade</strong> <strong>implícita</strong>: é tudo que somente os desenvolvedores conseguem perceberApesar do software ser um produto de um processo intelectual, assim como um livro ou um quadro, o software não pode ser totalmente criado com as vontades do seu criador, diferente das obras de arte por exemplo. Considerações</p>
+<ul>
+<li>software é um produto complexo, até mais do que o hardware</li>
+<li>não tem produção em série e o seu custo está no projeto e desenvolvimento</li>
+<li>não se desgasta</li>
+<li>a engenharia de software ainda não está madura o suficiente</li>
+</ul>
+<p>ConclusãoNão tem como modelar um software de qualidade sem um processo de qualidade também.Para que o software tenha qualidade, é necessário que o modelo de negócio também seja de qualidade.</p>
+<h3 id="Construcao-de-Software-Video-2"><a href="#Construcao-de-Software-Video-2" class="headerlink" title="Construção de Software (Vídeo 2)"></a>Construção de Software (Vídeo 2)</h3><p>Projeto é construir um produto, dentro de determinadas especificações, que atenda as necessidades dos usuários para que executem processos operacionais e gerenciais de negócios.  </p>
+<p>Projeto = (objetivos + atividades + prazos + recursos envolvidos + riscos e incertezas)  </p>
+<p>Características de um projeto de software:  </p>
+<ul>
+<li>esforço finito, no seu termino pretende-se a entrega</li>
+<li>um esforço que pode ser subdividido (fases, etapas, atividades)</li>
+<li>objetivo, recursos e progresso podem ser monitorados e avaliados</li>
+</ul>
+<p>Todo projeto tem três partes básicas:</p>
+<ol>
+<li>Planejamento</li>
+</ol>
+<ul>
+<li>elaborar escopo</li>
+<li>elaborar estimativas de prazo, recursos, esforço, custo, tamanho</li>
+<li>definir o processo de desenvolvimento</li>
+</ul>
+<ol>
+<li>Controle (execução)</li>
+</ol>
+<ul>
+<li>controle da alocação de recursos</li>
+<li>verificação e validação de produtos intermediário</li>
+<li>controle de mudança de escopo</li>
+<li>refinamento e replanejamento </li>
+<li>acompanhamento das tarefas e orçamento conforme cronograma</li>
+</ul>
+<ol>
+<li>Monitoramento</li>
+</ol>
+<ul>
+<li>verificar o progresso</li>
+<li>verificar e avaliar a qualidade</li>
+<li>verificar e avaliar produtividade</li>
+<li>verificar e avaliar financeiro</li>
+</ul>
+<h4 id="Processo-de-software"><a href="#Processo-de-software" class="headerlink" title="Processo de software"></a>Processo de software</h4><p>Conjunto de atividades em sequencia, métodos e práticas utilizadas na produção e evolução do software.</p>
+<ul>
+<li>definir politicas de desenvolvimento (ex. só se desenvolve para web ou para mobile)</li>
+<li>procedimentos para o desenvolvimento</li>
+<li>diversas técnicas e padrões para construção de produtos</li>
+<li>padrões de apresentação de produtos intermediários</li>
+</ul>
+<h4 id="Produto-de-software"><a href="#Produto-de-software" class="headerlink" title="Produto de software"></a>Produto de software</h4><p>É o resultado da execução de um <strong>processo</strong> que contém uma série de atributos derivados dos requisitos e especificações previstos no <strong>projeto</strong>.Sofre alterações caracterizadas como:</p>
+<ul>
+<li>manutenções corretivas, adaptativas</li>
+<li>melhorias</li>
+</ul>
+
+        
+      </div>
+      <div class="post-footer clearfix">
+        <a href="/2015/04/21/introducao-a-qualidade-de-software/" class="post-more waves-button-light">MORE</a>
+      </div>
+    
+
+  </article>
+
+
+</li>
+  
+    <li class="post-list-item">
+  <article id="post-processos-de-ciclo-de-vida" class="article article-type-post" itemscope itemprop="blogPost">
+    
+      
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2015/04/05/processos-de-ciclo-de-vida/">Processos de Ciclo de Vida</a>
+    </h3>
+  
+
+
+
+      <div class="post-meat flex-row">
+        <div class="flex-col">
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/disciplina1/">disciplina1</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/modulo2/">modulo2</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/unidade2/">unidade2</a></li></ul>
+</div>
+        <time datetime="2015-04-06T01:07:00.004Z" itemprop="datePublished" class="post-tiem">
+  05/04/2015
+</time>
+      </div>
+      <div class="post-content" itemprop="postContent" >
+        
+          <p>Dividido em dois grandes momentos:  </p>
+<ul>
+<li><p>Ciclo de Desenvolvimento</p>
+</li>
+<li><p><strong>Concepção</strong>: o que tem que ser feito, objetivos do sistema, viabilidade, analise custo x benefício, tem condições implementar, quantidade de pessoas, ferramentas, limitações do projeto. É o projeto. Invista tempo na concepção!</p>
+</li>
+<li><p><strong>Criação</strong>: implementação do sistema. verificar se realmente a equipe consegue implementar, seria interessante terceirizar a criação?</p>
+</li>
+<li><p>Ciclo Operacional</p>
+</li>
+<li><p><strong>Evolução:</strong> manutenção do código, mudanças nas regras de negócio, melhorias. Não é natural fazer alguma coisa de concepção ou criação. O menor custo de um defeito é evita-lo. </p>
+</li>
+<li><strong>Decadência:</strong> indicadores que o software está em decadência: esforço grande para manutenção do sistema, atraso tecnológico, reclamação do usuário, mudanças organizacionais. Inicia-se um novo projeto.</li>
+</ul>
+<h3 id="Processos-de-Ciclo-de-Vida-Norma-ISO-12207"><a href="#Processos-de-Ciclo-de-Vida-Norma-ISO-12207" class="headerlink" title="Processos de Ciclo de Vida - Norma ISO 12207"></a>Processos de Ciclo de Vida - Norma ISO 12207</h3><p>Orientar a organização sobre quais os processos desde a concepção até o fim. Três grandes classes de processo:</p>
+<ul>
+<li><p>Processos Primários (é o básico para criação de software)</p>
+</li>
+<li><p>tenha um processo de <strong>aquisição</strong></p>
+</li>
+<li>tenha um processo de <strong>fornecimento</strong></li>
+<li>tenha um processo de <strong>desenvolvimento</strong></li>
+<li>tenha um processo de <strong>operação</strong></li>
+<li><p><strong><span style="font-weight: normal;">tenha um processo de</span> manutenção</strong></p>
+</li>
+<li><p>Processos de Apoio</p>
+</li>
+<li><p>tenha um processo de <strong>documentação</strong></p>
+</li>
+<li>tenha um processo de <strong>gerência de qualidade</strong></li>
+<li>tenha um processo de <strong>validação</strong> (protótipos, projetos, testes)</li>
+<li>tenha um processo de <strong>auditoria</strong></li>
+<li>tenha um processo de <strong>usabilidade</strong> </li>
+<li>tenha um processo de <strong>gerência de configuração</strong> (diferentes plataformas)</li>
+<li>tenha um processo de <strong>verificação</strong></li>
+<li>tenha um processo de <strong>revisão conjunta</strong></li>
+<li><strong><span style="font-weight: normal;">tenha um processo de</span> resolução de problemas</strong></li>
+<li><p><strong><span style="font-weight: normal;">tenha um processo de</span> contrato</strong></p>
+</li>
+<li><p>Processos Organizacionais (parte da organização no processo de software)</p>
+</li>
+<li><p><strong><span style="font-weight: normal;">tenha um processo de</span> gerência</strong></p>
+</li>
+<li><strong><span style="font-weight: normal;">tenha um processo de</span> infra-estrutura</strong></li>
+<li><strong><span style="font-weight: normal;">tenha um processo de</span> melhoria</strong></li>
+<li><p><strong><span style="font-weight: normal;">tenha um processo de</span> recursos humanos</strong> (treinamento, consultor, evolução técnica)</p>
+</li>
+<li><p>Processos de Reuso de Software</p>
+</li>
+<li><p><strong><span style="font-weight: normal;">tenha um processo de</span> gestão de ativos</strong></p>
+</li>
+<li><strong><span style="font-weight: normal;">tenha um processo de</span> programas de reuso <span style="font-weight: normal;">(reuso tudo que já se tem pronto)</span></strong></li>
+<li><p><strong><span style="font-weight: normal;">tenha um processo de</span> engenharia de domínio <span style="font-weight: normal;">(não perder a arquitetura do processo)</span></strong></p>
+</li>
+<li><p>Processos de Adaptação</p>
+</li>
+<li><p><strong><span style="font-weight: normal;">os processos devem ser adaptáveis ao</span> projeto</strong></p>
+</li>
+<li><strong><strong><span style="font-weight: normal;">os processos devem ser adaptáveis a</span> organização</strong></strong></li>
+<li><strong>**</strong><span style="font-weight: normal;">os processos devem ser adaptáveis a</span> cultura<strong>**</strong></li>
+<li><strong>**</strong><span style="font-weight: normal;">os processos devem ser adaptáveis a</span> modelo de ciclo de vida, método, técnicas, linguagens<span style="font-weight: normal;">.</span><strong><strong>**</strong></strong><span style="font-weight: normal;"> </span><em>**</em></li>
+</ul>
+
+        
+      </div>
+      <div class="post-footer clearfix">
+        <a href="/2015/04/05/processos-de-ciclo-de-vida/" class="post-more waves-button-light">MORE</a>
+      </div>
+    
+
+  </article>
+
+
+</li>
+  
+    <li class="post-list-item">
+  <article id="post-dados-semi-estruturados-xml" class="article article-type-post" itemscope itemprop="blogPost">
+    
+      
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2015/03/08/dados-semi-estruturados-xml/">Dados Semi-Estruturados XML</a>
+    </h3>
+  
+
+
+
+      <div class="post-meat flex-row">
+        <div class="flex-col">
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/disciplina4/">disciplina4</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/modulo1/">modulo1</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/unidade1/">unidade1</a></li></ul>
+</div>
+        <time datetime="2015-03-08T18:25:00.000Z" itemprop="datePublished" class="post-tiem">
+  08/03/2015
+</time>
+      </div>
+      <div class="post-content" itemprop="postContent" >
+        
+          <p>O que são:</p>
+<ul>
+<li>Dados Estruturados: são os dados contidos nos bancos de dados, com formato definido.</li>
+<li>Dados Semiestruturados: são dados que permitem adicionar atributos mesmo depois de criados.</li>
+<li>A diferença entre os dois então, é a forma de criação do schema.</li>
+</ul>
+<h3 id="Linguagens-de-Marcacao"><a href="#Linguagens-de-Marcacao" class="headerlink" title="Linguagens de Marcação"></a>Linguagens de Marcação</h3><ul>
+<li><strong>HTML</strong> foi a primeira. Trabalha com marcadores definidos. Cuida da forma como o dado é apresentado. A visualização é sempre fixada (ex. o dado é sempre em itálico).  </li>
+<li><strong>XML</strong> nasceu para tratar do do conteúdo dos dados, trouxe flexibilidade, e não existe nenhuma preocupação com a  apresentação dos dados. Possui uma estrutura hierárquica. </li>
+</ul>
+<h4 id="Utilizacao-da-XML"><a href="#Utilizacao-da-XML" class="headerlink" title="Utilização da XML"></a>Utilização da XML</h4><ul>
+<li>Busca de dados na web</li>
+<li>Troca de dados</li>
+<li>Catálogos</li>
+<li>Automação de grandes redes (bancos, suprimentos, etc.)</li>
+</ul>
+<h4 id="Linguagens-para-manipular-XML"><a href="#Linguagens-para-manipular-XML" class="headerlink" title="Linguagens para manipular XML"></a>Linguagens para manipular XML</h4><ul>
+<li>Xpath: trabalha através de grafos, para saber o caminho percorrido</li>
+<li>Xquery: voltada para recuperar o dados</li>
+<li>XSL: definir o estilo que o dados serão exibidos</li>
+</ul>
+<h3 id="Conceitos-de-XML"><a href="#Conceitos-de-XML" class="headerlink" title="Conceitos de XML"></a>Conceitos de XML</h3><ul>
+<li>Documento bem formado: ordem de abertura e fechamento das tags</li>
+<li>Documento válido: de acordo com o esquema definido</li>
+</ul>
+<h3 id="DTD-Document-Type-Description"><a href="#DTD-Document-Type-Description" class="headerlink" title="DTD (Document Type Description)"></a>DTD (Document Type Description)</h3><p>Contém as regras para elaboração do XML. Define que um XML pode conter, a ordem, obrigatoriedade, cardinalidade (número de vezes que cada valor ocorre) e unicidade (se possui valor único ou não). Pode estar dentro ou fora do arquivo XML.</p>
+<h4 id="Declaracoes-contidas-em-uma-DTD"><a href="#Declaracoes-contidas-em-uma-DTD" class="headerlink" title="Declarações contidas em uma DTD"></a>Declarações contidas em uma DTD</h4><ul>
+<li>ELEMENT: especifica um elemento do XML</li>
+<li>ATTLIST: declara uma lista de atributos associados a um elemento e o valores possiveis</li>
+<li>ENTITY: usado para declarar uma espécie de alias dentro do doc.</li>
+<li>NOTATION: usado para passar dados sobre impressora, ou a forma de impressão do doc.</li>
+</ul>
+<h3 id="Descricao-de-cada-declaracao"><a href="#Descricao-de-cada-declaracao" class="headerlink" title="Descrição de cada declaração"></a>Descrição de cada declaração</h3><p>Tag ELEMENT  </p>
+<p>&lt;!ELEMENT S Nome S EspecificacaoConteudo S ?&gt;  </p>
+<ul>
+<li>Nome - nome do elemento</li>
+<li><p>EspecificaçãoConteudo pode ser:</p>
+</li>
+<li><p>EMPTY - não possui nenhum dado no elemento</p>
+</li>
+<li>ANY - pode ser vazio ou não</li>
+<li>mixed - pode ter alguma informação dentro dele ou alguns filhos</li>
+<li><p>children - subdivide-se em outros elementos</p>
+</li>
+<li><p>? (Cardinalidade) pode ser</p>
+</li>
+<li><p>? -&gt; No máximo uma ocorrência</p>
+</li>
+<li><ul>
+<li>-&gt; Nenhuma ou diversas ocorrências</li>
+</ul>
+</li>
+<li><ul>
+<li>-&gt; No mínimo uma ocorrência</li>
+</ul>
+</li>
+</ul>
+<p>Simbolo “|” -&gt; o elemento pode se dividir em outros elementos e eles são alternativos<br>Tag ATTLIST<br>&lt;!ATTLIST S Nome S EspecificacaoAtributo S ?&gt;  </p>
+<ul>
+<li>Nome - nome do atributo</li>
+<li><p>EspecificacaoAtributo é composto por:</p>
+</li>
+<li><p>NomeAtributo S TipoAtributo S ValorPadrão S ValorDefault</p>
+</li>
+<li>Onde:</li>
+<li>NomeAtributo - nome do atributo</li>
+<li><p>TipoAtributo são os tipos:</p>
+</li>
+<li><p>CDATA: dados com formato de caracteres (não pode conter tag)</p>
+</li>
+<li>ID: identificador do elemento (possui valor único)</li>
+<li>IDREF: é a referencia ao ID de um atributo</li>
+<li>IDREFS: mais de um ID</li>
+<li>NMTOKEN: palavra ou conjunto de palavras sem espaço </li>
+<li>NMTOKENS: lista separadas por espaço </li>
+<li><p>ENUMERADO: lista enumerada</p>
+</li>
+<li><p>ValorPadrão - sempre será esse valor, não muda nunca</p>
+</li>
+<li><p>ValorDefault - se nao definir um valor pro atributo, ele assume esse valor padrão</p>
+</li>
+<li><p>? Cardinalidade - mesma do elemento</p>
+</li>
+</ul>
+
+        
+      </div>
+      <div class="post-footer clearfix">
+        <a href="/2015/03/08/dados-semi-estruturados-xml/" class="post-more waves-button-light">MORE</a>
+      </div>
+    
+
+  </article>
+
+
+</li>
+  
+  </ul>
+  
+    <nav id="page-nav">
+      <div class="inner">
+        <a class="extend prev" rel="prev" href="/page/2/">上一页</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><a class="page-number" href="/page/5/">5</a><a class="extend next" rel="next" href="/page/4/">下一页</a>
+      </div>
+    </nav>
+  
+
+
+
+    </div>
+  </main>
+<div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-circle-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+<script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+
+<script src="/js/main.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

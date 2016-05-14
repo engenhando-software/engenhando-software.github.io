@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Engenheirando Software | Minhas observações sobre Engenharia de Software</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <meta name="keywords" content="undefined">
+  <meta name="description" content="Blog sobre engenharia de software">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Engenheirando Software">
+<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:site_name" content="Engenheirando Software">
+<meta property="og:description" content="Blog sobre engenharia de software">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Engenheirando Software">
+<meta name="twitter:description" content="Blog sobre engenharia de software">
+  
+    <link rel="alternative" href="/atom.xml" title="Engenheirando Software" type="application/atom+xml">
+  
+  <link rel="shortcut icon" href="/">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="loading" class="active"></div>
+
+  <nav id="menu"  >
+   <div class="inner">
+  <a href="javascript:;" class="header-icon waves-circle-light" id="menu-off">
+      <i class="icon icon-lg icon-close"></i>
+  </a>
+  <div class="brand-wrap">
+    <div class="brand">
+      <a href="/" class="avatar"><img src="/images/avatar.jpg"></a>
+      <hgroup class="introduce">
+        <h5 class="nickname">Jonathas Amaral</h5>
+        <a href="mailto:jnthas@gmail.com" title="jnthas@gmail.com" class="mail">jnthas@gmail.com</a>
+      </hgroup>
+    </div>
+  </div>
+  <ul class="nav">
+    
+        <li class="waves-block active">
+          <a href="/"  >
+            <i class="icon icon-lg icon-home"></i>
+            Home
+          </a>
+        </li>
+    
+        <li class="waves-block">
+          <a href="/archives"  >
+            <i class="icon icon-lg icon-archives"></i>
+            Archives
+          </a>
+        </li>
+    
+        <li class="waves-block">
+          <a href="/tags"  >
+            <i class="icon icon-lg icon-tags"></i>
+            Tags
+          </a>
+        </li>
+    
+        <li class="waves-block">
+          <a href="https://github.com/engenhando-software/engenhando-software.github.io" target="_blank" >
+            <i class="icon icon-lg icon-github"></i>
+            Github
+          </a>
+        </li>
+    
+  </ul>
+
+  <footer class="footer">
+  <p><a rel="license" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0;vertical-align:middle;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAAAPCAMAAABEF7i9AAAAllBMVEUAAAD///+rsapERER3d3eIiIjMzMzu7u4iIiKUmZO6v7rKzsoODg4RERFVVVUNDQ0NDg0PEA8zMzNLTEtbXltmZmZydnF9gn2AgICPkI+ZmZmqqqq7u7vFxsXIzMgNDQwZGRkgICAhISEkJSMnKCcuMC4xMzE5Ozk7PTtBQkFCQkJDQ0Nna2eGhoaHh4ezuLLGysbd3d1wVGpAAAAA4UlEQVR42q2T1xqCMAyFk7QsBQeKA9x7j/d/OSm22CpX0nzcpA1/T05aAOuBVkMAScQFHLnEwoCo2f1TnQIGoVMewjZEjVFN4GH1Ue1Cn2jWqwfsOOj6wDwGvotsl/c8lv7KIq1eLOsT0HMFHMIE/RZyHnlphryT9zyV+8WH5e8yQw3wnQvgAFxPTKUVi555SHR/lOfLMgVTeDlSfN+TaoUsiTyeIm+bCkHvCA2FUKG48LDtYBZBknsYP/G8NTw0gaaHyuQf4H5pecrB/FYCT2sL9zAfy1Xyjou6L8X2W7YcLyBZCRtnq/zfAAAAAElFTkSuQmCC" /></a></p>
+  <p>Jonathas Amaral &copy; 2016</p>
+  <p>Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme
+  <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a></p>
+  <a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-2x icon-rss-square"></i></a>
+</footer>
+
+</div>
+
+  </nav>
+  <main id="main">
+    <header class="header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-circle-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">Engenheirando Software</div>
+        
+    </div>
+</header>
+<header class="content-header">
+  <div class="container">
+    <h1 class="author">Engenheirando Software</h1>
+    <h5 class="subtitle">Minhas observações sobre Engenharia de Software</h5>
+  </div>
+</header>
+
+    <div class="container body-wrap">
+      
+  <ul class="post-list">
+  
+    <li class="post-list-item">
+  <article id="post-projeto-de-pesquisa" class="article article-type-post" itemscope itemprop="blogPost">
+    
+      
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2015/11/11/projeto-de-pesquisa/">Projeto de Pesquisa</a>
+    </h3>
+  
+
+
+
+      <div class="post-meat flex-row">
+        <div class="flex-col">
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/disciplina4/">disciplina4</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/modulo3/">modulo3</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/unidade1/">unidade1</a></li></ul>
+</div>
+        <time datetime="2015-11-12T01:44:00.001Z" itemprop="datePublished" class="post-tiem">
+  11/11/2015
+</time>
+      </div>
+      <div class="post-content" itemprop="postContent" >
+        
+          <h2 id="Caracteristicas-de-um-Projeto-de-Pesquisa"><a href="#Caracteristicas-de-um-Projeto-de-Pesquisa" class="headerlink" title="Características de um Projeto de Pesquisa"></a>Características de um Projeto de Pesquisa</h2><ul>
+<li>Tem um tema bem definido</li>
+<li>Possui metas alcançáveis bem justificadas</li>
+<li>Tem início, meio e fim (tempo limitado)</li>
+<li>Deve ser viável (recursos em geral)</li>
+<li>Propor resultados verificaveis</li>
+</ul>
+<h3 id="Concepcao-geral-do-projeto"><a href="#Concepcao-geral-do-projeto" class="headerlink" title="Concepção geral do projeto"></a>Concepção geral do projeto</h3><h4 id="1º-Passo-Identificar-o-tema"><a href="#1º-Passo-Identificar-o-tema" class="headerlink" title="1º Passo - Identificar o tema"></a>1º Passo - Identificar o tema</h4><ul>
+<li>O tema deve ser de interesse do pesquisador</li>
+<li>Tema muito amplo pode resultar em um trabalho superficial</li>
+<li>É mais interessante selecionar um tema que possa ser analisado em profundidade</li>
+</ul>
+<h4 id="Questoes-a-serem-feitas"><a href="#Questoes-a-serem-feitas" class="headerlink" title="Questões a serem feitas"></a>Questões a serem feitas</h4><ul>
+<li>O que será pesquisado?</li>
+<li>O assunto é de interesse do pesquisador?</li>
+<li>Haverá necessidade de prova ou algum tipo de desenvolvimento?</li>
+<li>O trabalho tem potencial pra ser original?  </li>
+</ul>
+<h4 id="Onde-encontrar-um-tema-de-pesquisa"><a href="#Onde-encontrar-um-tema-de-pesquisa" class="headerlink" title="Onde encontrar um tema de pesquisa?"></a>Onde encontrar um tema de pesquisa?</h4><ul>
+<li>Experiências pessoais e profissionais</li>
+<li>Desafios apontados por especialistas</li>
+<li>Leituras e reflexões</li>
+<li>Em conversar, debates e discussões</li>
+</ul>
+<h4 id="Formulacao-do-problema-de-pesquisa"><a href="#Formulacao-do-problema-de-pesquisa" class="headerlink" title="Formulação do problema de pesquisa"></a>Formulação do problema de pesquisa</h4><ul>
+<li>Não basta ter um tema, precisa ter um problema de pesquisa</li>
+<li>Não há uma “fórmula mágica” para se encontrar um problema de pesquisa</li>
+<li>Requer experiência e demanda orientação (de professores)</li>
+</ul>
+<h3 id="Exemplo"><a href="#Exemplo" class="headerlink" title="Exemplo"></a>Exemplo</h3><p><strong>Necessidade</strong>: melhoria da mobilidade em grandes centros urbanos<strong>Tema</strong>: controle do trânsito de veículos em vias urbanas<strong>Problema</strong>: como melhorar a mobilidade urbana em grandes cidades a partir de um sistema capaz de realizar um controle inteligente do trânsito de veículos.<strong>Problema 1</strong>: um sistema de controle de semáforos de trânsito pode melhorar a mobilidade urbana das grandes cidades?<strong>Problema 2</strong>: um sistema inteligente de controle de semáforos de trânsito pode melhorar a mobilidade urbana em cidades com um bom sistema de transporte público?</p>
+<h3 id="Justificativa"><a href="#Justificativa" class="headerlink" title="Justificativa"></a>Justificativa</h3><ul>
+<li>Todo projeto de pesquisa tem que se justificar</li>
+<li>O tema é atual?</li>
+<li>Porque vale a pena fazer essa pesquisa?</li>
+<li>Quais as possiveis contribuições decorrentes da solução? Há algum tipo de inovação?</li>
+<li>Ou seja, o problema é relevante?</li>
+</ul>
+<h3 id="Objetivo"><a href="#Objetivo" class="headerlink" title="Objetivo"></a>Objetivo</h3><ul>
+<li>Decorre diretamente do problema formulado</li>
+<li>O que se pretende alcançar com a pesquisa</li>
+<li>Destacar o objetivo, p.ex., iniciar um parágrafo com “O objetivo desse projeto..”</li>
+<li>Todo projeto deve ter um <strong>objetivo geral</strong> (umas 3 frases no infinitivo)</li>
+<li>Objetivo geral pode ser dividido em <strong>objetivos específicos</strong></li>
+</ul>
+<h4 id="Objetivo-geral-do-problema-exemplo"><a href="#Objetivo-geral-do-problema-exemplo" class="headerlink" title="Objetivo geral do problema exemplo"></a>Objetivo geral do problema exemplo</h4><p>Desenvolver um sistema inteligente de controle de semáforos de trânsito para melhorar a mobilidade urbana em grandes centros urbanos</p>
+<h4 id="Objetivo-especificos-do-problema-exemplo"><a href="#Objetivo-especificos-do-problema-exemplo" class="headerlink" title="Objetivo específicos do problema exemplo"></a>Objetivo específicos do problema exemplo</h4><ul>
+<li>Mapear as grandes cidades que serão estudadas, bem como os seus sistemas de trânsito.</li>
+<li>Analisar os sistemas de controle de semáforos de trânsitos utilizados em grandes centros urbanos.</li>
+<li>Especificar os requisitos de um sistema inteligente de controle de semáforos de trânsito para grandes cidades, destacando os problemas  ou deficiências dos sistemas existentes</li>
+<li>Implementar o novo sistema inteligente de controle de semáforos de trânsito para grandes cidades</li>
+<li>Realizar uma análise comparativa do novo sistema com os sistemas atuais</li>
+</ul>
+
+        
+      </div>
+      <div class="post-footer clearfix">
+        <a href="/2015/11/11/projeto-de-pesquisa/" class="post-more waves-button-light">MORE</a>
+      </div>
+    
+
+  </article>
+
+
+</li>
+  
+    <li class="post-list-item">
+  <article id="post-plataformas-emergentes" class="article article-type-post" itemscope itemprop="blogPost">
+    
+      
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2015/10/31/plataformas-emergentes/">Plataformas Emergentes</a>
+    </h3>
+  
+
+
+
+      <div class="post-meat flex-row">
+        <div class="flex-col">
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/disciplina3/">disciplina3</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/modulo3/">modulo3</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/unidade4/">unidade4</a></li></ul>
+</div>
+        <time datetime="2015-10-31T15:20:00.001Z" itemprop="datePublished" class="post-tiem">
+  31/10/2015
+</time>
+      </div>
+      <div class="post-content" itemprop="postContent" >
+        
+          <h2 id="Plataformas-emergentes"><a href="#Plataformas-emergentes" class="headerlink" title="Plataformas emergentes"></a>Plataformas emergentes</h2><ul>
+<li>Plataformas móveis: em 2014 o número de smartphones superou o de desktops, consolidando a plataforma mobile junto com desktop e web.</li>
+<li>IoT: smartwatch, google glass, tênis com sensores, transporte urbano. </li>
+<li>Redes sociais: números nunca antes visto de interatividade social. Ex: Facebook, whatsapp.</li>
+</ul>
+<p>Todas essas plataformas levam a uma convergência denominada pelo Gartner Group como o Nexus das Forças. Sinaliza uma tendência tecnológica que deve direcionar todo o desenvolvimento de aplicações corporativas.  </p>
+<h4 id="Plataformas-Open-group"><a href="#Plataformas-Open-group" class="headerlink" title="Plataformas - Open group"></a>Plataformas - Open group</h4><ul>
+<li><strong>1a. Plataforma:</strong> foi até meados dos anos 80, possuia milhares de usuários suportados por mainframes</li>
+<li><strong>2a. Plataforma:</strong> até inicio do sec. XXI, suportado pelo PC, Internet, e Cliente/Servidor. Possuia centenas de milhões de usuários. Riqueza de interação.</li>
+<li><strong>3a. Plataforma:</strong> Bilhões de usuários. Suportado por banda larga, dispositivos móveis, serviços em nuvem, big data, internet das coisas. Traz desafios importantes em tecnologia, já que Java e .NET por exemplo, não consegue lidar com a 3a. plataforma.</li>
+</ul>
+<h2 id="Plataforma-Javascript"><a href="#Plataforma-Javascript" class="headerlink" title="Plataforma Javascript"></a>Plataforma Javascript</h2><ul>
+<li>As tecnologias Javascript e HTML5 foram repensada e redesenvolvidas para fazer aplicações interativas e que podem ser representadas para qualquer tipo de dispositivo.</li>
+<li><p>Javascript se tornou uma plataforma com todo um conjunto de elementos existentes em plataformas estabelecidas, Ex:</p>
+</li>
+<li><p>Componentes</p>
+</li>
+<li>Frameworks MVVM</li>
+<li>Servidores</li>
+<li>Testes de unidade</li>
+<li>Gerenciadores de pacotes</li>
+<li>Layouts responsivos</li>
+<li>Linguagens de script</li>
+<li><p>IDEs</p>
+</li>
+<li><p>Bibliotecas Javascript</p>
+</li>
+<li><p>Jquery</p>
+</li>
+<li>Sencha</li>
+<li>ExtJS</li>
+<li>Kendo UI</li>
+<li><p>Angular</p>
+</li>
+<li><p>Framework MVVM JS: Diferente das paginas JSF, o trafego de dados entre o servidor é muito menor ao usar um framework javascript. O Controller fica no browser.</p>
+</li>
+<li><p>Backbone</p>
+</li>
+<li>AngularJS</li>
+<li>Ember</li>
+<li><p>Knockout</p>
+</li>
+<li><p>Servidores de aplicação JS</p>
+</li>
+<li><p>NodeJS</p>
+</li>
+<li><p>SilkJS</p>
+</li>
+<li><p>Testes de Unidade JS</p>
+</li>
+<li><p>QUnit</p>
+</li>
+<li>Mocha</li>
+<li>Jasmine</li>
+<li><p>Arquilian</p>
+</li>
+<li><p>IDEs JS</p>
+</li>
+<li><p>Senha Architect</p>
+</li>
+<li><p>WebStorm</p>
+</li>
+<li><p>Gerenciamento de Pacotes JS</p>
+</li>
+<li><p>Bower</p>
+</li>
+<li>Jam</li>
+<li><p>Npm</p>
+</li>
+<li><p>Framework CSS</p>
+</li>
+<li><p>Less</p>
+</li>
+<li>Bootstrap</li>
+<li><p>Foundation</p>
+</li>
+<li><p>Linguagens de Script JS</p>
+</li>
+<li><p>CoffeeScript</p>
+</li>
+<li>Parse</li>
+<li>TypeScript</li>
+</ul>
+
+        
+      </div>
+      <div class="post-footer clearfix">
+        <a href="/2015/10/31/plataformas-emergentes/" class="post-more waves-button-light">MORE</a>
+      </div>
+    
+
+  </article>
+
+
+</li>
+  
+    <li class="post-list-item">
+  <article id="post-plataformas-net-e-lamp" class="article article-type-post" itemscope itemprop="blogPost">
+    
+      
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2015/10/24/plataformas-net-e-lamp/">Plataformas .NET e LAMP</a>
+    </h3>
+  
+
+
+
+      <div class="post-meat flex-row">
+        <div class="flex-col">
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/disciplina3/">disciplina3</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/modulo3/">modulo3</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/unidade3/">unidade3</a></li></ul>
+</div>
+        <time datetime="2015-10-24T20:54:00.001Z" itemprop="datePublished" class="post-tiem">
+  24/10/2015
+</time>
+      </div>
+      <div class="post-content" itemprop="postContent" >
+        
+          <h2 id="Tecnologias-basicas-de-plataforma-NET"><a href="#Tecnologias-basicas-de-plataforma-NET" class="headerlink" title="Tecnologias básicas de plataforma .NET"></a>Tecnologias básicas de plataforma .NET</h2><h3 id="ASP-NET"><a href="#ASP-NET" class="headerlink" title="ASP.NET"></a>ASP.NET</h3><p>Tecnologia para o desenvolvimento de aplicações Web.  </p>
+<ul>
+<li>Razor: linguagem de marcação para escrita de páginas ASP.NET</li>
+<li>Windows Forms: tecnologia para desenvolvimento de aplicações <em>desktop</em></li>
+<li>Smart Clients: tecnologia para facilitar a distribuição e atualização de aplicações desktop</li>
+</ul>
+<h3 id="ADO-NET"><a href="#ADO-NET" class="headerlink" title="ADO.NET"></a>ADO.NET</h3><p>Tecnologia para interoperabilidade e persistência de dados com banco de dados relacionais  </p>
+<ul>
+<li>Entity Framework: tecnologia para mapeamento ORM em .NET</li>
+<li>nHibernate: tecnologia de terceiros para ORM em .NET</li>
+</ul>
+<h3 id="WCF"><a href="#WCF" class="headerlink" title="WCF"></a>WCF</h3><ul>
+<li>Tecnologia para componentização e exposição de serviços em ambiente .NET</li>
+<li>Especificar quais os protocolos suportados (HTTP/REST, SOAP, TCP, Named Pipes, entre outros)</li>
+<li>Suporta serviços que operam no IIS ou diretamente sobre o Windows (Service Host)</li>
+</ul>
+<h3 id="IIS"><a href="#IIS" class="headerlink" title="IIS"></a>IIS</h3><ul>
+<li>Servidor Web</li>
+<li>Servidor de aplicações baseados em ASP.NET e código gerenciado .NET</li>
+</ul>
+<h3 id="Windows-Azure"><a href="#Windows-Azure" class="headerlink" title="Windows Azure"></a>Windows Azure</h3><ul>
+<li>Plataforma para hospedagem de aplicações para nuvens públicas e privadas</li>
+<li>Suporta .NET, Java e LAMP</li>
+<li>Linux e Windows</li>
+</ul>
+<h2 id="Tecnologias-avancadas-de-plataforma-NET"><a href="#Tecnologias-avancadas-de-plataforma-NET" class="headerlink" title="Tecnologias avançadas de plataforma .NET"></a>Tecnologias avançadas de plataforma .NET</h2><h3 id="Mensagens-MSMQ"><a href="#Mensagens-MSMQ" class="headerlink" title="Mensagens - MSMQ"></a>Mensagens - MSMQ</h3><p>Tecnologia para a criação de aplicações baseadas em mensagens em tecnologias Windows e .NET</p>
+<h3 id="Active-Directory"><a href="#Active-Directory" class="headerlink" title="Active Directory"></a>Active Directory</h3><p>Tecnologia para suporte a autenticação e autorização federada de usuários em aplicaçõesSuporte a LDAP e Kerberos  </p>
+<h3 id="APP-Fabric-Caching"><a href="#APP-Fabric-Caching" class="headerlink" title="APP Fabric Caching"></a>APP Fabric Caching</h3><p>Tecnologia para suporte a cache distribuído de aplicações .NET  </p>
+<h3 id="Microsoft-BizTalk"><a href="#Microsoft-BizTalk" class="headerlink" title="Microsoft BizTalk"></a>Microsoft BizTalk</h3><ul>
+<li>Barramento de serviço (ESB) com suporte intensivo a tecnologias Windows</li>
+<li>Possui mais de 30 conectores a recursos corporativos legados (ex SAP ou COBOL)</li>
+<li>Suporte a orquestrações BPMS</li>
+</ul>
+<h2 id="Plataforma-LAMP"><a href="#Plataforma-LAMP" class="headerlink" title="Plataforma LAMP"></a>Plataforma LAMP</h2><ul>
+<li>Termo genérico que denota o desenvolvimento de aplicações em ambiente Linux, Apache httpD, MySQL e PHP;</li>
+<li>Generalizado para sinalizar o uso de tecnologias <strong>rápidas e simples</strong> para o desenvolvimento de aplicações Web;</li>
+<li>Generalizado para linguagens dinâmicas: python, ruby, groovy. </li>
+<li>Banco de dados abertos: MariaDb ou PostgreSQL</li>
+<li>Linux (SUSE, Redhat, outros) e Windows</li>
+</ul>
+<h3 id="PHP"><a href="#PHP" class="headerlink" title="PHP"></a>PHP</h3><ul>
+<li>Linguagem para desenvolvimento de aplicações Web</li>
+<li>Valores: Simplicidade e <strong>produtividade</strong></li>
+<li>Ambientes de produtividade com CakePHP suportam técnicas de aceleração com Scaffolding</li>
+</ul>
+<h3 id="Aplicacoes-de-scaffolding"><a href="#Aplicacoes-de-scaffolding" class="headerlink" title="Aplicações de scaffolding"></a>Aplicações de scaffolding</h3><ul>
+<li>Ruby/Ruby on Rails</li>
+<li>Python/Django</li>
+<li>Groovy/Grails</li>
+<li>Java/Play Framework</li>
+</ul>
+<h2 id="Plataforma-NET"><a href="#Plataforma-NET" class="headerlink" title="Plataforma .NET"></a>Plataforma .NET</h2><p>O que é o .NET Framework?</p>
+<ul>
+<li>Aplicações Gerenciadas - aplicações ficam num ambiente gerenciado</li>
+<li>.NET Framework - conjunto de bibliotecas que facilitam desenvolvimento de aplicações</li>
+<li>Sistema Operacional Windows - existem variações para linux também</li>
+</ul>
+<p>Diferente do Java EE, que somente especifica as tecnologia e a implementação é feita por terceiros. A plataforma .NET fornece tanto as especificações como as implementações..NET tem suporte a multilinguagem, mais comuns são C# e VB.NET</p>
+
+        
+      </div>
+      <div class="post-footer clearfix">
+        <a href="/2015/10/24/plataformas-net-e-lamp/" class="post-more waves-button-light">MORE</a>
+      </div>
+    
+
+  </article>
+
+
+</li>
+  
+    <li class="post-list-item">
+  <article id="post-plataformas-java-ee" class="article article-type-post" itemscope itemprop="blogPost">
+    
+      
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2015/10/20/plataformas-java-ee/">Plataformas Java EE</a>
+    </h3>
+  
+
+
+
+      <div class="post-meat flex-row">
+        <div class="flex-col">
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/disciplina3/">disciplina3</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/modulo3/">modulo3</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/unidade2/">unidade2</a></li></ul>
+</div>
+        <time datetime="2015-10-20T02:07:00.001Z" itemprop="datePublished" class="post-tiem">
+  20/10/2015
+</time>
+      </div>
+      <div class="post-content" itemprop="postContent" >
+        
+          <h2 id="Tecnologias-basicas-de-Java-EE"><a href="#Tecnologias-basicas-de-Java-EE" class="headerlink" title="Tecnologias básicas de Java EE"></a>Tecnologias básicas de Java EE</h2><h3 id="JSF"><a href="#JSF" class="headerlink" title="JSF"></a>JSF</h3><p>“A tecnologia Java Server Faces é um framework de componentes no lado servidor para interfaces de usuários Web baseada em tecnologia Java”, Java EE 6 TutorialJSF é uma especificação, a implementação é o PrimeFaces, RichFaces, IceFaces.Cuida da renderização de páginas web. É multicamadas e multi-plataforma. </p>
+<h3 id="Servlets"><a href="#Servlets" class="headerlink" title="Servlets"></a>Servlets</h3><p>“Um servlet é uma classe da linguagem Java que é usada para estender as capacidades de servidores que hospedam aplicações por meio de um modelo de programação requisição-resposta”, Java EE 6 TutorialFaz a ligação entre a lógica de negócio e as páginas web. Faz roteamento, auditoria, transações</p>
+<h3 id="JAX-WS"><a href="#JAX-WS" class="headerlink" title="JAX-WS"></a>JAX-WS</h3><p>“Provê a funcionalidade para serviços Web grandes baseado nos protocolos comuns WS-*”, Java EE 6 TutorialUsado para integração com outros sistemasÉ apenas uma especificação Apache CXF, JBOSS WebServices</p>
+<h3 id="JAX-RS"><a href="#JAX-RS" class="headerlink" title="JAX-RS"></a>JAX-RS</h3><p>“Provê a funcionalidade para serviços web no estilo RESTful”, Java EE 6 TutorialÉ apenas uma especificação, um exemplo de implementação é o Apache Jersey</p>
+<h3 id="JPA"><a href="#JPA" class="headerlink" title="JPA"></a>JPA</h3><p>“A API de persitência Java provê facilidades de mapeamento objeto relacional para gerenciar dados relacionais em aplicações Java”, Java EE 6 Tutorial</p>
+<h2 id="Tecnologias-avancadas-de-Java-EE"><a href="#Tecnologias-avancadas-de-Java-EE" class="headerlink" title="Tecnologias avançadas de Java EE"></a>Tecnologias avançadas de Java EE</h2><h3 id="EJB"><a href="#EJB" class="headerlink" title="EJB"></a>EJB</h3><p>É um componente servidor que encapsula a lógica de negócio de uma aplicação<br>Adiciona poderes a uma classe e permite que a aplicação se torne muito escalável.  </p>
+<h4 id="Vantagens"><a href="#Vantagens" class="headerlink" title="Vantagens"></a>Vantagens</h4><ul>
+<li>Controle transacional automático</li>
+<li>Capacidade de operar em ambientes distribuidos</li>
+<li>Facilita a montagem do estilo arquitetural de microserviços ou implantações SOA (é comparável ao WCF nesse sentido) </li>
+</ul>
+<h3 id="JMS"><a href="#JMS" class="headerlink" title="JMS"></a>JMS</h3><p>É uma API Java que permite que aplicações criem, enviem, recebam ou leiam mensagensÉ uma especificação e pode ser comparado ao MQServices da IBM ou MSMQ da Microsoft.Implementação dessa especificação é o Apache MQ</p>
+<h3 id="JTA"><a href="#JTA" class="headerlink" title="JTA"></a>JTA</h3><p>Permite que aplicações acessem transações de uma maneira independente de implementações específicas.<br>É um controle de transação global, por exemplo, fazer o controle da transação para enviar dados a receita e salvar esses dados no banco local. Nesse caso, não adianta fazer controle da transação somente no banco de dados.  </p>
+<h3 id="JCA"><a href="#JCA" class="headerlink" title="JCA"></a>JCA</h3><p>A arquitetura de conectores Java EE permite que componentes Java EE interajam com sistemas legados. Ex. SAPCC.<br>É uma alternativa mais avançada quando o JAX-WS ou JAX-RS não nos permite fazer a integração com sistemas legados.  </p>
+<h2 id="Plataforma-Java-EE"><a href="#Plataforma-Java-EE" class="headerlink" title="Plataforma Java EE"></a>Plataforma Java EE</h2><p>É uma das principais plataformas para desenvolver Web e Distribuído. A plataforma Java EE pode ser representada por uma imagem:  </p>
+<p><a href="http://docs.oracle.com/javaee/5/tutorial/doc/figures/overview-multitieredApplications.gif" target="_blank" rel="external"><img src="http://docs.oracle.com/javaee/5/tutorial/doc/figures/overview-multitieredApplications.gif" alt=""></a>  </p>
+<p>O Java EE é na verdade um conjunto de especificações coordenado por um conjunto de empresas, por isso, o Java EE não representa uma tecnologia específica.  </p>
+<p>Os servidores de aplicação para o Java EE mais conhecidos são:  </p>
+<ul>
+<li>Apache Tomcat</li>
+<li>JBOSS Web Server</li>
+<li>JBOSS Application Server</li>
+<li>IBM WebSphere WebServer</li>
+<li>IBM WebSphere Application Server</li>
+<li>Oracle Application Server</li>
+</ul>
+
+        
+      </div>
+      <div class="post-footer clearfix">
+        <a href="/2015/10/20/plataformas-java-ee/" class="post-more waves-button-light">MORE</a>
+      </div>
+    
+
+  </article>
+
+
+</li>
+  
+    <li class="post-list-item">
+  <article id="post-estilos-e-plataformas-arquiteturais" class="article article-type-post" itemscope itemprop="blogPost">
+    
+      
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2015/10/12/estilos-e-plataformas-arquiteturais/">Estilos e Plataformas Arquiteturais</a>
+    </h3>
+  
+
+
+
+      <div class="post-meat flex-row">
+        <div class="flex-col">
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/disciplina3/">disciplina3</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/modulo3/">modulo3</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/unidade1/">unidade1</a></li></ul>
+</div>
+        <time datetime="2015-10-12T21:22:00.000Z" itemprop="datePublished" class="post-tiem">
+  12/10/2015
+</time>
+      </div>
+      <div class="post-content" itemprop="postContent" >
+        
+          <h2 id="Plataformas-arquiteturais"><a href="#Plataformas-arquiteturais" class="headerlink" title="Plataformas arquiteturais"></a>Plataformas arquiteturais</h2><p>Representa um arranjo tecnológico das escolhas técnicas realizadas pelo time e que leva a implementação da solução no software.</p>
+<h3 id="Estilo-arquitetural"><a href="#Estilo-arquitetural" class="headerlink" title="Estilo arquitetural"></a>Estilo arquitetural</h3><p>A função de uma arquitetura vai determinar a forma do componente a ser montado. Analogamente, a arquitetura de uma casa a ser montada, vai refletir na sua forma. Portanto, uma casa com telhado fazendo um ângulo acentuado refletiu a intenção de evitar a neve se deposite no telhado da casa. </p>
+<blockquote>
+<p>A escolha do estilo arquitetural é a maior decisão na definição de uma arquitetura.</p>
+</blockquote>
+<p>Alguns estilos arquiteturais:  </p>
+<ul>
+<li>Cliente-servidor</li>
+<li>Baseado em cadastros web (Web 1.0)</li>
+<li>Aplicações Ricas de Internet (Web 2.0)</li>
+<li>Multicamadas (n-camadas)</li>
+<li>Baseado em integração de aplicações (EAI)</li>
+<li>Baseado em serviços</li>
+<li>Baseado em processos de negócio (BPMS)</li>
+<li>Baseado em computação em grade (grid computing)</li>
+</ul>
+<h3 id="Plataforma-arquitetural"><a href="#Plataforma-arquitetural" class="headerlink" title="Plataforma arquitetural"></a>Plataforma arquitetural</h3><p>É um tipo particular de mecanismo de implementação. É uma solução que representa o primeiro grande produto técnico que vai ser escolhido na arquitetura.Exemplos concretos</p>
+<ul>
+<li>Java EE</li>
+<li>.NET</li>
+</ul>
+<h2 id="Escolha-de-plataformas-arquiteturais"><a href="#Escolha-de-plataformas-arquiteturais" class="headerlink" title="Escolha de plataformas arquiteturais"></a>Escolha de plataformas arquiteturais</h2><p>Como as plataformas podem ser escolhidas?Uma solução emocional é usar a tecnologia que já se conhece para ser aplicado em qualquer tipo de problema. Não é uma boa ideia.Decisão estratégica: Escolha de um carro</p>
+<ul>
+<li>Antes de escolher um carro, deve-se compreender a real <strong>necessidade</strong></li>
+<li>É importante definir quais os critérios devem <strong>conduzir</strong> a escolha</li>
+</ul>
+<p>Necessidades para compra de um carro</p>
+<ul>
+<li>“Uso o carro para fins urbanos”</li>
+<li>“Sou casado e tenho três filhos”</li>
+<li>“Faço pequenas viagens e minha esposa carrega muita bagagem”</li>
+<li>“Meu orçamento é limitado a R$ 55.000”</li>
+<li>“Moro numa cidade quente”</li>
+</ul>
+<p>É preciso fazer uma decisão <strong>racional!!</strong> Nem sempre a escolha final vai agradar, no caso da escolha do carro, sobrou um carro não muito atrativo. Mas a escolha racional é a mais certa de ser feita.Através de “plugins” podemos modificar a plataforma escolhida para atender melhor nossos requisitos, no caso do carro, após o ter escolhido, podemos adicionar ar-condicionado, airbag, som, etc. No caso de uma plataforma arquitetural, após ter escolhida Java EE p.ex., pode optar por usar JSF ou PrimeFaces, hibernate ou JPA, etc.</p>
+
+        
+      </div>
+      <div class="post-footer clearfix">
+        <a href="/2015/10/12/estilos-e-plataformas-arquiteturais/" class="post-more waves-button-light">MORE</a>
+      </div>
+    
+
+  </article>
+
+
+</li>
+  
+    <li class="post-list-item">
+  <article id="post-modelagem-arquitetural" class="article article-type-post" itemscope itemprop="blogPost">
+    
+      
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2015/10/04/modelagem-arquitetural/">Modelagem Arquitetural</a>
+    </h3>
+  
+
+
+
+      <div class="post-meat flex-row">
+        <div class="flex-col">
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/disciplina2/">disciplina2</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/modulo3/">modulo3</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/unidade4/">unidade4</a></li></ul>
+</div>
+        <time datetime="2015-10-04T18:29:00.000Z" itemprop="datePublished" class="post-tiem">
+  04/10/2015
+</time>
+      </div>
+      <div class="post-content" itemprop="postContent" >
+        
+          <p>Modelagem Arquitetural com modelo de visualização 4+1. O objetivo é permitir que arquitetos possam capturar, comunicar e expressar de uma forma simples e visual como arquitetura foi pensada para seus times.  </p>
+<ul>
+<li>Visualização lógica - perspectiva do usuário final e representa os grandes blocos de construção de um software, os pacotes.</li>
+<li>Visualização de implementação - perspectiva para os desenvolvedores através de diagramas e componentes da UML</li>
+<li>Visualização do implantação - topologia física, descrita através do diagrama de implantação.</li>
+</ul>
+<h2 id="Visualizacao-Logica"><a href="#Visualizacao-Logica" class="headerlink" title="Visualização Lógica"></a>Visualização Lógica</h2><p>Objetivo é capturar os principais elementos/módulo de um sistema e como estão relacionados.</p>
+<h3 id="Diagrama-de-pacote"><a href="#Diagrama-de-pacote" class="headerlink" title="Diagrama de pacote"></a>Diagrama de pacote</h3><p>O objetivo é exprimir como dois ou mais pacotes se comunicam ou dependem um do outro. </p>
+<ul>
+<li>Dependência entre pacotes (linha pontilhada e seta aberta)</li>
+<li>Um pacote dentro do outro - todo/parte </li>
+<li>O diagrama de pacotes permite expressar não só a decomposição funcional de um sistema como também padrões arquiteturais, p.ex. MVC.</li>
+<li>É possível expressar também uma arquitetura n-camadas.</li>
+</ul>
+<h2 id="Visualizacao-de-Implementacao"><a href="#Visualizacao-de-Implementacao" class="headerlink" title="Visualização de Implementação"></a>Visualização de Implementação</h2><ul>
+<li>Expressa os componentes de uma aplicação</li>
+<li>Componentes são DLLs, libs, archives, assembly, JARs, WARs que constituem fisicamente uma aplicação</li>
+</ul>
+<h3 id="Diagrama-de-componentes"><a href="#Diagrama-de-componentes" class="headerlink" title="Diagrama de componentes"></a>Diagrama de componentes</h3><ul>
+<li>Um componente na UML2 é uma classe estereotipada: &lt;<component>&gt;</component></li>
+<li>Um componente pode representar qualquer tipo de software como ex. um banco de dados, um servidor de aplicação, servidor web, DLL, JAR</li>
+<li>Dependência é igual aos pacotes (linha pontilhada e seta aberta)</li>
+<li>Através da ligação interface requerida e interface fornecida é possível expressar mais informações no diagrama, do que somente dependência. Ex. browser tem uma interface requerida HTTP e IIS tem uma interface fornecida HTTP.</li>
+<li>Quadrado no componente é chamado “porto”</li>
+</ul>
+<h2 id="Visualizacao-de-Implantacao"><a href="#Visualizacao-de-Implantacao" class="headerlink" title="Visualização de Implantação"></a>Visualização de Implantação</h2><p>Permite expressar a visão topológica, implantação ou rede de um projeto. Representa como um software vai ser instalado e manifestado dentro máquinas na rede onde será hospedado e acessado pelos usuários.</p>
+<ul>
+<li>Tem um caráter físico topológico, por isso fala de uma linguagem mais próxima da linguagem de produção, da infra.</li>
+<li>Permite expressar elementos de hardware, processadores, dispositivos e redes de comunicação.</li>
+<li>Permite mostrar onde os componentes vão residir.</li>
+</ul>
+<h3 id="“Nodo”-como-elemento-basico"><a href="#“Nodo”-como-elemento-basico" class="headerlink" title="“Nodo” como elemento básico"></a>“Nodo” como elemento básico</h3><ul>
+<li>É sempre um retângulo em 3D</li>
+<li>Representa um elemento físico, um hardware com capacidade de processamento, ex: iPhone 5S, Samsung Galaxy Tab 3, ATM, Servidor de Banco de Dados</li>
+<li>No diagrama a associação é representada como uma linha contínua</li>
+<li>Dentro de um Nodo, podemos ter vários componentes com dependência, etc.</li>
+</ul>
+
+        
+      </div>
+      <div class="post-footer clearfix">
+        <a href="/2015/10/04/modelagem-arquitetural/" class="post-more waves-button-light">MORE</a>
+      </div>
+    
+
+  </article>
+
+
+</li>
+  
+    <li class="post-list-item">
+  <article id="post-mecanismos-arquiteturais" class="article article-type-post" itemscope itemprop="blogPost">
+    
+      
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2015/10/04/mecanismos-arquiteturais/">Mecanismos Arquiteturais</a>
+    </h3>
+  
+
+
+
+      <div class="post-meat flex-row">
+        <div class="flex-col">
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/disciplina2/">disciplina2</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/modulo3/">modulo3</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/unidade3/">unidade3</a></li></ul>
+</div>
+        <time datetime="2015-10-04T17:04:00.000Z" itemprop="datePublished" class="post-tiem">
+  04/10/2015
+</time>
+      </div>
+      <div class="post-content" itemprop="postContent" >
+        
+          <p>Permite que o arquiteto possa escolher tecnologias de forma correto no projeto.  </p>
+<ul>
+<li>Um mecanismo arquitetural representa uma solução comum para um problema recorrente.</li>
+<li>Um mecanismo liga requisitos arquiteturais a soluções técnicas, que podem ser expressas com a visão 4+1</li>
+<li><p>Os requisitos do projeto influenciam os mecanismos de análise, desenho e implementação.</p>
+</li>
+<li><p>Mecanismos de analise: representa a solução independente de tecnologia</p>
+</li>
+<li>Mecanismos de desenho: a solução com algum viés tecnológico</li>
+<li>Mecanismo de implementação: solução concreta</li>
+</ul>
+<h3 id="Exemplo"><a href="#Exemplo" class="headerlink" title="Exemplo"></a>Exemplo</h3><p>Requisito arquitetural:</p>
+<blockquote>
+<p>Dados cadastrais devem estar disponíveis indefinidamente para consulta ou modificação.</p>
+</blockquote>
+<p>Baseado nesse requisito, o <u>mecanismo de analise</u> seria a <strong>persistência</strong> dos dados, já que é uma solução comum no desenvolvimento de software.  </p>
+<p>Já o <u>mecanismo de desenho</u>, influenciado pelo de análise, terá algum viés tecnológico, ele poderia por exemplo ser um <strong>banco de dados relacional</strong> ou um <strong>arquivo de texto</strong>, mas ainda não tem o nome da tecnologia em si.  </p>
+<p>O <u>mecanismo de implementação</u> como terá uma solução concreta, esse requisito poderia ser implementado com o <strong>MS SQLServer</strong>.  </p>
+<h3 id="Exemplo-Hotel-ACME"><a href="#Exemplo-Hotel-ACME" class="headerlink" title="Exemplo - Hotel ACME"></a>Exemplo - Hotel ACME</h3><p>Requisito arquitetural:  </p>
+<blockquote>
+<p>Usuários devem ser corretamente identificados</p>
+</blockquote>
+<p>Restrições:  </p>
+<ul>
+<li>A solução de segurança deve ser baseada em padrões abertos</li>
+<li>As senhas não devem trafegar sobre a rede</li>
+<li>A empresa já utiliza soluções Microsoft</li>
+</ul>
+<p>Mecanismo de Análise  </p>
+<ul>
+<li>Os projetistas estudam materiais técnicos sobre <strong>autenticação</strong> </li>
+<li>A autenticação é a solução técnica (padronizada) para credenciar usuários do sistema</li>
+</ul>
+<p>Mecanismo de Desenho  </p>
+<ul>
+<li>As soluções Kerberos e LDAP são elencadas, pois são padrões abertos</li>
+<li>O Kerberos é escolhido, pois não trafega senhas sobre a rede.</li>
+</ul>
+<p>Mecanismos de Implementação</p>
+<ul>
+<li>Dado que a empresa já possui produtos MS, escolhemos um produto MS que suporta o protocolo Kerberos</li>
+<li>Active Directory com Kerberos</li>
+</ul>
+
+        
+      </div>
+      <div class="post-footer clearfix">
+        <a href="/2015/10/04/mecanismos-arquiteturais/" class="post-more waves-button-light">MORE</a>
+      </div>
+    
+
+  </article>
+
+
+</li>
+  
+    <li class="post-list-item">
+  <article id="post-requisitos-arquiteturais" class="article article-type-post" itemscope itemprop="blogPost">
+    
+      
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2015/09/19/requisitos-arquiteturais/">Requisitos Arquiteturais</a>
+    </h3>
+  
+
+
+
+      <div class="post-meat flex-row">
+        <div class="flex-col">
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/disciplina2/">disciplina2</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/modulo3/">modulo3</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/unidade2/">unidade2</a></li></ul>
+</div>
+        <time datetime="2015-09-19T19:07:00.002Z" itemprop="datePublished" class="post-tiem">
+  19/09/2015
+</time>
+      </div>
+      <div class="post-content" itemprop="postContent" >
+        
+          <h2 id="Requisitos-arquiteturais"><a href="#Requisitos-arquiteturais" class="headerlink" title="Requisitos arquiteturais"></a>Requisitos arquiteturais</h2><p>Não são requisitos não-funcionais. São requisitos que de alguma forma afetam a arquitetura.Dado um requisito</p>
+<blockquote>
+<p>O sistema deve ser <strong>rápido</strong> e capaz de processar <strong>grandes quantidades</strong> de requisições simultâneas</p>
+</blockquote>
+<p>“Rápido” e “grandes quantidades” são atributos de qualidade chamados performance e escalabilidade, respectivamente. Ainda nesse requisito, fala de todo o sistema, ou seja, é muito genérico. O papel do arquiteto é transformar um requisito como esse em um requisito específico e mensurável. Um exemplo de um requisito esperto seria:  </p>
+<blockquote>
+<p>A <strong>tela de cadastro</strong> de usuários deve possuir um tempo de resposta menor que <strong>8 segundos</strong> e suportar <strong>20 usuários</strong> simultaneamente em horários de pico (15:00 às 19:00).</p>
+</blockquote>
+<h2 id="Modelo-FURPS"><a href="#Modelo-FURPS" class="headerlink" title="Modelo FURPS+"></a>Modelo FURPS+</h2><p>O modelo permite capturar e qualificar requisitos com completude ao longo do projeto.  </p>
+<p>Devemos capturar requisitos ao longo de cinco dimensões:  </p>
+<ul>
+<li>Functionality - Funcionalidade</li>
+<li>Usability - Usabilidade</li>
+<li>Reliability - Confiabilidade</li>
+<li>Performance - Desempenho</li>
+<li>Supportability - Suportabilidade</li>
+</ul>
+<p>Dimensão adicional que lida com restrições técnicas:  </p>
+<ul>
+<li>Restrições ao desenho</li>
+<li>Restrições à implementação</li>
+<li>Restrições de interface</li>
+<li>Restrições físicas</li>
+</ul>
+<h3 id="Funcionais"><a href="#Funcionais" class="headerlink" title="Funcionais"></a>Funcionais</h3><h4 id="Funcionalidade"><a href="#Funcionalidade" class="headerlink" title="Funcionalidade"></a>Funcionalidade</h4><ul>
+<li>Lida com aspectos funcionais</li>
+<li>Requisitos funcionais que o sistema deve atender</li>
+<li>Geralmente relacionados ao domínio do problema</li>
+<li>Ex. pequisa de palavras chave do google (muito complexo)</li>
+<li>Segurança, ajuda on-line, log de auditoria, controle de licenças, envio e recebimento de e-mails, i18n, recursos de impressão e relatórios, recursos de work</li>
+</ul>
+<h3 id="Nao-funcionais-URPS"><a href="#Nao-funcionais-URPS" class="headerlink" title="Não funcionais: URPS"></a>Não funcionais: URPS</h3><h4 id="Usabilidade"><a href="#Usabilidade" class="headerlink" title="Usabilidade"></a>Usabilidade</h4><ul>
+<li>Qualidade da interação entre o sistema e o usuário final. Ex: Velocidade que o usuário entre e recupere informações, facilidade de aprendizado para usuários leigos. </li>
+</ul>
+<h4 id="Reliable-Confiabilidade"><a href="#Reliable-Confiabilidade" class="headerlink" title="Reliable (Confiabilidade)"></a>Reliable (Confiabilidade)</h4><ul>
+<li>É a disponibildiade do sistema. Qual o tempo que o sistema está disponivel? </li>
+<li>Ex: um produto com disponibilidade de 99% do tempo ao longo de 24 horas. </li>
+<li>Outro exemplo é a recuperação de falhas. Dado uma falha, qual o tempo que o sistema demora para se recuperar.</li>
+</ul>
+<h4 id="Performance-Desempenho"><a href="#Performance-Desempenho" class="headerlink" title="Performance (Desempenho)"></a>Performance (Desempenho)</h4><ul>
+<li>Está relacionado a dois itens: Vazão e Tempo de resposta</li>
+<li>Vazão: associada ao processamento em lote. Ex. processar folha de pagamento</li>
+<li>Tempo de resposta: tempo que o sistema demora pra fazer uma requisição.</li>
+</ul>
+<h4 id="Supportability-Suportabilidade"><a href="#Supportability-Suportabilidade" class="headerlink" title="Supportability - Suportabilidade"></a>Supportability - Suportabilidade</h4><ul>
+<li>Está relacionado aos aspectos internos do sistema, onde somente a equipe de TI consegue enxergar e não o usuário final.</li>
+<li>Ex: Manutenabilidade, sistema operacional</li>
+</ul>
+<h4 id="Restricoes"><a href="#Restricoes" class="headerlink" title="Restrições"></a>Restrições</h4><p>Elementos que precedem um determinado produto ou escolha a ser feita. Ex: a empresa já usa um banco Oracle, ou a tela de dispositivo é de 3,5’.  </p>
+<ul>
+<li>Restrição ao desenho: especifica e restringe as opções de arquitetura do sistema</li>
+<li>Restrição à implementação: especifica e restringe os aspectos de implementação de código</li>
+<li>Restrição de interface: É uma restrição de comunição. Ex. o sistema deve interoperar através de Webservice</li>
+<li>Restrição física: restrições de algum tipo de hardware</li>
+</ul>
+
+        
+      </div>
+      <div class="post-footer clearfix">
+        <a href="/2015/09/19/requisitos-arquiteturais/" class="post-more waves-button-light">MORE</a>
+      </div>
+    
+
+  </article>
+
+
+</li>
+  
+    <li class="post-list-item">
+  <article id="post-visao-geral-da-arquitetura-de-software" class="article article-type-post" itemscope itemprop="blogPost">
+    
+      
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2015/09/04/visao-geral-da-arquitetura-de-software/">Visão Geral da Arquitetura de Software</a>
+    </h3>
+  
+
+
+
+      <div class="post-meat flex-row">
+        <div class="flex-col">
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/disciplina2/">disciplina2</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/modulo3/">modulo3</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/unidade1/">unidade1</a></li></ul>
+</div>
+        <time datetime="2015-09-04T04:01:00.000Z" itemprop="datePublished" class="post-tiem">
+  04/09/2015
+</time>
+      </div>
+      <div class="post-content" itemprop="postContent" >
+        
+          <h2 id="Exemplo-pratico-de-arquitetura-de-software"><a href="#Exemplo-pratico-de-arquitetura-de-software" class="headerlink" title="Exemplo prático de arquitetura de software"></a>Exemplo prático de arquitetura de software</h2><p>Antes de aplicar a arquitetura de software para resolver um problema, deve analisar os condutores para se chegar nas soluções dos problemas desses condutores.</p>
+<h2 id="O-que-e-uma-arquitetura-de-software"><a href="#O-que-e-uma-arquitetura-de-software" class="headerlink" title="O que é uma arquitetura de software"></a>O que é uma arquitetura de software</h2><blockquote>
+<p>“Arquitetura de software é o conjunto de decisões que, se feitas incorretamente, podem causar o cancelamento do projeto” - Eoin Woods</p>
+</blockquote>
+<p>Tipos de arquitetos  </p>
+<ul>
+<li><p>Arquiteto de soluções</p>
+</li>
+<li><p>Responsável por trabalhar com times comercial e pré-venda na solução pré-liminar de um projeto. </p>
+</li>
+<li>Antes do projeto ser aprovado. </li>
+<li><p>Faz a ponte entre outros arquitetos, em particular do arquiteto de software.</p>
+</li>
+<li><p>Arquiteto de software</p>
+</li>
+<li><p>Papel central: liderar a construção de uma arquitetura desde o primeiro dia do projeto</p>
+</li>
+<li>Usa-se os requisitos críticos</li>
+<li><p>Toma decisões técnicas</p>
+</li>
+<li><p>Arquiteto de dados</p>
+</li>
+<li><p>Desafios como BI, ETL, etc.</p>
+</li>
+<li><p>Tomada de desciões técnicas</p>
+</li>
+<li><p>Arquiteto de Infraestrutura</p>
+</li>
+<li><p>Ex.: computação nas nuvens</p>
+</li>
+<li><p>Arquiteto de tecnologia Java EE</p>
+</li>
+<li>Arquiteto de tecnologia .NET</li>
+<li>Arquiteto das nuvens</li>
+</ul>
+<h3 id="Conceitos-sobre-o-arquiteto-de-software"><a href="#Conceitos-sobre-o-arquiteto-de-software" class="headerlink" title="Conceitos sobre o arquiteto de software"></a>Conceitos sobre o arquiteto de software</h3><ul>
+<li><p>O arquiteto é um desenvolvedor sênior</p>
+</li>
+<li><p>Falso</p>
+</li>
+<li>Enquanto o desenvolvedor é um especialista, o arquiteto é um generalista.</li>
+<li><p>O arquiteto <strong>não</strong> é um desenvolvedor sênior</p>
+</li>
+<li><p>O arquiteto domina as APIs de segurança Java ou .NET</p>
+</li>
+<li><p>Falso</p>
+</li>
+<li>Mas precisa dominar as táticas e soluções de mercado que ele vai trabalhar</li>
+<li><p>O arquiteto domina as <strong>táticas arquiteturais</strong> de segurança</p>
+</li>
+<li><p>O arquiteto desenha plantas e o time de desenvolvimento implementa</p>
+</li>
+<li><p>Falso</p>
+</li>
+<li><p>O arquiteto <span style="background-color: yellow;">junto</span> com o time de desenvolvimento desenvolve cria plantas</p>
+</li>
+<li><p>O arquiteto desenvolve a arquitetura</p>
+</li>
+<li><p>Falso</p>
+</li>
+<li>Ele desenvolve a arquitetura <span style="background-color: yellow;">junto</span> com time</li>
+<li>O time de arquitetura desenvolve a arquitetura</li>
+</ul>
+<h3 id="O-que-faz-um-arquiteto-de-software"><a href="#O-que-faz-um-arquiteto-de-software" class="headerlink" title="O que faz um arquiteto de software"></a>O que faz um arquiteto de software</h3><blockquote>
+<p>Liderar a concepção do software…<br>…Definindo os atributos de qualidade.</p>
+<p>Fornece apoio à construção do software…<br>…Baseado nos atributos de qualidade.</p>
+</blockquote>
+<h3 id="Decomposicao-tipica-das-atividades-de-um-arquiteto"><a href="#Decomposicao-tipica-das-atividades-de-um-arquiteto" class="headerlink" title="Decomposição típica das atividades de um arquiteto"></a>Decomposição típica das atividades de um arquiteto</h3><ul>
+<li>Coleta de requisitos (25%)</li>
+<li><p>Modelagem e implementação de provas de conceito (50%)</p>
+</li>
+<li><p>Provas de conceitos são instrumentos para que arquitetos possam reduzir riscos</p>
+</li>
+<li><p>Assistência ao time (25%)</p>
+</li>
+</ul>
+<h2 id="O-contexto-na-arquitetura-de-software"><a href="#O-contexto-na-arquitetura-de-software" class="headerlink" title="O contexto na arquitetura de software"></a>O contexto na arquitetura de software</h2><ul>
+<li>É preciso olhar o contexto ambiental onde o arquiteto está envolvido para se tomar decisões arquiteturais. Ex. mudar de framework quando não se tem tempo, nem experiência.</li>
+</ul>
+<h3 id="Influencias-na-arquitetura"><a href="#Influencias-na-arquitetura" class="headerlink" title="Influências na arquitetura"></a>Influências na arquitetura</h3><ul>
+<li><p>Contexto de negócio</p>
+</li>
+<li><p>Qual a natureza do projeto que se está trabalhando? Se está trabalhado com um projeto de tempo fechado, não se pode ofender o prazo.</p>
+</li>
+<li><p>Diretrizes e requisitos</p>
+</li>
+<li><p>Captar as diretrizes do projeto como  escalabilidade, segurança, usabilidade que são elementos críticos.</p>
+</li>
+<li><p>Restrições e premissas </p>
+</li>
+<li><p>Tempo, custo e muitas outras restrições. Ex. time júnior sem capacitação.</p>
+</li>
+<li><p>Experiência do time</p>
+</li>
+<li><p>Ignorar a experiência do time pode trazer consequencias graves no projeto.</p>
+</li>
+<li><p>Soluções técnicas disponíveis</p>
+</li>
+<li><p>São chamados de ativos arquiteturas. Podem ser elementos importantes para guia o arquiteto no caminho de boas soluções técnicas.</p>
+</li>
+<li><p>Atributos de qualidade diversos</p>
+</li>
+<li><p>Aspectos como segurança da informação, performance, usabilidade. É preciso conhecer esses atributos para se alcançar uma boa arquitetura</p>
+</li>
+</ul>
+<h2 id="Decisoes-arquiteturais"><a href="#Decisoes-arquiteturais" class="headerlink" title="Decisões arquiteturais"></a>Decisões arquiteturais</h2><blockquote>
+<p>“A vida de um arquiteto de software é uma longa sucessão de decisões sub-ótimas e parcialmente tomadas no escuro.” - Philippe Kruchten</p>
+</blockquote>
+<h3 id="Pontos-a-serem-observados-ao-tomar-decisoes"><a href="#Pontos-a-serem-observados-ao-tomar-decisoes" class="headerlink" title="Pontos a serem observados ao tomar decisões"></a>Pontos a serem observados ao tomar decisões</h3><ul>
+<li><p>Alinhamento estratégico</p>
+</li>
+<li><p>nunca colocar a tecnologia na frente do negócio.</p>
+</li>
+<li><p>Balanceamento de influências diversas</p>
+</li>
+<li><p>experiência do time</p>
+</li>
+<li>ativos da empresa</li>
+<li><p>contexto de negócio (diretrizes)</p>
+</li>
+<li><p>Análise de riscos</p>
+</li>
+<li><p>Processo decisório</p>
+</li>
+<li><p>O que é melhor para o projeto e não o que o desenvolvedor quer fazer.</p>
+</li>
+</ul>
+
+        
+      </div>
+      <div class="post-footer clearfix">
+        <a href="/2015/09/04/visao-geral-da-arquitetura-de-software/" class="post-more waves-button-light">MORE</a>
+      </div>
+    
+
+  </article>
+
+
+</li>
+  
+    <li class="post-list-item">
+  <article id="post-processo-de-testes" class="article article-type-post" itemscope itemprop="blogPost">
+    
+      
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2015/09/03/processo-de-testes/">Processo de Testes</a>
+    </h3>
+  
+
+
+
+      <div class="post-meat flex-row">
+        <div class="flex-col">
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/disciplina1/">disciplina1</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/modulo3/">modulo3</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/unidade4/">unidade4</a></li></ul>
+</div>
+        <time datetime="2015-09-04T02:58:00.000Z" itemprop="datePublished" class="post-tiem">
+  03/09/2015
+</time>
+      </div>
+      <div class="post-content" itemprop="postContent" >
+        
+          <h2 id="Verificacao-e-Validacao-no-MPS-Br"><a href="#Verificacao-e-Validacao-no-MPS-Br" class="headerlink" title="Verificação e Validação no MPS-Br"></a>Verificação e Validação no MPS-Br</h2><p>Nível D do MPS-BrObjetivo: formalizar o processo de teste de softwareOs resultados (da verificação e validação) são utilizados por avaliadores se a empresa atingiu os propositos dos processos de teste.</p>
+<h3 id="Validacao"><a href="#Validacao" class="headerlink" title="Validação"></a>Validação</h3><blockquote>
+<p>O propósito do processo Validação é confirmar que um produto ou componente do produto atenderá a seu uso pretendido quando colocado no ambiente para o qual foi desenvolvido.</p>
+</blockquote>
+<p><strong>O objetivo da validação é garantir que o produto correto está sendo desenvolvido. </strong>  </p>
+<p>Resultados esperados  </p>
+<ul>
+<li>VAL1 - Produtos de trabalho a serem validados são identificados</li>
+<li>VAL2 - Uma estratégia de validação é desenvolvida e implementada, estabelecendo cronograma, participantes envolvidos, métodos para validação e qualquer material a ser utilizado na validação.</li>
+<li>VAL3 - Critérios e procedimentos para validação dos produtos de trabalho a serem validados são identificados e um ambiente para validação é estabelecido.</li>
+<li><p>VAL4 - Atividades de validação são executadas para garantir que o produto esteja pronto para uso no ambiente operacional pretendido.</p>
+</li>
+<li><p>A execução dos testes ao longo do processo é possível através de 4 etapas:</p>
+</li>
+<li>Planejamento</li>
+<li>Projeto de casos de teste</li>
+<li>Execução</li>
+<li><p>Avaliação dos resultados</p>
+</li>
+<li><p>VAL5 - Problemas são identificados e registrados</p>
+</li>
+<li>VAL6 - Resultados de atividades de validação são analisados e disponibilizados para as partes interessadas.</li>
+<li>VAL7 - Evidências de que os produtos de software desenvolvidos estão prontos para o uso pretendido são fornecidas.</li>
+</ul>
+<h3 id="Verificacao"><a href="#Verificacao" class="headerlink" title="Verificação"></a>Verificação</h3><blockquote>
+<p>O propósito do processo de Verificação é confirmar que cada serviço e/ou produto de trabalho do processo ou do projeto atende apropriadamente os requisitos especificados.</p>
+</blockquote>
+<p>Resultados esperados  </p>
+<ul>
+<li>VER1 - Produtos de trabalho a serem verificados são identificados</li>
+<li>VER2 - Uma estratégia de verificação é desenvolvida e implementada, estabelecendo cronograma, revisores envolvidos, métodos para verificação e qualquer material a ser utilizado na verificação.</li>
+<li>VER3 - Critérios e procedimentos para verificação dos produtos de trabalho a serem verificados são identificados e um ambiente para verificação é estabelecido.</li>
+<li>VER4 - Atividades de verificação, incluindo testes e revisões por pares, são executadas.</li>
+<li>VER5 - Defeitos são identificados e registrados</li>
+<li>VER6 - Resultados de atividades de verificação são analisados e disponibilizados para as partes interessadas</li>
+</ul>
+
+        
+      </div>
+      <div class="post-footer clearfix">
+        <a href="/2015/09/03/processo-de-testes/" class="post-more waves-button-light">MORE</a>
+      </div>
+    
+
+  </article>
+
+
+</li>
+  
+  </ul>
+  
+    <nav id="page-nav">
+      <div class="inner">
+        <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/5/">5</a><a class="extend next" rel="next" href="/page/2/">下一页</a>
+      </div>
+    </nav>
+  
+
+
+
+    </div>
+  </main>
+<div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-circle-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+<script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+
+<script src="/js/main.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Princípios da Gerência de Projetos | Engenheirando Software | Minhas observações sobre Engenharia de Software</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <meta name="keywords" content="modulo2,unidade1,disciplina4">
+  <meta name="description" content="Parte ISeparação entre os sistemas de produção existentes  
+
+Produção contínua: grande quantidade de produtos gerados (automoveis)
+Produção por lote ou encomenda: menos produtos (fast food)
+Produção p">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Princípios da Gerência de Projetos">
+<meta property="og:url" content="http://yoursite.com/2015/06/16/principios-da-gerencia-de-projetos/index.html">
+<meta property="og:site_name" content="Engenheirando Software">
+<meta property="og:description" content="Parte ISeparação entre os sistemas de produção existentes  
+
+Produção contínua: grande quantidade de produtos gerados (automoveis)
+Produção por lote ou encomenda: menos produtos (fast food)
+Produção p">
+<meta property="og:updated_time" content="2015-09-06T17:32:48.076Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Princípios da Gerência de Projetos">
+<meta name="twitter:description" content="Parte ISeparação entre os sistemas de produção existentes  
+
+Produção contínua: grande quantidade de produtos gerados (automoveis)
+Produção por lote ou encomenda: menos produtos (fast food)
+Produção p">
+  
+    <link rel="alternative" href="/atom.xml" title="Engenheirando Software" type="application/atom+xml">
+  
+  <link rel="shortcut icon" href="/">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="loading" class="active"></div>
+
+  <nav id="menu" class="hide" >
+   <div class="inner">
+  <a href="javascript:;" class="header-icon waves-circle-light" id="menu-off">
+      <i class="icon icon-lg icon-close"></i>
+  </a>
+  <div class="brand-wrap">
+    <div class="brand">
+      <a href="/" class="avatar"><img src="/images/avatar.jpg"></a>
+      <hgroup class="introduce">
+        <h5 class="nickname">Jonathas Amaral</h5>
+        <a href="mailto:jnthas@gmail.com" title="jnthas@gmail.com" class="mail">jnthas@gmail.com</a>
+      </hgroup>
+    </div>
+  </div>
+  <ul class="nav">
+    
+        <li class="waves-block">
+          <a href="/"  >
+            <i class="icon icon-lg icon-home"></i>
+            Home
+          </a>
+        </li>
+    
+        <li class="waves-block">
+          <a href="/archives"  >
+            <i class="icon icon-lg icon-archives"></i>
+            Archives
+          </a>
+        </li>
+    
+        <li class="waves-block">
+          <a href="/tags"  >
+            <i class="icon icon-lg icon-tags"></i>
+            Tags
+          </a>
+        </li>
+    
+        <li class="waves-block">
+          <a href="https://github.com/engenhando-software/engenhando-software.github.io" target="_blank" >
+            <i class="icon icon-lg icon-github"></i>
+            Github
+          </a>
+        </li>
+    
+  </ul>
+
+  <footer class="footer">
+  <p><a rel="license" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0;vertical-align:middle;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAAAPCAMAAABEF7i9AAAAllBMVEUAAAD///+rsapERER3d3eIiIjMzMzu7u4iIiKUmZO6v7rKzsoODg4RERFVVVUNDQ0NDg0PEA8zMzNLTEtbXltmZmZydnF9gn2AgICPkI+ZmZmqqqq7u7vFxsXIzMgNDQwZGRkgICAhISEkJSMnKCcuMC4xMzE5Ozk7PTtBQkFCQkJDQ0Nna2eGhoaHh4ezuLLGysbd3d1wVGpAAAAA4UlEQVR42q2T1xqCMAyFk7QsBQeKA9x7j/d/OSm22CpX0nzcpA1/T05aAOuBVkMAScQFHLnEwoCo2f1TnQIGoVMewjZEjVFN4GH1Ue1Cn2jWqwfsOOj6wDwGvotsl/c8lv7KIq1eLOsT0HMFHMIE/RZyHnlphryT9zyV+8WH5e8yQw3wnQvgAFxPTKUVi555SHR/lOfLMgVTeDlSfN+TaoUsiTyeIm+bCkHvCA2FUKG48LDtYBZBknsYP/G8NTw0gaaHyuQf4H5pecrB/FYCT2sL9zAfy1Xyjou6L8X2W7YcLyBZCRtnq/zfAAAAAElFTkSuQmCC" /></a></p>
+  <p>Jonathas Amaral &copy; 2016</p>
+  <p>Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme
+  <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a></p>
+  <a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-2x icon-rss-square"></i></a>
+</footer>
+
+</div>
+
+  </nav>
+  <main id="main">
+    <header class="header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-circle-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">Princípios da Gerência de Projetos</div>
+        
+    </div>
+</header>
+<header class="content-header">
+  <div class="container">
+    <h1 class="author">Princípios da Gerência de Projetos</h1>
+    <h5 class="subtitle">16/06/2015</h5>
+  </div>
+</header>
+
+    <div class="container body-wrap">
+      
+  <article id="post-principios-da-gerencia-de-projetos" class="article article-type-post" itemscope itemprop="blogPost">
+    
+      <div class="post-meat flex-row">
+        <div class="flex-col">
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/disciplina4/">disciplina4</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/modulo2/">modulo2</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/unidade1/">unidade1</a></li></ul>
+</div>
+      </div>
+      <div class="post-body">
+
+        <aside class="post-widget" id="post-widget">
+
+          
+
+          
+          <nav class="post-toc-wrap" id="post-toc">
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Parte-I"><span class="post-toc-text">Parte I</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#4-P’s"><span class="post-toc-text">4 P’s</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Projeto"><span class="post-toc-text">Projeto</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Porque-os-projetos-falham"><span class="post-toc-text">Porque os projetos falham?</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Separacao-de-conceitos-entre-o-que-e-projeto"><span class="post-toc-text">Separação de conceitos entre o que é projeto</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Quando-nao-se-faz-projetos"><span class="post-toc-text">Quando não se faz projetos?</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Parte-II"><span class="post-toc-text">Parte II</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#PMBOK"><span class="post-toc-text">PMBOK</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#4-funcoes-que-todo-gerente-de-projetos-deve-executar-diariamente"><span class="post-toc-text">4 funções que todo gerente de projetos deve executar diariamente</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Questoes-fundamentais-sobre-projetos"><span class="post-toc-text">Questões fundamentais sobre projetos</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Processos-e-artefatos"><span class="post-toc-text">Processos e artefatos</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Tres-questoes-basicas"><span class="post-toc-text">Três questões básicas</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#PMBOK-caracteriza-um-projeto-como-um-conjunto-de-processos-que-sao-agrupados-em-5-grupos"><span class="post-toc-text">PMBOK caracteriza um projeto como um conjunto de processos, que são agrupados em 5 grupos:</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Visao-de-grupos-de-processos"><span class="post-toc-text">Visão de grupos de processos</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Areas-de-conhecimento-do-PMBOK-topicos-de-conhecimento"><span class="post-toc-text">Áreas de conhecimento do PMBOK (tópicos de conhecimento)</span></a></li></ol></li></ol></li></ol>
+          </nav>
+          
+        </aside>
+
+        <div class="post-main">
+
+            <div class="post-content" itemprop="postContent"><h2 id="Parte-I"><a href="#Parte-I" class="headerlink" title="Parte I"></a>Parte I</h2><p>Separação entre os sistemas de produção existentes  </p>
+<ol>
+<li>Produção contínua: grande quantidade de produtos gerados (automoveis)</li>
+<li>Produção por lote ou encomenda: menos produtos (fast food)</li>
+<li>Produção por projeto: são feitos um a um e cada projeto tem seu resultado específico. (desenvolvimento de software, construção civil, etc)</li>
+</ol>
+<h2 id="4-P’s"><a href="#4-P’s" class="headerlink" title="4 P’s"></a>4 P’s</h2><p>Elementos gerais que caracterizam a engenharia de software</p>
+<ul>
+<li>Pessoas: produzem</li>
+<li>Produtos: produtos inciais, intermediários e finais do projeto</li>
+<li>Processos: forma de produzir</li>
+<li>Projetos: instanciação de um projeto</li>
+</ul>
+<h2 id="Projeto"><a href="#Projeto" class="headerlink" title="Projeto"></a>Projeto</h2><p>PMBOK define projeto como sendo um</p>
+<blockquote>
+<p>Esforço temporário empreendido para criar um produto, serviço ou resultado exclusivo.</p>
+</blockquote>
+<p>VARGAS define como</p>
+<blockquote>
+<p>Um empreedimento não repetitivo, caracterizado por uma sequência clara e lógica de eventos, com início, meio e fim, que se destina a atingir um objetivo claro e definido, sendo conduzido por pessoas dentro de parâmetros predefinidos de tempo, custo, recursos envolvidos e qualidade.”</p>
+</blockquote>
+<p>Exemplos de projeto</p>
+<ul>
+<li>Pirâmides do Egito</li>
+<li>Reconstrução de um país pós guerra</li>
+<li>Construção de um navio</li>
+<li>Informatização de uma empresa</li>
+<li>Turnê de uma banda</li>
+</ul>
+<p>Principais atributos de um projeto</p>
+<ul>
+<li>Meta única</li>
+<li>Recursos humanos</li>
+<li>Escopo bem definido</li>
+<li>Início e fim determinados</li>
+<li>Tarefas bem definidas</li>
+<li>Intervenção humana indispensável</li>
+<li>Grupos de interesse envolvidos</li>
+<li>Recursos limitados</li>
+<li>Planejamento individualizado</li>
+<li>Execução controlada</li>
+<li>Normalmente é inovador</li>
+<li>Objetivos envolvem: <span style="background-color: yellow;">prazo, custo, qualidade (pontos críticos)</span></li>
+</ul>
+<p>Conceitos relacionados a projetos</p>
+<ul>
+<li>Empreendimento: sinônimo de projeto</li>
+<li>Programa: conjunto de projetos (ex. Programa de Aceleração do Crescimento)</li>
+</ul>
+<h3 id="Porque-os-projetos-falham"><a href="#Porque-os-projetos-falham" class="headerlink" title="Porque os projetos falham?"></a>Porque os projetos falham?</h3><ul>
+<li>Pessoas falham</li>
+<li>Falta de planejamento adequado</li>
+<li>Pressão excessiva de prazo e custo</li>
+<li>Falta de suporte ao gerente de projeto</li>
+<li>Equipe despreparada</li>
+<li>Comunicação</li>
+</ul>
+<h3 id="Separacao-de-conceitos-entre-o-que-e-projeto"><a href="#Separacao-de-conceitos-entre-o-que-e-projeto" class="headerlink" title="Separação de conceitos entre o que é projeto"></a>Separação de conceitos entre o que é projeto</h3><p>Projetos são feitos onde e quando?Exemplos de projetos </p>
+<ul>
+<li>Desenvolvimento de software</li>
+<li>Manutenção de software (fazer um módulo novo)</li>
+<li>Aquisição de novos servidores</li>
+<li>Criação de rede local</li>
+<li>Customização de um aplicativo</li>
+<li>Prospecção de ferramentas</li>
+<li>Integração entre sistemas</li>
+</ul>
+<h3 id="Quando-nao-se-faz-projetos"><a href="#Quando-nao-se-faz-projetos" class="headerlink" title="Quando não se faz projetos?"></a>Quando não se faz projetos?</h3><p>Quando há rotinas. É Focada em resultados rápidos. As atividades são mais operacionais.Exemplos</p>
+<ul>
+<li>Manutenção periódica ou corretiva</li>
+<li>Serviços de operação de servidores</li>
+<li>Serviços de helpdesk</li>
+<li>Atualização de versão de aplicativo</li>
+<li>Vendas da empresa estão paradas</li>
+<li>Banco de dados apresentando problemas</li>
+</ul>
+<h2 id="Parte-II"><a href="#Parte-II" class="headerlink" title="Parte II"></a>Parte II</h2><h3 id="PMBOK"><a href="#PMBOK" class="headerlink" title="PMBOK"></a>PMBOK</h3><p>Definição clássica de gerência de projetos:</p>
+<blockquote>
+<p>Aplicação de conhecimentos, habilidades e técnicas para projetar atividades que visem atingir os requisistos do projeto</p>
+</blockquote>
+<h4 id="4-funcoes-que-todo-gerente-de-projetos-deve-executar-diariamente"><a href="#4-funcoes-que-todo-gerente-de-projetos-deve-executar-diariamente" class="headerlink" title="4 funções que todo gerente de projetos deve executar diariamente"></a>4 funções que todo gerente de projetos deve executar diariamente</h4><ul>
+<li><strong>Planejamento</strong>: estabelecer metas, linhas de ação a ser seguidas</li>
+<li><strong>Organização</strong>: combinar, juntar recursos Ex. organizar processo produtivo</li>
+<li><strong>Direção</strong>: estabelecer um ponto onde se quer chegar. Transformar planos em atividades.</li>
+<li><strong>Controle</strong>: acompanhamento do projeto.</li>
+</ul>
+<h4 id="Questoes-fundamentais-sobre-projetos"><a href="#Questoes-fundamentais-sobre-projetos" class="headerlink" title="Questões fundamentais sobre projetos"></a>Questões fundamentais sobre projetos</h4><ul>
+<li>Métrica</li>
+<li>Recursos limitados</li>
+<li>Qualidade</li>
+<li>Conjunto de resultados esperados</li>
+<li>Interface (com pessoas, outras áreas, fornecedores, clientes, etc)</li>
+</ul>
+<h4 id="Processos-e-artefatos"><a href="#Processos-e-artefatos" class="headerlink" title="Processos e artefatos"></a>Processos e artefatos</h4><ul>
+<li><strong>Cronograma físico</strong>: planilha que representa o desenvolvimento do projeto temporalmente</li>
+<li><strong>Cronograma financeiro</strong>: deve estar sempre atrelado ao cronograma físico. Como os investimentos serão distribuidos no projeto.</li>
+<li><strong>Análise de riscos envolvidos (viabilidade)</strong>: tem como resultado uma lista de riscos.</li>
+<li><strong>Estudo de interfaces</strong>: como tratar as interfaces do projeto de maneira preventiva, corretiva e pró-ativa</li>
+<li><strong>Análise de custo-benefício</strong>: verificar a viabilidade do projeto.</li>
+<li><strong>Prioridade do projeto</strong>: prioridades do projeto e tarefas.</li>
+<li><strong>Plano de Projeto:</strong> doc. contendo todos os dados gerenciais relevantes.</li>
+<li><p><strong>Gerenciamento de tempo do projeto</strong>: </p>
+</li>
+<li><p>Ciclo de vida: importante definir um ciclo de vida para o projeto</p>
+</li>
+<li>Fase: subdivisão do ciclo de vida</li>
+<li>Tarefa: menor que uma fase. Pode ser em partes menores chamadas sub-tarefas</li>
+<li>Pacote de trabalho: menor unidade de um projeto. É em que uma pessoa vai trabalhar</li>
+<li>Duração: todo projeto tem uma duração. Ao final do projeto se faz uma comparação entre a duração estimada e a real para saber sobre o sucesso do projeto.</li>
+<li>Precedência: determina a duração de uma tarefa. Pode ser inicio-incio, termino-inicio (espera uma tarefa terminar para começar outra), etc. </li>
+</ul>
+<h3 id="Tres-questoes-basicas"><a href="#Tres-questoes-basicas" class="headerlink" title="Três questões básicas"></a>Três questões básicas</h3><ol>
+<li>As partes interessadas no projeto (stakeholders)</li>
+<li>Aprender com o passado</li>
+<li>Lei de Murphy (riscos)</li>
+</ol>
+<h3 id="PMBOK-caracteriza-um-projeto-como-um-conjunto-de-processos-que-sao-agrupados-em-5-grupos"><a href="#PMBOK-caracteriza-um-projeto-como-um-conjunto-de-processos-que-sao-agrupados-em-5-grupos" class="headerlink" title="PMBOK caracteriza um projeto como um conjunto de processos, que são agrupados em 5 grupos:"></a>PMBOK caracteriza um projeto como um conjunto de processos, que são agrupados em 5 grupos:</h3><h4 id="Visao-de-grupos-de-processos"><a href="#Visao-de-grupos-de-processos" class="headerlink" title="Visão de grupos de processos"></a>Visão de grupos de processos</h4><ul>
+<li><strong>Iniciação</strong>: conjunto de atividades para definir <span style="background-color: yellow;">o que deve ser feito</span>. </li>
+<li><strong>Planejamento</strong>: atividade que envolve a determinação de <span style="background-color: yellow;">como será feito</span>. Definir um orçamento, conjunto de tarefas a serem feitas</li>
+<li><strong>Execução</strong>: executar as atividades.</li>
+<li><strong>Finalização</strong>: conjunto de tarefas que se encerra o projeto. Fazer um balanço, quais os ganhos e quais as perdas.</li>
+<li><strong>Monitoramento e controle</strong>: atividade constante realizada pelo gerente de projeto.</li>
+</ul>
+<h4 id="Areas-de-conhecimento-do-PMBOK-topicos-de-conhecimento"><a href="#Areas-de-conhecimento-do-PMBOK-topicos-de-conhecimento" class="headerlink" title="Áreas de conhecimento do PMBOK (tópicos de conhecimento)"></a>Áreas de conhecimento do PMBOK (tópicos de conhecimento)</h4><ul>
+<li><strong>Integração</strong>: cuida de interfaces (outros projetos, stakeholders, etc)</li>
+<li><strong>Escopo</strong>: se preocupa a atender aquilo que o projeto se propõe a fazer</li>
+<li><strong>Tempo</strong>: prazos para execução de um projeto</li>
+<li><strong>Custo</strong>: trata da parte financeira do projeto</li>
+<li><strong>Qualidade</strong>: cuida do que está sendo produzido</li>
+<li><strong>Recursos</strong> <strong>Humanos</strong>: bom gerenciamento das pessoas</li>
+<li><strong>Comunicação</strong>: informações do projeto</li>
+<li><strong>Risco</strong>: identifica e trata riscos</li>
+<li><strong>Aquisição</strong>: aquisições de um projeto</li>
+<li><strong>Stakeholders</strong>: gerenciar os envolvidos no projeto</li>
+</ul>
+<p>O que o PMBOK <strong>não é</strong>:  </p>
+<ul>
+<li>Uma metodologia</li>
+<li>A verdade absoluta e imutável</li>
+<li>A única fonte de consulta de um gerente de projeto</li>
+</ul>
+</div>
+
+            
+<nav class="post-nav flex-row">
+  <div class="flex-col waves-block prev">
+    
+      <a href="/2015/06/25/metricas-e-estimativas-de-projetos/" title="Métricas e Estimativas de Projetos" id="post-prev" class="post-nav-link">
+        <i class="icon icon-chevron-left"></i>
+        <span class="article-nav-title">Anterior</span>
+      </a>
+    
+  </div>
+  <div class="flex-col waves-block next">
+    
+      <a href="/2015/06/14/padroes-de-projeto/" title="Padrões de Projeto" id="post-next" class="post-nav-link">
+        <span class="article-nav-title">Próximo</span>
+        <i class="icon icon-chevron-right"></i>
+      </a>
+    
+  </div>
+
+</nav>
+
+
+
+            
+<div id="disqus_thread"></div>
+<script>
+    /**
+     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+     */
+    /*
+    var disqus_config = function () {
+        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() {  // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        
+        s.src = '//engenhandosoftware.disqus.com/embed.js';
+        
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+
+
+        </div>
+
+      </div>
+
+    
+
+  </article>
+
+
+
+    </div>
+  </main>
+<div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-circle-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+<script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+
+<script src="/js/main.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

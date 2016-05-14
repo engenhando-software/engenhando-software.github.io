@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Conceitos de Programação Orientada a Objetos | Engenheirando Software | Minhas observações sobre Engenharia de Software</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <meta name="keywords" content="disciplina3,modulo2,unidade1">
+  <meta name="description" content="Conceitos Básicos de OO (cap. 1)
+Classes consistem na descrição de atributos e métodos para um conjunto de objetos. Possuem uma visão interna e externa (funções publicas).
+Interface pública são os ser">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Conceitos de Programação Orientada a Objetos">
+<meta property="og:url" content="http://yoursite.com/2015/05/24/conceitos-de-programacao-orientada-a-objetos/index.html">
+<meta property="og:site_name" content="Engenheirando Software">
+<meta property="og:description" content="Conceitos Básicos de OO (cap. 1)
+Classes consistem na descrição de atributos e métodos para um conjunto de objetos. Possuem uma visão interna e externa (funções publicas).
+Interface pública são os ser">
+<meta property="og:updated_time" content="2015-08-16T04:11:09.207Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Conceitos de Programação Orientada a Objetos">
+<meta name="twitter:description" content="Conceitos Básicos de OO (cap. 1)
+Classes consistem na descrição de atributos e métodos para um conjunto de objetos. Possuem uma visão interna e externa (funções publicas).
+Interface pública são os ser">
+  
+    <link rel="alternative" href="/atom.xml" title="Engenheirando Software" type="application/atom+xml">
+  
+  <link rel="shortcut icon" href="/">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="loading" class="active"></div>
+
+  <nav id="menu" class="hide" >
+   <div class="inner">
+  <a href="javascript:;" class="header-icon waves-circle-light" id="menu-off">
+      <i class="icon icon-lg icon-close"></i>
+  </a>
+  <div class="brand-wrap">
+    <div class="brand">
+      <a href="/" class="avatar"><img src="/images/avatar.jpg"></a>
+      <hgroup class="introduce">
+        <h5 class="nickname">Jonathas Amaral</h5>
+        <a href="mailto:jnthas@gmail.com" title="jnthas@gmail.com" class="mail">jnthas@gmail.com</a>
+      </hgroup>
+    </div>
+  </div>
+  <ul class="nav">
+    
+        <li class="waves-block">
+          <a href="/"  >
+            <i class="icon icon-lg icon-home"></i>
+            Home
+          </a>
+        </li>
+    
+        <li class="waves-block">
+          <a href="/archives"  >
+            <i class="icon icon-lg icon-archives"></i>
+            Archives
+          </a>
+        </li>
+    
+        <li class="waves-block">
+          <a href="/tags"  >
+            <i class="icon icon-lg icon-tags"></i>
+            Tags
+          </a>
+        </li>
+    
+        <li class="waves-block">
+          <a href="https://github.com/engenhando-software/engenhando-software.github.io" target="_blank" >
+            <i class="icon icon-lg icon-github"></i>
+            Github
+          </a>
+        </li>
+    
+  </ul>
+
+  <footer class="footer">
+  <p><a rel="license" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0;vertical-align:middle;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAAAPCAMAAABEF7i9AAAAllBMVEUAAAD///+rsapERER3d3eIiIjMzMzu7u4iIiKUmZO6v7rKzsoODg4RERFVVVUNDQ0NDg0PEA8zMzNLTEtbXltmZmZydnF9gn2AgICPkI+ZmZmqqqq7u7vFxsXIzMgNDQwZGRkgICAhISEkJSMnKCcuMC4xMzE5Ozk7PTtBQkFCQkJDQ0Nna2eGhoaHh4ezuLLGysbd3d1wVGpAAAAA4UlEQVR42q2T1xqCMAyFk7QsBQeKA9x7j/d/OSm22CpX0nzcpA1/T05aAOuBVkMAScQFHLnEwoCo2f1TnQIGoVMewjZEjVFN4GH1Ue1Cn2jWqwfsOOj6wDwGvotsl/c8lv7KIq1eLOsT0HMFHMIE/RZyHnlphryT9zyV+8WH5e8yQw3wnQvgAFxPTKUVi555SHR/lOfLMgVTeDlSfN+TaoUsiTyeIm+bCkHvCA2FUKG48LDtYBZBknsYP/G8NTw0gaaHyuQf4H5pecrB/FYCT2sL9zAfy1Xyjou6L8X2W7YcLyBZCRtnq/zfAAAAAElFTkSuQmCC" /></a></p>
+  <p>Jonathas Amaral &copy; 2016</p>
+  <p>Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme
+  <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a></p>
+  <a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-2x icon-rss-square"></i></a>
+</footer>
+
+</div>
+
+  </nav>
+  <main id="main">
+    <header class="header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-circle-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">Conceitos de Programação Orientada a Objetos</div>
+        
+    </div>
+</header>
+<header class="content-header">
+  <div class="container">
+    <h1 class="author">Conceitos de Programação Orientada a Objetos</h1>
+    <h5 class="subtitle">24/05/2015</h5>
+  </div>
+</header>
+
+    <div class="container body-wrap">
+      
+  <article id="post-conceitos-de-programacao-orientada-a-objetos" class="article article-type-post" itemscope itemprop="blogPost">
+    
+      <div class="post-meat flex-row">
+        <div class="flex-col">
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/disciplina3/">disciplina3</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/modulo2/">modulo2</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/unidade1/">unidade1</a></li></ul>
+</div>
+      </div>
+      <div class="post-body">
+
+        <aside class="post-widget" id="post-widget">
+
+          
+
+          
+          <nav class="post-toc-wrap" id="post-toc">
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Conceitos-Basicos-de-OO-cap-1"><span class="post-toc-text">Conceitos Básicos de OO (cap. 1)</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Linguagem-Java-cap-3"><span class="post-toc-text">Linguagem Java - (cap. 3)</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Heranca-de-Classe-cap-4"><span class="post-toc-text">Herança de Classe (cap. 4)</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Polimorfismo-cap-5"><span class="post-toc-text">Polimorfismo (cap 5)</span></a></li></ol>
+          </nav>
+          
+        </aside>
+
+        <div class="post-main">
+
+            <div class="post-content" itemprop="postContent"><h3 id="Conceitos-Basicos-de-OO-cap-1"><a href="#Conceitos-Basicos-de-OO-cap-1" class="headerlink" title="Conceitos Básicos de OO (cap. 1)"></a>Conceitos Básicos de OO (cap. 1)</h3><ul>
+<li>Classes consistem na descrição de atributos e métodos para um conjunto de objetos. Possuem uma visão interna e externa (funções publicas).</li>
+<li>Interface pública são os serviços da classe que poderão ser utilizados por outras partes do programa, ocultando como os serviços são implementados. Essa ocultação é chamada <strong>encapsulamento</strong>.</li>
+<li>Objetos são entidades unicamente identificados. Eles são uma instancia concreta e dinâmica de uma classe. Possuem dados, comportamento e identidade da classe. Pode-se dizer que um objeto é “uma variável do tipo de dados definido pela classe”.</li>
+<li>Os métodos de uma classe podem ser chamados de funções membros ou serviços.</li>
+<li>O estado de um objeto é determinado pelo valor de seus atributos</li>
+<li><p>Modificadores de acesso</p>
+</li>
+<li><p>Público - visíveis em toda aplicação</p>
+</li>
+<li>Privado - visíveis apenas internamente a classe que foram programados</li>
+<li><p>Protegido - visibilidade intermediária, visíveis apenas em uma hierarquia de classes (subclasses)</p>
+</li>
+<li><p>Herança</p>
+</li>
+<li><p>Criar classe mãe e classes filhas que especializam um determinado comportamento</p>
+</li>
+<li>Herança múltipla: duas ou mais classes que possuem subclasses (java e c# não implementa esse conceito)</li>
+</ul>
+<h3 id="Linguagem-Java-cap-3"><a href="#Linguagem-Java-cap-3" class="headerlink" title="Linguagem Java - (cap. 3)"></a>Linguagem Java - (cap. 3)</h3><ul>
+<li>Em java, um objeto é interpretado como uma referência e não o objeto propriamente dito.</li>
+<li>NomeClasse nomeObjeto -&gt; cria-se referência mas não objeto; uma vez criado objeto com “new” a referência não pode ser manipulada numericamente.</li>
+<li>Construtor: iniciam o objeto</li>
+<li>Modificador “friendly” - visíveis apenas no mesmo pacote</li>
+<li>Membros estáticos: os atributos declarados como estáticos, possuem o mesmo valor durante a execução.</li>
+<li>Destrutores: são utilizados para finalizar um objeto.</li>
+</ul>
+<h3 id="Heranca-de-Classe-cap-4"><a href="#Heranca-de-Classe-cap-4" class="headerlink" title="Herança de Classe (cap. 4)"></a>Herança de Classe (cap. 4)</h3><ul>
+<li>Extends</li>
+<li><p>Atributos protegidos podem ser explicados depois que o conceito de herança de classe foi introduzido</p>
+</li>
+<li><p>Membros protegidos podem ser acessados por classes do mesmo pacote mesmo que não sejam da mesma hierarquia de classes</p>
+</li>
+<li>Podem ser acessados por classes que estendem dessa classe, mesmo que esta subclasse seja de outro pacote</li>
+<li>Membros protegidos se limitam a uma hierarquia de classes, uma vez que java não permite herança múltipla de classes</li>
+<li><p>Membros protegidos e estáticos podem ser acessados em qualquer classe estendida</p>
+</li>
+<li><p>Construtores em classes estendidas</p>
+</li>
+<li><p>Quando uma subclasse é construída, uma superclasse também é.</p>
+</li>
+<li>A nova classe (derivada) deverá escolher qual construtor da superclasse deseja chamar</li>
+<li>Subclasse chama o construtor da superclasse através do super() com a mesma assinatura da superclasse</li>
+</ul>
+<h3 id="Polimorfismo-cap-5"><a href="#Polimorfismo-cap-5" class="headerlink" title="Polimorfismo (cap 5)"></a>Polimorfismo (cap 5)</h3><ul>
+<li>Reescrever métodos com mesmo nome, parâmetros diferentes, etc.</li>
+<li>Palavra chave super, pode-se usar super.metodo()</li>
+<li>Palavra chave final, serve para definir atributos ou métodos que não podem ser modificados após sua primeira inicialização.</li>
+</ul>
+</div>
+
+            
+<nav class="post-nav flex-row">
+  <div class="flex-col waves-block prev">
+    
+      <a href="/2015/05/27/implementacao-de-software/" title="Implementação de software" id="post-prev" class="post-nav-link">
+        <i class="icon icon-chevron-left"></i>
+        <span class="article-nav-title">Anterior</span>
+      </a>
+    
+  </div>
+  <div class="flex-col waves-block next">
+    
+      <a href="/2015/05/19/projeto-nos-modelos-de-qualidade/" title="Projeto nos Modelos de Qualidade" id="post-next" class="post-nav-link">
+        <span class="article-nav-title">Próximo</span>
+        <i class="icon icon-chevron-right"></i>
+      </a>
+    
+  </div>
+
+</nav>
+
+
+
+            
+<div id="disqus_thread"></div>
+<script>
+    /**
+     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+     */
+    /*
+    var disqus_config = function () {
+        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() {  // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        
+        s.src = '//engenhandosoftware.disqus.com/embed.js';
+        
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+
+
+        </div>
+
+      </div>
+
+    
+
+  </article>
+
+
+
+    </div>
+  </main>
+<div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-circle-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+<script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+
+<script src="/js/main.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,1496 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Engenheirando Software | Minhas observações sobre Engenharia de Software</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <meta name="keywords" content="undefined">
+  <meta name="description" content="Blog sobre engenharia de software">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Engenheirando Software">
+<meta property="og:url" content="http://yoursite.com/page/2/index.html">
+<meta property="og:site_name" content="Engenheirando Software">
+<meta property="og:description" content="Blog sobre engenharia de software">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Engenheirando Software">
+<meta name="twitter:description" content="Blog sobre engenharia de software">
+  
+    <link rel="alternative" href="/atom.xml" title="Engenheirando Software" type="application/atom+xml">
+  
+  <link rel="shortcut icon" href="/">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="loading" class="active"></div>
+
+  <nav id="menu"  >
+   <div class="inner">
+  <a href="javascript:;" class="header-icon waves-circle-light" id="menu-off">
+      <i class="icon icon-lg icon-close"></i>
+  </a>
+  <div class="brand-wrap">
+    <div class="brand">
+      <a href="/" class="avatar"><img src="/images/avatar.jpg"></a>
+      <hgroup class="introduce">
+        <h5 class="nickname">Jonathas Amaral</h5>
+        <a href="mailto:jnthas@gmail.com" title="jnthas@gmail.com" class="mail">jnthas@gmail.com</a>
+      </hgroup>
+    </div>
+  </div>
+  <ul class="nav">
+    
+        <li class="waves-block active">
+          <a href="/"  >
+            <i class="icon icon-lg icon-home"></i>
+            Home
+          </a>
+        </li>
+    
+        <li class="waves-block">
+          <a href="/archives"  >
+            <i class="icon icon-lg icon-archives"></i>
+            Archives
+          </a>
+        </li>
+    
+        <li class="waves-block">
+          <a href="/tags"  >
+            <i class="icon icon-lg icon-tags"></i>
+            Tags
+          </a>
+        </li>
+    
+        <li class="waves-block">
+          <a href="https://github.com/engenhando-software/engenhando-software.github.io" target="_blank" >
+            <i class="icon icon-lg icon-github"></i>
+            Github
+          </a>
+        </li>
+    
+  </ul>
+
+  <footer class="footer">
+  <p><a rel="license" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0;vertical-align:middle;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAAAPCAMAAABEF7i9AAAAllBMVEUAAAD///+rsapERER3d3eIiIjMzMzu7u4iIiKUmZO6v7rKzsoODg4RERFVVVUNDQ0NDg0PEA8zMzNLTEtbXltmZmZydnF9gn2AgICPkI+ZmZmqqqq7u7vFxsXIzMgNDQwZGRkgICAhISEkJSMnKCcuMC4xMzE5Ozk7PTtBQkFCQkJDQ0Nna2eGhoaHh4ezuLLGysbd3d1wVGpAAAAA4UlEQVR42q2T1xqCMAyFk7QsBQeKA9x7j/d/OSm22CpX0nzcpA1/T05aAOuBVkMAScQFHLnEwoCo2f1TnQIGoVMewjZEjVFN4GH1Ue1Cn2jWqwfsOOj6wDwGvotsl/c8lv7KIq1eLOsT0HMFHMIE/RZyHnlphryT9zyV+8WH5e8yQw3wnQvgAFxPTKUVi555SHR/lOfLMgVTeDlSfN+TaoUsiTyeIm+bCkHvCA2FUKG48LDtYBZBknsYP/G8NTw0gaaHyuQf4H5pecrB/FYCT2sL9zAfy1Xyjou6L8X2W7YcLyBZCRtnq/zfAAAAAElFTkSuQmCC" /></a></p>
+  <p>Jonathas Amaral &copy; 2016</p>
+  <p>Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme
+  <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a></p>
+  <a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-2x icon-rss-square"></i></a>
+</footer>
+
+</div>
+
+  </nav>
+  <main id="main">
+    <header class="header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-circle-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">Engenheirando Software</div>
+        
+    </div>
+</header>
+<header class="content-header">
+  <div class="container">
+    <h1 class="author">Engenheirando Software</h1>
+    <h5 class="subtitle">Minhas observações sobre Engenharia de Software</h5>
+  </div>
+</header>
+
+    <div class="container body-wrap">
+      
+  <ul class="post-list">
+  
+    <li class="post-list-item">
+  <article id="post-estrategias-para-testes-de-software" class="article article-type-post" itemscope itemprop="blogPost">
+    
+      
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2015/08/20/estrategias-para-testes-de-software/">Estratégias para testes de software</a>
+    </h3>
+  
+
+
+
+      <div class="post-meat flex-row">
+        <div class="flex-col">
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/disciplina1/">disciplina1</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/modulo3/">modulo3</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/unidade3/">unidade3</a></li></ul>
+</div>
+        <time datetime="2015-08-20T03:59:00.000Z" itemprop="datePublished" class="post-tiem">
+  20/08/2015
+</time>
+      </div>
+      <div class="post-content" itemprop="postContent" >
+        
+          <h2 id="Estrategias-para-teste-de-software-URL"><a href="#Estrategias-para-teste-de-software-URL" class="headerlink" title="Estratégias para teste de software URL"></a>Estratégias para teste de software URL</h2><ul>
+<li><p>Testes de módulos atômicos</p>
+</li>
+<li><p>Usa testes de caixa branca</p>
+</li>
+<li><p>Testes de integração</p>
+</li>
+<li><p>Testes de validação</p>
+</li>
+<li><p>Caixa preta</p>
+</li>
+<li><p>Testes de sistema</p>
+</li>
+<li><p>Desempenho, segurança</p>
+</li>
+<li><p>Testes de aceitação</p>
+</li>
+<li><p>No ambiente do usuário</p>
+</li>
+</ul>
+<h3 id="Testes-de-modulos-atomicos"><a href="#Testes-de-modulos-atomicos" class="headerlink" title="Testes de módulos atômicos"></a>Testes de módulos atômicos</h3><ul>
+<li>Testar condições limite</li>
+<li>Todos os caminhos são testados (método caminho básico)</li>
+<li>Usa-se Drives que são chamadas aos módulos (que simulam um modulo ainda não testado)</li>
+</ul>
+<h3 id="Testes-de-integracao"><a href="#Testes-de-integracao" class="headerlink" title="Testes de integração"></a>Testes de integração</h3><p>Consiste em se integrar os módulos do sistema. Possui duas abordagens:</p>
+<ul>
+<li><p>Bottom-up</p>
+</li>
+<li><p>Parte para os módulos no nível mais baixo. Os módulos são agrupados em clusters para que fique mais fácil de testar e cria-se drivers que vão simular uma parte superior na estrutura da hierarquia dos módulos que ainda não foi testada. </p>
+</li>
+<li><p>Vantagem: São mais simples que o top-down.</p>
+</li>
+<li><p>Top-down</p>
+</li>
+<li><p>Parte para os módulos de nível mais alto. Há duas formas de percorrer os módulos para testes: Profundidade - testa-se verticalmente até chegar numa folha - e Largura no qual se testa horizontalmente cada nível. </p>
+</li>
+<li>Stubs = mock</li>
+</ul>
+<h3 id="Testes-de-validacao"><a href="#Testes-de-validacao" class="headerlink" title="Testes de validação"></a>Testes de validação</h3><ul>
+<li>Uma sequencia de testes de caixa-preta que demonstram a funcionalidade dos requisitos.</li>
+<li>Os casos de teste devem ser montados seguindo a especificação de requisitos</li>
+<li>Depois de realizar cada caso de teste, vão existir uma das opções</li>
+</ul>
+<ol>
+<li>Teste é aceito </li>
+<li>Uma lista de deficiências é criada</li>
+</ol>
+<h3 id="Testes-de-sistema"><a href="#Testes-de-sistema" class="headerlink" title="Testes de sistema"></a>Testes de sistema</h3><p>Tem como objetivo colocar o sistema à prova. Tipo mais comuns:</p>
+<ul>
+<li>Testes de recuperação: forçar o sistema a falhar e ver a recuperação do sistema</li>
+<li>Testes de segurança: verificar os mecanismos de segurança do sistema. Senhas, proteção de acesso a funções. recomendável um especialista.</li>
+<li>Teste de stress: consiste em testar o programa em situações limite</li>
+<li>Testes de desempenho: realizado para testar os requisitos de desempenho descritos na especificação. Deve ocorrer ao longo de todos os passos do processo de testes. Confundido com teste de stress.</li>
+</ul>
+<h3 id="Testes-de-aceitacao"><a href="#Testes-de-aceitacao" class="headerlink" title="Testes de aceitação"></a>Testes de aceitação</h3><p>Visam especificamente capacitar clientes a validar seus requisitos. Realizado exclusivamente pelo usuário final. </p>
+<ul>
+<li>Alfa teste: realizado nas instalações do desenvolvedor</li>
+<li>Beta teste: realizado nas instalações do cliente</li>
+</ul>
+<h2 id="Revisoes-formais"><a href="#Revisoes-formais" class="headerlink" title="Revisões formais"></a>Revisões formais</h2><p>As revisões capturam erros durante as etapas de desenvolvimento e evita que esses erros sejam descobertos no fim do desenvolvimento.</p>
+<h4 id="Tipos-de-revisoes"><a href="#Tipos-de-revisoes" class="headerlink" title="Tipos de revisões:"></a>Tipos de revisões:</h4><ul>
+<li>Revisão de especificação é uma revisão em que os requisitos e especificações do usuário são revisados</li>
+<li>Revisão de interface do usuário: preocupa-se com os formatos de entrada e saída, layout de tela, relatório, posição dos componentes na tela, etc. Do campo IHC.</li>
+<li>Revisão de projeto é revisão dada nas decisões de implementação, arquitetura de software, técnicas empregadas, etc.</li>
+<li>Revisão de código: verifica o código fonte</li>
+<li>Revisão de teste: conduzidas para que os dados de teste sejam adequados ao sistema, não pra examinar a saída do teste.</li>
+</ul>
+<h4 id="Papeis"><a href="#Papeis" class="headerlink" title="Papeis:"></a>Papeis:</h4><ul>
+<li>Apresentador: a tarefa é introduzir o produto, apresenta o produto numa reunião.</li>
+<li>Coordenador: responsável para que as atividades sejam organizadas e atua também como moderador.</li>
+<li>Secretário copista: tomar notas durante da revisão</li>
+<li>Oráculo da manutenção: rever o produto sobre manutenções futuras</li>
+<li>Portador de padrões: especialista em engenharia de software que verifica se normas e padrões estão sendo seguidos</li>
+<li>Representante do usuário: verifica se os requisitos estão sendo atendidos</li>
+<li>Especialista na área do sistema: verifica se o sistema está correto na área da especialidade. Ex.: folha de pagamento.</li>
+</ul>
+<h4 id="Responsabilidades-do-autor"><a href="#Responsabilidades-do-autor" class="headerlink" title="Responsabilidades do autor"></a>Responsabilidades do autor</h4><ul>
+<li>Anunciar sua intenção de fazer uma revisão</li>
+<li>Escolher participantes e coordenador</li>
+<li>Fornecer material apropriado para a revisão</li>
+<li>Escolher um produto que possa ser revisado em no máximo 60min.</li>
+</ul>
+<h4 id="Responsabilidades-do-coordenador"><a href="#Responsabilidades-do-coordenador" class="headerlink" title="Responsabilidades do coordenador"></a>Responsabilidades do coordenador</h4><ul>
+<li>Assegurar que a revisão aconteça;</li>
+<li>que os participantes atendam a revisão</li>
+<li>Distribuir o material para a revisão</li>
+</ul>
+<h4 id="Responsabilidades-dos-outros-membros"><a href="#Responsabilidades-dos-outros-membros" class="headerlink" title="Responsabilidades dos outros membros"></a>Responsabilidades dos outros membros</h4><ul>
+<li>Ler documentação fornecida antes da reunião (1 hora)</li>
+</ul>
+<h4 id="Ao-final-da-revisao"><a href="#Ao-final-da-revisao" class="headerlink" title="Ao final da revisão:"></a>Ao final da revisão:</h4><ul>
+<li>Coordenador notifica a gerencia</li>
+<li>É distribuída uma cópia da ata aos participantes</li>
+<li>Produtor vai realizar as ações descritas na ata</li>
+</ul>
+
+        
+      </div>
+      <div class="post-footer clearfix">
+        <a href="/2015/08/20/estrategias-para-testes-de-software/" class="post-more waves-button-light">MORE</a>
+      </div>
+    
+
+  </article>
+
+
+</li>
+  
+    <li class="post-list-item">
+  <article id="post-testes-de-caixa-preta" class="article article-type-post" itemscope itemprop="blogPost">
+    
+      
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2015/08/15/testes-de-caixa-preta/">Testes de Caixa-Preta</a>
+    </h3>
+  
+
+
+
+      <div class="post-meat flex-row">
+        <div class="flex-col">
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/disciplina1/">disciplina1</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/modulo3/">modulo3</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/unidade2/">unidade2</a></li></ul>
+</div>
+        <time datetime="2015-08-15T05:13:00.001Z" itemprop="datePublished" class="post-tiem">
+  15/08/2015
+</time>
+      </div>
+      <div class="post-content" itemprop="postContent" >
+        
+          <p>3 métodos para geração de testes de caixa  </p>
+<h2 id="Metodo-1-Particao-de-Classes-de-Equivalencia"><a href="#Metodo-1-Particao-de-Classes-de-Equivalencia" class="headerlink" title="Método 1: Partição de Classes de Equivalência"></a>Método 1: Partição de Classes de Equivalência</h2><p>São casos de testes baseado na geração de valores típicos da entrada do programa.  </p>
+<h3 id="Classe-de-Equivalencia"><a href="#Classe-de-Equivalencia" class="headerlink" title="Classe de Equivalência"></a>Classe de Equivalência</h3><p>É um subconjunto das entradas possíveis do programa</p>
+<h3 id="Passos-do-metodo"><a href="#Passos-do-metodo" class="headerlink" title="Passos do método:"></a>Passos do método:</h3><ol>
+<li>Definir as condições de entrada</li>
+</ol>
+<ul>
+<li>Faixa de Valores: 1 &lt; ITEM &lt; 1000</li>
+<li>Conjunto ordenado: vetor de até 6 elementos</li>
+<li>Conjunto de Valores: Enum</li>
+<li>Condição booleana</li>
+</ul>
+<ol>
+<li>Definir as classes de equivalência: conjunto de valores que se entra no programa</li>
+</ol>
+<ul>
+<li>Classe válida: 1 &lt; ITEM &lt; 1000</li>
+<li>Classe inválida: ITEM &lt;= 1 e ITEM &gt;= 1000</li>
+<li>As classes são divididas de acordo com o número de condições do programa</li>
+</ul>
+<ol>
+<li>Identificação dos casos de teste</li>
+</ol>
+<ul>
+<li>Enumerar as classes de equivalência</li>
+<li>Fazer os casos de teste para as classes válidas, as vezes com poucos casos de teste já possível englobar um número grande de classes válidas. </li>
+<li>Fazer os casos de teste para as classes inválidas, se for o caso, um caso de teste para cada classe inválida.</li>
+</ul>
+<h2 id="Metodo-2-Grafo-de-Causa-e-Efeito"><a href="#Metodo-2-Grafo-de-Causa-e-Efeito" class="headerlink" title="Método 2: Grafo de Causa e Efeito"></a>Método 2: Grafo de Causa e Efeito</h2><p>É baseado na análise das entradas do programa e saídas possíveis. A diferença do primeiro é que são todas formatadas para um formato booleano.Seja um programa simples que recebe dois tokens, as entradas possíveis são</p>
+<ol>
+<li>Primeiro token MOVTOX</li>
+<li>Primeiro token MOVTOY</li>
+<li>Segundo token é a letra de A a Z</li>
+</ol>
+<p>Efeitos identificados70-Comando correto71-Mensagem M1 (msg de erro significa não é o token MOVTOX ou MOVTOY)72-Mensagem M2 (msg de erro significa não de token de A a Z</p>
+<h2 id="Metodo-3-Analise-de-valores-de-fronteira"><a href="#Metodo-3-Analise-de-valores-de-fronteira" class="headerlink" title="Método 3: Análise de valores de fronteira"></a>Método 3: Análise de valores de fronteira</h2><p>Trabalha especificamente com os valores que estejam próximos aos intervalos de validade de entrada do programa. Testa valores focados nas fronteiras dos intervalos.Princípio da Timidez: os bugs se encontram escondidos nos detalhes do programa.Ex.: Se os extremos da faixa são os valores a e b, geramos os seguintes casos de teste:</p>
+<ul>
+<li>Entrada sobre a (sobre a fronteira inferior)</li>
+<li>Entrada sobre  a - um valor bem pequeno (um pouco abaixo da fronteira inferior)</li>
+<li>Entrada sobre b (sobre a fronteira superior)</li>
+<li>Entrada sobre b + um valor bem pequeno (um pouco acima da fronteira superior)</li>
+</ul>
+
+        
+      </div>
+      <div class="post-footer clearfix">
+        <a href="/2015/08/15/testes-de-caixa-preta/" class="post-more waves-button-light">MORE</a>
+      </div>
+    
+
+  </article>
+
+
+</li>
+  
+    <li class="post-list-item">
+  <article id="post-introducao-e-testes-de-caixa-branca" class="article article-type-post" itemscope itemprop="blogPost">
+    
+      
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2015/08/11/introducao-e-testes-de-caixa-branca/">Introdução e Testes de Caixa-Branca</a>
+    </h3>
+  
+
+
+
+      <div class="post-meat flex-row">
+        <div class="flex-col">
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/disciplina1/">disciplina1</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/modulo3/">modulo3</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/unidade1/">unidade1</a></li></ul>
+</div>
+        <time datetime="2015-08-11T03:52:00.000Z" itemprop="datePublished" class="post-tiem">
+  11/08/2015
+</time>
+      </div>
+      <div class="post-content" itemprop="postContent" >
+        
+          <p>O objetivo principal de qualquer técnica de testes é maximizar a relação percentagem de defeito sobre o número de testes feitos. O ideal é fazer o menor número de teste e testar a maior parte do sistema todo.  </p>
+<h3 id="Principios"><a href="#Principios" class="headerlink" title="Princípios"></a>Princípios</h3><ul>
+<li>Testar completamente é impossível</li>
+<li>Testar é um trabalho criativo e difícil</li>
+<li>Testes devem ser planejados e projetados</li>
+<li>Teste requer independência (sem vícios)</li>
+</ul>
+<h3 id="Conceitos"><a href="#Conceitos" class="headerlink" title="Conceitos"></a>Conceitos</h3><ul>
+<li>Casos de teste: conjunto de entradas possíveis do programa</li>
+<li><p>Métodos de teste: métodos para se gerar casos de teste</p>
+</li>
+<li><p>Caixa branca ou estruturais</p>
+</li>
+<li>Caixa preta</li>
+</ul>
+<h3 id="Metodos-de-Testes-de-Caixa-Branca"><a href="#Metodos-de-Testes-de-Caixa-Branca" class="headerlink" title="Métodos de Testes de Caixa Branca"></a>Métodos de Testes de Caixa Branca</h3><h4 id="Cobertura-Logica"><a href="#Cobertura-Logica" class="headerlink" title="Cobertura Lógica"></a>Cobertura Lógica</h4><p>São critérios que devem ser obedecidos para determinar os casos de testes.</p>
+<h4 id="Fatores-para-escolha-dos-criterios"><a href="#Fatores-para-escolha-dos-criterios" class="headerlink" title="Fatores para escolha dos critérios:"></a>Fatores para escolha dos critérios:</h4><ul>
+<li>Complexidade do programa a se testar</li>
+<li>Estrutura do programa a ser testado</li>
+<li>Criticidade do programa a se testar</li>
+<li>Nível de confiança que se deseja atingir</li>
+</ul>
+<h4 id="Criterios"><a href="#Criterios" class="headerlink" title="Critérios"></a>Critérios</h4><ul>
+<li><p>Cobertura de comandos</p>
+</li>
+<li><p>Todos os comandos que existem no programa a ser testado sejam executados</p>
+</li>
+<li><p>Cobertura de decisões</p>
+</li>
+<li><p>O teste deve passar por todas as decisões do programa nos dois casos (verdadeiro e falso) pelo menos uma vez.</p>
+</li>
+<li><p>Cobertura de decisões-condições</p>
+</li>
+<li><p>Cobertura de múltiplas condições</p>
+</li>
+<li><p>Combinar todas as possibilidades nas duas decisões dadas no exemplo.</p>
+</li>
+</ul>
+<h4 id="Metodo-dos-caminhos-basicos"><a href="#Metodo-dos-caminhos-basicos" class="headerlink" title="Método dos caminhos básicos"></a>Método dos caminhos básicos</h4><ul>
+<li>Fortemente embasado na teoria de grafos</li>
+<li>Os casos de testes gerados passem por um número ótimo de caminhos entre a entrada e saída do programa</li>
+</ul>
+<h4 id="Definicoes"><a href="#Definicoes" class="headerlink" title="Definições"></a>Definições</h4><ul>
+<li><strong>Grafo de controle</strong>: descreve o fluxo do programa</li>
+<li><p><strong>Caminhos independentes</strong>: é um caminho que não é constituído pela combinação de dois ou mais outros (não apresenta redundância).</p>
+</li>
+<li><p>Existem 3 formas de se contar o número de caminhos independentes (Complexidade Ciclomática)</p>
+</li>
+<li><p>Número de regiões: contar o número de regiões (blocos dentro do IF) e uma externa</p>
+</li>
+<li>C = E -N +2 onde, C número de caminhos independentes, E número de arestas e N número de nós.</li>
+<li>Número de estruturas de decisão + 1</li>
+</ul>
+<h4 id="Geracao-dos-casos-de-teste"><a href="#Geracao-dos-casos-de-teste" class="headerlink" title="Geração dos casos de teste"></a>Geração dos casos de teste</h4><p>Cada caminho independente gera um caso de teste</p>
+
+        
+      </div>
+      <div class="post-footer clearfix">
+        <a href="/2015/08/11/introducao-e-testes-de-caixa-branca/" class="post-more waves-button-light">MORE</a>
+      </div>
+    
+
+  </article>
+
+
+</li>
+  
+    <li class="post-list-item">
+  <article id="post-gestao-do-desenvolvimento-de-software" class="article article-type-post" itemscope itemprop="blogPost">
+    
+      
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2015/07/09/gestao-do-desenvolvimento-de-software/">Gestão do Desenvolvimento de Software</a>
+    </h3>
+  
+
+
+
+      <div class="post-meat flex-row">
+        <div class="flex-col">
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/disciplina4/">disciplina4</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/modulo2/">modulo2</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/unidade4/">unidade4</a></li></ul>
+</div>
+        <time datetime="2015-07-09T05:29:00.000Z" itemprop="datePublished" class="post-tiem">
+  09/07/2015
+</time>
+      </div>
+      <div class="post-content" itemprop="postContent" >
+        
+          <h2 id="Gerencia-de-riscos"><a href="#Gerencia-de-riscos" class="headerlink" title="Gerência de riscos"></a>Gerência de riscos</h2><p>Risco, na área de TI está muito relacionado a questões de requisitos, comunicação, tecnologias, etc. São eventos incertos e se acontecerem podem ocasionar problemas, conhecidos como ameaça, ou podem ocorrer riscos positivos, conhecidos como oportunidade.  </p>
+<p>Devem ser identificados, quantificados e enfrentados se possível. Apresentam duas dimensões:  </p>
+<ul>
+<li>Probabilidade de ocorrência </li>
+<li>Impacto</li>
+</ul>
+<p>A origem dos riscos, se deve a dois elementos: Incerteza e Complexidade.  </p>
+<p>É importante identificar os riscos, pois eles podem levar a:  </p>
+<ul>
+<li>Possíveis perdas financeiras</li>
+<li>Podem levar ao fracasso de um projeto</li>
+<li>Pessoas podem ser afetadas </li>
+<li>Patrocinadores não querem ver os riscos acontecendo</li>
+<li>Equipe deve estar preparada para enfrentar os riscos</li>
+</ul>
+<p>O PMBOK define 6 processos para gerência de risco, mostrado a seguir:</p>
+<ol>
+<li>Planejamento de riscos</li>
+</ol>
+<ul>
+<li>Se faz o planejamento de ações para gerenciar os riscos</li>
+</ul>
+<ol>
+<li>Identificação dos riscos</li>
+</ol>
+<ul>
+<li>Se faz um estudo individualizado dos riscos</li>
+</ul>
+<ol>
+<li>Análise qualitativa dos riscos</li>
+</ol>
+<ul>
+<li>Avalia a prioridade dos riscos identificados</li>
+</ul>
+<ol>
+<li>Análise quantitativa dos riscos</li>
+</ol>
+<ul>
+<li>Atribuir valores aos riscos</li>
+</ul>
+<ol>
+<li>Planejamento de respostas aos riscos</li>
+</ol>
+<ul>
+<li>Definir as ações que vão ser tomadas</li>
+</ul>
+<ol>
+<li>Monitoramento e controle dos riscos</li>
+</ol>
+<ul>
+<li>Se faz o monitoramento e tratamento dos riscos</li>
+</ul>
+<h2 id="Planejamento-e-acompanhamento-de-projetos"><a href="#Planejamento-e-acompanhamento-de-projetos" class="headerlink" title="Planejamento e acompanhamento de projetos"></a>Planejamento e acompanhamento de projetos</h2><ul>
+<li>Projetos devem estar alinhados a estrategia da empresa</li>
+<li>Para acompanhar, é preciso, antes, planejar</li>
+<li>Metodologias de gerência de projetos são importantes para viabilizar essas atividades</li>
+</ul>
+<p>Função de Planejamento  </p>
+<ul>
+<li>Informática, função de apoio</li>
+<li>Estratégias empresarias refletem na informática</li>
+<li>Complexidade inerente a área</li>
+<li>Planejamento de necessidades e recursos devem ser rigorosos</li>
+<li>Diagramas de controle de projetos são fundamentais</li>
+<li>Riscos podem se tornar muito altos e até inviabilizar projetos</li>
+</ul>
+<p>O problema básico do planejamento estratégico:</p>
+<ol>
+<li>Saber pra onde ir -&gt; meta</li>
+<li>Definir como ir -&gt; metodologia</li>
+</ol>
+<p>Planejar um projeto significa estabelecer planos e monitorar resultados e dificuldades, a cada etapa do projeto, visando aplicar os conhecimentos e utilizar bem os recursos.Planejamento requer diagnóstico da situação atual para elaboração de indicadores.</p>
+<h4 id="Relacao-entre-planejamento-empresarial-e-de-projeto"><a href="#Relacao-entre-planejamento-empresarial-e-de-projeto" class="headerlink" title="Relação entre planejamento empresarial e de projeto"></a>Relação entre planejamento empresarial e de projeto</h4><ul>
+<li>Estratégico: objetivos de longo prazo (mais de 3 anos) que definem metas</li>
+<li>Tático: ações de médio prazo (de 1 a 3 anos) que implementam metas estratégicas</li>
+<li>Operacional: programação de curto prazo (até 1 ano), execução de projetos/subprojetos</li>
+</ul>
+<h4 id="Metodologias-de-gerenciamento-de-projetos"><a href="#Metodologias-de-gerenciamento-de-projetos" class="headerlink" title="Metodologias de gerenciamento de projetos"></a>Metodologias de gerenciamento de projetos</h4><ul>
+<li>Uma boa metodologia de GP deve-se basear no conhecimento e na experiência</li>
+<li>Deve considerar 10 áreas de GP do PMBOK</li>
+<li>Deve ser adequada ao porte do projeto</li>
+<li>Definir a abordagem (foco): orientada a processo, a resultados, qualidade, etc.</li>
+</ul>
+<p>Metodologias visam  </p>
+<ul>
+<li>Criar padrões</li>
+<li>Definir como chegar aos objetivos</li>
+<li>Prover um checklist gerencial</li>
+<li>Definir o ponto de partida e os pontos de verificação (milestones)</li>
+</ul>
+<p>Problemas que podem afetar uma metodologia de gerenciamento projetos  </p>
+<ul>
+<li>Preocupação excessiva com procedimentos</li>
+<li>Menosprezar dificuldades</li>
+<li>Definir planos inexequíveis</li>
+<li>Definir recursos sub ou super dimensionado</li>
+<li>Não considerar o contexto</li>
+<li>Ignorar a importância da equipe</li>
+</ul>
+<p>Estrutura geral de um projeto, deve passar pelos passos  </p>
+<ol>
+<li>Ambiente de projeto</li>
+<li>Escopo e objetivos</li>
+<li>Produtos a serem entregues</li>
+<li>Todos envolvidos (stakeholders)</li>
+<li>Análise de custo-benefício</li>
+<li>Prioridades (projeto e tarefas)</li>
+<li>Análise dos riscos</li>
+<li>Detalhamento do projeto</li>
+</ol>
+<p>Estrutura geral de um projeto</p>
+<ul>
+<li>Cronograma físico</li>
+<li>Cronograma financeiro</li>
+<li>Mapa de riscos</li>
+<li>Recursos</li>
+<li>Perfis e papéis da equipe</li>
+<li>Treinamentos</li>
+<li>Contratação de serviços</li>
+</ul>
+<p>Produtos a serem entregues  </p>
+<ul>
+<li>Definir o que será entregue ao cliente, em termos de produtos/serviços</li>
+<li>Os produtos entregues são detalhados nos objetivos do projeto</li>
+<li>A entrega dos produtos e/ou a prestação dos serviços é o objetivo final do projeto</li>
+</ul>
+<p>Stakeholders (envolvidos)  </p>
+<ul>
+<li>Clientes, fornecedores</li>
+<li>Outros gerentes</li>
+<li>Outros projetos</li>
+<li>Requisitos externos (leis, normas, etc)</li>
+<li>Assessorias/Consultorias</li>
+<li>Recursos</li>
+<li>Processos</li>
+<li>Tecnologias e padrões</li>
+</ul>
+<p>Para saber se um projeto é viável, faz-se a análise de custo-benefício, levantando fatores, comparando com outros projetos, etc.  </p>
+<p>A prioridade do projetos deve ser discutida com o cliente e internamente, deve-se levar em conta a orientação estratégica, importância,  custo/benefício, urgência, etc.  </p>
+<p><span style="background-color: yellow;">Papel do gerente de projeto</span>  </p>
+<ol>
+<li>Manter visão do projeto</li>
+<li>Estabelecer comunicação</li>
+<li>Focar nas metas do projeto</li>
+<li>Construir um estilo de abordagem pró-ativo</li>
+<li>Monitorar o projeto (tracking)</li>
+<li>Gerenciar recursos</li>
+<li>Tomar decisões pertinentes</li>
+<li>Fazer o papel de coaching</li>
+</ol>
+<p><span style="background-color: yellow;">Competências do gerente de projetos</span>  </p>
+<ul>
+<li>Dominar técnicas de gerenciamento de projeto</li>
+<li>Aceitar críticas construtivas da equipe</li>
+<li>Ter disposição para reuniões, seminários, cursos</li>
+<li>Procurar ajuda sobre questões de difícil solução</li>
+</ul>
+<p>Métodos e técnicas de GP</p>
+<ul>
+<li>Gantt Chart</li>
+<li>Critical Path Method (CPM)</li>
+<li>Program Evaluation Review Technique (PERT)</li>
+</ul>
+<p>Ferramentas de gerência de projetos</p>
+<ul>
+<li>Brainstorming</li>
+<li>Reuniões</li>
+<li>Cronogramas</li>
+<li>Gráfico de Gantt</li>
+<li>Diagrama de rede</li>
+<li>Planos de ação 5w2h</li>
+<li>Análise SWOT</li>
+</ul>
+<h2 id="Ferramentas-computacionais-para-gerencia-de-projetos"><a href="#Ferramentas-computacionais-para-gerencia-de-projetos" class="headerlink" title="Ferramentas computacionais para gerência de projetos"></a>Ferramentas computacionais para gerência de projetos</h2><ul>
+<li>WBS Chart Pro</li>
+<li>MindManager</li>
+<li>Microsoft Project</li>
+<li>Primavera Teamplay</li>
+<li>PMOffice</li>
+<li>Open Project Management</li>
+<li>Tassc Estimator Manager</li>
+</ul>
+<h2 id="Processos-da-gerencia-de-projetos-no-MPS-Br"><a href="#Processos-da-gerencia-de-projetos-no-MPS-Br" class="headerlink" title="Processos da gerência de projetos no MPS.Br"></a>Processos da gerência de projetos no MPS.Br</h2><p>É aderente ao PMBOK, todos processos atendem ao processos do PMBOK.</p>
+<ul>
+<li>GPR1 - O escopo do trabalho para o projeto é definido</li>
+<li>GPR2 - As tarefas e os produtos de trabalho do projeto são dimensionados utilizando métodos apropriados</li>
+<li>GPR3 - O modelo e as fases do ciclo de vida do projeto são definidos</li>
+<li>GPR4 - (Até o nível F) O esforço e o custo para a execução das tarefas e dos produtos de trabalho são estimados com base em dados históricos ou referências técnicas</li>
+<li>GPR4 - (Até o nível E) O planejamento e as estimativas das tarefas do projeto são feitos baseados no repositório de estimativas e no conjunto de ativos de processo organizacional</li>
+<li>GPR5 - O orçamento e o cronograma do projeto, incluindo a definição de marcos e pontos de controle são definidos e mantidos</li>
+<li>GPR6 - Os riscos do projeto são identificados e o seu impacto, probabilidade de ocorrência e prioridade de tratamento são determinados e documentados</li>
+<li>GRP7 - Os recursos humanos para o projeto são planejados considerando o perfil e o conhecimento necessários para executá-lo</li>
+<li>GPR8 - (Até o nível F) Os recursos e o ambiente de trabalho necessários para executar o projeto são planejados</li>
+<li>GPR8 - (A partir do nível E) Os recursos e o ambiente de trabalho necessários para executar os projetos são planejados a partir dos ambientes padrão de trabalho da organização.</li>
+<li>GRP9 - Os dados relevantes do projeto são identificados e planejados quanto à forma de coleta, armazenamento e distribuição.</li>
+<li>GRP10 - Um plano geral para a execução do projeto é estabelecido com a integração de planos específicos.</li>
+<li>GPR11- A viabilidade de atingir as metas do projeto é explicitamente avaliada considerando restrições e recursos disponíveis. Se necessário, ajustes são realizados.</li>
+<li>GPR12 - O plano do projeto é revisado com todos os interessados e o compromisso com ele é obtido e mantido.</li>
+<li>GPR13 - O escopo, as tarefas, as estimativas, o orçamento e o cronograma do projeto são monitorados</li>
+<li>GPR14 - Os recursos materiais e humanos são monitorados em relação ao planejado.</li>
+<li>GPR15 - Os riscos são monitorados</li>
+<li>GPR16 - O envolvimento entre as partes interessadas no projeto é planejado, monitorado e mantido</li>
+<li>GPR17 - Revisões são realizadas em marcos do projeto e conforme estabelecidos no planejamento</li>
+<li>GPR18 - Registros de problemas identificados e o resultado da análise de questões pertinentes são estabelecidos e tratados com as partes interessadas</li>
+<li>GPR19 - Ações para corrigir desvios em relação ao planejado e para prevenir a repetição dos problemas identificados são estabelecidas, implementadas e acompanhadas até sua conclusão.</li>
+<li>GPR20 - (A partir do nível F) Equipes envolvidas no projeto são estabelecidas, mantidas a partir das regras e diretrizes para estruturação, formação e atuação</li>
+<li>GPR21 - (A partir do nível E) Experiências relacionadas aos processos contribuem para os ativos de processo organizacional</li>
+<li>GPR22 - (A partir do nível E) Um processo definido para o projeto é estabelecido de acordo com a estratégia para adaptação do processo da organização</li>
+<li>GPR22 - (A partir do nível B) Os objetivos de qualidade e de desempenho do processo definido para o projeto são estabelecidos e mantidos</li>
+<li>GPR23 - (A partir do nível B) O processo definido para o projeto que o possibilita atender seus objetivos de qualidade e de desempenho é composto com base em técnicas estatísticas, etc;</li>
+<li>GPR24 - (A partir do nível B) Subprocessos e atributos críticos para avaliar o desempenho e que estão relacionados ao alcance dos objetivos de qualidade e de desempenho do processo do projeto são selecionados</li>
+<li>GPR25 - (A partir do nível B) Selecionar medidas e técnicas analíticas a serem utilizadas na gerência quantitativa</li>
+<li>GRP26 - (A partir do nível B) O desempenho dos subprocessos escolhidos para gerência quantitativa é monitorado usando técnicas estatísticas e outras técnicas quatitativas</li>
+<li>GPR27 - (A partir do nível B) O projeto é gerenciado usando técnicas estatísticas e outras técnicas quantitativas para determinar se seus objetivos de qualidade e de desempenho do processo serão atingidos</li>
+<li>GPR28 - (A partir do nível B) Questões que afetam os objetivos de qualidade e de desempenho do processo do projeto são alvo de análise de causa raiz</li>
+</ul>
+
+        
+      </div>
+      <div class="post-footer clearfix">
+        <a href="/2015/07/09/gestao-do-desenvolvimento-de-software/" class="post-more waves-button-light">MORE</a>
+      </div>
+    
+
+  </article>
+
+
+</li>
+  
+    <li class="post-list-item">
+  <article id="post-gerencia-de-configuracoes" class="article article-type-post" itemscope itemprop="blogPost">
+    
+      
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2015/07/04/gerencia-de-configuracoes/">Gerência de Configurações</a>
+    </h3>
+  
+
+
+
+      <div class="post-meat flex-row">
+        <div class="flex-col">
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/disciplina4/">disciplina4</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/modulo2/">modulo2</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/unidade3/">unidade3</a></li></ul>
+</div>
+        <time datetime="2015-07-04T03:42:00.004Z" itemprop="datePublished" class="post-tiem">
+  04/07/2015
+</time>
+      </div>
+      <div class="post-content" itemprop="postContent" >
+        
+          <p>A Gerência de Configuração tem por objetivo cuidar dos ativos de um projeto de software, tais como  </p>
+<ul>
+<li>Programas;</li>
+<li>Documentação Técnica;</li>
+<li>Documentação Gerencial;</li>
+<li>Informações sobre projetos e indicadores;</li>
+<li>Etc.</li>
+</ul>
+<p>No RUP, a disciplina que cuida dessa parte é a Gerência de Configuração e Mudança.</p>
+<h3 id="Exemplos-de-ferramentas-de-GC"><a href="#Exemplos-de-ferramentas-de-GC" class="headerlink" title="Exemplos de ferramentas de GC"></a>Exemplos de ferramentas de GC</h3><ul>
+<li>SVN</li>
+<li>Tortoise</li>
+<li>Subversion</li>
+<li>MS Sharepoint</li>
+<li>IBM Clearcase</li>
+</ul>
+<h3 id="Conceitos-de-gerenciamento-de-mudancas"><a href="#Conceitos-de-gerenciamento-de-mudancas" class="headerlink" title="Conceitos de gerenciamento de mudanças"></a>Conceitos de gerenciamento de mudanças</h3><ul>
+<li><strong>SCM (Gerência de Configuração)</strong> é uma atividade que abrange e é aplicada em todo processo de engenharia de um software. Como as mudanças podem ocorrer a qualquer tempo, as atividades de SCM são desenvolvidas para (1) identificar mudanças; (2) controlar mudanças; (3) garantir que a mudança esteja sendo adequadamente implementada; e (4) ressaltar a mudança a outras pessoas que possam ter interesse nela. Pressman</li>
+<li>Uma <strong>configuração</strong> descreve um estado temporal que um elemento se encontra. Deve conter todos elementos significativos daquele sistema, tais como, estado do hardware, do software, documentação técnica relevante, bibliotecas, etc.</li>
+<li><p><strong>Controle de versão</strong> é o controle das revisões, mudanças na evolução de um item de produto. Objetivos:</p>
+</li>
+<li><p>Automatizar o rastreamento de arquivos</p>
+</li>
+<li>Prevenir conflitos de desenvolvedores</li>
+<li>Recuperar versões previas</li>
+<li>Permitir o desenvolvimento paralelo</li>
+<li>Auditar o desenvolvimento</li>
+<li>Reduzir o espaço de armazenamento</li>
+<li><p>Estabelecer relacionamento entre arquivos, versões e distribuições</p>
+</li>
+<li><p><strong>Gerencia de configuração</strong> controla as revisões, mudanças e dependências de um item de produto. Portanto, gerencia de configuração é mais amplo que controle de versão.</p>
+</li>
+<li><strong>Item de configuração</strong> são itens que devem ser mantidos sob o controle da gerencia de configuração. São itens individuais. Ex. versão da espec. de requisitos, código fonte, cronograma de projeto, planilha de verificação.</li>
+<li><p><strong>Baseline</strong> é uma versão formalmente aprovada de um item de configuração, independente de mídia, formalmente definida e fixada em um determinado momento durante o ciclo de vida do item de configuração. Ou seja, é o estado inicial de configuração de um projeto. Os principais tipos, são:</p>
+</li>
+<li><p>Funcional: proposta do desenvolvimento de sistemas</p>
+</li>
+<li>Alocação: especificação de requisitos</li>
+<li>Projeto: especificação de implementação e revisão critica</li>
+<li>Produto: doc. de implementação, plano de teste e aceitação</li>
+<li><p>Operacional: doc. comprova a aceitação do usuário</p>
+</li>
+<li><p><strong>Repositório</strong> é um local sobre controle de acesso, onde são armazenados os itens de configuração de software.</p>
+</li>
+<li><strong>Build</strong> representa uma versão ainda incompleta do sistema mas com certa estabilidade. Inclui outros docs, além do fonte.</li>
+<li><strong>Branches e Trunks</strong>, são ramificações laterais de versões que se originam de uma revisão da linha principal de desenvolvimento.</li>
+<li><strong>Versão alfa</strong>, é uma versão produzida após um ciclo de desenvolvimento e utilizada em testes controlados</li>
+<li><strong>Versão de homologação ou beta</strong>, é liberada aos clientes para testes</li>
+<li><strong>Versão oficial</strong>, liberada comercialmente para clientes</li>
+<li><strong>Versões emergenciais</strong> visa resolver bugs</li>
+<li><strong>Checkout</strong> quando se obtém uma cópia da versão do arquivo para modificação e simultaneamente se impede o acesso a outros usuários. Checkin quando se cria uma nova versão do arquivo e se libera o acesso a essa nova versão.</li>
+</ul>
+<h3 id="Funcoes-da-Gerencia-de-Configuracao"><a href="#Funcoes-da-Gerencia-de-Configuracao" class="headerlink" title="Funções da Gerencia de Configuração"></a>Funções da Gerencia de Configuração</h3><ol>
+<li>Identificação de configuração</li>
+</ol>
+<ul>
+<li>Tem como objetivo a seleção dos itens de configuração desejados;</li>
+<li>Definição de um esquema de codificação</li>
+<li>Descrição dos itens</li>
+</ul>
+<ol>
+<li>Controle de configuração</li>
+</ol>
+<ul>
+<li>Permite o acompanhamento da evolução dos itens de configuração. Estabelece as atividades para que os itens possam evoluir de forma controlada:</li>
+<li>(1) solicitação de modificação, iniciando o ciclo de controle para uma manutenção</li>
+<li>(2) classificação da modificação</li>
+<li>(3) análise de impacto</li>
+<li>(4) avaliação da modificação pelo comitê de controle de configuração</li>
+<li>(5) implementação da modificação</li>
+<li>(6) verificação da modificação com relação à proposta de implementação levantada</li>
+<li>(7) atualização da baseline </li>
+</ul>
+<ol>
+<li>Contabilização de configuração</li>
+</ol>
+<ul>
+<li>Possui duas responsabilidades:</li>
+<li>(1) Armazenar informações geradas pelas demais funções</li>
+<li>(2) Permitir que as informações possam ser acessadas</li>
+</ul>
+<ol>
+<li><p>Avaliação e revisão da configuração</p>
+</li>
+<li><p>Ocorre quando a baseline (gerada no controle de configuração) é selecionada para ser liberada para o cliente. Suas atividades são:</p>
+</li>
+<li>(1) Auditoria funcional da baseline</li>
+<li><p>(2) Auditoria física de baseline</p>
+</li>
+<li><p>Gerenciamento de liberação e entrega</p>
+</li>
+<li><p>Construção: produzindo novos itens de configuração</p>
+</li>
+<li>Liberação: identificado versões particulares de cada item de configuração</li>
+<li>Entrega: implantando produto no ambiente final de produção</li>
+</ol>
+<h3 id="Papeis-Artefatos-e-Atividades-de-GC"><a href="#Papeis-Artefatos-e-Atividades-de-GC" class="headerlink" title="Papeis, Artefatos e Atividades de GC"></a>Papeis, Artefatos e Atividades de GC</h3><ul>
+<li>Gerente de configuração: papel de controlar as configurações de software</li>
+<li>Auditor de configuração: responsável pela auditoria dos projetos</li>
+<li>Equipe de projeto: usuários da gerencia de configuração de software</li>
+<li>Bibliotecário: responsável pelo acesso a biblioteca de configurações (repo)</li>
+<li>Comitê Controle de Mudança: responsável pelas decisões de modificação</li>
+</ul>
+<h3 id="Gerencia-de-Configuracao-MPS-BR"><a href="#Gerencia-de-Configuracao-MPS-BR" class="headerlink" title="Gerência de Configuração MPS-BR"></a>Gerência de Configuração MPS-BR</h3><p>Pertence ao <span style="background-color: yellow;">Nível F</span> junto com as atividades de </p>
+<ul>
+<li>Aquisição</li>
+<li>Garantia da qualidade</li>
+<li>Medição</li>
+<li>Gerência de portfólio de projetos</li>
+</ul>
+<p>GCO é composta por 7 REPs (Resultados Esperados no Processo), apresentados a seguir:</p>
+<ul>
+<li>GCO1 - Um Sistema de Gerência de Configuração é estabelecido e mantido;</li>
+<li>GCO2 - Os itens de configuração são identificados com base em critérios estabelecidos;</li>
+<li>GCO3 - Os itens de configuração sujeitos a um controle formal são colocados sob baseline</li>
+<li>GCO4 - A situação dos itens de configuração e das baselines é registrada ao longo do tempo e disponibilizada;</li>
+<li>GCO5 - Modificação em itens de configuração são controladas;</li>
+<li>GCO6 - O armazenamento, o manuseio e a liberação de itens de configuração e baselines são controlados;</li>
+<li>GCO7 - Auditorias de configuração são realizadas objetivamente para assegurar que as baselines e os itens de configuração estejam íntegros, completos e consistentes.</li>
+</ul>
+<p>O objetivo da GCO é <span style="background-color: yellow;">estabelecer e manter a integridade de todos os produtos de trabalho</span> de um projeto e disponibiliza-los para equipe.</p>
+
+        
+      </div>
+      <div class="post-footer clearfix">
+        <a href="/2015/07/04/gerencia-de-configuracoes/" class="post-more waves-button-light">MORE</a>
+      </div>
+    
+
+  </article>
+
+
+</li>
+  
+    <li class="post-list-item">
+  <article id="post-metricas-e-estimativas-de-projetos" class="article article-type-post" itemscope itemprop="blogPost">
+    
+      
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2015/06/25/metricas-e-estimativas-de-projetos/">Métricas e Estimativas de Projetos</a>
+    </h3>
+  
+
+
+
+      <div class="post-meat flex-row">
+        <div class="flex-col">
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/disciplina4/">disciplina4</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/modulo2/">modulo2</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/unidade2/">unidade2</a></li></ul>
+</div>
+        <time datetime="2015-06-25T04:47:00.004Z" itemprop="datePublished" class="post-tiem">
+  25/06/2015
+</time>
+      </div>
+      <div class="post-content" itemprop="postContent" >
+        
+          <h2 id="Metricas-Estimativas-e-Modelos-de-software"><a href="#Metricas-Estimativas-e-Modelos-de-software" class="headerlink" title="Métricas, Estimativas e Modelos de software"></a>Métricas, Estimativas e Modelos de software</h2><h3 id="Qualidade"><a href="#Qualidade" class="headerlink" title="Qualidade"></a>Qualidade</h3><p>A avaliação da qualidade está relacionada a uma série de características intrínsecas do produto, ex.,  </p>
+<ul>
+<li>Quantidade de bugs</li>
+<li>Conformidade com requisitos</li>
+<li>Desempenho</li>
+<li>Indicador de qualidade</li>
+</ul>
+<h3 id="Metrica"><a href="#Metrica" class="headerlink" title="Métrica"></a>Métrica</h3><p>É a medição de atributos de um processo, projeto, etc. É também uma relação entre medidas.  </p>
+<h4 id="Atividades-de-medicao-e-analise-sao-importantes-para"><a href="#Atividades-de-medicao-e-analise-sao-importantes-para" class="headerlink" title="Atividades de medição e análise são importantes para:"></a>Atividades de medição e análise são importantes para:</h4><ul>
+<li>Caracterizar ou permitir entender processos, produtos, recursos e ambiente.</li>
+<li>Avaliar para determinar o status do projeto, com respeito aos planos feitos</li>
+<li>Predizer valores observados possam ser utilizados para predizer outros</li>
+<li>Melhorar, identificando causas de problemas e ineficiências e oportunidades de melhoria</li>
+</ul>
+<h4 id="Escalas-de-mensuracao"><a href="#Escalas-de-mensuracao" class="headerlink" title="Escalas de mensuração"></a>Escalas de mensuração</h4><ul>
+<li>Nominal: escala inicial, baseada em uma avaliação nominal</li>
+<li>Ordinal: baseada numa ordem pre-estabelecida. Ex prioridade mínima, média, max.</li>
+<li>Intervalar: baseada em intervalos. Ex temperatura</li>
+<li>Razão: existe uma relação natural entre os valores. Ex: Salário</li>
+<li>Nas métricas de software serão usadas basicamente as escalas de razão e ordinal</li>
+</ul>
+<h4 id="Algumas-metricas-conhecidas-no-desenvolvimento-de-software"><a href="#Algumas-metricas-conhecidas-no-desenvolvimento-de-software" class="headerlink" title="Algumas métricas conhecidas no desenvolvimento de software:"></a>Algumas métricas conhecidas no desenvolvimento de software:</h4><ul>
+<li>Números de linhas de código </li>
+<li>Número de pessoas para implementar um caso de uso</li>
+<li>Número de defeitos encontrados num produto</li>
+<li>Esforço necessário para realizar uma tarefa/projeto</li>
+<li>Tempo necessário para realizar uma tarefa/projeto</li>
+<li>Custo necessário para realizar uma tarefa/projeto</li>
+<li>Grau de satisfação do cliente</li>
+</ul>
+<h4 id="Objetivos"><a href="#Objetivos" class="headerlink" title="Objetivos"></a>Objetivos</h4><ul>
+<li>Melhorar a previsibilidade e a chance de sucesso no projeto.</li>
+<li>Permitir melhor gerenciamento do projeto</li>
+<li>Reduzir pressões sobre cronogramas</li>
+<li>Apoiar decisões make or buy fazer/comprar</li>
+<li>Indicar a qualidade de um produto de software</li>
+<li>Avaliar benefícios</li>
+<li>Avaliar ROI</li>
+</ul>
+<h4 id="Caracteristicas-de-uma-boa-metrica"><a href="#Caracteristicas-de-uma-boa-metrica" class="headerlink" title="Características de uma boa métrica"></a>Características de uma boa métrica</h4><ul>
+<li>Facilmente calculada, entendida e testada</li>
+<li>Pode ser automatizável</li>
+<li>Deve ser útil para de estudos estatísticos</li>
+<li>Deve ser repetível, objetiva</li>
+<li>Capaz de indicar um caminho de melhoria</li>
+</ul>
+<h4 id="Classificacao"><a href="#Classificacao" class="headerlink" title="Classificação"></a><span style="background-color: yellow;">Classificação</span></h4><ul>
+<li><p>Métricas Diretas</p>
+</li>
+<li><p>É aquela que é realizada em termos <span style="background-color: yellow;">atributos observáveis</span>. Números de linhas, número de erros, etc</p>
+</li>
+<li><p>Métricas Indiretas</p>
+</li>
+<li><p><span style="background-color: yellow;">São baseadas em medidas diretas</span>. Ex. facilidade de manutenção, produtividade, esforço, tamanho baseado em funcionalidade. Não são observáveis diretamente.</p>
+</li>
+<li><p>Métricas orientadas a tamanho</p>
+</li>
+<li><p>São aquelas aplicáveis a contagem de tamanho de artefatos de software. Ex.: KLOC, número da páginas de documentação.</p>
+</li>
+<li><p>Métricas orientadas à função</p>
+</li>
+<li><p>Se baseia em métodos para medição de software do ponto de vista do usuário. Ex. Ponto de função, ponto de caso de uso, etc.</p>
+</li>
+</ul>
+<h3 id="Analise-de-Pontos-de-Funcao-APF"><a href="#Analise-de-Pontos-de-Funcao-APF" class="headerlink" title="Análise de Pontos de Função (APF)"></a>Análise de Pontos de Função (APF)</h3><p>Consiste na contagem das funções que caracterizam um sistema, sob o ponto de vista do que ele faz para o usuário.</p>
+<ul>
+<li>Mede a funcionalidade entregue ao cliente (métrica indireta)</li>
+<li>Utiliza um método padronizado internacionalmente</li>
+<li>Pode ser usada tanto no início, no meio ou no final do projeto de software</li>
+<li>Útil para medição de produtos novos ou existentes, em evolução</li>
+<li><p>É baseado em função de dois tipos. </p>
+</li>
+<li><p><strong>Dado</strong>: relacionam-se ao modelo de dados. Dividem-se em Arquivos Lógicos Internos (ALI) e Arquivos de Interface Externa (AIE)</p>
+</li>
+<li><p><strong>Transação</strong>: estão relacionadas “as transações realizadas no escopo da aplicação. Geralmente são captadas por meio de casos de uso. Dividem-se em Entradas Externas (EE), Saídas Externas (SE) e Consultas Externas CE).</p>
+</li>
+<li><p>É uma métrica indireta e funcional.</p>
+</li>
+</ul>
+<h4 id="O-que-deve-ser-contado-num-produto-segundo-a-APF"><a href="#O-que-deve-ser-contado-num-produto-segundo-a-APF" class="headerlink" title="O que deve ser contado num produto, segundo a APF?"></a>O que deve ser contado num produto, segundo a APF?</h4><ol>
+<li>Entradas: transações que alteram o estado do sistema. Ex: CRUD</li>
+<li>Saídas: transações que enviam dados para fora do sistema. Ex: Arquivos de interface</li>
+<li>Consultas: transações de consulta a bases de dados</li>
+<li>Arquivos Lógicos Internos: arquivos mantidos pelo sistema</li>
+<li>Arquivos de Interface Externa: arquivos externos que não são mantidos pela aplicação</li>
+</ol>
+<h4 id="Tipo-de-Contagem-de-PF"><a href="#Tipo-de-Contagem-de-PF" class="headerlink" title="Tipo de Contagem de PF"></a>Tipo de Contagem de PF</h4><ul>
+<li><strong>Contagem Indicativa</strong>: feita no momento inicial do projeto com um modelo preliminar dos dados.</li>
+<li><strong>Contagem Estimada</strong>: realizada quando se possui detalhes suficientes para fazer uma estimativa melhor. Quando se tem um modelo de funções básicas.</li>
+<li><strong>Contagem Detalhada</strong>: bastante confiável, realizada quando se tem informações completas sobres as funções e dados.</li>
+</ul>
+<h4 id="Etapas-do-processo-de-contagem-de-pontos-de-funcao"><a href="#Etapas-do-processo-de-contagem-de-pontos-de-funcao" class="headerlink" title="Etapas do processo de contagem de pontos de função"></a>Etapas do processo de contagem de pontos de função</h4><ol>
+<li>Identificação das funções do sistema</li>
+<li>Classificação de cada função de acordo com sua complexidade funcional</li>
+<li>Cálculo dos pontos de função brutos através de pesos de acordo com uma tabela</li>
+<li>Avaliação das 14 “características gerais” do sistema</li>
+<li>Determinação do fator de ajuste (específico do projeto)</li>
+<li>Cálculo dos pontos de função ajustados</li>
+</ol>
+<h4 id="Contagem-por-pontos-de-funcao"><a href="#Contagem-por-pontos-de-funcao" class="headerlink" title="Contagem por pontos de função"></a>Contagem por pontos de função</h4><p>É feito por 5 etapas.</p>
+<ul>
+<li><p>Entradas</p>
+</li>
+<li><p>São elementos que vão alterar algum estado dos dados na aplicação</p>
+</li>
+<li><p>Saídas</p>
+</li>
+<li><p>São funcionalidades que provem a troca de dados na saída de dados</p>
+</li>
+<li><p>Arquivos lógicos internos</p>
+</li>
+<li><p>São arquivos que armazenam informações da aplicação internamente</p>
+</li>
+<li><p>Arquivos de interface externo</p>
+</li>
+<li><p>São arquivos de outras aplicações que são apenas acessados</p>
+</li>
+<li><p>Consulta</p>
+</li>
+<li><p>Trazem dados que estão armazenados mediante uma seleção desses dados</p>
+</li>
+</ul>
+<h4 id="Transacoes-podem-ser"><a href="#Transacoes-podem-ser" class="headerlink" title="Transações podem ser"></a>Transações podem ser</h4><ul>
+<li>Entrada </li>
+<li>Saída </li>
+<li>Consulta</li>
+</ul>
+<p>A produtividade de uma equipe pode ser determinada com a quantidade de horas gastas para disponibilizar uma quantidade de pontos de função.  </p>
+<blockquote>
+<p><strong>Produtividade = Tamanho do Produto / Esforço</strong></p>
+</blockquote>
+<p>Obs.: Tamanho do Produto pode ser em diversas unidades, como PF/HH, PF/PM.  </p>
+<blockquote>
+<p><strong>Esforço = Pessoas x Tempo</strong></p>
+</blockquote>
+<p>Prdutividade média é baseada em dados históricos, com a fórmula:  </p>
+<blockquote>
+<p><strong>Qtd. Pessoas = Tamanho / (Produtividade x Tempo)</strong></p>
+</blockquote>
+<h4 id="Itens-de-influencia-Fatores-de-Ajuste"><a href="#Itens-de-influencia-Fatores-de-Ajuste" class="headerlink" title="Itens de influência (Fatores de Ajuste)"></a>Itens de influência (Fatores de Ajuste)</h4><ol>
+<li>Teleprocessamento</li>
+<li>Processamento Distribuído</li>
+<li>Performance</li>
+<li>Carga de Máquina</li>
+<li>Volume de Transações</li>
+<li>Entradas de dados online</li>
+<li>Atualizações online</li>
+<li>Eficiência do usuário final</li>
+<li>Complexiadade do processamento</li>
+<li>Reutilização de código</li>
+<li>Facilidade de implantação</li>
+<li>Facilidade de operação</li>
+<li>Facilidade de manutenção/alterações</li>
+<li>Operação em múltiplos locais</li>
+</ol>
+<h4 id="Etapas-para-o-calculo-da-produtividade"><a href="#Etapas-para-o-calculo-da-produtividade" class="headerlink" title="Etapas para o cálculo da produtividade"></a>Etapas para o cálculo da produtividade</h4><ul>
+<li>Medição do tamanho em pontos de função</li>
+<li>Registros históricos para determinar o escopo (medido em homens x hora)</li>
+<li>Calcular a produtividade obtida - Horas/PF ou PF/HH</li>
+<li>Estabelecer as produtividades médias para os diversos ambientes de desenvolvimento e tipos de projeto</li>
+</ul>
+<h4 id="Fatores-que-influenciam-na-produtividade-de-um-projeto"><a href="#Fatores-que-influenciam-na-produtividade-de-um-projeto" class="headerlink" title="Fatores que influênciam na produtividade de um projeto"></a>Fatores que influênciam na produtividade de um projeto</h4><ul>
+<li>Inexperiência da equipe</li>
+<li>Gerenciamento ineficiente do projeto</li>
+<li>Requisitos instáveis</li>
+<li>Falta de metodologia </li>
+<li>Tamanho do projeto</li>
+</ul>
+<h4 id="Metodos-de-estimativas-empiricos"><a href="#Metodos-de-estimativas-empiricos" class="headerlink" title="Métodos de estimativas empíricos"></a>Métodos de estimativas empíricos</h4><ul>
+<li><p>Estimativa Ad-hoc</p>
+</li>
+<li><p>Estimativa isolada. Projeto não está conectado a uma outra situação conhecida.</p>
+</li>
+<li><p>Estimativa gerencial</p>
+</li>
+<li><p>Gerente estima o prazo. Problema de prazo sub-dimensionado.</p>
+</li>
+<li><p>Métodos ágeis</p>
+</li>
+<li><p>planning poker, etc</p>
+</li>
+<li><p>De equipe</p>
+</li>
+<li><p>a própria equipe estima o trabalho</p>
+</li>
+<li>Pode ser feita utilizando uma técnica chamada Delphi: cada pessoa faz uma contagem e depois tenta-se convergir os valores</li>
+</ul>
+<h4 id="Reflexoes-sobre-estimativas-de-software"><a href="#Reflexoes-sobre-estimativas-de-software" class="headerlink" title="Reflexões sobre estimativas de software"></a>Reflexões sobre estimativas de software</h4><ul>
+<li><p>Métricas são falíveis</p>
+</li>
+<li><p>Mesmo assim é melhor ter métricas do que planejar no escuro</p>
+</li>
+<li><p>Utilizar faixas de tolerância é uma recomendação</p>
+</li>
+<li><p>Não se consegue boas estimativas no início do projeto</p>
+</li>
+<li><p>Mesmo assim uma estimativa inicial deve ser feita</p>
+</li>
+<li><p>Uma base histórica é o que faz a diferença para uma boa estimativa</p>
+</li>
+</ul>
+<h4 id="Outras-metricas"><a href="#Outras-metricas" class="headerlink" title="Outras métricas"></a>Outras métricas</h4><ul>
+<li><p>COCOMO II</p>
+</li>
+<li><p>Bom para estimar custo. Difícil de ser usado.</p>
+</li>
+<li><p>Pontos de Caso de Uso</p>
+</li>
+<li><p>Derivada dos pontos de função, mas usa atores e casos de uso.</p>
+</li>
+<li><p>Pontos de histórias de usuário</p>
+</li>
+<li><p>aplicada em histórias de usuário dos métodos ágeis</p>
+</li>
+<li><p>COSMIC</p>
+</li>
+<li><p>Nova geração de métricas. Não estabelece limites para medição de uma função. Mede não somente a camada da aplicação mas a infraestrutura.</p>
+</li>
+<li>Deve ser aplicado quando há muita variação de escopo</li>
+<li>Deve ser aplicado com muitos pontos de função</li>
+<li>Propicia o aumento da previsibilidade e menor variabilidade na relação entre o tamanho, custo e esforço.</li>
+</ul>
+
+        
+      </div>
+      <div class="post-footer clearfix">
+        <a href="/2015/06/25/metricas-e-estimativas-de-projetos/" class="post-more waves-button-light">MORE</a>
+      </div>
+    
+
+  </article>
+
+
+</li>
+  
+    <li class="post-list-item">
+  <article id="post-principios-da-gerencia-de-projetos" class="article article-type-post" itemscope itemprop="blogPost">
+    
+      
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2015/06/16/principios-da-gerencia-de-projetos/">Princípios da Gerência de Projetos</a>
+    </h3>
+  
+
+
+
+      <div class="post-meat flex-row">
+        <div class="flex-col">
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/disciplina4/">disciplina4</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/modulo2/">modulo2</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/unidade1/">unidade1</a></li></ul>
+</div>
+        <time datetime="2015-06-16T03:48:00.002Z" itemprop="datePublished" class="post-tiem">
+  16/06/2015
+</time>
+      </div>
+      <div class="post-content" itemprop="postContent" >
+        
+          <h2 id="Parte-I"><a href="#Parte-I" class="headerlink" title="Parte I"></a>Parte I</h2><p>Separação entre os sistemas de produção existentes  </p>
+<ol>
+<li>Produção contínua: grande quantidade de produtos gerados (automoveis)</li>
+<li>Produção por lote ou encomenda: menos produtos (fast food)</li>
+<li>Produção por projeto: são feitos um a um e cada projeto tem seu resultado específico. (desenvolvimento de software, construção civil, etc)</li>
+</ol>
+<h2 id="4-P’s"><a href="#4-P’s" class="headerlink" title="4 P’s"></a>4 P’s</h2><p>Elementos gerais que caracterizam a engenharia de software</p>
+<ul>
+<li>Pessoas: produzem</li>
+<li>Produtos: produtos inciais, intermediários e finais do projeto</li>
+<li>Processos: forma de produzir</li>
+<li>Projetos: instanciação de um projeto</li>
+</ul>
+<h2 id="Projeto"><a href="#Projeto" class="headerlink" title="Projeto"></a>Projeto</h2><p>PMBOK define projeto como sendo um</p>
+<blockquote>
+<p>Esforço temporário empreendido para criar um produto, serviço ou resultado exclusivo.</p>
+</blockquote>
+<p>VARGAS define como</p>
+<blockquote>
+<p>Um empreedimento não repetitivo, caracterizado por uma sequência clara e lógica de eventos, com início, meio e fim, que se destina a atingir um objetivo claro e definido, sendo conduzido por pessoas dentro de parâmetros predefinidos de tempo, custo, recursos envolvidos e qualidade.”</p>
+</blockquote>
+<p>Exemplos de projeto</p>
+<ul>
+<li>Pirâmides do Egito</li>
+<li>Reconstrução de um país pós guerra</li>
+<li>Construção de um navio</li>
+<li>Informatização de uma empresa</li>
+<li>Turnê de uma banda</li>
+</ul>
+<p>Principais atributos de um projeto</p>
+<ul>
+<li>Meta única</li>
+<li>Recursos humanos</li>
+<li>Escopo bem definido</li>
+<li>Início e fim determinados</li>
+<li>Tarefas bem definidas</li>
+<li>Intervenção humana indispensável</li>
+<li>Grupos de interesse envolvidos</li>
+<li>Recursos limitados</li>
+<li>Planejamento individualizado</li>
+<li>Execução controlada</li>
+<li>Normalmente é inovador</li>
+<li>Objetivos envolvem: <span style="background-color: yellow;">prazo, custo, qualidade (pontos críticos)</span></li>
+</ul>
+<p>Conceitos relacionados a projetos</p>
+<ul>
+<li>Empreendimento: sinônimo de projeto</li>
+<li>Programa: conjunto de projetos (ex. Programa de Aceleração do Crescimento)</li>
+</ul>
+<h3 id="Porque-os-projetos-falham"><a href="#Porque-os-projetos-falham" class="headerlink" title="Porque os projetos falham?"></a>Porque os projetos falham?</h3><ul>
+<li>Pessoas falham</li>
+<li>Falta de planejamento adequado</li>
+<li>Pressão excessiva de prazo e custo</li>
+<li>Falta de suporte ao gerente de projeto</li>
+<li>Equipe despreparada</li>
+<li>Comunicação</li>
+</ul>
+<h3 id="Separacao-de-conceitos-entre-o-que-e-projeto"><a href="#Separacao-de-conceitos-entre-o-que-e-projeto" class="headerlink" title="Separação de conceitos entre o que é projeto"></a>Separação de conceitos entre o que é projeto</h3><p>Projetos são feitos onde e quando?Exemplos de projetos </p>
+<ul>
+<li>Desenvolvimento de software</li>
+<li>Manutenção de software (fazer um módulo novo)</li>
+<li>Aquisição de novos servidores</li>
+<li>Criação de rede local</li>
+<li>Customização de um aplicativo</li>
+<li>Prospecção de ferramentas</li>
+<li>Integração entre sistemas</li>
+</ul>
+<h3 id="Quando-nao-se-faz-projetos"><a href="#Quando-nao-se-faz-projetos" class="headerlink" title="Quando não se faz projetos?"></a>Quando não se faz projetos?</h3><p>Quando há rotinas. É Focada em resultados rápidos. As atividades são mais operacionais.Exemplos</p>
+<ul>
+<li>Manutenção periódica ou corretiva</li>
+<li>Serviços de operação de servidores</li>
+<li>Serviços de helpdesk</li>
+<li>Atualização de versão de aplicativo</li>
+<li>Vendas da empresa estão paradas</li>
+<li>Banco de dados apresentando problemas</li>
+</ul>
+<h2 id="Parte-II"><a href="#Parte-II" class="headerlink" title="Parte II"></a>Parte II</h2><h3 id="PMBOK"><a href="#PMBOK" class="headerlink" title="PMBOK"></a>PMBOK</h3><p>Definição clássica de gerência de projetos:</p>
+<blockquote>
+<p>Aplicação de conhecimentos, habilidades e técnicas para projetar atividades que visem atingir os requisistos do projeto</p>
+</blockquote>
+<h4 id="4-funcoes-que-todo-gerente-de-projetos-deve-executar-diariamente"><a href="#4-funcoes-que-todo-gerente-de-projetos-deve-executar-diariamente" class="headerlink" title="4 funções que todo gerente de projetos deve executar diariamente"></a>4 funções que todo gerente de projetos deve executar diariamente</h4><ul>
+<li><strong>Planejamento</strong>: estabelecer metas, linhas de ação a ser seguidas</li>
+<li><strong>Organização</strong>: combinar, juntar recursos Ex. organizar processo produtivo</li>
+<li><strong>Direção</strong>: estabelecer um ponto onde se quer chegar. Transformar planos em atividades.</li>
+<li><strong>Controle</strong>: acompanhamento do projeto.</li>
+</ul>
+<h4 id="Questoes-fundamentais-sobre-projetos"><a href="#Questoes-fundamentais-sobre-projetos" class="headerlink" title="Questões fundamentais sobre projetos"></a>Questões fundamentais sobre projetos</h4><ul>
+<li>Métrica</li>
+<li>Recursos limitados</li>
+<li>Qualidade</li>
+<li>Conjunto de resultados esperados</li>
+<li>Interface (com pessoas, outras áreas, fornecedores, clientes, etc)</li>
+</ul>
+<h4 id="Processos-e-artefatos"><a href="#Processos-e-artefatos" class="headerlink" title="Processos e artefatos"></a>Processos e artefatos</h4><ul>
+<li><strong>Cronograma físico</strong>: planilha que representa o desenvolvimento do projeto temporalmente</li>
+<li><strong>Cronograma financeiro</strong>: deve estar sempre atrelado ao cronograma físico. Como os investimentos serão distribuidos no projeto.</li>
+<li><strong>Análise de riscos envolvidos (viabilidade)</strong>: tem como resultado uma lista de riscos.</li>
+<li><strong>Estudo de interfaces</strong>: como tratar as interfaces do projeto de maneira preventiva, corretiva e pró-ativa</li>
+<li><strong>Análise de custo-benefício</strong>: verificar a viabilidade do projeto.</li>
+<li><strong>Prioridade do projeto</strong>: prioridades do projeto e tarefas.</li>
+<li><strong>Plano de Projeto:</strong> doc. contendo todos os dados gerenciais relevantes.</li>
+<li><p><strong>Gerenciamento de tempo do projeto</strong>: </p>
+</li>
+<li><p>Ciclo de vida: importante definir um ciclo de vida para o projeto</p>
+</li>
+<li>Fase: subdivisão do ciclo de vida</li>
+<li>Tarefa: menor que uma fase. Pode ser em partes menores chamadas sub-tarefas</li>
+<li>Pacote de trabalho: menor unidade de um projeto. É em que uma pessoa vai trabalhar</li>
+<li>Duração: todo projeto tem uma duração. Ao final do projeto se faz uma comparação entre a duração estimada e a real para saber sobre o sucesso do projeto.</li>
+<li>Precedência: determina a duração de uma tarefa. Pode ser inicio-incio, termino-inicio (espera uma tarefa terminar para começar outra), etc. </li>
+</ul>
+<h3 id="Tres-questoes-basicas"><a href="#Tres-questoes-basicas" class="headerlink" title="Três questões básicas"></a>Três questões básicas</h3><ol>
+<li>As partes interessadas no projeto (stakeholders)</li>
+<li>Aprender com o passado</li>
+<li>Lei de Murphy (riscos)</li>
+</ol>
+<h3 id="PMBOK-caracteriza-um-projeto-como-um-conjunto-de-processos-que-sao-agrupados-em-5-grupos"><a href="#PMBOK-caracteriza-um-projeto-como-um-conjunto-de-processos-que-sao-agrupados-em-5-grupos" class="headerlink" title="PMBOK caracteriza um projeto como um conjunto de processos, que são agrupados em 5 grupos:"></a>PMBOK caracteriza um projeto como um conjunto de processos, que são agrupados em 5 grupos:</h3><h4 id="Visao-de-grupos-de-processos"><a href="#Visao-de-grupos-de-processos" class="headerlink" title="Visão de grupos de processos"></a>Visão de grupos de processos</h4><ul>
+<li><strong>Iniciação</strong>: conjunto de atividades para definir <span style="background-color: yellow;">o que deve ser feito</span>. </li>
+<li><strong>Planejamento</strong>: atividade que envolve a determinação de <span style="background-color: yellow;">como será feito</span>. Definir um orçamento, conjunto de tarefas a serem feitas</li>
+<li><strong>Execução</strong>: executar as atividades.</li>
+<li><strong>Finalização</strong>: conjunto de tarefas que se encerra o projeto. Fazer um balanço, quais os ganhos e quais as perdas.</li>
+<li><strong>Monitoramento e controle</strong>: atividade constante realizada pelo gerente de projeto.</li>
+</ul>
+<h4 id="Areas-de-conhecimento-do-PMBOK-topicos-de-conhecimento"><a href="#Areas-de-conhecimento-do-PMBOK-topicos-de-conhecimento" class="headerlink" title="Áreas de conhecimento do PMBOK (tópicos de conhecimento)"></a>Áreas de conhecimento do PMBOK (tópicos de conhecimento)</h4><ul>
+<li><strong>Integração</strong>: cuida de interfaces (outros projetos, stakeholders, etc)</li>
+<li><strong>Escopo</strong>: se preocupa a atender aquilo que o projeto se propõe a fazer</li>
+<li><strong>Tempo</strong>: prazos para execução de um projeto</li>
+<li><strong>Custo</strong>: trata da parte financeira do projeto</li>
+<li><strong>Qualidade</strong>: cuida do que está sendo produzido</li>
+<li><strong>Recursos</strong> <strong>Humanos</strong>: bom gerenciamento das pessoas</li>
+<li><strong>Comunicação</strong>: informações do projeto</li>
+<li><strong>Risco</strong>: identifica e trata riscos</li>
+<li><strong>Aquisição</strong>: aquisições de um projeto</li>
+<li><strong>Stakeholders</strong>: gerenciar os envolvidos no projeto</li>
+</ul>
+<p>O que o PMBOK <strong>não é</strong>:  </p>
+<ul>
+<li>Uma metodologia</li>
+<li>A verdade absoluta e imutável</li>
+<li>A única fonte de consulta de um gerente de projeto</li>
+</ul>
+
+        
+      </div>
+      <div class="post-footer clearfix">
+        <a href="/2015/06/16/principios-da-gerencia-de-projetos/" class="post-more waves-button-light">MORE</a>
+      </div>
+    
+
+  </article>
+
+
+</li>
+  
+    <li class="post-list-item">
+  <article id="post-padroes-de-projeto" class="article article-type-post" itemscope itemprop="blogPost">
+    
+      
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2015/06/14/padroes-de-projeto/">Padrões de Projeto</a>
+    </h3>
+  
+
+
+
+      <div class="post-meat flex-row">
+        <div class="flex-col">
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/disciplina3/">disciplina3</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/modulo2/">modulo2</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/unidade4/">unidade4</a></li></ul>
+</div>
+        <time datetime="2015-06-14T20:29:00.000Z" itemprop="datePublished" class="post-tiem">
+  14/06/2015
+</time>
+      </div>
+      <div class="post-content" itemprop="postContent" >
+        
+          <p>Privilegia principalmente a reutilização  </p>
+<blockquote>
+<p>Padrão de projeto é uma solução padronizada para um problema que se repete muitas vezes dentro de um determinado contexto.</p>
+</blockquote>
+<h2 id="Padroes-de-criacao"><a href="#Padroes-de-criacao" class="headerlink" title="Padrões de criação"></a>Padrões de criação</h2><p>Diz respeito a padronizar a forma como os objetos são criados, compostos e representados.</p>
+<h3 id="Abstract-Factory"><a href="#Abstract-Factory" class="headerlink" title="Abstract Factory"></a>Abstract Factory</h3><p>Prover uma interface para criação de famílias de objetos relacionados ou independentes sem que se especifiquem suas classes concretas.</p>
+<h3 id="Factory-Method"><a href="#Factory-Method" class="headerlink" title="Factory Method"></a>Factory Method</h3><p>São métodos que retornam um novo objeto</p>
+<h3 id="Singleton"><a href="#Singleton" class="headerlink" title="Singleton"></a>Singleton</h3><p>Obter somente uma instância de um objeto na aplicação.</p>
+<h3 id="Prototype"><a href="#Prototype" class="headerlink" title="Prototype"></a>Prototype</h3><p>Quero que, dados dois objetos, eles sejam idênticos, mas não sejam a mesma instância.a1 = a2 não funciona porque eles viram a mesma instância.O Java já possui o método clone() que faz isso.</p>
+<h2 id="Padroes-Estruturais"><a href="#Padroes-Estruturais" class="headerlink" title="Padrões Estruturais"></a>Padrões Estruturais</h2><p>Estão relacionados a como classes e objetos são compostos de forma a gerar estruturas maiores e mais complexas.</p>
+<h3 id="Adapter"><a href="#Adapter" class="headerlink" title="Adapter"></a>Adapter</h3><p>Com o adapter é possível por exemplo, trocar de uma biblioteca gráfica por outra sem grande impacto na aplicação.Definir uma interface que a aplicação (cliente) vai usar, implementar essa interface e dentro da implementação chamar os métodos da biblioteca gráfica. Ex. adaptada.desenharBotao();</p>
+<h3 id="Flyweight"><a href="#Flyweight" class="headerlink" title="Flyweight"></a>Flyweight</h3><p>Dado um conjunto de pequenos objetos que possuem um atributo em comum, se cria apenas um objeto e todos os pequenos objetos apontam para o mesmo, economizando espaço em memória.  </p>
+<h3 id="Proxy"><a href="#Proxy" class="headerlink" title="Proxy"></a>Proxy</h3><p>Proxy representa uma visão diferente do objeto em questão. Por exemplo, um objeto representa uma imagem de satélite com alta resolução, cria-se o proxy desse objeto com a imagem de baixa resolução e posso manipular os dois da mesma forma, só que um é mais leve.  </p>
+<h3 id="Facade"><a href="#Facade" class="headerlink" title="Façade"></a>Façade</h3><p>Dado que a aplicação precisa chamar a mesma sequencia de métodos em diversos locais diferentes, cria-se um Façade que faz essas chamas para aplicação e a aplicação só chama o Façade.  </p>
+<h3 id="Composite"><a href="#Composite" class="headerlink" title="Composite"></a>Composite</h3><p>Representa estrutura de árvore. Um objeto pode ter nós que são da mesma interface Composite ou então ser uma folha.  </p>
+<h2 id="Padroes-Comportamentais"><a href="#Padroes-Comportamentais" class="headerlink" title="Padrões Comportamentais"></a>Padrões Comportamentais</h2><p>Estão relacionados ao comportamento dos objetos</p>
+<h3 id="Chain-of-Responsability"><a href="#Chain-of-Responsability" class="headerlink" title="Chain of Responsability"></a>Chain of Responsability</h3><p>Uma vez que existe uma cadeia de objetos, e é necessário ser enviado uma mensagem para um desses objetos. Esses objetos vão encaminhando para o próximo objeto da sequência até que um objeto identifique que a mensagem é pra ele. É uma lista encadeada.</p>
+
+        
+      </div>
+      <div class="post-footer clearfix">
+        <a href="/2015/06/14/padroes-de-projeto/" class="post-more waves-button-light">MORE</a>
+      </div>
+    
+
+  </article>
+
+
+</li>
+  
+    <li class="post-list-item">
+  <article id="post-arquitetura-orientada-ao-modelo-model-driven-architecture-mda" class="article article-type-post" itemscope itemprop="blogPost">
+    
+      
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2015/06/04/arquitetura-orientada-ao-modelo-model-driven-architecture-mda/">Arquitetura Orientada ao Modelo (Model Driven Architecture-MDA)</a>
+    </h3>
+  
+
+
+
+      <div class="post-meat flex-row">
+        <div class="flex-col">
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/disciplina3/">disciplina3</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/modulo2/">modulo2</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/unidade3/">unidade3</a></li></ul>
+</div>
+        <time datetime="2015-06-04T04:22:00.002Z" itemprop="datePublished" class="post-tiem">
+  04/06/2015
+</time>
+      </div>
+      <div class="post-content" itemprop="postContent" >
+        
+          <h2 id="Arquitetura-Orientada-Ao-Modelo"><a href="#Arquitetura-Orientada-Ao-Modelo" class="headerlink" title="Arquitetura Orientada Ao Modelo"></a>Arquitetura Orientada Ao Modelo</h2><ul>
+<li>Foi um paradigma criado pelo OMG em 2000</li>
+<li>Ciclo de vida é semelhante ao tradicional, cria-se os mesmos modelos das abordagens tradicionais.</li>
+<li><p>A ideia é iniciar um projeto de modelagem que vai ser num primeiro momento independente de plataforma, chamado:</p>
+</li>
+<li><p><strong>PIM - Platform Independent Model</strong></p>
+</li>
+<li>Logo depois, </li>
+<li><strong>PSM - Platform Specific Model</strong></li>
+<li>E depois será convertido em código fonte.</li>
+</ul>
+<p>Dentro do conceito de MDA, surge também o MOF - Meta Object Facility, que é uma instância do conceito de MDA.</p>
+<blockquote>
+<p>MOF define uma linguagem abstrata e um framework para especificação, construção e gerenciamento de metamodelo. A UML implementa o MOF.</p>
+</blockquote>
+<h3 id="Tabela-do-MOF"><a href="#Tabela-do-MOF" class="headerlink" title="Tabela do MOF"></a>Tabela do MOF</h3><ul>
+<li>M3 - Nível mais alto de abstração. É a especificação de conceitos do modelo MOF</li>
+<li>M2 - Nível de implementação de linguagens como UML</li>
+<li>M1 - Mais comum. Onde os modelos são criados. </li>
+<li>M0 - Nível das instancias que são criadas a partir desse modelo. Se temos uma tabela Produto, o nível M0 seria os registros dessa tabela.</li>
+</ul>
+<p>XMI é uma especificação genérica que é possível exportar diagramas entre softwares diferentes (Argo e Rational)</p>
+<h2 id="EMF-Eclipse-Modeling-Framework"><a href="#EMF-Eclipse-Modeling-Framework" class="headerlink" title="EMF - Eclipse Modeling Framework"></a>EMF - Eclipse Modeling Framework</h2><ul>
+<li>É um framework que é utilizado para geração de aplicações dentro do conceito de MDA.</li>
+<li>Base para trabalhar com EMF é um doc XMI, Rational, java anotado, etc.</li>
+<li>É semelhante ao MOF mas definição é chamada “EMOF”.</li>
+</ul>
+<p>Constituído de dois frameworks fundamentais:  </p>
+<ul>
+<li>Core Framework: suporte para criação de classes de implementação</li>
+<li>EMF.edit: suporte para edição do modelo</li>
+</ul>
+
+        
+      </div>
+      <div class="post-footer clearfix">
+        <a href="/2015/06/04/arquitetura-orientada-ao-modelo-model-driven-architecture-mda/" class="post-more waves-button-light">MORE</a>
+      </div>
+    
+
+  </article>
+
+
+</li>
+  
+    <li class="post-list-item">
+  <article id="post-implementacao-de-software" class="article article-type-post" itemscope itemprop="blogPost">
+    
+      
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2015/05/27/implementacao-de-software/">Implementação de software</a>
+    </h3>
+  
+
+
+
+      <div class="post-meat flex-row">
+        <div class="flex-col">
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/disciplina3/">disciplina3</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/modulo2/">modulo2</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/unidade2/">unidade2</a></li></ul>
+</div>
+        <time datetime="2015-05-27T03:09:00.000Z" itemprop="datePublished" class="post-tiem">
+  27/05/2015
+</time>
+      </div>
+      <div class="post-content" itemprop="postContent" >
+        
+          <h2 id="Frameworks"><a href="#Frameworks" class="headerlink" title="Frameworks"></a>Frameworks</h2><p>É com a experiência dos programadores que foram surgindo os frameworksConstruir um software do zero é muito custoso, por isso se usa uma base já implementada</p>
+<h3 id="Beneficios-de-se-usar-um-framework"><a href="#Beneficios-de-se-usar-um-framework" class="headerlink" title="Benefícios de se usar um framework"></a>Benefícios de se usar um framework</h3><ul>
+<li>O benefício básico de se usar um framework é a produtividade</li>
+<li>Melhora da qualidade através da reutilização do framework, já que ele é mais usado e se detecta mais falhas</li>
+</ul>
+<p>Com restrições de prazo e custo, os desenvolvedores devem-se utilizar de componentes, frameworks e padrões de projeto para realização do projeto</p>
+<h3 id="Definicoes"><a href="#Definicoes" class="headerlink" title="Definições"></a>Definições</h3><p>Framework é uma técnica que se beneficia de três características das linguagens de programação orientadas a objeto: abstração de dados, poliformismo e herança; O framework é uma arquitetura semi-acabada e passível de reutilização para um domínio de aplicação;Framework é uma aplicação genérica que permite a criação de diferentes aplicações em um determinado domínio;Um framework define uma arquitetura para uma família de sistemas, fornecendo partes predefinidas para sua construção;</p>
+<h3 id="Conceitos-de-Frozen-Spots-e-Hot-Spots"><a href="#Conceitos-de-Frozen-Spots-e-Hot-Spots" class="headerlink" title="Conceitos de Frozen Spots e Hot Spots"></a>Conceitos de Frozen Spots e Hot Spots</h3><p><strong>Frozen Spots</strong>: definem uma arquitetura global de um sistema que permanece <strong>inalterado</strong> em qualquer instanciação do framework;<strong>Hot Spots</strong>: são pontos do framework onde ocorrem a especialização (definir classes adicionais para sobrepor métodos, etc.) e adaptação.</p>
+<h3 id="Esquema-de-HotSopts"><a href="#Esquema-de-HotSopts" class="headerlink" title="Esquema de HotSopts"></a>Esquema de HotSopts</h3><ul>
+<li>Uma classe abstrata de base, que vai definir a interface</li>
+<li>Classes concretas derivadas, representando cada uma das diferentes alternativas para os aspectos variáveis</li>
+<li>Parte opcional com relacionamentos e classes adicionais</li>
+</ul>
+<h3 id="Beneficios"><a href="#Beneficios" class="headerlink" title="Benefícios"></a>Benefícios</h3><ul>
+<li>Modulariação</li>
+<li>Reutilização</li>
+<li>Extensão de interfaces</li>
+<li>Framework controla estrutura e abordagem do programa</li>
+</ul>
+<h3 id="UML-F"><a href="#UML-F" class="headerlink" title="UML-F"></a>UML-F</h3><p>Usada para fazer modelagem de frameworks e utiliza conceitos comuns e mecanismos de extensão (como estereótipos) da própria UML.</p>
+<ul>
+<li><p>Estereótipos</p>
+</li>
+<li><p>São mecanismos para permitir adicionar novos blocos de construção semelhantes aos existentes</p>
+</li>
+<li><p>É representado graficamente por &lt;&lt; e &gt;&gt;</p>
+</li>
+<li><p>Tag values</p>
+</li>
+<li><p>São meios para proporcionar a criação de novas propriedades. É apresentado como uma sequencia de caracteres entre chaves, colocado abaixo de outro elemento.</p>
+</li>
+<li><p>Restrições</p>
+</li>
+<li><p>São mecanismos para especificar uma nova semântica de algum elemento UML. É representada como uma sequencia de caracteres colocada próxima ao elemento associado.</p>
+</li>
+</ul>
+<h3 id="Hot-Spots"><a href="#Hot-Spots" class="headerlink" title="Hot Spots"></a>Hot Spots</h3><p>Há três tipos de hot spots em um framework orientado a objetos:</p>
+<ul>
+<li>Métodos variáveis: possuem uma interface bem definida, mas que podem variar sua implementação de acordo com a instanciação do framework;</li>
+<li>Classes estendidas: podem ser estendidas durante a instanciação do framework, recebendo novos métodos;</li>
+<li>Interfaces estendidas ou classes abstratas: permitem a criação de subclasses concretas na instanciação do framework. Essas classes são chamadas de classes de aplicação.</li>
+</ul>
+<p>Os três tipos podem ser estáticos (instanciação não é requerida em tempo de execução) ou dinâmicos (é requerida em tempo de execução)</p>
+<h3 id="Tags-utilizadas-em-UML-F"><a href="#Tags-utilizadas-em-UML-F" class="headerlink" title="Tags utilizadas em UML-F"></a>Tags utilizadas em UML-F</h3><ul>
+<li>Variable: é aplicado aos métodos de uma classe e representa o hot spot Métodos Variáveis;</li>
+<li>Extensible: é aplicada a uma classe e indica o hot spot Classes Estendidas. </li>
+<li>Incomplete: representa o hot spot Interfaces Estendidas. Colocada ao lado do simbolo de generalização;</li>
+<li>Tag appl-class: Complementa a definição de classes estendidas. Indica um aditivo na estrutura de um framework;</li>
+<li>static e dynamic: complementam a notação dos hot spots, indicando se o mesmo requer instanciação ou não.</li>
+</ul>
+
+        
+      </div>
+      <div class="post-footer clearfix">
+        <a href="/2015/05/27/implementacao-de-software/" class="post-more waves-button-light">MORE</a>
+      </div>
+    
+
+  </article>
+
+
+</li>
+  
+  </ul>
+  
+    <nav id="page-nav">
+      <div class="inner">
+        <a class="extend prev" rel="prev" href="/">上一页</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><a class="page-number" href="/page/5/">5</a><a class="extend next" rel="next" href="/page/3/">下一页</a>
+      </div>
+    </nav>
+  
+
+
+
+    </div>
+  </main>
+<div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-circle-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+<script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+
+<script src="/js/main.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

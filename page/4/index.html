@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Engenheirando Software | Minhas observações sobre Engenharia de Software</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <meta name="keywords" content="undefined">
+  <meta name="description" content="Blog sobre engenharia de software">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Engenheirando Software">
+<meta property="og:url" content="http://yoursite.com/page/4/index.html">
+<meta property="og:site_name" content="Engenheirando Software">
+<meta property="og:description" content="Blog sobre engenharia de software">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Engenheirando Software">
+<meta name="twitter:description" content="Blog sobre engenharia de software">
+  
+    <link rel="alternative" href="/atom.xml" title="Engenheirando Software" type="application/atom+xml">
+  
+  <link rel="shortcut icon" href="/">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="loading" class="active"></div>
+
+  <nav id="menu"  >
+   <div class="inner">
+  <a href="javascript:;" class="header-icon waves-circle-light" id="menu-off">
+      <i class="icon icon-lg icon-close"></i>
+  </a>
+  <div class="brand-wrap">
+    <div class="brand">
+      <a href="/" class="avatar"><img src="/images/avatar.jpg"></a>
+      <hgroup class="introduce">
+        <h5 class="nickname">Jonathas Amaral</h5>
+        <a href="mailto:jnthas@gmail.com" title="jnthas@gmail.com" class="mail">jnthas@gmail.com</a>
+      </hgroup>
+    </div>
+  </div>
+  <ul class="nav">
+    
+        <li class="waves-block active">
+          <a href="/"  >
+            <i class="icon icon-lg icon-home"></i>
+            Home
+          </a>
+        </li>
+    
+        <li class="waves-block">
+          <a href="/archives"  >
+            <i class="icon icon-lg icon-archives"></i>
+            Archives
+          </a>
+        </li>
+    
+        <li class="waves-block">
+          <a href="/tags"  >
+            <i class="icon icon-lg icon-tags"></i>
+            Tags
+          </a>
+        </li>
+    
+        <li class="waves-block">
+          <a href="https://github.com/engenhando-software/engenhando-software.github.io" target="_blank" >
+            <i class="icon icon-lg icon-github"></i>
+            Github
+          </a>
+        </li>
+    
+  </ul>
+
+  <footer class="footer">
+  <p><a rel="license" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0;vertical-align:middle;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAAAPCAMAAABEF7i9AAAAllBMVEUAAAD///+rsapERER3d3eIiIjMzMzu7u4iIiKUmZO6v7rKzsoODg4RERFVVVUNDQ0NDg0PEA8zMzNLTEtbXltmZmZydnF9gn2AgICPkI+ZmZmqqqq7u7vFxsXIzMgNDQwZGRkgICAhISEkJSMnKCcuMC4xMzE5Ozk7PTtBQkFCQkJDQ0Nna2eGhoaHh4ezuLLGysbd3d1wVGpAAAAA4UlEQVR42q2T1xqCMAyFk7QsBQeKA9x7j/d/OSm22CpX0nzcpA1/T05aAOuBVkMAScQFHLnEwoCo2f1TnQIGoVMewjZEjVFN4GH1Ue1Cn2jWqwfsOOj6wDwGvotsl/c8lv7KIq1eLOsT0HMFHMIE/RZyHnlphryT9zyV+8WH5e8yQw3wnQvgAFxPTKUVi555SHR/lOfLMgVTeDlSfN+TaoUsiTyeIm+bCkHvCA2FUKG48LDtYBZBknsYP/G8NTw0gaaHyuQf4H5pecrB/FYCT2sL9zAfy1Xyjou6L8X2W7YcLyBZCRtnq/zfAAAAAElFTkSuQmCC" /></a></p>
+  <p>Jonathas Amaral &copy; 2016</p>
+  <p>Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme
+  <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a></p>
+  <a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-2x icon-rss-square"></i></a>
+</footer>
+
+</div>
+
+  </nav>
+  <main id="main">
+    <header class="header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-circle-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">Engenheirando Software</div>
+        
+    </div>
+</header>
+<header class="content-header">
+  <div class="container">
+    <h1 class="author">Engenheirando Software</h1>
+    <h5 class="subtitle">Minhas observações sobre Engenharia de Software</h5>
+  </div>
+</header>
+
+    <div class="container body-wrap">
+      
+  <ul class="post-list">
+  
+    <li class="post-list-item">
+  <article id="post-sistemas-de-gestao-empresarial" class="article article-type-post" itemscope itemprop="blogPost">
+    
+      
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2015/03/06/sistemas-de-gestao-empresarial/">Sistemas de Gestão Empresarial</a>
+    </h3>
+  
+
+
+
+      <div class="post-meat flex-row">
+        <div class="flex-col">
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/disciplina4/">disciplina4</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/modulo1/">modulo1</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/unidade4/">unidade4</a></li></ul>
+</div>
+        <time datetime="2015-03-06T05:30:00.001Z" itemprop="datePublished" class="post-tiem">
+  06/03/2015
+</time>
+      </div>
+      <div class="post-content" itemprop="postContent" >
+        
+          <h2 id="Sistemas-de-Gestao-Empresarial"><a href="#Sistemas-de-Gestao-Empresarial" class="headerlink" title="Sistemas de Gestão Empresarial"></a>Sistemas de Gestão Empresarial</h2><p>Existem dois grandes tipos de aplicações:  </p>
+<ul>
+<li><strong>aplicações do negócio:</strong> suportam o negócio e a parte administrativa do mesmo;</li>
+<li><strong>aplicações sobre o negócio:</strong> analisam e ajudam a interpretar o que ocorreu e a decidir estratégias futuras.</li>
+</ul>
+<h3 id="Data-Warehouse"><a href="#Data-Warehouse" class="headerlink" title="Data Warehouse"></a>Data Warehouse</h3><p>É um armazém de dados, orientada por assuntos, integrada, variante do tempo e não volátil.</p>
+<ul>
+<li><strong>Assuntos:</strong> vendas de produtos, RH, aplicações financeiras</li>
+<li><strong>Integrado:</strong> se integra no banco da empresa</li>
+<li><strong>Variante do tempo:</strong> a chave principal da analise é o tempo</li>
+<li><strong>Não volátil:</strong> não se muda o dado</li>
+</ul>
+<h3 id="Classificacao"><a href="#Classificacao" class="headerlink" title="Classificação"></a>Classificação</h3><ul>
+<li><strong>Ambiente físico:</strong> centralizado ou descentralizado</li>
+<li><strong>Distribuição por função:</strong> cada assunto fica em um data warehouse e todos se combinam para um objeto comum</li>
+<li><strong>Camadas:</strong> os dados resumidos ficam em um servidor, os com detalhamentos intermediário em outro e outro com dados atômicos  </li>
+</ul>
+<h3 id="Data-Warehouse-e-Metadados"><a href="#Data-Warehouse-e-Metadados" class="headerlink" title="Data Warehouse e Metadados"></a>Data Warehouse e Metadados</h3><p>Os metadados são divididos em três camadas:</p>
+<ol>
+<li>Operacionais (nível de aplicação): definem a estrutura dos dados mantidos pelos bancos operacionais.</li>
+<li>Centrais do data warehouse: metadados do próprio data warehouse </li>
+<li>Nível do usuário: mapeiam os metadados do data warehouse para conceitos que sejam familiares ao usuário </li>
+</ol>
+<p>Classificação segundo classes de componentes:  </p>
+<ul>
+<li>mapeamento: descrevem as transformação dos dados operacionais até chegarem ao data warehouse</li>
+<li>histórico: quais mudanças existentes nos dados </li>
+<li>miscelânea: sinônimos</li>
+</ul>
+<h3 id="Linguagens-em-banco-de-dados"><a href="#Linguagens-em-banco-de-dados" class="headerlink" title="Linguagens em banco de dados"></a>Linguagens em banco de dados</h3><ul>
+<li>OLTP: é o que estamos acostumados (SQL) </li>
+<li>OLAP: é usada em data warehouse (não faz a manutenção dos dados)</li>
+</ul>
+<p>OLAP x SQL</p>
+<ul>
+<li>SQL convencional tem pouco suporte a consultas temporais</li>
+<li>SQL não dá suporte para otimizar um grupo de consultas, somente uma única</li>
+</ul>
+<h3 id="Modelagem-de-Data-Warehouse"><a href="#Modelagem-de-Data-Warehouse" class="headerlink" title="Modelagem de Data Warehouse"></a>Modelagem de Data Warehouse</h3><ul>
+<li>Dimensão: é uma entidade, através dela que conseguimos apurar. Exemplos: marca, modelo de um veículo. São diferentes perspectivas envolvidas em cada projeto em uma organização</li>
+<li><p>Fatos: são medições, numéricas. </p>
+</li>
+<li><p>Aditivos: medições em uma tabela que podem ser adicionados ao longo de todas as dimensões, ex: quant. produtos vendidos</p>
+</li>
+<li>Semi-aditivo: fato numérico, que pode ser adicionado ao longo de algumas dimensões. Ex. estoque (nem sempre pode ser armazenados para todas as dimensões</li>
+<li><p>Não aditivo: são fatos que não podem ser adicionados em qualquer dimensão, ex. textuais</p>
+</li>
+<li><p>Granularidade: nível de detalhes que são armazenados</p>
+</li>
+<li>Grão: significado de uma linha na tabela de fatos. Ex a quantidade de veículos armazenados podem ser computados por dia, mês, ano. Se for armazenado por grão “mês”, não é possível recuperar por semana ou dia</li>
+</ul>
+<h3 id="Modelos-de-data-warehouse"><a href="#Modelos-de-data-warehouse" class="headerlink" title="Modelos de data warehouse"></a>Modelos de data warehouse</h3><ul>
+<li><p>Estrela (favorece aglutinação)</p>
+</li>
+<li><p>A tabela de fatos fica no centro do modelo e as dimensões ao redor.</p>
+</li>
+<li><p>Floco de Neve</p>
+</li>
+<li><p>Uma dimensão depende de outra. Para se apurar os fatos, deve-se ligar a uma dimensão e depois em outra. Ex. Produto &gt; Categoria &gt; Marca. </p>
+</li>
+</ul>
+<p>Modelagem de um data warehouse</p>
+<ul>
+<li>Orientado no negócio e necessidade do usuário</li>
+<li>dados já foram produzidos</li>
+<li>a normalização nem sempre se aplica</li>
+<li><p>Diretrizes</p>
+</li>
+<li><p>o modelo dimensional deve se parecer com o corporativo</p>
+</li>
+<li>combinar a necessidade de informação com os dados disponíveis </li>
+</ul>
+<h3 id="9-passos-de-decisao-KIMBALL"><a href="#9-passos-de-decisao-KIMBALL" class="headerlink" title="9 passos de decisão (KIMBALL)"></a>9 passos de decisão (KIMBALL)</h3><ol>
+<li>conhecer os processos (identidade dos fatos)</li>
+<li>decidir a granularidade de cada tabela de fatos</li>
+<li>decidir as dimensões da tabela de fatos</li>
+<li>quais fatos armazenar, que tipo de aglutinação</li>
+<li>definir os atributos de cada dimensão</li>
+<li>como rastrear dimensões de modificações mais lentas</li>
+<li>decisões de armazenamento físico</li>
+<li>amplitude de tempo histórico (terá uma visão de quanto anos atras?)</li>
+<li>definir os intervalos de extração dos dados</li>
+</ol>
+<h3 id="Mineracao-de-Dados"><a href="#Mineracao-de-Dados" class="headerlink" title="Mineração de Dados"></a>Mineração de Dados</h3><p>Regras</p>
+<ul>
+<li>Associação: associar dados a outros dados</li>
+<li>Sequenciais: informação é requerida depois que algum outro dado foi requerido (passagem aérea, hotel)</li>
+<li>Classificação: indicadores estatísticos (frequência de visitas a loja, incidência de erros de empregados)</li>
+</ul>
+<h3 id="Objetivos-do-Processo-de-Mineracao"><a href="#Objetivos-do-Processo-de-Mineracao" class="headerlink" title="Objetivos do Processo de Mineração"></a>Objetivos do Processo de Mineração</h3><ul>
+<li>Previsão: prever fatos que já ocorreram no passado e podem ocorrer denovo</li>
+<li>Identificação: identificar para minimizar ou maximizar a ocorrência</li>
+<li>Classificação: classificar o que ocorre na organização</li>
+<li>Otimização: otimizar os fatos ocorridos no passado</li>
+</ul>
+
+        
+      </div>
+      <div class="post-footer clearfix">
+        <a href="/2015/03/06/sistemas-de-gestao-empresarial/" class="post-more waves-button-light">MORE</a>
+      </div>
+    
+
+  </article>
+
+
+</li>
+  
+    <li class="post-list-item">
+  <article id="post-seguranca-e-persistencia-de-dados" class="article article-type-post" itemscope itemprop="blogPost">
+    
+      
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2015/03/06/seguranca-e-persistencia-de-dados/">Segurança e Persistência de Dados</a>
+    </h3>
+  
+
+
+
+      <div class="post-meat flex-row">
+        <div class="flex-col">
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/disciplina4/">disciplina4</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/modulo1/">modulo1</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/unidade3/">unidade3</a></li></ul>
+</div>
+        <time datetime="2015-03-06T04:15:00.000Z" itemprop="datePublished" class="post-tiem">
+  06/03/2015
+</time>
+      </div>
+      <div class="post-content" itemprop="postContent" >
+        
+          <p>Dois tipos de segurança  </p>
+<ul>
+<li>Segurança de Acesso  (acesso ao dado)</li>
+<li>Segurança de Atualização (não é atualização do dado, é a persistência do dado)</li>
+</ul>
+<h3 id="Seguranca-de-Acesso"><a href="#Seguranca-de-Acesso" class="headerlink" title="Segurança de Acesso"></a>Segurança de Acesso</h3><p>Dois tipos de privilégio</p>
+<ul>
+<li>Nível de conta: relacionado ao usuário do banco de dados, esse usuário pode criar uma tabela, uma view, etc. (DDL)</li>
+<li><p>Nivel de relação(tabela ou view): select, insert, update, delete, alter table, index, etc (DML)</p>
+</li>
+<li><p>grant select, insert, delete on TABELA to USER or ROLE</p>
+</li>
+<li>revoke select, insert, … on TABELA to USER or ROLE</li>
+<li>grant option permite o usuario dar permissões a outros</li>
+</ul>
+<h3 id="Seguranca-de-Atualizacao"><a href="#Seguranca-de-Atualizacao" class="headerlink" title="Segurança de Atualização"></a>Segurança de Atualização</h3><p>É a segurança que o usuário tem em manter o dado persistido, se ele assim o quiser.  </p>
+<ul>
+<li>Commit </li>
+<li>Rollback</li>
+<li>Log</li>
+<li>Backup full, incremental</li>
+<li>Recover (time stamp)</li>
+</ul>
+<p>É o backup, recovery e log do banco de dadosrecovery = backupFull + Soma(BackupIncrementais) + Log</p>
+
+        
+      </div>
+      <div class="post-footer clearfix">
+        <a href="/2015/03/06/seguranca-e-persistencia-de-dados/" class="post-more waves-button-light">MORE</a>
+      </div>
+    
+
+  </article>
+
+
+</li>
+  
+    <li class="post-list-item">
+  <article id="post-banco-de-dados-distribuidos" class="article article-type-post" itemscope itemprop="blogPost">
+    
+      
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2015/02/22/banco-de-dados-distribuidos/">Banco de Dados Distribuidos</a>
+    </h3>
+  
+
+
+
+      <div class="post-meat flex-row">
+        <div class="flex-col">
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/disciplina4/">disciplina4</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/modulo1/">modulo1</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/unidade2/">unidade2</a></li></ul>
+</div>
+        <time datetime="2015-02-22T22:12:00.001Z" itemprop="datePublished" class="post-tiem">
+  22/02/2015
+</time>
+      </div>
+      <div class="post-content" itemprop="postContent" >
+        
+          <p>Consiste num conjunto de bancos espalhados e um sistema distribuído para gerenciar esses bancos. Cada local pode realizar transações: locais, em que acessam dados de um único local e globais onde acessam dados em vários locais.  </p>
+<h3 id="Condicoes-minimas-para-ser-um-banco-de-dados-distribuido"><a href="#Condicoes-minimas-para-ser-um-banco-de-dados-distribuido" class="headerlink" title="Condições mínimas para ser um banco de dados distribuído"></a>Condições mínimas para ser um banco de dados distribuído</h3><ul>
+<li>Estar conectados em rede</li>
+<li>Possuir uma inter-relação lógica dos bancos</li>
+<li>Não é necessário que o software seja o mesmo em cada nó da rede</li>
+</ul>
+<h3 id="Transparencia"><a href="#Transparencia" class="headerlink" title="Transparência"></a>Transparência</h3><ul>
+<li>Usuário: usuário não precisa saber detalhes de implementação</li>
+<li>Distribuição ou rede: usuário não precisa saber configuração de rede</li>
+<li>Local: Usuário não sabe onde o banco se encontra</li>
+<li>Nomes: nome dos dados. usuário chama um dado pelo nome que ele conhece.</li>
+<li>Replicação e Fragmentação: usuário não precisa saber como o dado está.</li>
+<li>Projeto: Projeto do banco de dados é transparente ao usuário</li>
+<li>Execução: Como deve ser feita a requisição e o processamento no banco, usuário não precisa saber;</li>
+</ul>
+<h3 id="Custo-de-instalacao-de-um-banco-de-dados-distribuido"><a href="#Custo-de-instalacao-de-um-banco-de-dados-distribuido" class="headerlink" title="Custo de instalação de um banco de dados distribuído"></a>Custo de instalação de um banco de dados distribuído</h3><ol>
+<li>Custo de instalação: tempo para ligar fisicamente um nó</li>
+<li>Custo de comunicação: custo em tempo e dinheiro para enviar uma mensagem entre os nós</li>
+<li>Confiabilidade: frequência com a qual uma ligação apresenta falhas</li>
+<li>Disponibilidade: o grau com que um dado pode ser acessado ainda que algumas apresentem falhas</li>
+</ol>
+<h3 id="Pros-e-Contras-a-distribuicao-de-dados"><a href="#Pros-e-Contras-a-distribuicao-de-dados" class="headerlink" title="Prós e Contras à distribuição de dados"></a>Prós e Contras à distribuição de dados</h3><h4 id="Vantagens"><a href="#Vantagens" class="headerlink" title="Vantagens"></a>Vantagens</h4><ul>
+<li>Autonomia local, mesmo que a rede esteja indisponível, o sistema se mantem localmente</li>
+<li>Confiabilidade e Disponibilidade: forte ponte do BDD.</li>
+<li>Aceleração do processo de consulta: pode-se subdividir uma consulta que são executadas em paralelo</li>
+<li>Crescimento incremental: cresce de acordo com a necessidade</li>
+</ul>
+<h4 id="Desvantagens"><a href="#Desvantagens" class="headerlink" title="Desvantagens"></a>Desvantagens</h4><ul>
+<li>Aumento da sobrecarga de processamento: sistema deve encontrar o dados no nó correto</li>
+<li>Maior chance de erros</li>
+<li>Custo de desenvolvimento do software</li>
+</ul>
+<h3 id="Tipo-de-Sistemas-de-BDD"><a href="#Tipo-de-Sistemas-de-BDD" class="headerlink" title="Tipo de Sistemas de BDD"></a>Tipo de Sistemas de BDD</h3><p>Características:</p>
+<ul>
+<li><strong>(Hetero)Homogeneidade</strong>: é a diferença de sistemas (ou SGBD) entre os bancos distribuídos. Um banco é homogêneo quando ele tem mesmo sistema em todos os nós.</li>
+<li><strong>Autonomia</strong>: quando cada local possui seu próprio banco de dados. O dados podem ser acessados em qualquer lugar, por isso, se um nó cair, o sistema continua funcionando obtendo o dado de outro nó.</li>
+<li><p><strong>Distribuição</strong>: é o quanto o banco é distribuído.</p>
+<pre><code>**Autonomia    Distribuição   Heterogeneidade****Centralizado**       total                 nenhuma          nenhuma**Puros**                   nenhuma          alta                   nenhuma**Federado**             media               alta                   alta **Multibancos**        alta                   alta                   alta  
+</code></pre></li>
+</ul>
+<h3 id="Dificuldades-com-bancos-federados"><a href="#Dificuldades-com-bancos-federados" class="headerlink" title="Dificuldades com bancos federados"></a>Dificuldades com bancos federados</h3><ul>
+<li>Diferenças entre linguagens, restrições, interpretação quando um banco está muito distante, p.ex., Brasil x EUA.</li>
+<li>Diferença entre nome de um dado, p.ex., mexerica, pocan, tangerina e bergamota. Os nomes referenciam ao mesmo produto, mas cada local tem um nome diferente.</li>
+<li>Forma como realizar agregação de tabelas e resumos</li>
+</ul>
+<h3 id="Replicacao"><a href="#Replicacao" class="headerlink" title="Replicação"></a>Replicação</h3><ul>
+<li>Síncrona: o dado é replicado na mesma hora (traz overhead)</li>
+<li>Assíncrona: o dado é replicado na hora que o SGBD achar melhor</li>
+</ul>
+<h3 id="Fragmentacao"><a href="#Fragmentacao" class="headerlink" title="Fragmentação"></a>Fragmentação</h3><ul>
+<li>Horizontal: linhas de uma tabela</li>
+<li>Vertical: colunas de uma tabela (exige o “id de tupla”, maior sobrecarga)</li>
+<li>Mista: SGBDs ainda não implementam </li>
+</ul>
+<h3 id="Estrutura-de-um-BDD"><a href="#Estrutura-de-um-BDD" class="headerlink" title="Estrutura de um BDD"></a>Estrutura de um BDD</h3><p>GT - é o mesmo componente do SGDB centralizado  </p>
+<p>Todo nó possui um Gerenciador de Transações (GT) que cooperam entre si para execução das transações. É responsável por manter o log, participa do controle de concorrência.O <strong>coordenador de transações</strong> coordena as transações locais e globais. É responsavel por  </p>
+<ul>
+<li>iniciar uma transação; </li>
+<li>distribuir a transação nos nós apropriados;</li>
+<li>coordernar a conclusão da transação.</li>
+</ul>
+<h3 id="Robustez"><a href="#Robustez" class="headerlink" title="Robustez"></a>Robustez</h3><p>Um SGBD é robusto quando consegue detectar falhas, reconfigurar o sistema para continuar o funcionamento e recuperar a situação original.</p>
+<h3 id=""><a href="#" class="headerlink" title=" "></a> </h3><p>Two-Phase Commit</p>
+<p>Coordenador emite uma mensagem para o GT, dizendo que vai atualizar. O GT responde OK, o coordenador envia a mensagem para o GT com a forma para atualizar. Se o coordenador não responder um segundo OK ele aborta a transação.São duas fases, uma o coordenador pergunta se pode atualizar e a outra confirma se foi atualizado.</p>
+<h3 id="Three-Phase-Commit"><a href="#Three-Phase-Commit" class="headerlink" title="Three-Phase Commit"></a>Three-Phase Commit</h3><p>Agora há um pré commit entre as duas fases do Two-Phase Commit.</p>
+
+        
+      </div>
+      <div class="post-footer clearfix">
+        <a href="/2015/02/22/banco-de-dados-distribuidos/" class="post-more waves-button-light">MORE</a>
+      </div>
+    
+
+  </article>
+
+
+</li>
+  
+    <li class="post-list-item">
+  <article id="post-gestao-de-riscos" class="article article-type-post" itemscope itemprop="blogPost">
+    
+      
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2015/02/17/gestao-de-riscos/">Gestão de Riscos</a>
+    </h3>
+  
+
+
+
+      <div class="post-meat flex-row">
+        <div class="flex-col">
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/disciplina2/">disciplina2</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/modulo1/">modulo1</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/unidade4/">unidade4</a></li></ul>
+</div>
+        <time datetime="2015-02-18T01:27:00.001Z" itemprop="datePublished" class="post-tiem">
+  17/02/2015
+</time>
+      </div>
+      <div class="post-content" itemprop="postContent" >
+        
+          <h2 id="Gerencia-de-Riscos"><a href="#Gerencia-de-Riscos" class="headerlink" title="Gerência de Riscos"></a>Gerência de Riscos</h2><p>Classificação dos Riscos: Técnicos, Externos, Organizacionais e de Gestão de Projetos (cada um contém vários subtópicos).  </p>
+<p>Processo Gerenciamento de Riscos - Visão PMBOK  </p>
+<ul>
+<li><p>Planejamento da gestão de riscos</p>
+</li>
+<li><p>Decide como abordar, planejar e executar a gestão de riscos</p>
+</li>
+<li><p>Gera-se um plano de gestão de riscos</p>
+</li>
+<li><p>Identificação de riscos</p>
+</li>
+<li><p>Formas de identificar riscos: checklist, histórico, brainstorming, consultoria, etc.</p>
+</li>
+<li><p>Análise qualitativa de riscos: Avaliar dois fatores:</p>
+</li>
+<li><p>Probabilidade do risco ocorrer</p>
+</li>
+<li><p>Impacto (custo, escopo, tempo, qualidade)</p>
+</li>
+<li><p>Análise quantitativa de riscos</p>
+</li>
+<li><p>Determina a consequência de cada risco numericamente</p>
+</li>
+<li><p>Técnicas mais conhecidas são: Análise de Sensibilidade e Árvore de Simulação.</p>
+</li>
+<li><p>Planejamento de respostas a risco: Cinco respostas genéricas: </p>
+</li>
+<li><p>Aceitar (duas formas: ativa e passiva)</p>
+</li>
+<li>Redução do risco (mitigação)</li>
+<li>Ignorar</li>
+<li><p>Transferência de Risco</p>
+</li>
+<li><p>Monitoramento e controle de riscos</p>
+</li>
+<li><p>O risco mudou de estado ou tendência? </p>
+</li>
+<li>Plano de resposta ao risco</li>
+</ul>
+<h4 id="Riscos-positivos"><a href="#Riscos-positivos" class="headerlink" title="Riscos positivos:"></a>Riscos positivos:</h4><ul>
+<li>Provocar: mexer na probabilidade do risco ocorrer</li>
+<li>Compartilhar: Trabalhar com terceiros</li>
+<li>Melhorar: Aumenta o tamanho da oportunidade</li>
+<li>Aceitar: Espera o risco positivo acontecer</li>
+</ul>
+<h4 id="Visao-MPS-BR"><a href="#Visao-MPS-BR" class="headerlink" title="Visão MPS-BR"></a>Visão MPS-BR</h4><p>É consistente com PMBOK. Gerência de Risco - GRI  </p>
+<ul>
+<li>GRI-1: O escopo de gerencia de risco é determinado</li>
+<li>GRI-2: As origens e categorias são determinados</li>
+<li>GRI-3: As estratégias de gerência são definidas</li>
+<li>GRI-4: Os riscos são identificados</li>
+<li>GRI-5: Os riscos são priorizados, estimados e classificados</li>
+<li>GRI-6: Planos para mitigação são desenvolvidos</li>
+<li>GRI-7: Os riscos são analisados e prioridades determinadas</li>
+<li>GRI-8: Os riscos são avaliados e monitorados para determinar mudanças</li>
+<li>GRI-9: Ações apropriadas são executadas para corrigir ou evitar o impacto</li>
+</ul>
+
+        
+      </div>
+      <div class="post-footer clearfix">
+        <a href="/2015/02/17/gestao-de-riscos/" class="post-more waves-button-light">MORE</a>
+      </div>
+    
+
+  </article>
+
+
+</li>
+  
+    <li class="post-list-item">
+  <article id="post-gerencia-de-requisitos" class="article article-type-post" itemscope itemprop="blogPost">
+    
+      
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2015/02/17/gerencia-de-requisitos/">Gerência de Requisitos</a>
+    </h3>
+  
+
+
+
+      <div class="post-meat flex-row">
+        <div class="flex-col">
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/disciplina2/">disciplina2</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/modulo1/">modulo1</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/unidade3/">unidade3</a></li></ul>
+</div>
+        <time datetime="2015-02-18T00:20:00.001Z" itemprop="datePublished" class="post-tiem">
+  17/02/2015
+</time>
+      </div>
+      <div class="post-content" itemprop="postContent" >
+        
+          <p>Trata-se de:  </p>
+<ul>
+<li><span style="font-weight: normal;">Mudanças nos </span>requisitos</li>
+<li><span style="font-weight: normal;">Relacionamento entre os requisitos</span></li>
+<li><span style="font-weight: normal;">Dependência entre os documentos (ex. se alterar o escopo, vai alterar custo, prazo, etc)</span></li>
+</ul>
+<h3 id="Motivacao"><a href="#Motivacao" class="headerlink" title="Motivação"></a>Motivação</h3><ul>
+<li>Erros em requisitos causam atrasos, software insatisfatório. </li>
+<li>Erros em requisitos são causados por: falta de compreensão, mudanças descontroladas.</li>
+</ul>
+<p>A gerência de requisitos é responsável por minimizar esses erros. Pois garante, execução eficiente dos processos de ER e mudança controlada.  </p>
+<h3 id="Fatores-para-mudancas-de-requisitos"><a href="#Fatores-para-mudancas-de-requisitos" class="headerlink" title="Fatores para mudanças de requisitos"></a>Fatores para mudanças de requisitos</h3><ul>
+<li>Erros </li>
+<li>Evolução do conhecimento (os envolvidos passam a ter outras ideias com o passar do tempo)</li>
+<li>Problemas técnicos (custo e prazo)</li>
+<li>Problemas na implementação, vai demorar demais ou ser muito caro</li>
+<li>Mudança na prioridade dos clientes</li>
+<li>Mudanças de ambiente (tecnológico)</li>
+<li>Mudanças organizacionais</li>
+</ul>
+<p>Requisitos estáveis é o que não vai mudar para o cliente, voláteis são os que mudam classificados como mutáveis, emergentes, consequência e compatibilidade.</p>
+<h3 id="Gerenciamento-de-Mudanca"><a href="#Gerenciamento-de-Mudanca" class="headerlink" title="Gerenciamento de Mudança"></a>Gerenciamento de Mudança</h3><p>São os procedimentos, processos e padrões usados para gerenciar as mudanças nos requisitos.Problema identificado -&gt; Análise do problema -&gt; Análise da mudança e custo -&gt; Implementação da Mudança -&gt; Especificação Revisada  </p>
+<h3 id="Rastreabilidade"><a href="#Rastreabilidade" class="headerlink" title="Rastreabilidade"></a>Rastreabilidade</h3><p>Para percorrer do documento de requisitos até os arquivos fonte e vice-versa.</p>
+
+        
+      </div>
+      <div class="post-footer clearfix">
+        <a href="/2015/02/17/gerencia-de-requisitos/" class="post-more waves-button-light">MORE</a>
+      </div>
+    
+
+  </article>
+
+
+</li>
+  
+    <li class="post-list-item">
+  <article id="post-processo-de-engenharia-de-requisitos" class="article article-type-post" itemscope itemprop="blogPost">
+    
+      
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2015/02/17/processo-de-engenharia-de-requisitos/">Processo de Engenharia de Requisitos</a>
+    </h3>
+  
+
+
+
+      <div class="post-meat flex-row">
+        <div class="flex-col">
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/disciplina2/">disciplina2</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/modulo1/">modulo1</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/unidade2/">unidade2</a></li></ul>
+</div>
+        <time datetime="2015-02-17T23:26:00.000Z" itemprop="datePublished" class="post-tiem">
+  17/02/2015
+</time>
+      </div>
+      <div class="post-content" itemprop="postContent" >
+        
+          <h2 id="Processo-de-Engenharia-de-Requisitos"><a href="#Processo-de-Engenharia-de-Requisitos" class="headerlink" title="Processo de Engenharia de Requisitos"></a>Processo de Engenharia de Requisitos</h2><p>Como todo processo, possui uma entrada e uma saída. Como entrada, podemos receber, sistemas existentes, requisitos dos clientes, regulamentos, domínio, etc. Como saída, a própria especificação de requisitos de software.</p>
+<h3 id="Subprocessos"><a href="#Subprocessos" class="headerlink" title="Subprocessos"></a>Subprocessos</h3><ul>
+<li><p>Estudo da viabilidade</p>
+</li>
+<li><p>Produz um relatório de viabilidade, se for viável, continua.</p>
+</li>
+<li><p>Elicitação e análise </p>
+</li>
+<li><p>Leitura de documentos, entrevistas, organizar os requisitos</p>
+</li>
+<li><p>Detalhamento dos requisitos: São gerados os documentos:</p>
+</li>
+<li><p>Visão: Descrever as necessidades e características de <strong>alto nível</strong> do sistema</p>
+</li>
+<li>Espec. Requisitos: Detalha todos os requisitos do sistema</li>
+<li>Modelo de Domínio: Voltado aos implementadores, diagramas UML</li>
+<li><p>Casos de Uso: diagrama e textual</p>
+</li>
+<li><p>Validação</p>
+</li>
+<li><p>Verificar conflitos, é necessário implementar em termos de prazo, custo. Uma forma de validar é prototipar.</p>
+</li>
+</ul>
+<h3 id="Dificuldades"><a href="#Dificuldades" class="headerlink" title="Dificuldades"></a>Dificuldades</h3><ul>
+<li>Volatilidade dos requisitos</li>
+<li>Clientes dispersos, numerosos</li>
+<li>Clientes possuem objetivos conflitantes</li>
+<li>Falta de tempo</li>
+</ul>
+
+        
+      </div>
+      <div class="post-footer clearfix">
+        <a href="/2015/02/17/processo-de-engenharia-de-requisitos/" class="post-more waves-button-light">MORE</a>
+      </div>
+    
+
+  </article>
+
+
+</li>
+  
+    <li class="post-list-item">
+  <article id="post-avaliacao-e-testes" class="article article-type-post" itemscope itemprop="blogPost">
+    
+      
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2015/02/16/avaliacao-e-testes/">Avaliação e Testes</a>
+    </h3>
+  
+
+
+
+      <div class="post-meat flex-row">
+        <div class="flex-col">
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/disciplina3/">disciplina3</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/modulo1/">modulo1</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/unidade4/">unidade4</a></li></ul>
+</div>
+        <time datetime="2015-02-17T01:05:00.000Z" itemprop="datePublished" class="post-tiem">
+  16/02/2015
+</time>
+      </div>
+      <div class="post-content" itemprop="postContent" >
+        
+          <p>Como é feita uma avaliação de usabilidade?<br>Através de testes de usabilidade, utilizando critérios de boa usabilidade para ver se atende os critérios.  </p>
+<p>Objetivos:  </p>
+<ul>
+<li>Avaliar a funcionalidade</li>
+<li>Avaliar a interface</li>
+<li>Identificar problemas específicos</li>
+</ul>
+<p>Framework DECIDE para avaliar o usuário:  </p>
+<ul>
+<li>Determinar as metas do teste</li>
+<li>Explorar as questões a serem respondidas</li>
+<li>Escolher a melhor maneira para avaliar</li>
+<li>Identificar problemas práticos</li>
+<li>Decidir problemas ligados a ética</li>
+<li>Avaliar, analisar e apresentar dados</li>
+</ul>
+<h3 id="Tecnicas-de-avaliacao"><a href="#Tecnicas-de-avaliacao" class="headerlink" title="Técnicas de avaliação"></a>Técnicas de avaliação</h3><h4 id="Revisao-de-software"><a href="#Revisao-de-software" class="headerlink" title="Revisão de software"></a>Revisão de software</h4><p>Baseado em resultados existentes, o avaliador compara o produto com a documentação de outros resultados.  </p>
+<h4 id="Card-sorting"><a href="#Card-sorting" class="headerlink" title="Card-sorting"></a>Card-sorting</h4><p>Além de avaliar, também é uma maneira de especificar e projetar a interface. Colocar em cartões as informações que serão exibidas na tela e pedir para o usuário agrupar de acordo com a forma que ele acha mais adequado.  </p>
+<h4 id="Heuristicas-de-Nielsen"><a href="#Heuristicas-de-Nielsen" class="headerlink" title="Heurísticas de Nielsen"></a>Heurísticas de Nielsen</h4><ul>
+<li>Dialogo simples e natural (não carregar muito a interface)</li>
+<li>Falar a linguagem do usuário</li>
+<li>Minimizar a carga cognitiva</li>
+<li>Ser consistente</li>
+<li>Forneça feedback</li>
+<li>Marcar claramente as saídas (undo e redo)</li>
+<li>Flexibilidade e eficiência de uso</li>
+<li>Mensagens de erros claras</li>
+<li>Evitar e prevenir erros</li>
+<li>Ajuda e documentação</li>
+</ul>
+<h3 id="Procedimentos-de-avaliacao"><a href="#Procedimentos-de-avaliacao" class="headerlink" title="Procedimentos de avaliação"></a>Procedimentos de avaliação</h3><ul>
+<li>Treinar as pessoas que vão fazer a avaliação;</li>
+<li>Avaliação;</li>
+<li>O resultado da avaliação é pontuado quanto ao grau de severidade;</li>
+<li>Discutir os resultados (debriefing).</li>
+</ul>
+<h3 id="Erros-tipicos"><a href="#Erros-tipicos" class="headerlink" title="Erros típicos"></a>Erros típicos</h3><ul>
+<li>Navegação</li>
+<li>Desenho de interface / layout</li>
+<li>Terminologia</li>
+<li>Falta de feedback </li>
+<li>Consistência</li>
+<li>Redundância</li>
+<li>Controle (sistema dá ordens ao usuário)</li>
+<li>Metáfora </li>
+</ul>
+<p>A avaliação é fundamental para a qualidade do produto. Deve ser feita várias vezes durante o processo.</p>
+
+        
+      </div>
+      <div class="post-footer clearfix">
+        <a href="/2015/02/16/avaliacao-e-testes/" class="post-more waves-button-light">MORE</a>
+      </div>
+    
+
+  </article>
+
+
+</li>
+  
+    <li class="post-list-item">
+  <article id="post-prototipacao" class="article article-type-post" itemscope itemprop="blogPost">
+    
+      
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2015/02/16/prototipacao/">Prototipação</a>
+    </h3>
+  
+
+
+
+      <div class="post-meat flex-row">
+        <div class="flex-col">
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/disciplina3/">disciplina3</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/modulo1/">modulo1</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/unidade3/">unidade3</a></li></ul>
+</div>
+        <time datetime="2015-02-16T23:50:00.000Z" itemprop="datePublished" class="post-tiem">
+  16/02/2015
+</time>
+      </div>
+      <div class="post-content" itemprop="postContent" >
+        
+          <p>Um dos aspectos mais importantes no design de interfaces.  </p>
+<h4 id="Porque-prototipar"><a href="#Porque-prototipar" class="headerlink" title="Porque prototipar?"></a>Porque prototipar?</h4><ul>
+<li>Avaliação;</li>
+<li>Apresentação aos stakeholders;</li>
+<li>Comunicação entre equipes;</li>
+<li>Testar ideias;</li>
+<li>Incentivo a reflexão;</li>
+<li>Responder questões e escolher alternativas.</li>
+</ul>
+<p>Fidelidade: é o nivel de detalhamento que possui um protótipo. Exemplos de baixa fidelidade: storyboard, wireframe.<strong>Protótipos iniciais</strong></p>
+<ul>
+<li>Objetivo: testar globalmente a interação;</li>
+<li>Fidelidade pode ser um pouco menor;</li>
+<li>Deve incluir funções representativas;</li>
+</ul>
+<p><strong>Protótipos finais</strong></p>
+<ul>
+<li>Objetivo:  testar partes importantes ou ainda não resolvidas;</li>
+</ul>
+<h4 id="Dimensoes-do-prototipo-classifica-diferentes-abordagens-a-prototipacao-como"><a href="#Dimensoes-do-prototipo-classifica-diferentes-abordagens-a-prototipacao-como" class="headerlink" title="Dimensões do protótipo: classifica diferentes abordagens à prototipação, como:"></a>Dimensões do protótipo: classifica diferentes abordagens à prototipação, como:</h4><ul>
+<li>Representação: como o desenho da interação é representado</li>
+<li>Escopo: inclui todo o sistema ou só interface</li>
+</ul>
+<h4 id="Prototipo-Horizontal-x-Vertical"><a href="#Prototipo-Horizontal-x-Vertical" class="headerlink" title="Protótipo: Horizontal x Vertical"></a>Protótipo: Horizontal x Vertical</h4><ul>
+<li>Horizontal: menor profundidade e maior largura, features do sistema. (mais usado em protótipos iniciais)</li>
+<li>Vertical: Um menor numero de características em maior profundidade.</li>
+<li>Global: Visualiza o sistema como um todo</li>
+<li>Local: Somente uma parte do sistema</li>
+</ul>
+<h4 id="Riscos"><a href="#Riscos" class="headerlink" title="Riscos"></a>Riscos</h4><ul>
+<li>Desenvolvedores não levam a sério o protótipo</li>
+<li>Não deixar o usuário gerar expectativas falsas</li>
+<li>Dificuldade no desenvolvimento de protótipos com pessoas que não estão acostumadas</li>
+</ul>
+
+        
+      </div>
+      <div class="post-footer clearfix">
+        <a href="/2015/02/16/prototipacao/" class="post-more waves-button-light">MORE</a>
+      </div>
+    
+
+  </article>
+
+
+</li>
+  
+    <li class="post-list-item">
+  <article id="post-engenharia-de-usabilidade" class="article article-type-post" itemscope itemprop="blogPost">
+    
+      
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2015/02/16/engenharia-de-usabilidade/">Engenharia de Usabilidade</a>
+    </h3>
+  
+
+
+
+      <div class="post-meat flex-row">
+        <div class="flex-col">
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/disciplina3/">disciplina3</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/modulo1/">modulo1</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/unidade2/">unidade2</a></li></ul>
+</div>
+        <time datetime="2015-02-16T23:14:00.000Z" itemprop="datePublished" class="post-tiem">
+  16/02/2015
+</time>
+      </div>
+      <div class="post-content" itemprop="postContent" >
+        
+          <p>Demonstra o processo de engenharia necessário para se conseguir uma tela com boa usabilidade.  </p>
+<ul>
+<li>Planejamento - Desenvolvimento do Conceito</li>
+<li>Pesquisa e Análise de necessidades</li>
+<li>Conhecimentos dos usuários</li>
+<li>Análise da concorrência</li>
+<li>Análise de tarefas</li>
+<li>Definição de requisitos e metas de usabilidade</li>
+<li>Prototipação</li>
+<li>Desenho interativo e refinamento</li>
+<li>Avalição de usabilidade</li>
+</ul>
+<h4 id="Planejamento-e-analise-de-necessidades"><a href="#Planejamento-e-analise-de-necessidades" class="headerlink" title="Planejamento e análise de necessidades"></a>Planejamento e análise de necessidades</h4><p>Levantar os requisitos de interface do sistema, determinar o propósito, sequencia de tarefas, etc.  </p>
+<h4 id="Concorrentes"><a href="#Concorrentes" class="headerlink" title="Concorrentes"></a>Concorrentes</h4><p>Procurar nos concorrentes o que já foi implementado e como já foi. Não é preciso sair do zero.  </p>
+<h4 id="Conhecer-usuario"><a href="#Conhecer-usuario" class="headerlink" title="Conhecer usuário"></a>Conhecer usuário</h4><p>Quem é o usuario? Como usa o sistema? Quais a tarefas do dia-a-dia. Fazer analise dos perfis, o que usuario vai fazer o que?  </p>
+<h4 id="Analise-das-Tarefas"><a href="#Analise-das-Tarefas" class="headerlink" title="Análise das Tarefas"></a>Análise das Tarefas</h4><p>O que o usuário gostaria de fazer, a ordem, a prioridade, os recursos que o usuário necessita para executar bem a tarefa.  </p>
+<h4 id="Erros"><a href="#Erros" class="headerlink" title="Erros"></a>Erros</h4><p>Antecipar e minimizar a ocorrência de erros através da analise </p>
+<h4 id="Metas"><a href="#Metas" class="headerlink" title="Metas"></a>Metas</h4><p>Definir metas, para melhorar a usabilidade. Por exemplo, um site de venda de livros, percebeu que havia muitas desistencias e definiu a meta de aumentar suas vendas, e para isso focou facilitar o aprendizado do sistema e aumentar a grau de satisfação do usuário.  </p>
+<h4 id="Prototipacao"><a href="#Prototipacao" class="headerlink" title="Prototipação"></a>Prototipação</h4><p>Criar um pequeno modelo da interface desejada. Para conseguir informações importantes para o design de interface e de funcionalidades do sistema.  </p>
+<blockquote>
+<p>Desenho -&gt; Prototipo -&gt; Avaliação<br>                       &lt;-  </p>
+</blockquote>
+<h4 id="Avaliacao-do-Usuario"><a href="#Avaliacao-do-Usuario" class="headerlink" title="Avaliação do Usuário"></a>Avaliação do Usuário</h4><p>Observar o usuário utilizar o sistema, filmar, enviar interface para ser avaliada por terceiros, questionário, etc.  </p>
+<p>Engenharia de Usabilidade de Nielsen  </p>
+<ol>
+<li>Conheça seu usuário</li>
+<li>Realize uma análise competitiva</li>
+<li>Defina metas de usabilidade</li>
+<li>Faça designs paralelos</li>
+<li>Adote o design participativo</li>
+<li>Faça o design coordenado da interface como um todo</li>
+<li>Aplique diretrizes e análise heuríticas</li>
+<li>Faça prototipos</li>
+<li>Realize testes empiricos</li>
+<li>Pratique design iterativo</li>
+</ol>
+<p>Na UML, os diagramas de caso de uso e sequencia são o ponto comum entre os diagramas de desenvolvimento tradicional e usabilidade.</p>
+
+        
+      </div>
+      <div class="post-footer clearfix">
+        <a href="/2015/02/16/engenharia-de-usabilidade/" class="post-more waves-button-light">MORE</a>
+      </div>
+    
+
+  </article>
+
+
+</li>
+  
+    <li class="post-list-item">
+  <article id="post-principios-do-design-de-interface" class="article article-type-post" itemscope itemprop="blogPost">
+    
+      
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2015/02/16/principios-do-design-de-interface/">Princípios do design de interface</a>
+    </h3>
+  
+
+
+
+      <div class="post-meat flex-row">
+        <div class="flex-col">
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/disciplina3/">disciplina3</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/modulo1/">modulo1</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/unidade1/">unidade1</a></li></ul>
+</div>
+        <time datetime="2015-02-16T22:33:00.000Z" itemprop="datePublished" class="post-tiem">
+  16/02/2015
+</time>
+      </div>
+      <div class="post-content" itemprop="postContent" >
+        
+          <p>Principios auxiliam no projeto de interface, procuram atender a 3 pontos básicos: usabilidade, cognição e facilidade de comunicação.  </p>
+<h3 id="4-Principios-gerais-de-um-bom-design"><a href="#4-Principios-gerais-de-um-bom-design" class="headerlink" title="4 Princípios gerais de um bom design"></a>4 Princípios gerais de um bom design</h3><ul>
+<li>Estado e ação devem estar sempre visiveis</li>
+<li>Casar modelo conceitual com imagem consistente do sistema</li>
+<li>Incluir mapeamentos que revelam relações entre estágios</li>
+<li>Fornecer a todo tempo feedback ao usuário (Ex: aguarde…)</li>
+</ul>
+<h3 id="8-regras-de-ouro-no-design-de-interfaces"><a href="#8-regras-de-ouro-no-design-de-interfaces" class="headerlink" title="8 regras de ouro no design de interfaces"></a>8 regras de ouro no design de interfaces</h3><ul>
+<li>Seja consistente: mesma cor e nome para mesmo botoes em telas diferentes.</li>
+<li>Otimize as operações do usuário: forneça recursos como atalhos, macros, etc.</li>
+<li>Oferecer feedback significativo: não mostrar mensagem de erro com código.</li>
+<li>Tarefas com principio, meio e fim bem definidos</li>
+<li>Oferecer prevenção e tratamento de erros</li>
+<li>Perdoar erros: permitir desfazer (undo)</li>
+<li>Reduzir a quantidade de informações que devem ser memorizadas</li>
+<li>Reduzir a carga de memória de curto prazo</li>
+</ul>
+<h3 id=""><a href="#" class="headerlink" title=" "></a> </h3><p>4 pontos críticos de falhas de design</p>
+<ul>
+<li>Usuários podem formar metas inadequadas à sua intenção</li>
+<li>Usuários podem não encontrar o objeto de interface correto</li>
+<li>Usuário não consegue especificar como realizar tarefa</li>
+<li>Usuário pode receber feedback confuso</li>
+</ul>
+
+        
+      </div>
+      <div class="post-footer clearfix">
+        <a href="/2015/02/16/principios-do-design-de-interface/" class="post-more waves-button-light">MORE</a>
+      </div>
+    
+
+  </article>
+
+
+</li>
+  
+  </ul>
+  
+    <nav id="page-nav">
+      <div class="inner">
+        <a class="extend prev" rel="prev" href="/page/3/">上一页</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/">5</a><a class="extend next" rel="next" href="/page/5/">下一页</a>
+      </div>
+    </nav>
+  
+
+
+
+    </div>
+  </main>
+<div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-circle-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+<script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+
+<script src="/js/main.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Banco de Dados Distribuidos | Engenheirando Software | Minhas observações sobre Engenharia de Software</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <meta name="keywords" content="modulo1,disciplina4,unidade2">
+  <meta name="description" content="Consiste num conjunto de bancos espalhados e um sistema distribuído para gerenciar esses bancos. Cada local pode realizar transações: locais, em que acessam dados de um único local e globais onde aces">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Banco de Dados Distribuidos">
+<meta property="og:url" content="http://yoursite.com/2015/02/22/banco-de-dados-distribuidos/index.html">
+<meta property="og:site_name" content="Engenheirando Software">
+<meta property="og:description" content="Consiste num conjunto de bancos espalhados e um sistema distribuído para gerenciar esses bancos. Cada local pode realizar transações: locais, em que acessam dados de um único local e globais onde aces">
+<meta property="og:updated_time" content="2015-06-09T04:07:22.618Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Banco de Dados Distribuidos">
+<meta name="twitter:description" content="Consiste num conjunto de bancos espalhados e um sistema distribuído para gerenciar esses bancos. Cada local pode realizar transações: locais, em que acessam dados de um único local e globais onde aces">
+  
+    <link rel="alternative" href="/atom.xml" title="Engenheirando Software" type="application/atom+xml">
+  
+  <link rel="shortcut icon" href="/">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="loading" class="active"></div>
+
+  <nav id="menu" class="hide" >
+   <div class="inner">
+  <a href="javascript:;" class="header-icon waves-circle-light" id="menu-off">
+      <i class="icon icon-lg icon-close"></i>
+  </a>
+  <div class="brand-wrap">
+    <div class="brand">
+      <a href="/" class="avatar"><img src="/images/avatar.jpg"></a>
+      <hgroup class="introduce">
+        <h5 class="nickname">Jonathas Amaral</h5>
+        <a href="mailto:jnthas@gmail.com" title="jnthas@gmail.com" class="mail">jnthas@gmail.com</a>
+      </hgroup>
+    </div>
+  </div>
+  <ul class="nav">
+    
+        <li class="waves-block">
+          <a href="/"  >
+            <i class="icon icon-lg icon-home"></i>
+            Home
+          </a>
+        </li>
+    
+        <li class="waves-block">
+          <a href="/archives"  >
+            <i class="icon icon-lg icon-archives"></i>
+            Archives
+          </a>
+        </li>
+    
+        <li class="waves-block">
+          <a href="/tags"  >
+            <i class="icon icon-lg icon-tags"></i>
+            Tags
+          </a>
+        </li>
+    
+        <li class="waves-block">
+          <a href="https://github.com/engenhando-software/engenhando-software.github.io" target="_blank" >
+            <i class="icon icon-lg icon-github"></i>
+            Github
+          </a>
+        </li>
+    
+  </ul>
+
+  <footer class="footer">
+  <p><a rel="license" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0;vertical-align:middle;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAAAPCAMAAABEF7i9AAAAllBMVEUAAAD///+rsapERER3d3eIiIjMzMzu7u4iIiKUmZO6v7rKzsoODg4RERFVVVUNDQ0NDg0PEA8zMzNLTEtbXltmZmZydnF9gn2AgICPkI+ZmZmqqqq7u7vFxsXIzMgNDQwZGRkgICAhISEkJSMnKCcuMC4xMzE5Ozk7PTtBQkFCQkJDQ0Nna2eGhoaHh4ezuLLGysbd3d1wVGpAAAAA4UlEQVR42q2T1xqCMAyFk7QsBQeKA9x7j/d/OSm22CpX0nzcpA1/T05aAOuBVkMAScQFHLnEwoCo2f1TnQIGoVMewjZEjVFN4GH1Ue1Cn2jWqwfsOOj6wDwGvotsl/c8lv7KIq1eLOsT0HMFHMIE/RZyHnlphryT9zyV+8WH5e8yQw3wnQvgAFxPTKUVi555SHR/lOfLMgVTeDlSfN+TaoUsiTyeIm+bCkHvCA2FUKG48LDtYBZBknsYP/G8NTw0gaaHyuQf4H5pecrB/FYCT2sL9zAfy1Xyjou6L8X2W7YcLyBZCRtnq/zfAAAAAElFTkSuQmCC" /></a></p>
+  <p>Jonathas Amaral &copy; 2016</p>
+  <p>Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme
+  <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a></p>
+  <a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-2x icon-rss-square"></i></a>
+</footer>
+
+</div>
+
+  </nav>
+  <main id="main">
+    <header class="header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-circle-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">Banco de Dados Distribuidos</div>
+        
+    </div>
+</header>
+<header class="content-header">
+  <div class="container">
+    <h1 class="author">Banco de Dados Distribuidos</h1>
+    <h5 class="subtitle">22/02/2015</h5>
+  </div>
+</header>
+
+    <div class="container body-wrap">
+      
+  <article id="post-banco-de-dados-distribuidos" class="article article-type-post" itemscope itemprop="blogPost">
+    
+      <div class="post-meat flex-row">
+        <div class="flex-col">
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/disciplina4/">disciplina4</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/modulo1/">modulo1</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/unidade2/">unidade2</a></li></ul>
+</div>
+      </div>
+      <div class="post-body">
+
+        <aside class="post-widget" id="post-widget">
+
+          
+
+          
+          <nav class="post-toc-wrap" id="post-toc">
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Condicoes-minimas-para-ser-um-banco-de-dados-distribuido"><span class="post-toc-text">Condições mínimas para ser um banco de dados distribuído</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Transparencia"><span class="post-toc-text">Transparência</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Custo-de-instalacao-de-um-banco-de-dados-distribuido"><span class="post-toc-text">Custo de instalação de um banco de dados distribuído</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Pros-e-Contras-a-distribuicao-de-dados"><span class="post-toc-text">Prós e Contras à distribuição de dados</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Vantagens"><span class="post-toc-text">Vantagens</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Desvantagens"><span class="post-toc-text">Desvantagens</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Tipo-de-Sistemas-de-BDD"><span class="post-toc-text">Tipo de Sistemas de BDD</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Dificuldades-com-bancos-federados"><span class="post-toc-text">Dificuldades com bancos federados</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Replicacao"><span class="post-toc-text">Replicação</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Fragmentacao"><span class="post-toc-text">Fragmentação</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Estrutura-de-um-BDD"><span class="post-toc-text">Estrutura de um BDD</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Robustez"><span class="post-toc-text">Robustez</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#"><span class="post-toc-text"> </span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Three-Phase-Commit"><span class="post-toc-text">Three-Phase Commit</span></a></li></ol>
+          </nav>
+          
+        </aside>
+
+        <div class="post-main">
+
+            <div class="post-content" itemprop="postContent"><p>Consiste num conjunto de bancos espalhados e um sistema distribuído para gerenciar esses bancos. Cada local pode realizar transações: locais, em que acessam dados de um único local e globais onde acessam dados em vários locais.  </p>
+<h3 id="Condicoes-minimas-para-ser-um-banco-de-dados-distribuido"><a href="#Condicoes-minimas-para-ser-um-banco-de-dados-distribuido" class="headerlink" title="Condições mínimas para ser um banco de dados distribuído"></a>Condições mínimas para ser um banco de dados distribuído</h3><ul>
+<li>Estar conectados em rede</li>
+<li>Possuir uma inter-relação lógica dos bancos</li>
+<li>Não é necessário que o software seja o mesmo em cada nó da rede</li>
+</ul>
+<h3 id="Transparencia"><a href="#Transparencia" class="headerlink" title="Transparência"></a>Transparência</h3><ul>
+<li>Usuário: usuário não precisa saber detalhes de implementação</li>
+<li>Distribuição ou rede: usuário não precisa saber configuração de rede</li>
+<li>Local: Usuário não sabe onde o banco se encontra</li>
+<li>Nomes: nome dos dados. usuário chama um dado pelo nome que ele conhece.</li>
+<li>Replicação e Fragmentação: usuário não precisa saber como o dado está.</li>
+<li>Projeto: Projeto do banco de dados é transparente ao usuário</li>
+<li>Execução: Como deve ser feita a requisição e o processamento no banco, usuário não precisa saber;</li>
+</ul>
+<h3 id="Custo-de-instalacao-de-um-banco-de-dados-distribuido"><a href="#Custo-de-instalacao-de-um-banco-de-dados-distribuido" class="headerlink" title="Custo de instalação de um banco de dados distribuído"></a>Custo de instalação de um banco de dados distribuído</h3><ol>
+<li>Custo de instalação: tempo para ligar fisicamente um nó</li>
+<li>Custo de comunicação: custo em tempo e dinheiro para enviar uma mensagem entre os nós</li>
+<li>Confiabilidade: frequência com a qual uma ligação apresenta falhas</li>
+<li>Disponibilidade: o grau com que um dado pode ser acessado ainda que algumas apresentem falhas</li>
+</ol>
+<h3 id="Pros-e-Contras-a-distribuicao-de-dados"><a href="#Pros-e-Contras-a-distribuicao-de-dados" class="headerlink" title="Prós e Contras à distribuição de dados"></a>Prós e Contras à distribuição de dados</h3><h4 id="Vantagens"><a href="#Vantagens" class="headerlink" title="Vantagens"></a>Vantagens</h4><ul>
+<li>Autonomia local, mesmo que a rede esteja indisponível, o sistema se mantem localmente</li>
+<li>Confiabilidade e Disponibilidade: forte ponte do BDD.</li>
+<li>Aceleração do processo de consulta: pode-se subdividir uma consulta que são executadas em paralelo</li>
+<li>Crescimento incremental: cresce de acordo com a necessidade</li>
+</ul>
+<h4 id="Desvantagens"><a href="#Desvantagens" class="headerlink" title="Desvantagens"></a>Desvantagens</h4><ul>
+<li>Aumento da sobrecarga de processamento: sistema deve encontrar o dados no nó correto</li>
+<li>Maior chance de erros</li>
+<li>Custo de desenvolvimento do software</li>
+</ul>
+<h3 id="Tipo-de-Sistemas-de-BDD"><a href="#Tipo-de-Sistemas-de-BDD" class="headerlink" title="Tipo de Sistemas de BDD"></a>Tipo de Sistemas de BDD</h3><p>Características:</p>
+<ul>
+<li><strong>(Hetero)Homogeneidade</strong>: é a diferença de sistemas (ou SGBD) entre os bancos distribuídos. Um banco é homogêneo quando ele tem mesmo sistema em todos os nós.</li>
+<li><strong>Autonomia</strong>: quando cada local possui seu próprio banco de dados. O dados podem ser acessados em qualquer lugar, por isso, se um nó cair, o sistema continua funcionando obtendo o dado de outro nó.</li>
+<li><p><strong>Distribuição</strong>: é o quanto o banco é distribuído.</p>
+<pre><code>**Autonomia    Distribuição   Heterogeneidade****Centralizado**       total                 nenhuma          nenhuma**Puros**                   nenhuma          alta                   nenhuma**Federado**             media               alta                   alta **Multibancos**        alta                   alta                   alta  
+</code></pre></li>
+</ul>
+<h3 id="Dificuldades-com-bancos-federados"><a href="#Dificuldades-com-bancos-federados" class="headerlink" title="Dificuldades com bancos federados"></a>Dificuldades com bancos federados</h3><ul>
+<li>Diferenças entre linguagens, restrições, interpretação quando um banco está muito distante, p.ex., Brasil x EUA.</li>
+<li>Diferença entre nome de um dado, p.ex., mexerica, pocan, tangerina e bergamota. Os nomes referenciam ao mesmo produto, mas cada local tem um nome diferente.</li>
+<li>Forma como realizar agregação de tabelas e resumos</li>
+</ul>
+<h3 id="Replicacao"><a href="#Replicacao" class="headerlink" title="Replicação"></a>Replicação</h3><ul>
+<li>Síncrona: o dado é replicado na mesma hora (traz overhead)</li>
+<li>Assíncrona: o dado é replicado na hora que o SGBD achar melhor</li>
+</ul>
+<h3 id="Fragmentacao"><a href="#Fragmentacao" class="headerlink" title="Fragmentação"></a>Fragmentação</h3><ul>
+<li>Horizontal: linhas de uma tabela</li>
+<li>Vertical: colunas de uma tabela (exige o “id de tupla”, maior sobrecarga)</li>
+<li>Mista: SGBDs ainda não implementam </li>
+</ul>
+<h3 id="Estrutura-de-um-BDD"><a href="#Estrutura-de-um-BDD" class="headerlink" title="Estrutura de um BDD"></a>Estrutura de um BDD</h3><p>GT - é o mesmo componente do SGDB centralizado  </p>
+<p>Todo nó possui um Gerenciador de Transações (GT) que cooperam entre si para execução das transações. É responsável por manter o log, participa do controle de concorrência.O <strong>coordenador de transações</strong> coordena as transações locais e globais. É responsavel por  </p>
+<ul>
+<li>iniciar uma transação; </li>
+<li>distribuir a transação nos nós apropriados;</li>
+<li>coordernar a conclusão da transação.</li>
+</ul>
+<h3 id="Robustez"><a href="#Robustez" class="headerlink" title="Robustez"></a>Robustez</h3><p>Um SGBD é robusto quando consegue detectar falhas, reconfigurar o sistema para continuar o funcionamento e recuperar a situação original.</p>
+<h3 id=""><a href="#" class="headerlink" title=" "></a> </h3><p>Two-Phase Commit</p>
+<p>Coordenador emite uma mensagem para o GT, dizendo que vai atualizar. O GT responde OK, o coordenador envia a mensagem para o GT com a forma para atualizar. Se o coordenador não responder um segundo OK ele aborta a transação.São duas fases, uma o coordenador pergunta se pode atualizar e a outra confirma se foi atualizado.</p>
+<h3 id="Three-Phase-Commit"><a href="#Three-Phase-Commit" class="headerlink" title="Three-Phase Commit"></a>Three-Phase Commit</h3><p>Agora há um pré commit entre as duas fases do Two-Phase Commit.</p>
+</div>
+
+            
+<nav class="post-nav flex-row">
+  <div class="flex-col waves-block prev">
+    
+      <a href="/2015/03/06/seguranca-e-persistencia-de-dados/" title="Segurança e Persistência de Dados" id="post-prev" class="post-nav-link">
+        <i class="icon icon-chevron-left"></i>
+        <span class="article-nav-title">Anterior</span>
+      </a>
+    
+  </div>
+  <div class="flex-col waves-block next">
+    
+      <a href="/2015/02/17/gestao-de-riscos/" title="Gestão de Riscos" id="post-next" class="post-nav-link">
+        <span class="article-nav-title">Próximo</span>
+        <i class="icon icon-chevron-right"></i>
+      </a>
+    
+  </div>
+
+</nav>
+
+
+
+            
+<div id="disqus_thread"></div>
+<script>
+    /**
+     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+     */
+    /*
+    var disqus_config = function () {
+        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() {  // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        
+        s.src = '//engenhandosoftware.disqus.com/embed.js';
+        
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+
+
+        </div>
+
+      </div>
+
+    
+
+  </article>
+
+
+
+    </div>
+  </main>
+<div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-circle-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+<script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+
+<script src="/js/main.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>
